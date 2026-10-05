@@ -105,6 +105,7 @@ export class AnnotationScene {
     this.root.visible = false;
     this.layoutVisible = false;
     this.poseFilter.reset();
+    this.labelLayout.reset();
     this.lastPoseAt = null;
     this.lastRenderAt = null;
     this.drawLabels();

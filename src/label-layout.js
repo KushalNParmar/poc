@@ -5,13 +5,15 @@ const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
 
 /** Screen-space card layout; the tracked anchors remain in object-local space. */
 export class LabelLayout {
-  constructor({ minWidth = 128, maxWidth = 184, gap = 12, verticalOffset = 18 } = {}) {
+  constructor({ minWidth = 128, maxWidth = 184, gap = 20, leaderGap = 8, verticalOffset = 18 } = {}) {
     this.minWidth = Number.isFinite(minWidth) && minWidth > 0 ? minWidth : 128;
     this.maxWidth = Number.isFinite(maxWidth) && maxWidth >= this.minWidth ? maxWidth : Math.max(184, this.minWidth);
-    this.gap = Number.isFinite(gap) && gap >= 0 ? gap : 12;
+    this.gap = Number.isFinite(gap) && gap >= 0 ? gap : 20;
+    this.leaderGap = Number.isFinite(leaderGap) && leaderGap >= 0 ? leaderGap : 8;
     this.verticalOffset = Number.isFinite(verticalOffset) ? verticalOffset : 18;
     this.rects = [];
     this.items = [];
+    this.order = [];
     this.scratch = new THREE.Vector3();
     this.groupScale = new THREE.Vector3();
   }
@@ -27,30 +29,35 @@ export class LabelLayout {
     return this.items[index];
   }
 
-  // Always keep the same top-to-bottom order. A binary overlap test would
-  // otherwise make cards jump when a slowly moving anchor crosses a threshold.
+  reset() {
+    this.order.length = 0;
+    this.rects.length = 0;
+  }
+
+  // Keep the order chosen when this tracking lock starts. Re-sorting every
+  // frame would make labels swap places as noisy anchor heights cross.
   prepareRects(count, safe, scale) {
     const bottom = safe.y + safe.height;
     let fits = true;
     for (let i = 0; i < count; i++) {
-      const item = this.items[i];
+      const item = this.items[this.order[i]];
       item.width = Math.min(safe.width, item.idealWidth * scale);
       item.height = item.width * item.aspect;
-      const centerX = item.anchorX + item.side * (item.width / 2 + this.gap);
+      const centerX = item.anchorX + item.side * (item.width / 2 + this.leaderGap);
       item.x = clamp(centerX - item.width / 2, safe.x, safe.x + safe.width - item.width);
       item.desiredY = item.anchorY + item.shiftY - item.height / 2;
       item.earliest = safe.y;
       for (let j = 0; j < i; j++) {
-        const other = this.items[j];
+        const other = this.items[this.order[j]];
         item.earliest = Math.max(item.earliest, other.earliest + other.height + this.gap);
       }
       if (item.earliest + item.height > bottom + 1e-7) fits = false;
     }
     for (let i = count - 1; i >= 0; i--) {
-      const item = this.items[i];
+      const item = this.items[this.order[i]];
       item.latest = bottom - item.height;
       for (let j = i + 1; j < count; j++) {
-        const other = this.items[j];
+        const other = this.items[this.order[j]];
         item.latest = Math.min(item.latest, other.latest - this.gap - item.height);
       }
       if (item.earliest > item.latest + 1e-7) fits = false;
@@ -65,9 +72,9 @@ export class LabelLayout {
     for (let pass = 0; pass < 32; pass++) {
       let moved = false;
       for (let i = 0; i < count; i++) {
-        const a = this.items[i];
+        const a = this.items[this.order[i]];
         for (let j = i + 1; j < count; j++) {
-          const b = this.items[j];
+          const b = this.items[this.order[j]];
           const overlap = a.y + a.height + this.gap - b.y;
           if (overlap <= 1e-6) continue;
           const upRoom = Math.max(0, a.y - a.earliest);
@@ -84,10 +91,10 @@ export class LabelLayout {
     }
     // Resolve floating-point residuals within the precomputed feasible bounds.
     for (let i = 0; i < count; i++) {
-      const item = this.items[i];
+      const item = this.items[this.order[i]];
       let top = item.earliest;
       for (let j = 0; j < i; j++) {
-        const other = this.items[j];
+        const other = this.items[this.order[j]];
         top = Math.max(top, other.y + other.height + this.gap);
       }
       item.y = clamp(item.y, top, Math.max(top, item.latest));
@@ -147,6 +154,21 @@ export class LabelLayout {
     // Edge anchors can retain clamped labels; a target entirely outside one
     // viewport edge has no useful on-screen attachment and is not laid out.
     if (maxAnchorX < 0 || minAnchorX > width || maxAnchorY < 0 || minAnchorY > height) return false;
+
+    if (this.order.length !== count) {
+      this.order = annotations.map((_, index) => index).sort((a, b) =>
+        this.items[a].anchorY - this.items[b].anchorY || a - b);
+    }
+
+    // Side labels sit outward from their projected spots, including when the
+    // object's rotation swaps left/right on screen. Blend across the center to
+    // avoid a sudden side switch as the camera moves.
+    const centerX = (minAnchorX + maxAnchorX) / 2;
+    for (let i = 0; i < count; i++) {
+      if (annotations[i].slot !== 'upper-left') {
+        this.items[i].side = clamp((this.items[i].anchorX - centerX) / 24, -1, 1);
+      }
+    }
 
     // Compact landscape fallback uses one continuous scale rather than stepped
     // width changes that could introduce jitter as anchor depths fluctuate.
