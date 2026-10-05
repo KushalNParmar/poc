@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101714" />
+    <title>Cup → Toaster · Object AR</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./loader.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./vendor/lottie.min.js"></script>
+    <script defer src="./vendor/three/three.min.js"></script>
+    <script defer src="./vendor/three/GLTFLoader.js"></script>
+    <script defer src="./vendor/three/DRACOLoader.js"></script>
+    <script defer src="./vendor/three/RoomEnvironment.js"></script>
+    <script defer src="./vendor/webar/WebARRocksObject.js"></script>
+    <script defer src="./vendor/webar/WebARRocksThreeStabilizer.js"></script>
+    <script type="module" src="./src/app.js"></script>
+  </head>
+  <body>
+    <main class="container" id="stage">
+      <video id="camera" autoplay muted playsinline aria-label="Live camera"></video>
+      <canvas id="trackingCanvas" width="512" height="512" aria-hidden="true"></canvas>
+      <canvas id="sceneCanvas" aria-label="3D toaster"></canvas>
+      <ul id="annotations" class="sr-only" aria-label="Toaster annotations" hidden></ul>
+      <header class="topbar">
+        <div class="wordmark"><span class="brand-dot"></span> OBJECT AR <span class="poc-tag">POC 01</span></div>
+        <span class="status" id="status" role="status" aria-live="polite">Preparing</span>
+      </header>
+      <section class="intro" id="intro" hidden>
+        <div class="eyebrow">A SMALL OBJECT. A NEW PERSPECTIVE.</div>
+        <h1>Cup <span>→</span> Toaster</h1>
+        <p id="introMessage">Point your camera at a coffee cup. Explore a 3D toaster attached to it.</p>
+        <div class="actions">
+          <button class="primary" id="startButton">Start camera <span aria-hidden="true">↗</span></button>
+        </div>
+        <p class="fineprint">Try an opaque coffee cup in good light. Keep the whole cup visible. Cup recognition varies.</p>
+      </section>
+      <div class="scan-guide" id="scanGuide" hidden aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+      <section class="session-bar" id="sessionBar" hidden>
+        <div><strong id="sessionTitle">Find your cup</strong><p id="sessionHint">Keep the entire cup in view.</p></div>
+        <div class="session-actions"><button class="secondary compact" id="labelsButton" aria-pressed="true">Labels on</button><button class="secondary compact" id="resetButton">Rescan</button><button class="secondary compact" id="stopButton">Close</button></div>
+      </section>
+      <section class="error-card" id="errorCard" role="alert" hidden>
+        <h2 id="errorTitle">Couldn’t start the experience</h2><p id="errorMessage"></p>
+        <div class="actions"><button class="primary" id="retryButton">Try again</button></div>
+      </section>
+      <output id="debug" hidden></output>
+    </main>
+    <div class="centeredLoader" id="lottieLoader">
+      <div class="lottieContainer">
+        <div class="lottie" id="lottie"></div>
+        <h4 class="lottieText">Loading your experience</h4>
+        <p class="loader-detail" id="loaderDetail">Preparing the toaster</p>
+      </div>
+    </div>
+    <noscript>This experience needs JavaScript enabled.</noscript>
+  </body>
+</html>
