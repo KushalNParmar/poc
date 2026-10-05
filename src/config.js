@@ -20,10 +20,10 @@ export const CONFIG = Object.freeze({
   }),
   annotations: [
     // Label offsets and widths are in the same object-local 3D units as the annotation bounds.
-    // Cards inherit the tracked object's orientation; no camera-facing rotation is applied.
-    { title: 'Toast slots', detail: 'Top opening', point: [0.5, 0.96, 0.5], offset: [-0.12, 0.18, 0.1], width: 0.38 },
-    { title: 'Control dial', detail: 'Front controls', point: [0.98, 0.29, 0.5], offset: [0.26, 0, 0.1], width: 0.38 },
-    { title: 'Toaster body', detail: 'Outer housing', point: [0.22, 0.5, 0.95], offset: [-0.31, 0.02, 0.12], width: 0.38 },
+    // Each spot follows the object; text cards turn to face the camera.
+    { title: 'Overview', detail: 'The object at a glance', point: [0.5, 0.96, 0.5], offset: [-0.12, 0.18, 0.1], width: 0.38 },
+    { title: 'Design details', detail: 'Shape, texture and finish', point: [0.98, 0.29, 0.5], offset: [0.26, 0, 0.1], width: 0.38 },
+    { title: 'Everyday use', detail: 'Form meets function', point: [0.22, 0.5, 0.95], offset: [-0.31, 0.02, 0.12], width: 0.38 },
   ],
 });
 

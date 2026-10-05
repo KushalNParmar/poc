@@ -48,7 +48,7 @@ function cardTexture(definition, renderer) {
   return texture;
 }
 
-// Keep each element in the model's coordinate system. No camera-facing updates.
+// Anchor positions follow the object; the text card counter-rotates each frame.
 export function createAnnotation(definition, bounds, renderer) {
   const group = new THREE.Group();
   group.name = `annotation-${definition.title}`;
@@ -61,7 +61,6 @@ export function createAnnotation(definition, bounds, renderer) {
   const card = new THREE.Group();
   card.name = 'annotation-card';
   card.position.copy(anchor.position).add(new THREE.Vector3(...definition.offset));
-  card.rotation.set(...(definition.rotation || [0, 0, 0]));
   const width = definition.width || 0.44;
   const height = width * TEXTURE_HEIGHT / TEXTURE_WIDTH;
   const geometry = new THREE.PlaneGeometry(width, height);
@@ -84,39 +83,54 @@ export function createAnnotation(definition, bounds, renderer) {
   card.add(front, back);
   group.add(card);
 
-  // Find the nearest rectangle edge in card-local space, including card rotation.
-  const edge = anchor.position.clone().sub(card.position)
-    .applyQuaternion(card.quaternion.clone().invert());
+  const parentQuaternion = new THREE.Quaternion();
+  const inverseCardQuaternion = new THREE.Quaternion();
+  const edge = new THREE.Vector3();
+  const direction = new THREE.Vector3();
+  const up = new THREE.Vector3(0, 1, 0);
   const halfWidth = width / 2;
   const halfHeight = height / 2;
-  const inside = Math.abs(edge.x) <= halfWidth && Math.abs(edge.y) <= halfHeight;
-  edge.x = THREE.MathUtils.clamp(edge.x, -halfWidth, halfWidth);
-  edge.y = THREE.MathUtils.clamp(edge.y, -halfHeight, halfHeight);
-  if (inside) {
-    if (halfWidth - Math.abs(edge.x) < halfHeight - Math.abs(edge.y)) {
-      edge.x = edge.x < 0 ? -halfWidth : halfWidth;
-    } else {
-      edge.y = edge.y < 0 ? -halfHeight : halfHeight;
-    }
-  }
-  edge.z = 0;
-  edge.applyQuaternion(card.quaternion).add(card.position);
-  const direction = edge.clone().sub(anchor.position);
-  const length = direction.length();
   const leaderMaterial = new THREE.MeshBasicMaterial({
     color: 0xb5e5d2, depthTest: true, toneMapped: false,
   });
   const line = new THREE.Mesh(
-    new THREE.CylinderGeometry(0.0015, 0.0015, Math.max(length, 0.00001), 8),
+    new THREE.CylinderGeometry(0.0015, 0.0015, 1, 8),
     leaderMaterial,
   );
   line.name = 'annotation-leader';
-  line.position.copy(anchor.position).add(edge).multiplyScalar(0.5);
-  if (length > 0) line.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), direction.normalize());
-  line.visible = length > 0;
   const dot = new THREE.Mesh(new THREE.SphereGeometry(0.005, 12, 8), leaderMaterial);
   dot.name = 'annotation-anchor';
   dot.position.copy(anchor.position);
   group.add(line, dot);
-  return { group, card, front, back, anchor, line, dot };
+  function updateFacing(cameraWorldQuaternion) {
+    // Parent rotation includes the smoothed tracking pose. Cancel it so the
+    // card stays parallel to the camera, with upright, unmirrored text.
+    group.getWorldQuaternion(parentQuaternion);
+    card.quaternion.copy(parentQuaternion).invert().multiply(cameraWorldQuaternion);
+
+    // Reconnect the leader to the closest card edge after counter-rotation.
+    // Reuse vectors and unit geometry rather than allocating meshes per frame.
+    inverseCardQuaternion.copy(card.quaternion).invert();
+    edge.copy(anchor.position).sub(card.position).applyQuaternion(inverseCardQuaternion);
+    const inside = Math.abs(edge.x) <= halfWidth && Math.abs(edge.y) <= halfHeight;
+    edge.x = THREE.MathUtils.clamp(edge.x, -halfWidth, halfWidth);
+    edge.y = THREE.MathUtils.clamp(edge.y, -halfHeight, halfHeight);
+    if (inside) {
+      if (halfWidth - Math.abs(edge.x) < halfHeight - Math.abs(edge.y)) {
+        edge.x = edge.x < 0 ? -halfWidth : halfWidth;
+      } else {
+        edge.y = edge.y < 0 ? -halfHeight : halfHeight;
+      }
+    }
+    edge.z = 0;
+    edge.applyQuaternion(card.quaternion).add(card.position);
+    direction.copy(edge).sub(anchor.position);
+    const length = direction.length();
+    line.position.copy(anchor.position).add(edge).multiplyScalar(0.5);
+    line.scale.y = Math.max(length, 0.00001);
+    if (length > 0) line.quaternion.setFromUnitVectors(up, direction.multiplyScalar(1 / length));
+    line.visible = length > 0;
+  }
+
+  return { group, card, front, back, anchor, line, dot, updateFacing };
 }

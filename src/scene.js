@@ -33,6 +33,7 @@ export class AnnotationScene {
     this.position = new THREE.Vector3();
     this.rotation = new THREE.Euler(0, 0, 0, 'ZXY');
     this.quaternion = new THREE.Quaternion();
+    this.cameraWorldQuaternion = new THREE.Quaternion();
     this.mode = 'idle';
     this.resize();
   }
@@ -138,14 +139,18 @@ export class AnnotationScene {
   render(timestampMs = performance.now()) {
     if (this.poseFilter.initialized && this.lastRenderAt !== null && timestampMs > this.lastRenderAt) {
       const dt = Math.min((timestampMs - this.lastRenderAt) / 1000, 0.1);
-      // Frame-time easing fills the gaps between detections. Everything shares
-      // this transform, so the text, leader lines and dots cannot drift apart.
+      // Frame-time easing smooths the tracked spots between detections.
       const alpha = 1 - Math.exp(-dt / CONFIG.smoothing.renderTimeConstant);
       this.root.position.lerp(this.poseFilter.position, alpha);
       this.root.quaternion.slerp(this.poseFilter.quaternion, alpha);
     }
     this.lastRenderAt = timestampMs;
     this.drawLabels();
+    if (this.root.visible && this.labelsEnabled) {
+      this.scene.updateMatrixWorld(true);
+      this.camera.getWorldQuaternion(this.cameraWorldQuaternion);
+      this.annotations.forEach(annotation => annotation.updateFacing(this.cameraWorldQuaternion));
+    }
     this.renderer.render(this.scene, this.camera);
   }
 }
