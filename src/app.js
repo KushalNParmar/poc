@@ -1,9 +1,28 @@
-import { CONFIG } from './config.js';
-import { CupTracker } from './tracker.js';
+import { CONFIG, TARGETS, DEFAULT_TARGET_ID } from './config.js';
+import { ObjectTracker } from './tracker.js';
 import { ToasterScene } from './scene.js';
 
 const $ = id => document.getElementById(id);
-let scene, tracker, stream, animation, network;
+let scene, tracker, stream, animation;
+let selectedTarget = TARGETS[DEFAULT_TARGET_ID], activeTarget = selectedTarget;
+const networks = new Map();
+const targetCopy = {
+  cup: {
+    subject: 'a coffee cup',
+    guidance: 'Try an opaque coffee cup in good light. Keep the whole cup visible. Recognition varies by cup.',
+    scanning: 'Use an opaque coffee cup. Keep it fully visible.',
+  },
+  keyboard: {
+    subject: 'a computer keyboard',
+    guidance: 'Try a full-size computer keyboard in good light. Keep all edges visible. Recognition varies by keyboard.',
+    scanning: 'Keep the entire keyboard in view, including its edges.',
+  },
+  sprite: {
+    subject: 'a Sprite can',
+    guidance: 'Try a Sprite 330 ml / 12 oz can with the logo facing the camera. Packaging and reflections can affect recognition.',
+    scanning: 'Show the Sprite logo and keep the whole can visible.',
+  },
+};
 let mode = 'loading', frameId = 0, epoch = 0, lastDetectAt = 0, lastSeenAt = 0, hits = 0;
 let preparing, stopping = Promise.resolve(), hasTracked = false, lastVideoTime = -1;
 const debugEnabled = new URLSearchParams(location.search).has('debug');
@@ -36,17 +55,48 @@ async function prepare() {
   if (!preparing) {
     preparing = (async () => {
       if (!scene) scene = new ToasterScene($('sceneCanvas'), $('annotations'), $('stage'));
-      const results = await withTimeout(Promise.all([
-        scene.ready ? Promise.resolve() : scene.load(),
-        network ? Promise.resolve(network) : fetch(CONFIG.networkUrl).then(response => {
-          if (!response.ok) throw new Error('The cup tracking model could not be loaded.');
-          return response.json();
-        }),
-      ]), 45000, 'Loading timed out. Check your connection and reload the page.');
-      network = results[1];
+      await withTimeout(scene.ready ? Promise.resolve() : scene.load(),
+        45000, 'Loading timed out. Check your connection and reload the page.');
     })().catch(error => { preparing = null; throw error; });
   }
   return preparing;
+}
+
+function loadNetwork(target) {
+  if (!networks.has(target.id)) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 45000);
+    const request = fetch(target.networkUrl, { signal: controller.signal })
+      .then(response => {
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return response.json();
+      })
+      .catch(error => {
+        networks.delete(target.id);
+        console.warn(`${target.name} model download:`, error);
+        throw new Error(`The ${target.name.toLowerCase()} tracking model could not be loaded. Check your connection and try again, or choose another object.`);
+      })
+      .finally(() => clearTimeout(timer));
+    networks.set(target.id, request);
+  }
+  return networks.get(target.id);
+}
+
+function updateTargetUI() {
+  $('targetName').textContent = selectedTarget.name;
+  $('introMessage').textContent = `Point your camera at ${targetCopy[selectedTarget.id].subject}. Explore a 3D toaster attached to it.`;
+  $('targetHint').textContent = targetCopy[selectedTarget.id].guidance;
+  document.querySelectorAll('input[name="trackingTarget"]').forEach(input => {
+    input.checked = input.value === selectedTarget.id;
+  });
+}
+
+function showScanning() {
+  const name = activeTarget.name.toLowerCase();
+  setStatus(`Scanning for ${name}`);
+  $('scanGuide').hidden = false;
+  $('sessionTitle').textContent = `Find your ${name}${hasTracked ? ' again' : ''}`;
+  $('sessionHint').textContent = targetCopy[activeTarget.id].scanning;
 }
 
 function startRenderLoop() {
@@ -59,15 +109,15 @@ function startRenderLoop() {
       lastVideoTime = $('camera').currentTime;
       try {
         const state = tracker.step();
-        if (state.label === 'CUP' && scene.updatePose(state, hits === 0)) {
+        if (state.label === activeTarget.label && scene.updatePose(state, hits === 0)) {
           lastSeenAt = now;
           hits++;
           if (hits >= CONFIG.revealFrames) {
             scene.root.visible = true;
             hasTracked = true;
-            setStatus('Cup tracked', 'tracking');
-            $('sessionTitle').textContent = 'Your cup, augmented';
-            $('sessionHint').textContent = 'Move slowly. Keep the whole cup in view.';
+            setStatus(`${activeTarget.name} tracked`, 'tracking');
+            $('sessionTitle').textContent = `Your ${activeTarget.name.toLowerCase()}, augmented`;
+            $('sessionHint').textContent = 'Move slowly. Keep the whole object in view.';
             $('scanGuide').hidden = true;
           }
         } else {
@@ -80,10 +130,7 @@ function startRenderLoop() {
     }
     if (mode === 'ar' && now - lastSeenAt > CONFIG.lostAfterMs) {
       scene.root.visible = false;
-      setStatus('Scanning for cup');
-      $('scanGuide').hidden = false;
-      $('sessionTitle').textContent = hasTracked ? 'Find your cup again' : 'Find your cup';
-      $('sessionHint').textContent = 'Use an opaque coffee cup. Keep it fully visible.';
+      showScanning();
     }
     scene.render();
   };
@@ -120,17 +167,22 @@ async function closeSession() {
   hideLoader();
   setStatus('Ready to explore');
   $('intro').hidden = false;
-  $('introMessage').textContent = 'Point your camera at a coffee cup. Explore a 3D toaster attached to it.';
+  $('targetSelector').disabled = false;
+  updateTargetUI();
   await releaseCamera();
 }
 
 async function startCamera() {
+  if (mode !== 'ready' && mode !== 'error') return;
   const token = ++epoch;
+  const target = selectedTarget;
+  activeTarget = target;
   mode = 'requesting';
   resetUI();
   $('intro').hidden = false;
   $('introMessage').textContent = 'Allow camera access in your browser to begin.';
   $('startButton').disabled = true;
+  $('targetSelector').disabled = true;
   setStatus('Waiting for camera');
   await releaseCamera();
   try {
@@ -150,8 +202,11 @@ async function startCamera() {
     await video.play();
     if (token !== epoch) return;
     $('intro').hidden = true;
-    showLoader('Starting cup tracking');
-    tracker = new CupTracker({ video, canvas: $('trackingCanvas'), onFatal: error => { if (token === epoch) void showError(error); } });
+    showLoader(`Loading ${target.name.toLowerCase()} tracking`);
+    const network = await loadNetwork(target);
+    if (token !== epoch) return;
+    showLoader(`Starting ${target.name.toLowerCase()} tracking`);
+    tracker = new ObjectTracker({ video, canvas: $('trackingCanvas'), target, onFatal: error => { if (token === epoch) void showError(error); } });
     await tracker.init(network);
     if (token !== epoch) return;
     mode = 'ar';
@@ -162,7 +217,7 @@ async function startCamera() {
     $('resetButton').hidden = false;
     $('scanGuide').hidden = false;
     $('debug').hidden = !debugEnabled;
-    setStatus('Scanning for cup');
+    showScanning();
     hideLoader();
     startRenderLoop();
     stream.getVideoTracks()[0].addEventListener('ended', () => {
@@ -188,6 +243,7 @@ async function showError(error) {
   const hardFailure = /timeout|timed out|context|WebGL|ALREADY_INITIALIZED/i.test(error.message || '');
   $('retryButton').textContent = hardFailure ? 'Reload page' : 'Try again';
   $('retryButton').dataset.reload = String(hardFailure);
+  $('chooseTargetButton').hidden = hardFailure || !scene?.ready;
   $('errorCard').hidden = false;
   console.error(error);
   await releaseCamera();
@@ -198,6 +254,12 @@ async function boot() {
     animation = window.lottie?.loadAnimation({ container: $('lottie'), renderer: 'svg', loop: true, autoplay: true, path: './assets/loader_light.json' });
     $('startButton').addEventListener('click', startCamera);
     $('stopButton').addEventListener('click', closeSession);
+    $('chooseTargetButton').addEventListener('click', closeSession);
+    $('targetSelector').addEventListener('change', event => {
+      if (mode !== 'ready' || !TARGETS[event.target.value]) return;
+      selectedTarget = TARGETS[event.target.value];
+      updateTargetUI();
+    });
     $('retryButton').addEventListener('click', () => $('retryButton').dataset.reload === 'true' ? location.reload() : (scene?.ready ? startCamera() : location.reload()));
     $('labelsButton').addEventListener('click', () => {
       scene.labelsEnabled = !scene.labelsEnabled;
@@ -224,6 +286,8 @@ async function boot() {
     $('sceneCanvas').addEventListener('webglcontextlost', event => { event.preventDefault(); void showError(new Error('The graphics context was lost. Reload the page to restart.')); });
     await prepare();
     mode = 'ready';
+    document.body.dataset.mode = 'ready';
+    updateTargetUI();
     hideLoader();
     $('intro').hidden = false;
     setStatus('Ready to explore');

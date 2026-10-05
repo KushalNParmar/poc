@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#101714" />
-    <title>Cup → Toaster · Object AR</title>
+    <title>Object → Toaster · Object AR</title>
     <link rel="icon" href="data:," />
     <link rel="stylesheet" href="./loader.css" />
     <link rel="stylesheet" href="./style.css" />
@@ -29,12 +29,20 @@
       </header>
       <section class="intro" id="intro" hidden>
         <div class="eyebrow">A SMALL OBJECT. A NEW PERSPECTIVE.</div>
-        <h1>Cup <span>→</span> Toaster</h1>
+        <h1><span id="targetName">Cup</span> <span class="title-arrow">→</span> Toaster</h1>
         <p id="introMessage">Point your camera at a coffee cup. Explore a 3D toaster attached to it.</p>
         <div class="actions">
           <button class="primary" id="startButton">Start camera <span aria-hidden="true">↗</span></button>
         </div>
-        <p class="fineprint">Try an opaque coffee cup in good light. Keep the whole cup visible. Cup recognition varies.</p>
+        <fieldset class="target-selector" id="targetSelector" aria-describedby="targetHint">
+          <legend>Choose an object to track</legend>
+          <div class="target-options">
+            <label class="target-option"><input type="radio" name="trackingTarget" value="cup" checked /><span>Cup</span></label>
+            <label class="target-option"><input type="radio" name="trackingTarget" value="keyboard" /><span>Keyboard</span></label>
+            <label class="target-option"><input type="radio" name="trackingTarget" value="sprite" /><span>Sprite can</span></label>
+          </div>
+        </fieldset>
+        <p class="fineprint" id="targetHint" aria-live="polite">Try an opaque coffee cup in good light. Keep the whole cup visible. Recognition varies by cup.</p>
       </section>
       <div class="scan-guide" id="scanGuide" hidden aria-hidden="true"><span></span><span></span><span></span><span></span></div>
       <section class="session-bar" id="sessionBar" hidden>
@@ -43,7 +51,7 @@
       </section>
       <section class="error-card" id="errorCard" role="alert" hidden>
         <h2 id="errorTitle">Couldn’t start the experience</h2><p id="errorMessage"></p>
-        <div class="actions"><button class="primary" id="retryButton">Try again</button></div>
+        <div class="actions"><button class="primary" id="retryButton">Try again</button><button class="secondary" id="chooseTargetButton">Choose another object</button></div>
       </section>
       <output id="debug" hidden></output>
     </main>

@@ -4,8 +4,14 @@
   "sources": {
     "vendor/webar/WebARRocksObject.js": {
       "url": "https://raw.githubusercontent.com/WebAR-rocks/WebAR.rocks.object/6e5bbd1d404b61529f95f616758da13259e59b7b/dist/WebARRocksObject.js",
-      "bytes": 90122,
-      "sha256": "6640ed6472d348492ec63df6ac928df5f311288b254425b2b2a4c4e45deb5ae0"
+      "bytes": 90291,
+      "sha256": "97cf906476a357bfa77a991b87fcbb1733f04160b10e23183dfa778d5e3bfd1a",
+      "upstreamSha256": "6640ed6472d348492ec63df6ac928df5f311288b254425b2b2a4c4e45deb5ae0",
+      "upstreamBytes": 90122,
+      "modifications": [
+        "Recreate scan settings from the upstream defaults on init so omitted settings cannot leak between targets.",
+        "Assign splitYawComponents on every network load so Keyboard yaw decoding does not persist for Cup or Sprite."
+      ]
     },
     "vendor/webar/WebARRocksThreeStabilizer.js": {
       "url": "https://raw.githubusercontent.com/WebAR-rocks/WebAR.rocks.object/6e5bbd1d404b61529f95f616758da13259e59b7b/helpers/stabilizers/WebARRocksThreeStabilizer.js",
@@ -96,6 +102,16 @@
       "url": "https://raw.githubusercontent.com/google/draco/1.4.1/LICENSE",
       "bytes": 13898,
       "sha256": "d3709b0fb4b8a94bbb1d02b8a2e484f258b0d9c5c5a01f940391f3fe662cd1a4"
+    },
+    "assets/NN_KEYBOARD_5.json": {
+      "url": "https://raw.githubusercontent.com/WebAR-rocks/WebAR.rocks.object/6e5bbd1d404b61529f95f616758da13259e59b7b/neuralNets/NN_KEYBOARD_5.json",
+      "bytes": 1333934,
+      "sha256": "cbab99222ed268f5ee0508b87b050b79ac953e43ef4dd85b8a4a7a0945de8a11"
+    },
+    "assets/NN_SPRITE_1.json": {
+      "url": "https://raw.githubusercontent.com/WebAR-rocks/WebAR.rocks.object/6e5bbd1d404b61529f95f616758da13259e59b7b/neuralNets/NN_SPRITE_1.json",
+      "bytes": 681864,
+      "sha256": "53bdcb5b526bd3087e25f425f3afb3adc0aeed41fd88df1e8329fc31aee23ec9"
     }
   }
 }

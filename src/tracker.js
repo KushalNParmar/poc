@@ -4,54 +4,35 @@ let activeTracker = null;
 const CORE_TIMEOUT_MS = 30_000;
 const NETWORK_TIMEOUT_MS = 60_000;
 
-const SCAN_SETTINGS = {
-  nScaleLevels: 2,
-  scale0Factor: 0.8,
-  overlapFactors: [2, 2, 2],
-  scanCenterFirst: true,
-};
-
-const LOAD_OPTIONS = {
-  notHereFactor: 0,
-  paramsPerLabel: { CUP: { thresholdDetect: 0.92 } },
-};
-
-const DETECT_OPTIONS = {
-  isKeepTracking: true,
-  isSkipConfirmation: false,
-  thresholdDetectFactor: 1,
-  cutShader: 'median',
-  thresholdDetectFactorUnstitch: 0.2,
-  trackingFactors: [0.5, 0.4, 1.5],
-};
-
 function trackingError(code, context, cause) {
   const details = {
-    GL_INCOMPATIBLE: 'WebGL support is unavailable or insufficient for cup tracking.',
+    GL_INCOMPATIBLE: 'WebGL support is unavailable or insufficient for object tracking.',
     GLCONTEXT_LOST: 'The tracking graphics context was lost. Reload to restart the camera experience.',
     ALREADY_INITIALIZED: 'The tracking engine is already in use.',
     INVALID_CANVASID: 'The tracking canvas could not be found.',
-    INVALID_NN: 'The cup tracking network is invalid or corrupted.',
-    NOTFOUND_NN: 'The cup tracking network could not be loaded.',
+    INVALID_NN: 'The selected tracking network is invalid or corrupted.',
+    NOTFOUND_NN: 'The selected tracking network could not be loaded.',
     CORE_TIMEOUT: 'The tracking engine did not finish starting. Reload and try again.',
-    NETWORK_TIMEOUT: 'The cup tracking network did not finish loading. Reload and try again.',
-    NOT_READY: 'The cup tracker has not finished starting.',
-    DESTROYED: 'Cup tracking was stopped.',
-    MISSING_ENGINE: 'The cup tracking script did not load. Check the connection and reload.',
-    INVALID_INPUT: 'A camera video, tracking canvas, and parsed cup network are required.',
+    NETWORK_TIMEOUT: 'The selected tracking network did not finish loading. Reload and try again.',
+    NOT_READY: 'The object tracker has not finished starting.',
+    DESTROYED: 'Object tracking was stopped.',
+    MISSING_ENGINE: 'The object tracking script did not load. Check the connection and reload.',
+    INVALID_INPUT: 'A camera video, tracking canvas, target profile, and parsed tracking network are required.',
   };
-  const error = new Error(`${details[code] || 'Cup tracking failed.'} (${context}: ${code})`);
-  error.name = 'CupTrackingError';
+  const error = new Error(`${details[code] || 'Object tracking failed.'} (${context}: ${code})`);
+  error.name = 'ObjectTrackingError';
   error.code = code;
   error.context = context;
   if (cause) error.cause = cause;
   return error;
 }
 
-export class CupTracker {
-  constructor({ video, canvas, onFatal = () => {} }) {
+export class ObjectTracker {
+  constructor({ video, canvas, target, onFatal = () => {} }) {
     this.video = video;
     this.canvas = canvas;
+    this.target = target;
+    this.detectOptions = target?.detectOptions ? structuredClone(target.detectOptions) : null;
     this.videoWidth = 0;
     this.videoHeight = 0;
     this.onFatal = onFatal;
@@ -69,7 +50,9 @@ export class CupTracker {
   async init(network) {
     if (this.stopped) throw trackingError('DESTROYED', 'initialization');
     if (this.initPromise) return this.initPromise;
-    if (!this.video || !this.canvas || !network || typeof network !== 'object') {
+    if (!this.video || !this.canvas || !network || typeof network !== 'object'
+      || !this.target?.label || typeof this.target.followZRot !== 'boolean'
+      || !this.target.scanSettings || !this.target.loadOptions || !this.detectOptions) {
       throw trackingError('INVALID_INPUT', 'initialization');
     }
     const api = typeof window !== 'undefined' && window.WEBARROCKSOBJECT;
@@ -92,8 +75,8 @@ export class CupTracker {
           video: this.video,
           canvas: this.canvas,
           isDebugRender: false,
-          followZRot: true,
-          scanSettings: structuredClone(SCAN_SETTINGS),
+          followZRot: this.target.followZRot,
+          scanSettings: structuredClone(this.target.scanSettings),
           callbackReady: (code) => {
             // The engine reuses this callback for context loss after startup.
             if (code && this.initialized) {
@@ -107,7 +90,7 @@ export class CupTracker {
       });
       if (this.stopped || this.failed) throw trackingError('DESTROYED', 'initialization');
       await this.waitForCallback('network loading', NETWORK_TIMEOUT_MS, 'NETWORK_TIMEOUT', (done) => {
-        this.api.set_NN(network, done, structuredClone(LOAD_OPTIONS));
+        this.api.set_NN(network, done, structuredClone(this.target.loadOptions));
       });
       if (this.stopped || this.failed) throw trackingError('DESTROYED', 'network loading');
       this.ready = true;
@@ -158,7 +141,7 @@ export class CupTracker {
         this.videoWidth = width;
         this.videoHeight = height;
       }
-      const state = this.api.detect(0, null, DETECT_OPTIONS);
+      const state = this.api.detect(0, null, this.detectOptions);
       // detect() reuses its own object and positionScale array each frame.
       return {
         label: state.label || false,
