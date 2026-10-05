@@ -211,7 +211,7 @@ async function startCamera() {
     if (token !== epoch) return;
     mode = 'ar';
     document.body.dataset.mode = 'ar';
-    scene.setMode('ar', video);
+    scene.setMode('ar', video, target);
     lastSeenAt = 0; lastDetectAt = 0; lastVideoTime = -1; hits = 0; hasTracked = false;
     $('sessionBar').hidden = false;
     $('resetButton').hidden = false;

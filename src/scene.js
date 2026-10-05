@@ -1,6 +1,7 @@
-import { CONFIG } from './config.js';
+import { CONFIG, TARGETS, DEFAULT_TARGET_ID } from './config.js';
 import { createAnnotation } from './annotations.js';
 import { OneEuroPoseFilter } from './pose-filter.js';
+import { LabelLayout } from './label-layout.js';
 
 const THREE = window.THREE;
 
@@ -29,6 +30,11 @@ export class AnnotationScene {
     this.annotationGroup.name = 'object-relative-labels';
     this.content.add(this.annotationGroup);
     this.annotations = [];
+    this.target = TARGETS[DEFAULT_TARGET_ID];
+    this.labelLayout = new LabelLayout();
+    this.layoutVisible = false;
+    this.topbar = stage.querySelector('.topbar');
+    this.sessionBar = stage.querySelector('#sessionBar');
     this.labelsEnabled = true;
     this.position = new THREE.Vector3();
     this.rotation = new THREE.Euler(0, 0, 0, 'ZXY');
@@ -40,13 +46,8 @@ export class AnnotationScene {
 
   async load() {
     if (this.ready) return;
-    // Preserve the existing label layout without loading an invisible 3D model.
-    const bounds = new THREE.Box3(
-      new THREE.Vector3(...CONFIG.annotationBounds.min),
-      new THREE.Vector3(...CONFIG.annotationBounds.max),
-    );
-    CONFIG.annotations.forEach(definition => {
-      const annotation = createAnnotation(definition, bounds, this.renderer);
+    CONFIG.annotations.forEach((definition, index) => {
+      const annotation = createAnnotation(definition, this.target.annotationAnchors[index], this.renderer);
       this.annotationGroup.add(annotation.group);
       this.annotations.push(annotation);
       // A text equivalent for screen readers; the visible cards are 3D meshes.
@@ -57,14 +58,18 @@ export class AnnotationScene {
     this.ready = true;
   }
 
-  setMode(mode, video = null) {
+  setTarget(target) {
+    this.target = target;
+    this.annotations.forEach((annotation, index) => annotation.setAnchor(target.annotationAnchors[index]));
+  }
+
+  setMode(mode, video = null, target = this.target) {
     this.mode = mode;
     this.video = video;
     this.root.visible = false;
     this.root.position.set(0, 0, 0);
     this.root.quaternion.identity();
-    this.content.position.set(...(mode === 'ar' ? CONFIG.annotationOffset : [0, 0, 0]));
-    this.content.rotation.set(...CONFIG.annotationRotation);
+    this.setTarget(target);
     this.resetTracking();
     this.camera.position.set(0, 0, 0);
     this.camera.quaternion.identity();
@@ -98,6 +103,7 @@ export class AnnotationScene {
 
   resetTracking() {
     this.root.visible = false;
+    this.layoutVisible = false;
     this.poseFilter.reset();
     this.lastPoseAt = null;
     this.lastRenderAt = null;
@@ -132,8 +138,24 @@ export class AnnotationScene {
   }
 
   drawLabels() {
-    this.annotationGroup.visible = this.labelsEnabled;
-    this.labelLayer.hidden = !(this.root.visible && this.labelsEnabled);
+    this.annotationGroup.visible = this.labelsEnabled && this.layoutVisible;
+    this.labelLayer.hidden = !(this.root.visible && this.annotationGroup.visible);
+  }
+
+  getSafeRect() {
+    const stage = this.stage.getBoundingClientRect();
+    const margin = 12;
+    let top = margin;
+    let bottom = stage.height - margin;
+    if (this.topbar && !this.topbar.hidden) {
+      const rect = this.topbar.getBoundingClientRect();
+      if (rect.height > 0) top = Math.max(top, rect.bottom - stage.top + margin);
+    }
+    if (this.sessionBar && !this.sessionBar.hidden) {
+      const rect = this.sessionBar.getBoundingClientRect();
+      if (rect.height > 0) bottom = Math.min(bottom, rect.top - stage.top - margin);
+    }
+    return { x: margin, y: top, width: Math.max(0, stage.width - margin * 2), height: Math.max(0, bottom - top) };
   }
 
   render(timestampMs = performance.now()) {
@@ -145,12 +167,14 @@ export class AnnotationScene {
       this.root.quaternion.slerp(this.poseFilter.quaternion, alpha);
     }
     this.lastRenderAt = timestampMs;
-    this.drawLabels();
     if (this.root.visible && this.labelsEnabled) {
       this.scene.updateMatrixWorld(true);
       this.camera.getWorldQuaternion(this.cameraWorldQuaternion);
       this.annotations.forEach(annotation => annotation.updateFacing(this.cameraWorldQuaternion));
+      this.layoutVisible = this.labelLayout.update(this.annotations, this.camera, this, this.getSafeRect());
+      if (this.layoutVisible) this.annotations.forEach(annotation => annotation.updateLeader());
     }
+    this.drawLabels();
     this.renderer.render(this.scene, this.camera);
   }
 }

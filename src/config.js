@@ -1,9 +1,4 @@
 export const CONFIG = Object.freeze({
-  // Bounds and placement preserve the original three-pointer layout.
-  // The tracker uses a unit-width detection window, not physical metres.
-  annotationBounds: { min: [-0.45, 0, -0.22480954187733437], max: [0.4499988879606582, 0.4985365382564583, 0.22481088915576777] },
-  annotationOffset: [0, 0.7, 0],
-  annotationRotation: [0, 0, 0],
   cameraMinDimensionFov: 35,
   maxPixelRatio: 1.5,
   detectIntervalMs: 1000 / 30,
@@ -19,11 +14,10 @@ export const CONFIG = Object.freeze({
     renderTimeConstant: 0.035,
   }),
   annotations: [
-    // Label offsets and widths are in the same object-local 3D units as the annotation bounds.
-    // Each spot follows the object; text cards turn to face the camera.
-    { title: 'Overview', detail: 'The object at a glance', point: [0.5, 0.96, 0.5], offset: [-0.12, 0.18, 0.1], width: 0.38 },
-    { title: 'Design details', detail: 'Shape, texture and finish', point: [0.98, 0.29, 0.5], offset: [0.26, 0, 0.1], width: 0.38 },
-    { title: 'Everyday use', detail: 'Form meets function', point: [0.22, 0.5, 0.95], offset: [-0.31, 0.02, 0.12], width: 0.38 },
+    // Stable card slots separate the text without moving the tracked anchor dots.
+    { title: 'Overview', detail: 'The object at a glance', slot: 'upper-left', width: 0.38 },
+    { title: 'Design details', detail: 'Shape, texture and finish', slot: 'right', width: 0.38 },
+    { title: 'Everyday use', detail: 'Form meets function', slot: 'lower-left', width: 0.38 },
   ],
 });
 
@@ -43,6 +37,9 @@ export const TARGETS = freezeTarget({
     id: 'cup',
     name: 'Cup',
     label: 'CUP',
+    // Tracker-relative coordinates, matching the upstream centered cup proxy
+    // (radius 0.5, height 0.75). These are reference spots, not detected keypoints.
+    annotationAnchors: [[0, 0.375, 0.5], [0.4, 0, 0.3], [-0.36, -0.22, 0.347]],
     networkUrl: './assets/NN_COFFEE_2.json',
     followZRot: true,
     scanSettings: {
@@ -68,6 +65,8 @@ export const TARGETS = freezeTarget({
     id: 'keyboard',
     name: 'Keyboard',
     label: 'KEYBOARD',
+    // The keyboard surface is at y=0; keep all three dots near its deck.
+    annotationAnchors: [[0, 0.02, -0.1], [0.32, 0.02, 0.08], [-0.32, 0.02, 0.08]],
     networkUrl: './assets/NN_KEYBOARD_5.json',
     followZRot: false,
     scanSettings: {
@@ -93,6 +92,8 @@ export const TARGETS = freezeTarget({
     id: 'sprite',
     name: 'Sprite can',
     label: 'SPRITECAN',
+    // Upstream can proxy: radius 0.31, height 1.085, centered at the origin.
+    annotationAnchors: [[0, 0.5425, 0], [0.248, 0.08, 0.186], [-0.248, -0.3, 0.186]],
     networkUrl: './assets/NN_SPRITE_1.json',
     followZRot: true,
     scanSettings: {},

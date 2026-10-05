@@ -49,18 +49,16 @@ function cardTexture(definition, renderer) {
 }
 
 // Anchor positions follow the object; the text card counter-rotates each frame.
-export function createAnnotation(definition, bounds, renderer) {
+export function createAnnotation(definition, anchorPosition, renderer) {
   const group = new THREE.Group();
   group.name = `annotation-${definition.title}`;
   const anchor = new THREE.Object3D();
-  anchor.position.copy(bounds.min).add(
-    new THREE.Vector3(...definition.point).multiply(bounds.getSize(new THREE.Vector3())),
-  );
+  anchor.position.set(...anchorPosition);
   group.add(anchor);
 
   const card = new THREE.Group();
   card.name = 'annotation-card';
-  card.position.copy(anchor.position).add(new THREE.Vector3(...definition.offset));
+  card.position.copy(anchor.position);
   const width = definition.width || 0.44;
   const height = width * TEXTURE_HEIGHT / TEXTURE_WIDTH;
   const geometry = new THREE.PlaneGeometry(width, height);
@@ -69,7 +67,8 @@ export function createAnnotation(definition, bounds, renderer) {
     side: THREE.FrontSide,
     transparent: true,
     alphaTest: 0.05,
-    depthTest: true,
+    // A viewport-clamped card may cross a pointer; keep its text readable.
+    depthTest: false,
     depthWrite: false,
     toneMapped: false,
   });
@@ -107,11 +106,13 @@ export function createAnnotation(definition, bounds, renderer) {
     // card stays parallel to the camera, with upright, unmirrored text.
     group.getWorldQuaternion(parentQuaternion);
     card.quaternion.copy(parentQuaternion).invert().multiply(cameraWorldQuaternion);
+  }
 
+  function updateLeader() {
     // Reconnect the leader to the closest card edge after counter-rotation.
     // Reuse vectors and unit geometry rather than allocating meshes per frame.
     inverseCardQuaternion.copy(card.quaternion).invert();
-    edge.copy(anchor.position).sub(card.position).applyQuaternion(inverseCardQuaternion);
+    edge.copy(anchor.position).sub(card.position).applyQuaternion(inverseCardQuaternion).divide(card.scale);
     const inside = Math.abs(edge.x) <= halfWidth && Math.abs(edge.y) <= halfHeight;
     edge.x = THREE.MathUtils.clamp(edge.x, -halfWidth, halfWidth);
     edge.y = THREE.MathUtils.clamp(edge.y, -halfHeight, halfHeight);
@@ -123,7 +124,7 @@ export function createAnnotation(definition, bounds, renderer) {
       }
     }
     edge.z = 0;
-    edge.applyQuaternion(card.quaternion).add(card.position);
+    edge.multiply(card.scale).applyQuaternion(card.quaternion).add(card.position);
     direction.copy(edge).sub(anchor.position);
     const length = direction.length();
     line.position.copy(anchor.position).add(edge).multiplyScalar(0.5);
@@ -132,5 +133,11 @@ export function createAnnotation(definition, bounds, renderer) {
     line.visible = length > 0;
   }
 
-  return { group, card, front, back, anchor, line, dot, updateFacing };
+  function setAnchor(position) {
+    anchor.position.set(...position);
+    dot.position.copy(anchor.position);
+  }
+
+  return { group, card, front, back, anchor, line, dot, width, height,
+    slot: definition.slot, setAnchor, updateFacing, updateLeader };
 }
