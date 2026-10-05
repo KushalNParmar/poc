@@ -93,11 +93,6 @@
       "bytes": 14350,
       "sha256": "67b2fc1c614f59694b98dca1afc64d987e01608db1c205cf08ad4d42939a2a48"
     },
-    "assets/Toaster.glb": {
-      "url": "https://cdn.pixelbin.io/v2/dummy-cloudname/original/Toaster.glb",
-      "bytes": 1099308,
-      "sha256": "4932477feab5df7e31f0a4261f2fa70cf02621dfbe9eb10dfd844c229c4e706b"
-    },
     "vendor/three/draco/LICENSE": {
       "url": "https://raw.githubusercontent.com/google/draco/1.4.1/LICENSE",
       "bytes": 13898,

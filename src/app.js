@@ -1,6 +1,6 @@
 import { CONFIG, TARGETS, DEFAULT_TARGET_ID } from './config.js';
 import { ObjectTracker } from './tracker.js';
-import { ToasterScene } from './scene.js';
+import { AnnotationScene } from './scene.js';
 
 const $ = id => document.getElementById(id);
 let scene, tracker, stream, animation;
@@ -54,7 +54,7 @@ function hideLoader() {
 async function prepare() {
   if (!preparing) {
     preparing = (async () => {
-      if (!scene) scene = new ToasterScene($('sceneCanvas'), $('annotations'), $('stage'));
+      if (!scene) scene = new AnnotationScene($('sceneCanvas'), $('annotations'), $('stage'));
       await withTimeout(scene.ready ? Promise.resolve() : scene.load(),
         45000, 'Loading timed out. Check your connection and reload the page.');
     })().catch(error => { preparing = null; throw error; });
@@ -84,7 +84,7 @@ function loadNetwork(target) {
 
 function updateTargetUI() {
   $('targetName').textContent = selectedTarget.name;
-  $('introMessage').textContent = `Point your camera at ${targetCopy[selectedTarget.id].subject}. Explore a 3D toaster attached to it.`;
+  $('introMessage').textContent = `Point your camera at ${targetCopy[selectedTarget.id].subject}. Explore labels attached to it.`;
   $('targetHint').textContent = targetCopy[selectedTarget.id].guidance;
   document.querySelectorAll('input[name="trackingTarget"]').forEach(input => {
     input.checked = input.value === selectedTarget.id;
@@ -109,7 +109,7 @@ function startRenderLoop() {
       lastVideoTime = $('camera').currentTime;
       try {
         const state = tracker.step();
-        if (state.label === activeTarget.label && scene.updatePose(state, hits === 0)) {
+        if (state.label === activeTarget.label && scene.updatePose(state, false, now)) {
           lastSeenAt = now;
           hits++;
           if (hits >= CONFIG.revealFrames) {
@@ -128,11 +128,11 @@ function startRenderLoop() {
         void showError(error);
       }
     }
-    if (mode === 'ar' && now - lastSeenAt > CONFIG.lostAfterMs) {
-      scene.root.visible = false;
+    if (mode === 'ar' && scene.poseFilter.initialized && now - lastSeenAt > CONFIG.lostAfterMs) {
+      scene.resetTracking();
       showScanning();
     }
-    scene.render();
+    scene.render(now);
   };
   frameId = requestAnimationFrame(loop);
 }
@@ -268,14 +268,16 @@ async function boot() {
       scene.drawLabels();
     });
     $('resetButton').addEventListener('click', () => {
-      tracker?.reset(); hits = 0; lastSeenAt = 0; scene.root.visible = false;
+      tracker?.reset(); hits = 0; lastSeenAt = 0; scene.resetTracking();
+      showScanning();
     });
     new ResizeObserver(() => scene?.resize()).observe($('stage'));
     $('camera').addEventListener('resize', () => scene?.resize());
     document.addEventListener('visibilitychange', () => {
       if (!document.hidden && mode === 'ar') {
-        tracker?.reset(); hits = 0; lastSeenAt = 0; lastVideoTime = -1; scene.root.visible = false;
-        scene.stabilizer.reset();
+        tracker?.reset(); hits = 0; lastSeenAt = 0; lastVideoTime = -1;
+        scene.resetTracking();
+        showScanning();
       }
     });
     window.addEventListener('pagehide', () => {

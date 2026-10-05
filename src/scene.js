@@ -1,9 +1,10 @@
 import { CONFIG } from './config.js';
 import { createAnnotation } from './annotations.js';
+import { OneEuroPoseFilter } from './pose-filter.js';
 
 const THREE = window.THREE;
 
-export class ToasterScene {
+export class AnnotationScene {
   constructor(canvas, labelLayer, stage) {
     this.stage = stage;
     this.labelLayer = labelLayer;
@@ -15,28 +16,17 @@ export class ToasterScene {
     this.scene = new THREE.Scene();
     this.camera = new THREE.PerspectiveCamera(35, 1, 0.01, 100);
     this.root = new THREE.Group();
-    this.root.name = 'cup-anchor';
+    this.root.name = 'tracked-object-anchor';
     this.root.visible = false;
     this.content = new THREE.Group();
-    this.content.name = 'toaster-and-annotations';
+    this.content.name = 'tracked-annotations';
     this.root.add(this.content);
     this.scene.add(this.root);
-    this.stabilizer = WebARRocksThreeStabilizer.instance({ obj3D: this.root, n: 2 });
-    const hemisphere = new THREE.HemisphereLight(0xe6f4ff, 0x69796a, 0.8);
-    const key = new THREE.DirectionalLight(0xffffff, 1.4);
-    key.position.set(2, 4, 3);
-    this.scene.add(hemisphere, key);
-    const room = new THREE.RoomEnvironment();
-    const pmrem = new THREE.PMREMGenerator(this.renderer);
-    this.environment = pmrem.fromScene(room, 0.04);
-    this.scene.environment = this.environment.texture;
-    room.traverse(object => {
-      object.geometry?.dispose();
-      if (object.material) (Array.isArray(object.material) ? object.material : [object.material]).forEach(m => m.dispose());
-    });
-    pmrem.dispose();
+    this.poseFilter = new OneEuroPoseFilter(CONFIG.smoothing);
+    this.lastPoseAt = null;
+    this.lastRenderAt = null;
     this.annotationGroup = new THREE.Group();
-    this.annotationGroup.name = 'model-relative-labels';
+    this.annotationGroup.name = 'object-relative-labels';
     this.content.add(this.annotationGroup);
     this.annotations = [];
     this.labelsEnabled = true;
@@ -48,36 +38,12 @@ export class ToasterScene {
   }
 
   async load() {
-    const draco = new THREE.DRACOLoader();
-    draco.setDecoderPath('./vendor/three/draco/');
-    draco.setWorkerLimit(1);
-    const loader = new THREE.GLTFLoader();
-    loader.setDRACOLoader(draco);
-    let gltf;
-    try {
-      gltf = await loader.loadAsync(CONFIG.modelUrl);
-    } finally {
-      draco.dispose();
-    }
-    this.model = gltf.scene;
-    const box = new THREE.Box3().setFromObject(this.model);
-    const size = box.getSize(new THREE.Vector3());
-    const center = box.getCenter(new THREE.Vector3());
-    const scale = CONFIG.modelWidth / Math.max(size.x, size.z);
-    if (!Number.isFinite(scale) || scale <= 0) throw new Error('The toaster model has invalid dimensions.');
-    this.model.position.set(-center.x * scale, -box.min.y * scale, -center.z * scale);
-    this.model.scale.setScalar(scale);
-    this.content.add(this.model);
-    this.content.updateMatrixWorld(true);
-    // Compute bounds in content-local space, independent of the current AR pose.
-    const bounds = new THREE.Box3();
-    const inverseContent = this.content.matrixWorld.clone().invert();
-    this.model.traverse(object => {
-      if (!object.isMesh) return;
-      object.geometry.computeBoundingBox();
-      const localMatrix = inverseContent.clone().multiply(object.matrixWorld);
-      bounds.union(object.geometry.boundingBox.clone().applyMatrix4(localMatrix));
-    });
+    if (this.ready) return;
+    // Preserve the existing label layout without loading an invisible 3D model.
+    const bounds = new THREE.Box3(
+      new THREE.Vector3(...CONFIG.annotationBounds.min),
+      new THREE.Vector3(...CONFIG.annotationBounds.max),
+    );
     CONFIG.annotations.forEach(definition => {
       const annotation = createAnnotation(definition, bounds, this.renderer);
       this.annotationGroup.add(annotation.group);
@@ -96,9 +62,9 @@ export class ToasterScene {
     this.root.visible = false;
     this.root.position.set(0, 0, 0);
     this.root.quaternion.identity();
-    this.content.position.set(...(mode === 'ar' ? CONFIG.modelOffset : [0, 0, 0]));
-    this.content.rotation.set(...CONFIG.modelRotation);
-    this.stabilizer.reset();
+    this.content.position.set(...(mode === 'ar' ? CONFIG.annotationOffset : [0, 0, 0]));
+    this.content.rotation.set(...CONFIG.annotationRotation);
+    this.resetTracking();
     this.camera.position.set(0, 0, 0);
     this.camera.quaternion.identity();
     this.drawLabels();
@@ -129,9 +95,17 @@ export class ToasterScene {
     this.camera.updateProjectionMatrix();
   }
 
-  updatePose(state, reset = false) {
+  resetTracking() {
+    this.root.visible = false;
+    this.poseFilter.reset();
+    this.lastPoseAt = null;
+    this.lastRenderAt = null;
+    this.drawLabels();
+  }
+
+  updatePose(state, reset = false, timestampMs = performance.now()) {
     const s = state.positionScale?.[2];
-    if (!(s > 0) || ![...state.positionScale, state.pitch, state.yaw, state.roll].every(Number.isFinite)) return false;
+    if (!(s > 0) || ![...state.positionScale, state.pitch, state.yaw, state.roll, timestampMs].every(Number.isFinite)) return false;
     // Unit detection-window geometry; same camera-relative convention as upstream.
     const halfTanHorizontal = Math.tan(THREE.MathUtils.degToRad(this.camera.fov) / 2) * this.camera.aspect;
     const distance = 1 / (2 * s * halfTanHorizontal);
@@ -142,8 +116,17 @@ export class ToasterScene {
     );
     this.rotation.set(-(state.pitch - Math.PI / 2), state.yaw + Math.PI, -state.roll);
     this.quaternion.setFromEuler(this.rotation);
-    if (reset) this.stabilizer.reset();
-    this.stabilizer.update(this.position, this.quaternion);
+    if (reset) this.resetTracking();
+    const fresh = !this.poseFilter.initialized || (this.lastPoseAt !== null
+      && timestampMs - this.lastPoseAt > CONFIG.smoothing.maxGapSeconds * 1000);
+    if (!this.poseFilter.update(this.position, this.quaternion, timestampMs / 1000)) return false;
+    this.lastPoseAt = timestampMs;
+    if (fresh) {
+      // Reacquire at the current pose instead of sliding from a stale position.
+      this.root.position.copy(this.poseFilter.position);
+      this.root.quaternion.copy(this.poseFilter.quaternion);
+      this.lastRenderAt = timestampMs;
+    }
     return true;
   }
 
@@ -152,7 +135,16 @@ export class ToasterScene {
     this.labelLayer.hidden = !(this.root.visible && this.labelsEnabled);
   }
 
-  render() {
+  render(timestampMs = performance.now()) {
+    if (this.poseFilter.initialized && this.lastRenderAt !== null && timestampMs > this.lastRenderAt) {
+      const dt = Math.min((timestampMs - this.lastRenderAt) / 1000, 0.1);
+      // Frame-time easing fills the gaps between detections. Everything shares
+      // this transform, so the text, leader lines and dots cannot drift apart.
+      const alpha = 1 - Math.exp(-dt / CONFIG.smoothing.renderTimeConstant);
+      this.root.position.lerp(this.poseFilter.position, alpha);
+      this.root.quaternion.slerp(this.poseFilter.quaternion, alpha);
+    }
+    this.lastRenderAt = timestampMs;
     this.drawLabels();
     this.renderer.render(this.scene, this.camera);
   }
