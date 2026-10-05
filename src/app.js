@@ -3,7 +3,7 @@ import { ObjectTracker } from './tracker.js';
 import { AnnotationScene } from './scene.js';
 
 const $ = id => document.getElementById(id);
-let scene, tracker, stream, animation;
+let scene, tracker, stream;
 let selectedTarget = TARGETS[DEFAULT_TARGET_ID], activeTarget = selectedTarget;
 const networks = new Map();
 const targetCopy = {
@@ -43,12 +43,10 @@ function setStatus(text, state = '') {
 function showLoader(message) {
   $('loaderDetail').textContent = message;
   $('lottieLoader').hidden = false;
-  animation?.play();
 }
 
 function hideLoader() {
   $('lottieLoader').hidden = true;
-  animation?.pause();
 }
 
 async function prepare() {
@@ -83,7 +81,6 @@ function loadNetwork(target) {
 }
 
 function updateTargetUI() {
-  $('targetName').textContent = selectedTarget.name;
   $('introMessage').textContent = `Point your camera at ${targetCopy[selectedTarget.id].subject}. Explore labels attached to it.`;
   $('targetHint').textContent = targetCopy[selectedTarget.id].guidance;
   document.querySelectorAll('input[name="trackingTarget"]').forEach(input => {
@@ -251,7 +248,6 @@ async function showError(error) {
 
 async function boot() {
   try {
-    animation = window.lottie?.loadAnimation({ container: $('lottie'), renderer: 'svg', loop: true, autoplay: true, path: './assets/loader_light.json' });
     $('startButton').addEventListener('click', startCamera);
     $('stopButton').addEventListener('click', closeSession);
     $('chooseTargetButton').addEventListener('click', closeSession);

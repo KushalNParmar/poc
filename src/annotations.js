@@ -22,10 +22,10 @@ function cardTexture(definition, renderer) {
   context.lineTo(inset, inset + radius);
   context.quadraticCurveTo(inset, inset, inset + radius, inset);
   context.closePath();
-  context.fillStyle = '#102320';
+  context.fillStyle = '#ffffff';
   context.fill();
   context.lineWidth = 6;
-  context.strokeStyle = '#719e91';
+  context.strokeStyle = '#deded8';
   context.stroke();
 
   const writeText = (text, size, weight, color, y) => {
@@ -39,8 +39,8 @@ function cardTexture(definition, renderer) {
     context.textBaseline = 'middle';
     context.fillText(value, 64, y, TEXTURE_WIDTH - 128);
   };
-  writeText(definition.title, 118, 700, '#ffffff', 117);
-  writeText(definition.detail, 86, 400, '#bdd4cb', 221);
+  writeText(definition.title, 118, 700, '#161616', 117);
+  writeText(definition.detail, 86, 400, '#666662', 221);
 
   const texture = new THREE.CanvasTexture(canvas);
   texture.encoding = THREE.sRGBEncoding;
@@ -81,6 +81,16 @@ export function createAnnotation(definition, anchorPosition, renderer) {
   back.rotation.y = Math.PI;
   card.add(front, back);
   group.add(card);
+  let textKey = `${definition.title}\n${definition.detail}`;
+  function setText(next) {
+    const nextKey = `${next.title}\n${next.detail}`;
+    if (nextKey === textKey) return;
+    const previousTexture = material.map;
+    material.map = cardTexture(next, renderer);
+    previousTexture.dispose();
+    textKey = nextKey;
+    group.name = `annotation-${next.title}`;
+  }
 
   const parentQuaternion = new THREE.Quaternion();
   const inverseCardQuaternion = new THREE.Quaternion();
@@ -90,15 +100,25 @@ export function createAnnotation(definition, anchorPosition, renderer) {
   const halfWidth = width / 2;
   const halfHeight = height / 2;
   const leaderMaterial = new THREE.MeshBasicMaterial({
-    color: 0xb5e5d2, depthTest: true, toneMapped: false,
+    color: 0x161616, depthTest: false, toneMapped: false,
   });
   const line = new THREE.Mesh(
     new THREE.CylinderGeometry(0.0015, 0.0015, 1, 8),
     leaderMaterial,
   );
   line.name = 'annotation-leader';
+  line.renderOrder = 2;
+  // A light outline keeps the monochrome pointer visible on dark objects.
+  const outlineMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff, depthTest: false, toneMapped: false });
+  const lineOutline = new THREE.Mesh(new THREE.CylinderGeometry(0.003, 0.003, 1, 8), outlineMaterial);
+  lineOutline.renderOrder = 1;
+  line.add(lineOutline);
   const dot = new THREE.Mesh(new THREE.SphereGeometry(0.005, 12, 8), leaderMaterial);
   dot.name = 'annotation-anchor';
+  dot.renderOrder = 2;
+  const dotOutline = new THREE.Mesh(new THREE.SphereGeometry(0.008, 12, 8), outlineMaterial);
+  dotOutline.renderOrder = 1;
+  dot.add(dotOutline);
   dot.position.copy(anchor.position);
   group.add(line, dot);
   function updateFacing(cameraWorldQuaternion) {
@@ -139,5 +159,5 @@ export function createAnnotation(definition, anchorPosition, renderer) {
   }
 
   return { group, card, front, back, anchor, line, dot, width, height,
-    slot: definition.slot, setAnchor, updateFacing, updateLeader };
+    slot: definition.slot, setAnchor, setText, updateFacing, updateLeader };
 }

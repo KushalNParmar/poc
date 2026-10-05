@@ -15,9 +15,9 @@ export const CONFIG = Object.freeze({
   }),
   annotations: [
     // Stable card slots separate the text without moving the tracked anchor dots.
-    { title: 'Overview', detail: 'The object at a glance', slot: 'upper-left', width: 0.38 },
-    { title: 'Design details', detail: 'Shape, texture and finish', slot: 'right', width: 0.38 },
-    { title: 'Everyday use', detail: 'Form meets function', slot: 'lower-left', width: 0.38 },
+    { slot: 'upper-left', width: 0.38 },
+    { slot: 'right', width: 0.38 },
+    { slot: 'lower-left', width: 0.38 },
   ],
 });
 
@@ -37,6 +37,11 @@ export const TARGETS = freezeTarget({
     id: 'cup',
     name: 'Cup',
     label: 'CUP',
+    annotations: [
+      { title: 'Your daily brew', detail: 'Coffee or tea, your way' },
+      { title: 'Pause and sip', detail: 'Make time for a break' },
+      { title: 'Refill and repeat', detail: 'Enjoy your next cup' },
+    ],
     // Tracker-relative coordinates, matching the upstream centered cup proxy
     // (radius 0.5, height 0.75). These are reference spots, not detected keypoints.
     annotationAnchors: [[0, 0.375, 0.5], [0.4, 0, 0.3], [-0.36, -0.22, 0.347]],
@@ -65,6 +70,12 @@ export const TARGETS = freezeTarget({
     id: 'keyboard',
     name: 'Keyboard',
     label: 'KEYBOARD',
+    // Demo copy supplied by the client; detection does not verify specifications.
+    annotations: [
+      { title: 'Made with', detail: 'recycled plastic' },
+      { title: 'Smart battery', detail: 'efficiency' },
+      { title: 'Responsible', detail: 'packaging' },
+    ],
     // The keyboard surface is at y=0; keep all three dots near its deck.
     annotationAnchors: [[0, 0.02, -0.1], [0.32, 0.02, 0.08], [-0.32, 0.02, 0.08]],
     networkUrl: './assets/NN_KEYBOARD_5.json',
@@ -92,6 +103,11 @@ export const TARGETS = freezeTarget({
     id: 'sprite',
     name: 'Sprite can',
     label: 'SPRITECAN',
+    annotations: [
+      { title: 'Lemon-lime flavour', detail: 'Crisp, refreshing taste' },
+      { title: 'Serve chilled', detail: 'Enjoy a refreshing break' },
+      { title: 'Recycle the can', detail: 'Empty it. Recycle locally.' },
+    ],
     // Upstream can proxy: radius 0.31, height 1.085, centered at the origin.
     annotationAnchors: [[0, 0.5425, 0], [0.248, 0.08, 0.186], [-0.248, -0.3, 0.186]],
     networkUrl: './assets/NN_SPRITE_1.json',

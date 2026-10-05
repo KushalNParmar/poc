@@ -46,7 +46,8 @@ export class AnnotationScene {
 
   async load() {
     if (this.ready) return;
-    CONFIG.annotations.forEach((definition, index) => {
+    CONFIG.annotations.forEach((layout, index) => {
+      const definition = { ...layout, ...this.target.annotations[index] };
       const annotation = createAnnotation(definition, this.target.annotationAnchors[index], this.renderer);
       this.annotationGroup.add(annotation.group);
       this.annotations.push(annotation);
@@ -60,7 +61,12 @@ export class AnnotationScene {
 
   setTarget(target) {
     this.target = target;
-    this.annotations.forEach((annotation, index) => annotation.setAnchor(target.annotationAnchors[index]));
+    this.annotations.forEach((annotation, index) => {
+      const definition = target.annotations[index];
+      annotation.setAnchor(target.annotationAnchors[index]);
+      annotation.setText(definition);
+      this.labelLayer.children[index].textContent = `${definition.title}: ${definition.detail}`;
+    });
   }
 
   setMode(mode, video = null, target = this.target) {
@@ -146,7 +152,9 @@ export class AnnotationScene {
   getSafeRect() {
     const stage = this.stage.getBoundingClientRect();
     const margin = 12;
-    let top = margin;
+    // Reserve the notch inset even when the start screen has no top bar.
+    const safeTop = parseFloat(getComputedStyle(this.stage).getPropertyValue('--annotation-safe-top')) || 0;
+    let top = margin + safeTop;
     let bottom = stage.height - margin;
     if (this.topbar && !this.topbar.hidden) {
       const rect = this.topbar.getBoundingClientRect();
