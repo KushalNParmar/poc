@@ -27,6 +27,7 @@ export class AutoObjectTracker {
     this.onFatal = onFatal;
     this.tracker = null;
     this.target = null;
+    this.retainedTargetId = null;
     this.candidateIndex = 0;
     this.phase = 'switching';
     this.stopped = false;
@@ -129,8 +130,18 @@ export class AutoObjectTracker {
   }
 
   nextCandidate() {
+    // The UI retains a profile only after its reveal frames have succeeded.
+    // Continue inference with that model until the user explicitly rescans.
+    if (this.retainedTargetId) return;
     this.replaceCandidate((this.candidateIndex + 1) % this.targets.length)
       .catch(error => this.reportFatal(error));
+  }
+
+  retainTarget(targetId) {
+    if (this.stopped || this.failed || this.phase !== 'tracking' || !this.tracker?.ready
+      || this.target?.id !== targetId) return false;
+    this.retainedTargetId = targetId;
+    return true;
   }
 
   validPose(state) {
@@ -184,6 +195,7 @@ export class AutoObjectTracker {
 
   reset() {
     if (this.stopped || this.failed) return;
+    this.retainedTargetId = null;
     this.clearSearch();
     // A model already being loaded will enter a fresh search when ready.
     if (this.transitionPromise || !this.tracker?.ready) return;
@@ -196,7 +208,11 @@ export class AutoObjectTracker {
   }
 
   resume() {
+    // A background/foreground transition needs fresh confirmation but must not
+    // turn a displayed experience back into an unrestricted object search.
+    const retainedTargetId = this.retainedTargetId;
     this.reset();
+    if (!this.stopped && !this.failed) this.retainedTargetId = retainedTargetId;
   }
 
   reportFatal(error) {
@@ -210,6 +226,7 @@ export class AutoObjectTracker {
   destroy() {
     if (this.destroyPromise) return this.destroyPromise;
     this.stopped = true;
+    this.retainedTargetId = null;
     this.phase = 'switching';
     this.clearSearch();
     this.destroyPromise = (async () => {

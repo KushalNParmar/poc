@@ -4,6 +4,7 @@ export const CONFIG = Object.freeze({
   detectIntervalMs: 1000 / 30,
   revealFrames: 3,
   lostAfterMs: 220,
+  recoveryPromptAfterMs: 500,
   autoDetection: Object.freeze({
     candidateDurationMs: 1800,
     candidateMinFrames: 30,
@@ -19,12 +20,7 @@ export const CONFIG = Object.freeze({
     maxGapSeconds: 0.3,
     renderTimeConstant: 0.035,
   }),
-  annotations: [
-    // Stable card slots separate the text without moving the tracked anchor dots.
-    { slot: 'upper-left', width: 0.38 },
-    { slot: 'right', width: 0.38 },
-    { slot: 'lower-left', width: 0.38 },
-  ],
+
 });
 
 export const DEFAULT_TARGET_ID = 'cup';
@@ -36,6 +32,8 @@ function freezeTarget(value) {
   return Object.freeze(value);
 }
 
+// Hotspot local X accounts for the upstream yaw+PI pose convention.
+// Cup/can front surfaces use local -Z; keyboard depth follows the deck.
 // Settings are paired with the corresponding upstream pretrained network.
 // The engine receives mutable copies so switching targets cannot alter a profile.
 export const TARGETS = freezeTarget({
@@ -43,14 +41,9 @@ export const TARGETS = freezeTarget({
     id: 'cup',
     name: 'Cup',
     label: 'CUP',
-    annotations: [
-      { title: 'Your daily brew', detail: 'Coffee or tea, your way' },
-      { title: 'Pause and sip', detail: 'Make time for a break' },
-      { title: 'Refill and repeat', detail: 'Enjoy your next cup' },
-    ],
-    // Tracker-relative coordinates, matching the upstream centered cup proxy
-    // (radius 0.5, height 0.75). These are reference spots, not detected keypoints.
-    annotationAnchors: [[0, 0.375, 0.5], [0.4, 0, 0.3], [-0.36, -0.22, 0.347]],
+    // Cup proxy: radius 0.5, height 0.75, centered on the tracker. Four reference hotspots are not detected keypoints.
+    annotationAnchors: [[0, 0.315, -0.5], [0.4, 0, -0.3], [-0.45, 0.075, -0.218], [0, -0.315, -0.5]],
+    annotationBounds: [[-0.5, -0.375, -0.5], [0.5, 0.375, 0.5]],
     networkUrl: './assets/NN_COFFEE_2.json',
     followZRot: true,
     scanSettings: {
@@ -76,14 +69,9 @@ export const TARGETS = freezeTarget({
     id: 'keyboard',
     name: 'Keyboard',
     label: 'KEYBOARD',
-    // Demo copy supplied by the client; detection does not verify specifications.
-    annotations: [
-      { title: 'Made with', detail: 'recycled plastic' },
-      { title: 'Smart battery', detail: 'efficiency' },
-      { title: 'Responsible', detail: 'packaging' },
-    ],
-    // The keyboard surface is at y=0; keep all three dots near its deck.
-    annotationAnchors: [[0, 0.02, -0.1], [0.32, 0.02, 0.08], [-0.32, 0.02, 0.08]],
+    // Keyboard hotspots follow its deck; reference x/y maps to local x/z.
+    annotationAnchors: [[0.35, 0.02, -0.088], [-0.25, 0.02, -0.066], [-0.4, 0.02, 0.11], [0.38, 0.02, 0.132]],
+    annotationBounds: [[-0.5, -0.02, -0.22], [0.5, 0.06, 0.22]],
     networkUrl: './assets/NN_KEYBOARD_5.json',
     followZRot: false,
     scanSettings: {
@@ -109,13 +97,9 @@ export const TARGETS = freezeTarget({
     id: 'sprite',
     name: 'Sprite can',
     label: 'SPRITECAN',
-    annotations: [
-      { title: 'Lemon-lime flavour', detail: 'Crisp, refreshing taste' },
-      { title: 'Serve chilled', detail: 'Enjoy a refreshing break' },
-      { title: 'Recycle the can', detail: 'Empty it. Recycle locally.' },
-    ],
-    // Upstream can proxy: radius 0.31, height 1.085, centered at the origin.
-    annotationAnchors: [[0, 0.5425, 0], [0.248, 0.08, 0.186], [-0.248, -0.3, 0.186]],
+    // Can proxy: radius 0.31, height 1.085; positions mirror the supplied four reference hotspots.
+    annotationAnchors: [[0, 0.4774, -0.31], [0.279, 0.05425, -0.135], [-0.279, -0.1085, -0.135], [0, -0.48825, -0.31]],
+    annotationBounds: [[-0.31, -0.5425, -0.31], [0.31, 0.5425, 0.31]],
     networkUrl: './assets/NN_SPRITE_1.json',
     followZRot: true,
     scanSettings: {},

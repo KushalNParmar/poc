@@ -1,81 +1,85 @@
-# Object AR labels POC
+# The Leela AR discovery POC
 
-A static browser experience that uses WebAR.rocks.object to automatically detect and track a coffee cup, computer keyboard, or Sprite can and Three.js to display three tracked annotations. The UI uses the monochrome theme, GlamAR SVG branding, and CSS wave-grid loader from the existing `poc/index.html`. No skin-analysis SDK, login, or client-record integration is included.
+A browser camera experience that automatically recognises a supported cup, keyboard or Sprite can and reveals The Leela stories around it. WebAR.rocks.object estimates the object pose; Three.js and the existing One Euro filter smooth the anchors; interactive HTML hotspots stay readable and face the camera.
 
 ## Run
-
-From this project directory:
 
 ```sh
 python3 -m http.server 8765 --bind 127.0.0.1
 ```
 
-Open `http://localhost:8765`. For phone testing, serve this directory on **HTTPS**. A phone opening a computer's plain HTTP LAN address does not get the localhost camera exemption. No build or package installation is needed. Enable gzip/Brotli for the network JSON and JavaScript in your static host.
+Open `http://localhost:8765`. Use **HTTPS** when testing on phones and tablets. A plain HTTP LAN address does not qualify for the localhost camera exemption. No build or package installation is required. Enable gzip/Brotli for the model JSON and JavaScript on the static host.
 
-Tap **Start camera**, then point at one supported object. There are no manual object choices. The rear camera is preferred. All three tracking networks download on the first start and are cached in memory for later sessions. The app searches Cup → Keyboard → Sprite until a target is confirmed, then shows its three product labels. Labels can be toggled. **Rescan** clears the lock and starts a new search; **Close** stops the camera and returns to the start screen. Failed model downloads can be retried.
+## Experience
 
-## Targets and labels
+The page requests the rear camera on entry and displays a full-screen native animation inspired by `leela_ar_intro_1080x1920.gif`. Only after the camera begins playback does it reveal the blurred live preview and introduction sheet, which contains the original static Leela monogram above its title:
 
-- Tracking targets use the official pretrained networks and their corresponding detector settings:
+- **Enter the world of True Indian Luxury**
+- Point your camera at an object and uncover the story behind it.
+- **Start scanning**
 
-  | Target | Label | Network |
-  | --- | --- | --- |
-  | Cup | `CUP` | `NN_COFFEE_2.json` |
-  | Keyboard | `KEYBOARD` | `NN_KEYBOARD_5.json` |
-  | Sprite can | `SPRITECAN` | `NN_SPRITE_1.json` |
+The browser still controls camera permission. If permission is denied or the camera fails, an error panel offers **Try again**; retry returns to the animated loader while the camera starts, then shows the introduction. Starting scanning reuses the preview stream instead of opening a second camera. The GIF is a visual reference only and is not shipped or requested. The loader uses the small Leela logo PNG, CSS reveal/glow and lettering animations, gold scan corners, a subtle SVG geometric pattern, and softly twinkling points. Its blue background fills every screen edge to edge, with no aspect-ratio cropping or side gaps. Reduced-motion preferences show a static, readable identity. The introduction sheet uses the original small static monogram from the HTML reference, without lettering, framing or logo animation. Model preparation after Start scanning retains the compact Leela loader.
 
-- Each target has three product-specific labels, split into two lines for readability:
+After Start scanning, the app loads the three models once, searches automatically and shows the matching experience. No manual object selector is provided. Four gold pins and glass labels per target reproduce the supplied hotspot copy:
 
-  | Target | Label 1 | Label 2 | Label 3 |
-  | --- | --- | --- | --- |
-  | Keyboard | Made with / recycled plastic | Smart battery / efficiency | Responsible / packaging |
-  | Cup | Your daily brew / Coffee or tea, your way | Pause and sip / Make time for a break | Refill and repeat / Enjoy your next cup |
-  | Sprite | Lemon-lime flavour / Crisp, refreshing taste | Serve chilled / Enjoy a refreshing break | Recycle the can / Empty it. Recycle locally. |
+| Target | Hotspots | Overview links |
+| --- | --- | --- |
+| Cup | Culinary Artistry; Mindful Sips; Signature Dining; Gift the Taste | Explore dining; Aujasya menus |
+| Keyboard | Royal Meetings; Always Connected; Grand Venues; Arq Privileges | Plan a meeting; MICE brochure |
+| Sprite can | Plastic-free; Mixology; The Library Bar; Net Zero by 2050 | Our sustainability; Explore bars |
 
-  Keyboard copy is supplied for this demo; detecting a keyboard does not verify its materials, battery, or packaging. Cup copy describes everyday use without asserting materials or insulation. Sprite flavour and chilled-serving copy refer to [Coca-Cola's Sprite information](https://www.yourcoca-cola.co.uk/p/sprite-24-x-330ml/12737124/); recycling depends on local collection. Three reference spots remain configured for each object's shape. There is no toaster model to load or render.
-- Any cup is **not** guaranteed. Start with a conventional opaque coffee cup in good light, keep the entire cup visible, and move slowly. Unusual shapes, clear glass, shiny metal, occlusion, and poor lighting can reduce reliability. Verify your specific cup.
-- For Keyboard, try a full-size computer keyboard with all edges visible. For Sprite, try a 330 ml / 12 oz Sprite can with the logo facing the camera. Other drink cans and every Sprite packaging variation are not supported by implication. Recognition must be checked with the actual objects.
-- One target at a time: the first confirmed supported target is locked. If multiple objects are visible, scan order affects which is selected. Content hides after tracking is lost and reappears after reacquisition. There are no persistent room anchors or real-object depth occlusion.
-- The estimated camera field of view and annotation placement require calibration with actual objects. This POC has not been validated on physical iOS or Android devices yet. Keyboard retains the upstream detector's `followZRot: false`; the optional upstream device-orientation correction is not enabled, so no motion-sensor permission is requested. All targets share the same pose filter.
+Tap a pin or label to open its detail, call to action and highlight navigation. **All highlights** returns to the overview. **Labels off** hides the text cards and connector lines while retaining tappable pins. **Close** collapses the details sheet; **Show details** restores it. **Rescan** clears the current match and searches again. After a successful scan, sustained tracking loss shows a Leela-themed camera overlay naming that object and asking the user to align it. It never appears during the first search. The header and bottom sheet remain usable, and the open object detail is preserved. Three consecutive valid pose frames restore the annotations and remove the overlay; isolated detection blips do not dismiss it.
 
-## Automatic scanning
+The reference’s `can` content maps to our existing **Sprite can** tracking network. Its mock COCO detector notes are not implemented; this POC still supports the same three pretrained object models.
 
-The three existing networks remain separate; they are not a combined classifier. Each candidate gets at least 1.8 seconds and 30 fresh detection frames to search. Four consecutive valid detections confirm a lock. This is followed by the scene’s existing three-frame reveal check. Scores are evaluated by each network’s own detector settings, not ranked against other networks.
+## Branding, responsive layout and content
 
-While locked, only that target’s model runs. A brief miss preserves its lock; labels hide after the existing 220 ms visual-loss tolerance. After 1.5 seconds without a valid detection, automatic searching resumes with the next candidate. Rescan and returning from a background tab clear the lock and retry the current model before continuing the search. Unsupported objects remain in the searching state.
+The theme, monogram, hotspot copy and sheet copy come from `leela_ar_get_started.html` and `leela_ar_ui_reference.html`; the logo motion references `leela_ar_intro_1080x1920.gif`. Active screens and loading states use The Leela branding throughout. Palette: sodalite `#070d1f`, gold `#f8e6a8` / `#e2c27a` / `#c9a45a`, ivory `#efe8da`. Typography retains the supplied serif/sans font stacks with system fallbacks; no remote font dependency is required.
 
-`src/auto-tracker.js` schedules search, confirmation, lock and recovery. It destroys the previous tracking core before initializing the next one, keeps the same camera stream, and reuses cached JSON. This avoids accumulating neural-network GPU resources and reapplies init-only settings such as Keyboard’s different `followZRot`. The camera stream stays open during model changes; GPU setup can briefly interrupt rendering. Only one tracking core is active at a time.
+The app fills the available camera viewport, reserves device safe areas and limits intro/AR sheets to 600 px on tablets and desktop. Short landscape layouts use a compact introduction. Sheet content scrolls independently when necessary, keeping its controls reachable. Hotspot text wraps rather than truncating; cards avoid the header, sheet and reopened-details button. If the available area is too small for every readable card, pins remain available and their details can still be opened. Safari’s native browser bars remain controlled by iOS.
 
-Initial model downloads and candidate switching add latency. A complete search cycle can take several seconds and longer on slow devices; these timing settings are search budgets, not recognition guarantees. Mobile hardware performance and real-object false positives still need device testing.
+All overview and hotspot calls to action use HTTPS links to the official Leela site and open a new tab with `noopener noreferrer`. The following destinations were checked on 6 October 2026:
 
-## Configuration
+- [Culinary Artistry](https://www.theleela.com/culinary-artistry-at-the-leela): dining, signature restaurants and the multi-property bar listings used by Explore bars.
+- [Aujasya](https://www.theleela.com/aujasya-by-the-leela): wellbeing and Sampoorna nourishment information.
+- [Meetings](https://www.theleela.com/meetings): meeting spaces and its linked MICE brochure. The brochure action preserves the official PDF URL and version from the reference.
+- [Sustainability](https://www.theleela.com/sustainability) and [Environmental stewardship](https://www.theleela.com/environmental-stewardship).
+- [Signatures](https://www.theleela.com/signatures-by-the-leela), [Royal Meetings](https://www.theleela.com/special-offers/royal-meetings), [Arq](https://www.theleela.com/arq-by-the-leela), and [The Library Bar](https://www.theleela.com/the-leela-palace-bengaluru/restaurants/the-library-bar).
 
-`src/config.js` contains target profiles, per-target `annotations` copy, shared card layout, annotation anchor positions, loss tolerance, detection cadence, and the automatic search budgets in `CONFIG.autoDetection`. Switching targets redraws the card textures and screen-reader text, disposes replaced textures, and reuses the existing geometry. Each profile's `annotationAnchors` are object-local coordinates in tracker units, not metres or detected semantic keypoints. Cup and Sprite spots use the upstream centered cylinder dimensions; the keyboard spots lie near its deck plane and may need tuning for different keyboard proportions. Card orientation is controlled by the camera-facing update, so object rotation does not tilt or mirror the text. Rendering and the detector share a centered cover crop; the detector source is refreshed on intrinsic video-size changes.
+`src/content.js` contains the reference copy and links independently of tracking configuration. Time-sensitive offers and their linked pages may change.
 
-`src/tracker.js` owns the singleton tracking core and its lifecycle. `src/scene.js` owns rendering, pose conversion, stabilization, and the shared annotation hierarchy. `src/annotations.js` creates textured 3D text cards, connector lines, and anchor dots. The dots follow the smoothed object pose. Text cards counter-rotate every rendered frame to stay parallel to the camera and upright, including when the object turns around. `src/label-layout.js` places cards near their projected anchors, smoothly places the side cards outward from their projected spots as the object turns, and chooses the vertical order from the initial tracked view. That order stays fixed until tracking resets, with 20 CSS pixels between cards and a separate 8-pixel preferred connector gap, and keeps them inside the viewport safe area above the session controls. Card width is constrained in CSS pixels for readability. Connector lines update to meet the resized card edges using the same geometry each frame. `src/app.js` owns camera permissions and UI state. Add `?debug=1` to see search/lock phase, active candidate, detection label and score.
+## Automatic tracking
 
-`src/pose-filter.js` applies an adaptive [One Euro filter](https://gery.casiez.net/1euro/) to position and quaternion rotation, replacing the previous sliding-window stabilizer. A frame-time lerp/slerp eases the shared root between detections, keeping the labels, dots and lines together. Tune cutoffs, speed response and render easing in `CONFIG.smoothing`: lower minimum cutoffs suppress more stationary jitter but add lag; higher beta responds faster to motion. Position speed is normalized by depth, and rotation uses the shortest quaternion arc. Brief missed detections retain filtering history; tracking loss, rescan, session changes and tab resume reset it. This reduces pose noise but does not correct an incorrectly detected object or uncalibrated camera.
+| Target | Detector label | Network |
+| --- | --- | --- |
+| Cup | `CUP` | `NN_COFFEE_2.json` |
+| Keyboard | `KEYBOARD` | `NN_KEYBOARD_5.json` |
+| Sprite can | `SPRITECAN` | `NN_SPRITE_1.json` |
 
-## Dependencies
+The three networks are separate. Each candidate receives at least 1.8 seconds and 30 fresh detection frames; four consecutive valid, confident detections confirm the target. The scene retains its three-frame reveal check. Scores are judged using each model’s native thresholds, not compared across different models. Only the locked model runs during tracking. Brief misses preserve its lock; annotations hide after 220 ms. Once the UI has successfully revealed an object, the controller retains that model throughout loss instead of switching to an unrelated object. Recovery guidance appears after 500 ms without stable tracking. Before a successful reveal, the original 1.5-second loss budget can still advance the automatic search. **Rescan** explicitly releases the retained object and restarts automatic discovery. Returning from a background tab refreshes pose confirmation while retaining the discovered object and its details.
 
-All runtime assets are served locally. Three.js and addons are pinned to r136 to match the standalone upstream integration baseline. WebAR.rocks.object is based on the commit recorded in `vendor/sources.json`, with two small local corrections for switching targets: reset the yaw-decoding flag when loading each network, and restore the default scan settings before applying each target's overrides. Without these corrections, Keyboard settings leak into subsequent Cup/Sprite sessions. The manifest records the upstream hash, local modifications, and the shipped file's hash and size.
+`src/auto-tracker.js` serializes destruction and initialization of the single tracking core. The camera stays open across model changes and model JSON is cached. GPU setup can briefly interrupt rendering; a complete search can take several seconds. Only one target is tracked at a time, and scan order affects the result if several supported objects are visible.
 
-Upstream license notices remain included for the vendored dependencies. The active loader uses the original POC's CSS wave-grid animation, including its reduced-motion fallback. Older Lottie assets remain archived in the repository but are not requested at runtime.
+The pretrained models do not guarantee recognition of every cup, keyboard or Sprite package. Use a conventional opaque cup, a fully visible keyboard, or a Sprite 330 ml / 12 oz can with the logo visible. Other drinks, arbitrary cans, reflective or transparent materials and partial views may not work. No retraining, paid service, room anchors or real-world depth occlusion is added.
 
-## Mobile viewport and branding
+## Code
 
-`loader.css` retains the original white loader, 16 black cells, animation timings, and responsive sizes. A borderless GlamAR logo replaces the object-to-AR title in the center of the start screen. The top logo/status badges are removed; tracking status remains available to screen readers. During the camera experience, a full-width white “Powered by GlamAR” footer sits at the bottom, including the device safe area; session controls stay above it. Camera overlays use white cards with charcoal text. Pointers have a white outline so they remain visible over dark objects.
+- `src/app.js`: camera preview, permission/retry flow, automatic tracking and lifecycle.
+- `src/experience-ui.js`: overview/detail panels, external links and sheet controls.
+- `src/content.js`: the twelve supplied Leela hotspots, six overview actions and detail actions.
+- `src/tracking-recovery.js`: object-specific camera guidance and placement between the active header and bottom sheet.
+- `src/config.js`: unchanged detector profiles/search budgets, smoothing settings and four object-local anchor coordinates per target.
+- `src/scene.js`: Three.js pose conversion, smoothing and projection into the camera viewport.
+- `src/hotspots.js`: interactive pins, labels, gold leaders/bounds and responsive placement. Pins inherit the filtered object pose; text remains upright in screen space.
+- `src/tracker.js`: singleton vendor core, cancellation and cleanup.
+- `src/pose-filter.js`: adaptive One Euro position/quaternion filter and render interpolation.
 
-The page uses `viewport-fit=cover`, matching root/body backgrounds, a fixed full-viewport stage, and safe-area spacing on controls. Canvas projection follows the measured stage size when it changes. These address page-side gaps; native Safari or in-app browser toolbars remain controlled by iOS. Physical iOS testing is still required, especially when browser bars expand/collapse. See [WebKit's safe-area guidance](https://webkit.org/blog/7929/designing-websites-for-iphone-x/).
+Add `?debug=1` to see scanning phase, current model, label and score. Anchor positions and proxy bounds are reference locations in tracker units, not detected semantic keypoints or metres. Real-object alignment may need calibration. Older texture-card and branding assets remain unreferenced; they are not loaded by the active UI.
+
+Three.js remains pinned to r136. The vendored WebAR.rocks.object version and its two existing profile-isolation corrections are recorded in `vendor/sources.json`. Third-party license notices remain included.
 
 ## Validation
 
-Run the deterministic smoothing checks with `node tests/pose-filter-check.cjs` (no package installation). They cover stationary jitter, moving-pose lag at 15/30/60 detections per second, depth scaling, quaternion wrap/sign equivalence, invalid timestamps, brief misses, and reset/reacquisition. Where the previous vendor stabilizer is present, the test also compares displayed-pose jitter against it on identical synthetic inputs. These measurements are synthetic, not real-device accuracy benchmarks.
+Run `node tests/auto-tracker-check.cjs` for confirmation, scan budgets, retained-target loss/recovery, resume/Rescan behavior, profile changes and cleanup. `node tests/pose-filter-check.cjs` checks the existing pose smoother. Neither is a physical recognition benchmark.
 
-Browser checks cover annotation creation without GLB/Draco downloads, label toggling, mobile viewport layout, actual tracking-engine initialization against a synthetic camera stream, rescanning, stopping, and reinitialization. Annotation checks cover the three tracked spots, camera-facing text across yaw/pitch/roll and reversed views, leader attachment, geometry reuse, and loss/reacquisition with injected detection output. Placement checks cover all three target profiles, front and oblique views, portrait/landscape and small screens, separation between cards, and clearance from safe-area insets and controls. Synthetic checks establish runtime integration only; they do not establish physical-object recognition accuracy or mobile hardware performance.
-
-Run `node tests/auto-tracker-check.cjs` for automatic search and lifecycle checks. Automatic-mode browser checks cover all three target locks and product labels, confirmation, brief loss versus sustained loss, rescanning, cache reuse, no manual selectors, camera close/restart, and error recovery. Real vendor checks cycle the three networks against a synthetic camera source to verify initialization and profile isolation. Synthetic detections validate control flow, not physical-object recognition.
-
-Theme checks compare the logo paths and loader animation against the source POC, verify reduced motion and loader failure recovery, cycle all product copies without recreating geometry, and emulate mobile viewport/safe-area changes in Chromium. These do not reproduce native iOS browser chrome.
-
-Before treating this as a demonstrated AR result, test all three actual objects on target phones, including camera/object movement, rotation, temporary occlusion, loss/reacquisition, and changes in lighting.
+Browser checks use a synthetic camera and injected recognition output to verify loader visibility through permission and playback startup, camera-ready introduction, automatic preview/stream reuse, the three target experiences, all twelve tappable hotspots, detail/back/label controls, sheet collapse/reopen, official-link destinations, delayed object-specific recovery guidance and unobscured controls, camera cleanup/restart and permission/error recovery. Responsive checks include mobile portrait, tablet, desktop and short landscape; safe-area and reduced-motion behavior are also checked. Real-object accuracy, camera calibration and native iOS browser chrome still require device testing.

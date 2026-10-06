@@ -135,6 +135,88 @@ async function exhaustCandidate(controller, start = 0) {
   {
     const h = harness();
     const c = h.create();
+    assert.equal(c.retainTarget('cup'), false, 'An uninitialized profile cannot become sticky.');
+    await c.init();
+    assert.equal(c.retainTarget('cup'), false, 'A searching profile cannot become sticky.');
+    h.setPose();
+    for (let frame = 0; frame < 3; frame += 1) {
+      assert.equal(c.step(frame).phase, 'searching');
+      assert.equal(c.retainTarget('cup'), false, 'Partial confirmation is not a displayed match.');
+    }
+    h.miss();
+    await exhaustCandidate(c, 3000);
+    assert.equal(c.target.id, 'keyboard', 'Pre-success search must still rotate normally.');
+    assert.equal(c.retainedTargetId, null);
+    assert.equal(h.count('init'), 2);
+    await c.destroy();
+    checks.push('Retention rejects uninitialized/searching/partly confirmed targets; pre-success candidates still rotate.');
+  }
+
+  {
+    const h = harness();
+    const c = h.create();
+    await c.init();
+    h.setPose();
+    // Four controller confirmations followed by two more poses represent the
+    // three reveal frames consumed by the UI before it retains the profile.
+    for (let frame = 0; frame < 6; frame += 1) c.step(frame);
+    assert.equal(c.retainTarget('keyboard'), false, 'A stale/different target ID must not be retained.');
+    assert.equal(c.retainedTargetId, null);
+    assert.equal(c.retainTarget('cup'), true);
+    assert.equal(c.retainTarget('cup'), true, 'Retention is idempotent while tracking the same profile.');
+    const detectionsBeforeLoss = h.count('detect');
+    h.miss();
+    for (let now = 100; now <= 20100; now += 1000) {
+      const result = c.step(now);
+      assert.equal(result.phase, 'tracking');
+      assert.equal(result.target.id, 'cup');
+      assert.equal(result.state, null);
+    }
+    await tick();
+    assert(h.count('detect') > detectionsBeforeLoss + 10, 'Retained loss must keep running same-model inference.');
+    assert.equal(h.count('init'), 1, 'Prolonged retained loss must not replace the model.');
+    assert.equal(h.count('destroy'), 0, 'Prolonged retained loss must preserve the active core.');
+    h.setPose(h.targets[1]);
+    assert.equal(c.step(21000).state, null, 'An unrelated label cannot replace a retained experience.');
+    h.setPose();
+    assert.equal(c.step(21033).state.label, 'CUP', 'The retained object can be reacquired on its existing model.');
+    assert.equal(c.retainedTargetId, 'cup');
+
+    const resetsBeforeResume = h.count('reset');
+    c.resume();
+    assert.equal(h.count('reset'), resetsBeforeResume + 1, 'Resume refreshes the engine state.');
+    assert.equal(c.phase, 'searching', 'Resume requires fresh same-model confirmation.');
+    assert.equal(c.retainedTargetId, 'cup', 'Returning from background preserves the displayed experience.');
+    h.miss();
+    await exhaustCandidate(c, 22000);
+    await exhaustCandidate(c, 25000);
+    assert.equal(c.target.id, 'cup');
+    assert.equal(h.count('init'), 1, 'Retained resume confirmation must not exhaust into another model.');
+    h.setPose();
+    for (let frame = 0; frame < 3; frame += 1) assert.equal(c.step(29000 + frame).state, null);
+    assert.equal(c.step(29003).phase, 'tracking');
+
+    c.reset();
+    assert.equal(c.retainedTargetId, null, 'Explicit Rescan releases the displayed profile.');
+    assert.equal(c.phase, 'searching');
+    h.miss();
+    await exhaustCandidate(c, 30000);
+    assert.equal(c.target.id, 'keyboard', 'Rescan restores ordinary automatic model cycling.');
+    assert.equal(h.count('init'), 2);
+    h.setPose(h.targets[1]);
+    for (let frame = 0; frame < 4; frame += 1) c.step(33000 + frame);
+    assert.equal(c.retainTarget('keyboard'), true, 'A newly displayed profile can become the retained target.');
+    await c.destroy();
+    assert.equal(c.retainedTargetId, null);
+    assert.equal(c.retainTarget('keyboard'), false);
+    assert.equal(h.failures.length, 0);
+    checks.push('Displayed profiles survive prolonged loss with continued inference, reject unrelated labels, and reacquire without rebuilding.');
+    checks.push('Resume preserves retention with fresh confirmation; explicit Rescan releases it and restores automatic model cycling.');
+  }
+
+  {
+    const h = harness();
+    const c = h.create();
     await c.init();
     h.setPose();
     for (let t = 0; t < 3; t += 1) assert.equal(c.step(t).state, null);
@@ -193,7 +275,7 @@ async function exhaustCandidate(controller, start = 0) {
     c.step(100001);
     assert.equal(h.count('source'), 1);
     await c.destroy();
-    checks.push('Rescan/resume clear lock and timing without rebuilding; invalid timestamps do not consume frames; source rotation remains supported.');
+    checks.push('Without retention, Rescan/resume clear lock and timing without rebuilding; invalid timestamps do not consume frames; source rotation remains supported.');
   }
 
   for (const hold of ['holdInit', 'holdNetwork']) {

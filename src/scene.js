@@ -1,7 +1,7 @@
 import { CONFIG, TARGETS, DEFAULT_TARGET_ID } from './config.js';
-import { createAnnotation } from './annotations.js';
+import { EXPERIENCES } from './content.js';
+import { TrackedHotspots } from './hotspots.js';
 import { OneEuroPoseFilter } from './pose-filter.js';
-import { LabelLayout } from './label-layout.js';
 
 const THREE = window.THREE;
 
@@ -29,9 +29,11 @@ export class AnnotationScene {
     this.annotationGroup = new THREE.Group();
     this.annotationGroup.name = 'object-relative-labels';
     this.content.add(this.annotationGroup);
-    this.annotations = [];
     this.target = TARGETS[DEFAULT_TARGET_ID];
-    this.labelLayout = new LabelLayout();
+    this.onHotspot = () => {};
+    this.hotspots = new TrackedHotspots(stage.querySelector('#hotspots'), labelLayer,
+      index => this.onHotspot(index));
+    this.annotations = this.hotspots.items;
     this.layoutVisible = false;
     this.topbar = stage.querySelector('.topbar');
     this.sessionBar = stage.querySelector('#sessionBar');
@@ -39,34 +41,29 @@ export class AnnotationScene {
     this.position = new THREE.Vector3();
     this.rotation = new THREE.Euler(0, 0, 0, 'ZXY');
     this.quaternion = new THREE.Quaternion();
-    this.cameraWorldQuaternion = new THREE.Quaternion();
     this.mode = 'idle';
     this.resize();
   }
 
   async load() {
     if (this.ready) return;
-    CONFIG.annotations.forEach((layout, index) => {
-      const definition = { ...layout, ...this.target.annotations[index] };
-      const annotation = createAnnotation(definition, this.target.annotationAnchors[index], this.renderer);
-      this.annotationGroup.add(annotation.group);
-      this.annotations.push(annotation);
-      // A text equivalent for screen readers; the visible cards are 3D meshes.
-      const element = document.createElement('li');
-      element.textContent = `${definition.title}: ${definition.detail}`;
-      this.labelLayer.append(element);
-    });
+    this.setTarget(this.target);
     this.ready = true;
   }
 
   setTarget(target) {
+    if (!target || !EXPERIENCES[target.id]) return;
+    const changed = this.target?.id !== target.id || !this.hotspots.items.length;
     this.target = target;
-    this.annotations.forEach((annotation, index) => {
-      const definition = target.annotations[index];
-      annotation.setAnchor(target.annotationAnchors[index]);
-      annotation.setText(definition);
-      this.labelLayer.children[index].textContent = `${definition.title}: ${definition.detail}`;
-    });
+    if (changed) {
+      this.hotspots.setTarget(target, EXPERIENCES[target.id]);
+      this.annotations = this.hotspots.items;
+      this.layoutVisible = false;
+    }
+  }
+
+  setActiveHotspot(index) {
+    this.hotspots.setActive(index);
   }
 
   setMode(mode, video = null, target = this.target) {
@@ -111,7 +108,7 @@ export class AnnotationScene {
     this.root.visible = false;
     this.layoutVisible = false;
     this.poseFilter.reset();
-    this.labelLayout.reset();
+    this.hotspots.reset();
     this.lastPoseAt = null;
     this.lastRenderAt = null;
     this.drawLabels();
@@ -145,8 +142,7 @@ export class AnnotationScene {
   }
 
   drawLabels() {
-    this.annotationGroup.visible = this.labelsEnabled && this.layoutVisible;
-    this.labelLayer.hidden = !(this.root.visible && this.annotationGroup.visible);
+    this.hotspots.setVisibility(this.root.visible && this.layoutVisible, this.labelsEnabled);
   }
 
   getSafeRect() {
@@ -160,8 +156,13 @@ export class AnnotationScene {
       const rect = this.topbar.getBoundingClientRect();
       if (rect.height > 0) top = Math.max(top, rect.bottom - stage.top + margin);
     }
-    if (this.sessionBar && !this.sessionBar.hidden) {
+    if (this.sessionBar && !this.sessionBar.hidden && !this.sessionBar.classList.contains('closed')) {
       const rect = this.sessionBar.getBoundingClientRect();
+      if (rect.height > 0) bottom = Math.min(bottom, rect.top - stage.top - margin);
+    }
+    const reopen = this.stage.querySelector('#reopenButton');
+    if (reopen && !reopen.hidden) {
+      const rect = reopen.getBoundingClientRect();
       if (rect.height > 0) bottom = Math.min(bottom, rect.top - stage.top - margin);
     }
     return { x: margin, y: top, width: Math.max(0, stage.width - margin * 2), height: Math.max(0, bottom - top) };
@@ -176,12 +177,9 @@ export class AnnotationScene {
       this.root.quaternion.slerp(this.poseFilter.quaternion, alpha);
     }
     this.lastRenderAt = timestampMs;
-    if (this.root.visible && this.labelsEnabled) {
+    if (this.root.visible) {
       this.scene.updateMatrixWorld(true);
-      this.camera.getWorldQuaternion(this.cameraWorldQuaternion);
-      this.annotations.forEach(annotation => annotation.updateFacing(this.cameraWorldQuaternion));
-      this.layoutVisible = this.labelLayout.update(this.annotations, this.camera, this, this.getSafeRect());
-      if (this.layoutVisible) this.annotations.forEach(annotation => annotation.updateLeader());
+      this.layoutVisible = this.hotspots.update(this.root, this.camera, this, this.getSafeRect());
     }
     this.drawLabels();
     this.renderer.render(this.scene, this.camera);
