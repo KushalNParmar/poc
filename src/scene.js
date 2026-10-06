@@ -156,13 +156,8 @@ export class AnnotationScene {
       const rect = this.topbar.getBoundingClientRect();
       if (rect.height > 0) top = Math.max(top, rect.bottom - stage.top + margin);
     }
-    if (this.sessionBar && !this.sessionBar.hidden && !this.sessionBar.classList.contains('closed')) {
+    if (this.sessionBar && !this.sessionBar.hidden) {
       const rect = this.sessionBar.getBoundingClientRect();
-      if (rect.height > 0) bottom = Math.min(bottom, rect.top - stage.top - margin);
-    }
-    const reopen = this.stage.querySelector('#reopenButton');
-    if (reopen && !reopen.hidden) {
-      const rect = reopen.getBoundingClientRect();
       if (rect.height > 0) bottom = Math.min(bottom, rect.top - stage.top - margin);
     }
     return { x: margin, y: top, width: Math.max(0, stage.width - margin * 2), height: Math.max(0, bottom - top) };

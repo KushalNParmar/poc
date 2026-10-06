@@ -88,17 +88,11 @@ button:focus:not(:focus-visible) { outline: none; }
 .ctarow .cta { flex: 1.25; }
 .ctarow .cta.ghost { flex: 1; }
 .row { display: flex; gap: 8px; margin-top: 10px; flex-shrink: 0; }
+.session-actions { width: calc(100% - 24px); max-width: 460px; margin-inline: auto; justify-content: center; }
 .btn { flex: 1; min-width: 0; min-height: 44px; padding: 8px 6px; border-radius: 12px; background: rgba(255,255,255,.04); border: 1px solid rgba(226,194,122,.28); color: var(--ivory); font: 500 12px var(--sans); }
 .btn:hover { border-color: var(--gold-300); }
 .btn.on, .btn[aria-pressed='true'] { color: var(--gold-100); border-color: var(--gold-300); }
 .back { display: inline-flex; align-items: center; min-height: 38px; padding: 0 2px; margin: -6px 0 3px; background: none; border: none; color: var(--gold-300); font: 500 11px var(--sans); letter-spacing: .04em; }
-.dots { display: flex; gap: 5px; justify-content: center; margin-top: 10px; }
-.dots span { width: 5px; height: 5px; border-radius: 50%; background: rgba(226,194,122,.3); }
-.dots span.on { background: var(--gold-300); width: 14px; border-radius: 4px; }
-.dots button { display: grid; place-items: center; flex-shrink: 0; width: 44px; height: 36px; margin: -4px 0; padding: 0; border: 0; border-radius: 8px; background: transparent; }
-.dots button::after { content: ''; width: 5px; height: 5px; border-radius: 50%; background: rgba(226,194,122,.3); }
-.dots button.on::after { width: 14px; border-radius: 4px; background: var(--gold-300); }
-.reopen { position: absolute; bottom: calc(22px + env(safe-area-inset-bottom)); left: 50%; transform: translateX(-50%); z-index: 10; min-height: 44px; padding: 9px 18px; border-radius: 30px; background: var(--glass); border: 1px solid var(--hair); color: var(--gold-100); font: 500 12px var(--sans); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); white-space: nowrap; }
 .scan-guide { position: absolute; z-index: 2; width: min(42vw, 250px); height: min(44vw, 270px); left: 50%; top: 43%; transform: translate(-50%, -50%); pointer-events: none; filter: drop-shadow(0 1px 2px #000a); }
 .scan-guide span { position: absolute; width: 23px; height: 23px; border: 1.5px solid var(--gold-300); }
 .scan-guide span:nth-child(1) { top: 0; left: 0; border-right: 0; border-bottom: 0; }

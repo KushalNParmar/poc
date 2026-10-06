@@ -7,12 +7,11 @@ export class TrackingRecovery {
     this.message = stage.querySelector('#recoveryMessage');
     this.header = stage.querySelector('#arTopbar');
     this.sheet = stage.querySelector('#sessionBar');
-    this.reopen = stage.querySelector('#reopenButton');
     this.targetId = null;
     this.resizeObserver = new ResizeObserver(() => {
       if (!this.element.hidden) this.layout();
     });
-    for (const element of [stage, this.header, this.sheet, this.reopen]) this.resizeObserver.observe(element);
+    for (const element of [stage, this.header, this.sheet]) this.resizeObserver.observe(element);
   }
 
   show(target) {
@@ -38,8 +37,7 @@ export class TrackingRecovery {
   layout() {
     const stage = this.stage.getBoundingClientRect();
     const top = this.header.hidden ? 16 : this.header.getBoundingClientRect().bottom - stage.top + 18;
-    const bottomElement = this.sheet.hidden ? this.reopen : this.sheet;
-    const bottom = bottomElement.hidden ? 16 : stage.bottom - bottomElement.getBoundingClientRect().top + 18;
+    const bottom = this.sheet.hidden ? 16 : stage.bottom - this.sheet.getBoundingClientRect().top + 18;
     const height = Math.max(0, stage.height - top - bottom);
     this.element.style.setProperty('--recovery-top', `${top}px`);
     this.element.style.setProperty('--recovery-bottom', `${bottom}px`);

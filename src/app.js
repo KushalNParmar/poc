@@ -43,6 +43,23 @@ function showLoader(message) {
 
 function hideLoader() { $('lottieLoader').hidden = true; }
 
+function showCameraLoader() {
+  const loader = $('cameraLoader');
+  loader.hidden = false;
+  // Restart the opening reveal on retries. Ambient glows can keep looping;
+  // only the finite logo/lettering animations gate the introduction.
+  const opening = loader.getAnimations({ subtree: true }).filter(animation =>
+    Number.isFinite(animation.effect.getComputedTiming().endTime));
+  for (const animation of opening) {
+    animation.currentTime = 0;
+    animation.play();
+  }
+  return Promise.all([
+    new Promise(resolve => setTimeout(resolve, 2000)),
+    ...opening.map(animation => animation.finished.catch(() => {})),
+  ]);
+}
+
 async function prepare() {
   if (!preparing) {
     preparing = (async () => {
@@ -125,7 +142,7 @@ async function previewCamera() {
   resetUI();
   hideLoader();
   document.body.dataset.mode = 'loading';
-  $('cameraLoader').hidden = false;
+  const loaderFinished = showCameraLoader();
   setStatus('Starting your camera');
   cameraNotice();
   try {
@@ -134,6 +151,10 @@ async function previewCamera() {
     startRenderLoop();
     const cameraStream = await ensureCamera(token);
     if (token !== epoch || !cameraStream) return;
+    // Camera startup and the reveal run together, so slow permissions do not
+    // add another two-second wait after the camera is ready.
+    await loaderFinished;
+    if (token !== epoch) return;
     mode = 'intro';
     document.body.dataset.mode = 'intro';
     $('cameraLoader').hidden = true;
@@ -237,7 +258,7 @@ async function releaseCamera() {
 function resetUI() {
   confirmedTarget = null;
   recovery?.hide();
-  for (const id of ['intro', 'arTopbar', 'errorCard', 'sessionBar', 'reopenButton', 'scanGuide', 'debug', 'cameraLoader']) $(id).hidden = true;
+  for (const id of ['intro', 'arTopbar', 'errorCard', 'sessionBar', 'scanGuide', 'debug', 'cameraLoader']) $(id).hidden = true;
   $('startButton').disabled = false;
   scene?.setMode('idle');
 }
