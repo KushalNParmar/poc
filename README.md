@@ -36,7 +36,7 @@ The reference’s `can` content maps to our existing **Sprite can** tracking net
 
 The theme, monogram, hotspot copy and sheet copy come from `leela_ar_get_started.html` and `leela_ar_ui_reference.html`; the logo motion references `leela_ar_intro_1080x1920.gif`. Active screens and loading states use The Leela branding throughout. Palette: sodalite `#070d1f`, gold `#f8e6a8` / `#e2c27a` / `#c9a45a`, ivory `#efe8da`. Typography retains the supplied serif/sans font stacks with system fallbacks; no remote font dependency is required.
 
-The app fills the available camera viewport, reserves device safe areas and limits intro/AR sheets to 600 px on tablets and desktop. Short landscape layouts use a compact introduction. Sheet content scrolls independently when necessary, keeping its controls reachable. Hotspot text wraps rather than truncating; cards avoid the header, sheet and reopened-details button. If the available area is too small for every readable card, pins remain available and their details can still be opened. Safari’s native browser bars remain controlled by iOS.
+The app fills the available camera viewport, reserves device safe areas and limits intro/AR sheets to 600 px on tablets and desktop. Short landscape layouts use a compact introduction. Sheet content scrolls independently when necessary, keeping its controls reachable. Hotspot text wraps rather than truncating. Cards occupy distinct positions outside the projected object anchors: keyboard cards sit in two pairs above and below, while cup/can cards spread around all four sides. Cards retain their readable size and spacing; they may extend beyond the viewport instead of being squeezed into the available screen. Moving the camera can reveal them again. The header and sheet render above the annotations. The tracked-object corner frame is removed; scanning corners appear only during initial discovery. Safari’s native browser bars remain controlled by iOS.
 
 All overview and hotspot calls to action use HTTPS links to the official Leela site and open a new tab with `noopener noreferrer`. The following destinations were checked on 6 October 2026:
 
@@ -70,11 +70,11 @@ The pretrained models do not guarantee recognition of every cup, keyboard or Spr
 - `src/tracking-recovery.js`: object-specific camera guidance and placement between the active header and bottom sheet.
 - `src/config.js`: unchanged detector profiles/search budgets, smoothing settings and four object-local anchor coordinates per target.
 - `src/scene.js`: Three.js pose conversion, smoothing and projection into the camera viewport.
-- `src/hotspots.js`: interactive pins, labels, gold leaders/bounds and responsive placement. Pins inherit the filtered object pose; text remains upright in screen space.
+- `src/hotspots.js`: interactive pins, labels, gold leaders and object-relative placement without viewport clamping. Pins inherit the filtered object pose; text remains upright in screen space.
 - `src/tracker.js`: singleton vendor core, cancellation and cleanup.
 - `src/pose-filter.js`: adaptive One Euro position/quaternion filter and render interpolation.
 
-Add `?debug=1` to see scanning phase, current model, label and score. Anchor positions and proxy bounds are reference locations in tracker units, not detected semantic keypoints or metres. Real-object alignment may need calibration. Older texture-card and branding assets remain unreferenced; they are not loaded by the active UI.
+Add `?debug=1` to see scanning phase, current model, label and score. Anchor positions are reference locations in tracker units, not detected semantic keypoints or metres. Real-object alignment may need calibration. Older texture-card and branding assets remain unreferenced; they are not loaded by the active UI.
 
 Three.js remains pinned to r136. The vendored WebAR.rocks.object version and its two existing profile-isolation corrections are recorded in `vendor/sources.json`. Third-party license notices remain included.
 

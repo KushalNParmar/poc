@@ -179,7 +179,7 @@ export class AnnotationScene {
     this.lastRenderAt = timestampMs;
     if (this.root.visible) {
       this.scene.updateMatrixWorld(true);
-      this.layoutVisible = this.hotspots.update(this.root, this.camera, this, this.getSafeRect());
+      this.layoutVisible = this.hotspots.update(this.root, this.camera, this);
     }
     this.drawLabels();
     this.renderer.render(this.scene, this.camera);

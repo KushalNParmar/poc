@@ -69,7 +69,6 @@ button:focus:not(:focus-visible) { outline: none; }
 .label small { display: block; font-family: var(--sans); font-size: 9.5px; line-height: 1.35; color: var(--muted); margin-top: 2px; letter-spacing: .02em; }
 .label i { position: absolute; right: 8px; top: 8px; font-style: normal; font-size: 10px; color: var(--gold-300); }
 .lead { stroke: var(--gold-300); stroke-opacity: .7; stroke-width: 1; fill: none; }
-.brk { stroke: var(--gold-300); stroke-width: 2; fill: none; }
 .hidden-labels .label, .hidden-labels .lead { visibility: hidden; opacity: 0; pointer-events: none; }
 @keyframes label-in { from { opacity: 0; } to { opacity: 1; } }
 

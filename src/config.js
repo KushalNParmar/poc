@@ -43,7 +43,6 @@ export const TARGETS = freezeTarget({
     label: 'CUP',
     // Cup proxy: radius 0.5, height 0.75, centered on the tracker. Four reference hotspots are not detected keypoints.
     annotationAnchors: [[0, 0.315, -0.5], [0.4, 0, -0.3], [-0.45, 0.075, -0.218], [0, -0.315, -0.5]],
-    annotationBounds: [[-0.5, -0.375, -0.5], [0.5, 0.375, 0.5]],
     networkUrl: './assets/NN_COFFEE_2.json',
     followZRot: true,
     scanSettings: {
@@ -71,7 +70,6 @@ export const TARGETS = freezeTarget({
     label: 'KEYBOARD',
     // Keyboard hotspots follow its deck; reference x/y maps to local x/z.
     annotationAnchors: [[0.35, 0.02, -0.088], [-0.25, 0.02, -0.066], [-0.4, 0.02, 0.11], [0.38, 0.02, 0.132]],
-    annotationBounds: [[-0.5, -0.02, -0.22], [0.5, 0.06, 0.22]],
     networkUrl: './assets/NN_KEYBOARD_5.json',
     followZRot: false,
     scanSettings: {
@@ -99,7 +97,6 @@ export const TARGETS = freezeTarget({
     label: 'SPRITECAN',
     // Can proxy: radius 0.31, height 1.085; positions mirror the supplied four reference hotspots.
     annotationAnchors: [[0, 0.4774, -0.31], [0.279, 0.05425, -0.135], [-0.279, -0.1085, -0.135], [0, -0.48825, -0.31]],
-    annotationBounds: [[-0.31, -0.5425, -0.31], [0.31, 0.5425, 0.31]],
     networkUrl: './assets/NN_SPRITE_1.json',
     followZRot: true,
     scanSettings: {},
