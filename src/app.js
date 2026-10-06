@@ -1,30 +1,25 @@
-import { CONFIG, TARGETS, DEFAULT_TARGET_ID } from './config.js';
-import { ObjectTracker } from './tracker.js';
+import { CONFIG, TARGETS } from './config.js';
+import { AutoObjectTracker } from './auto-tracker.js';
 import { AnnotationScene } from './scene.js';
 
 const $ = id => document.getElementById(id);
 let scene, tracker, stream;
-let selectedTarget = TARGETS[DEFAULT_TARGET_ID], activeTarget = selectedTarget;
+let activeTarget = null;
 const networks = new Map();
+const introMessage = 'Point your camera at a cup, keyboard or Sprite can. We’ll recognise it and bring its details into view.';
 const targetCopy = {
   cup: {
-    subject: 'a coffee cup',
-    guidance: 'Try an opaque coffee cup in good light. Keep the whole cup visible. Recognition varies by cup.',
     scanning: 'Use an opaque coffee cup. Keep it fully visible.',
   },
   keyboard: {
-    subject: 'a computer keyboard',
-    guidance: 'Try a full-size computer keyboard in good light. Keep all edges visible. Recognition varies by keyboard.',
     scanning: 'Keep the entire keyboard in view, including its edges.',
   },
   sprite: {
-    subject: 'a Sprite can',
-    guidance: 'Try a Sprite 330 ml / 12 oz can with the logo facing the camera. Packaging and reflections can affect recognition.',
     scanning: 'Show the Sprite logo and keep the whole can visible.',
   },
 };
 let mode = 'loading', frameId = 0, epoch = 0, lastDetectAt = 0, lastSeenAt = 0, hits = 0;
-let preparing, stopping = Promise.resolve(), hasTracked = false, lastVideoTime = -1;
+let preparing, stopping = Promise.resolve(), lastVideoTime = -1;
 const debugEnabled = new URLSearchParams(location.search).has('debug');
 
 function withTimeout(promise, milliseconds, message) {
@@ -36,7 +31,7 @@ function withTimeout(promise, milliseconds, message) {
 }
 
 function setStatus(text, state = '') {
-  $('status').textContent = text;
+  if ($('status').textContent !== text) $('status').textContent = text;
   $('status').dataset.state = state;
 }
 
@@ -72,7 +67,7 @@ function loadNetwork(target) {
       .catch(error => {
         networks.delete(target.id);
         console.warn(`${target.name} model download:`, error);
-        throw new Error(`The ${target.name.toLowerCase()} tracking model could not be loaded. Check your connection and try again, or choose another object.`);
+        throw new Error(`The ${target.name.toLowerCase()} tracking model could not be loaded. Check your connection and try again.`);
       })
       .finally(() => clearTimeout(timer));
     networks.set(target.id, request);
@@ -80,20 +75,21 @@ function loadNetwork(target) {
   return networks.get(target.id);
 }
 
-function updateTargetUI() {
-  $('introMessage').textContent = `Point your camera at ${targetCopy[selectedTarget.id].subject}. Explore labels attached to it.`;
-  $('targetHint').textContent = targetCopy[selectedTarget.id].guidance;
-  document.querySelectorAll('input[name="trackingTarget"]').forEach(input => {
-    input.checked = input.value === selectedTarget.id;
-  });
+function showScanning(target = null) {
+  setStatus(target ? `Looking for ${target.name.toLowerCase()} again` : 'Looking for a cup, keyboard or Sprite can');
+  $('scanGuide').hidden = false;
+  $('sessionTitle').textContent = target ? `Find your ${target.name.toLowerCase()} again` : 'Looking for an object';
+  $('sessionHint').textContent = target ? targetCopy[target.id].scanning : 'Point at a cup, keyboard or Sprite can. Keep it fully visible.';
 }
 
-function showScanning() {
-  const name = activeTarget.name.toLowerCase();
-  setStatus(`Scanning for ${name}`);
-  $('scanGuide').hidden = false;
-  $('sessionTitle').textContent = `Find your ${name}${hasTracked ? ' again' : ''}`;
-  $('sessionHint').textContent = targetCopy[activeTarget.id].scanning;
+function resetScanning() {
+  if (mode !== 'ar') return;
+  tracker?.reset();
+  if (mode !== 'ar') return;
+  activeTarget = null;
+  hits = 0; lastSeenAt = 0; lastVideoTime = -1;
+  scene.resetTracking();
+  showScanning();
 }
 
 function startRenderLoop() {
@@ -105,13 +101,27 @@ function startRenderLoop() {
       lastDetectAt = now;
       lastVideoTime = $('camera').currentTime;
       try {
-        const state = tracker.step();
-        if (state.label === activeTarget.label && scene.updatePose(state, false, now)) {
+        const currentTracker = tracker;
+        const result = currentTracker.step(now);
+        // A fatal core callback can synchronously enter the error screen.
+        if (mode !== 'ar' || tracker !== currentTracker) return;
+        const { state, target, phase } = result;
+        if (phase !== 'tracking') {
+          if (activeTarget || scene.poseFilter.initialized) scene.resetTracking();
+          activeTarget = null;
+          hits = 0;
+          showScanning();
+        } else if (target && activeTarget?.id !== target.id) {
+          activeTarget = target;
+          hits = 0;
+          scene.resetTracking();
+          scene.setTarget(target);
+        }
+        if (phase === 'tracking' && state && activeTarget && state.label === activeTarget.label && scene.updatePose(state, false, now)) {
           lastSeenAt = now;
           hits++;
           if (hits >= CONFIG.revealFrames) {
             scene.root.visible = true;
-            hasTracked = true;
             setStatus(`${activeTarget.name} tracked`, 'tracking');
             $('sessionTitle').textContent = `Your ${activeTarget.name.toLowerCase()}, augmented`;
             $('sessionHint').textContent = 'Move slowly. Keep the whole object in view.';
@@ -120,14 +130,14 @@ function startRenderLoop() {
         } else {
           hits = 0;
         }
-        if (debugEnabled) $('debug').textContent = `label: ${state.label || 'none'}\nscore: ${state.score?.toFixed(3) ?? '—'}\nrender calls: ${scene.renderer.info.render.calls}`;
+        if (debugEnabled) $('debug').textContent = `phase: ${phase}\nmodel: ${target?.id ?? 'switching'}\nlabel: ${state?.label || 'none'}\nscore: ${state?.score?.toFixed(3) ?? '—'}\nrender calls: ${scene.renderer.info.render.calls}`;
       } catch (error) {
         void showError(error);
       }
     }
     if (mode === 'ar' && scene.poseFilter.initialized && now - lastSeenAt > CONFIG.lostAfterMs) {
       scene.resetTracking();
-      showScanning();
+      showScanning(activeTarget);
     }
     scene.render(now);
   };
@@ -164,22 +174,20 @@ async function closeSession() {
   hideLoader();
   setStatus('Ready to explore');
   $('intro').hidden = false;
-  $('targetSelector').disabled = false;
-  updateTargetUI();
+  $('introMessage').textContent = introMessage;
+  activeTarget = null;
   await releaseCamera();
 }
 
 async function startCamera() {
   if (mode !== 'ready' && mode !== 'error') return;
   const token = ++epoch;
-  const target = selectedTarget;
-  activeTarget = target;
+  activeTarget = null;
   mode = 'requesting';
   resetUI();
   $('intro').hidden = false;
   $('introMessage').textContent = 'Allow camera access in your browser to begin.';
   $('startButton').disabled = true;
-  $('targetSelector').disabled = true;
   setStatus('Waiting for camera');
   await releaseCamera();
   try {
@@ -194,22 +202,35 @@ async function startCamera() {
     });
     if (token !== epoch) { newStream.getTracks().forEach(track => track.stop()); return; }
     stream = newStream;
+    const cameraTrack = stream.getVideoTracks()[0];
+    if (!cameraTrack || cameraTrack.readyState === 'ended') {
+      throw new Error('The camera stopped. Try starting it again.');
+    }
+    // Catch camera interruptions during model downloads and core startup too.
+    cameraTrack.addEventListener('ended', () => {
+      if (token === epoch) void showError(new Error('The camera stopped. Try starting it again.'));
+    }, { once: true });
     const video = $('camera');
     video.srcObject = stream;
     await video.play();
     if (token !== epoch) return;
     $('intro').hidden = true;
-    showLoader(`Loading ${target.name.toLowerCase()} tracking`);
-    const network = await loadNetwork(target);
+    showLoader('Loading automatic object detection');
+    const targets = Object.values(TARGETS);
+    const loadedNetworks = await Promise.all(targets.map(async target => [target.id, await loadNetwork(target)]));
     if (token !== epoch) return;
-    showLoader(`Starting ${target.name.toLowerCase()} tracking`);
-    tracker = new ObjectTracker({ video, canvas: $('trackingCanvas'), target, onFatal: error => { if (token === epoch) void showError(error); } });
-    await tracker.init(network);
+    showLoader('Starting automatic object detection');
+    tracker = new AutoObjectTracker({
+      video, canvas: $('trackingCanvas'), targets, networks: new Map(loadedNetworks),
+      settings: CONFIG.autoDetection,
+      onFatal: error => { if (token === epoch) void showError(error); },
+    });
+    await tracker.init();
     if (token !== epoch) return;
     mode = 'ar';
     document.body.dataset.mode = 'ar';
-    scene.setMode('ar', video, target);
-    lastSeenAt = 0; lastDetectAt = 0; lastVideoTime = -1; hits = 0; hasTracked = false;
+    scene.setMode('ar', video);
+    lastSeenAt = 0; lastDetectAt = 0; lastVideoTime = -1; hits = 0;
     $('sessionBar').hidden = false;
     $('resetButton').hidden = false;
     $('scanGuide').hidden = false;
@@ -217,9 +238,6 @@ async function startCamera() {
     showScanning();
     hideLoader();
     startRenderLoop();
-    stream.getVideoTracks()[0].addEventListener('ended', () => {
-      if (token === epoch) void showError(new Error('The camera stopped. Try starting it again.'));
-    });
   } catch (error) { if (token === epoch) await showError(error); }
 }
 
@@ -240,7 +258,7 @@ async function showError(error) {
   const hardFailure = /timeout|timed out|context|WebGL|ALREADY_INITIALIZED/i.test(error.message || '');
   $('retryButton').textContent = hardFailure ? 'Reload page' : 'Try again';
   $('retryButton').dataset.reload = String(hardFailure);
-  $('chooseTargetButton').hidden = hardFailure || !scene?.ready;
+  $('backButton').hidden = hardFailure || !scene?.ready;
   $('errorCard').hidden = false;
   console.error(error);
   await releaseCamera();
@@ -250,12 +268,7 @@ async function boot() {
   try {
     $('startButton').addEventListener('click', startCamera);
     $('stopButton').addEventListener('click', closeSession);
-    $('chooseTargetButton').addEventListener('click', closeSession);
-    $('targetSelector').addEventListener('change', event => {
-      if (mode !== 'ready' || !TARGETS[event.target.value]) return;
-      selectedTarget = TARGETS[event.target.value];
-      updateTargetUI();
-    });
+    $('backButton').addEventListener('click', closeSession);
     $('retryButton').addEventListener('click', () => $('retryButton').dataset.reload === 'true' ? location.reload() : (scene?.ready ? startCamera() : location.reload()));
     $('labelsButton').addEventListener('click', () => {
       scene.labelsEnabled = !scene.labelsEnabled;
@@ -263,17 +276,12 @@ async function boot() {
       $('labelsButton').textContent = scene.labelsEnabled ? 'Labels on' : 'Labels off';
       scene.drawLabels();
     });
-    $('resetButton').addEventListener('click', () => {
-      tracker?.reset(); hits = 0; lastSeenAt = 0; scene.resetTracking();
-      showScanning();
-    });
+    $('resetButton').addEventListener('click', resetScanning);
     new ResizeObserver(() => scene?.resize()).observe($('stage'));
     $('camera').addEventListener('resize', () => scene?.resize());
     document.addEventListener('visibilitychange', () => {
       if (!document.hidden && mode === 'ar') {
-        tracker?.reset(); hits = 0; lastSeenAt = 0; lastVideoTime = -1;
-        scene.resetTracking();
-        showScanning();
+        resetScanning();
       }
     });
     window.addEventListener('pagehide', () => {
@@ -285,7 +293,7 @@ async function boot() {
     await prepare();
     mode = 'ready';
     document.body.dataset.mode = 'ready';
-    updateTargetUI();
+    $('introMessage').textContent = introMessage;
     hideLoader();
     $('intro').hidden = false;
     setStatus('Ready to explore');

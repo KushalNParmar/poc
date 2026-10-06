@@ -4,6 +4,12 @@ export const CONFIG = Object.freeze({
   detectIntervalMs: 1000 / 30,
   revealFrames: 3,
   lostAfterMs: 220,
+  autoDetection: Object.freeze({
+    candidateDurationMs: 1800,
+    candidateMinFrames: 30,
+    confirmationFrames: 4,
+    trackingLossMs: 1500,
+  }),
   smoothing: Object.freeze({
     positionMinCutoff: 0.8,
     positionBeta: 8,

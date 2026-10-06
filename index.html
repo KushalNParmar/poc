@@ -22,28 +22,20 @@
       <section class="intro" id="intro" hidden>
         <div class="eyebrow">A SMALL OBJECT. A NEW PERSPECTIVE.</div>
         <h1 class="intro-brand"><img class="brand-logo" src="./assets/glamar.svg" alt="GlamAR" width="260" height="74" /></h1>
-        <p id="introMessage">Point your camera at a coffee cup. Explore labels attached to it.</p>
+        <p id="introMessage">Point your camera at a cup, keyboard or Sprite can. We’ll recognise it and bring its details into view.</p>
         <div class="actions">
           <button class="primary" id="startButton">Start camera <span aria-hidden="true">↗</span></button>
         </div>
-        <fieldset class="target-selector" id="targetSelector" aria-describedby="targetHint">
-          <legend>Choose an object to track</legend>
-          <div class="target-options">
-            <label class="target-option"><input type="radio" name="trackingTarget" value="cup" checked /><span>Cup</span></label>
-            <label class="target-option"><input type="radio" name="trackingTarget" value="keyboard" /><span>Keyboard</span></label>
-            <label class="target-option"><input type="radio" name="trackingTarget" value="sprite" /><span>Sprite can</span></label>
-          </div>
-        </fieldset>
-        <p class="fineprint" id="targetHint" aria-live="polite">Try an opaque coffee cup in good light. Keep the whole cup visible. Recognition varies by cup.</p>
+        <p class="fineprint">Keep one object fully in view and hold steady for a few seconds. Use good lighting; for Sprite, face the logo towards the camera.</p>
       </section>
       <div class="scan-guide" id="scanGuide" hidden aria-hidden="true"><span></span><span></span><span></span><span></span></div>
       <section class="session-bar" id="sessionBar" hidden>
-        <div><strong id="sessionTitle">Find your cup</strong><p id="sessionHint">Keep the entire cup in view.</p></div>
+        <div><strong id="sessionTitle">Looking for an object</strong><p id="sessionHint">Point at a cup, keyboard or Sprite can. Keep it fully visible.</p></div>
         <div class="session-actions"><button class="secondary compact" id="labelsButton" aria-pressed="true">Labels on</button><button class="secondary compact" id="resetButton">Rescan</button><button class="secondary compact" id="stopButton">Close</button></div>
       </section>
       <section class="error-card" id="errorCard" role="alert" hidden>
         <h2 id="errorTitle">Couldn’t start the experience</h2><p id="errorMessage"></p>
-        <div class="actions"><button class="primary" id="retryButton">Try again</button><button class="secondary" id="chooseTargetButton">Choose another object</button></div>
+        <div class="actions"><button class="primary" id="retryButton">Try again</button><button class="secondary" id="backButton">Back</button></div>
       </section>
       <footer class="camera-footer" id="brandFooter">
         <span>Powered by</span>

@@ -29,17 +29,6 @@ body[data-mode="ar"] #camera { visibility: visible; }
 .eyebrow { color: var(--muted); font-size: 10px; letter-spacing: 2.2px; line-height: 1.5; }
 .intro p, .error-card p { font-size: 15px; line-height: 1.65; color: var(--muted); max-width: 400px; margin: 0 auto; }
 .actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: 30px 0 24px; }
-.target-selector { border: 0; padding: 0; margin: 0 auto 18px; max-width: 380px; min-width: 0; }
-.target-selector legend { padding: 0; margin: 0 auto 12px; color: var(--muted); font-size: 12px; }
-.target-options { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
-.target-option { position: relative; cursor: pointer; }
-.target-option input { position: absolute; width: 1px; height: 1px; opacity: 0; }
-.target-option span { display: flex; justify-content: center; align-items: center; min-height: 46px; padding: 10px 6px; border: 1px solid var(--strong-border); border-radius: 12px; background: var(--surface); font-size: 12px; transition: background .15s, border-color .15s; }
-.target-option:hover span { background: #efefec; }
-.target-option input:checked + span { color: var(--ink); border-color: var(--ink); background: #ededea; font-weight: 600; }
-.target-option input:focus-visible + span { outline: 3px solid var(--ink); outline-offset: 3px; }
-.target-selector:disabled { opacity: .5; }
-.target-selector:disabled .target-option { cursor: wait; }
 .primary, .secondary { min-height: 46px; border-radius: 12px; padding: 12px 18px; font-size: 13px; font-weight: 600; border: 1px solid var(--strong-border); transition: background .15s; }
 .primary { background: var(--ink); color: #fff; border-color: var(--ink); }
 .primary span { margin-left: 14px; }
@@ -79,7 +68,6 @@ noscript { position: fixed; z-index: 6000; inset: 0; padding: 40px; background: 
   .intro { top: 50%; max-height: calc(100dvh - 32px - env(safe-area-inset-top) - env(safe-area-inset-bottom)); }
   .eyebrow, .fineprint { display: none; }
   .actions { margin: 12px 0; }
-  .target-selector { margin-bottom: 0; }
   .session-bar { flex-direction: row; align-items: center; bottom: calc(var(--brand-footer-height) + 10px + env(safe-area-inset-bottom)); padding: 10px 15px; }
   .session-actions { width: auto; }
 }

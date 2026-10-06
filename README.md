@@ -1,6 +1,6 @@
 # Object AR labels POC
 
-A static browser experience that uses WebAR.rocks.object to track a selected coffee cup, computer keyboard, or Sprite can and Three.js to display three tracked annotations. The UI uses the monochrome theme, GlamAR SVG branding, and CSS wave-grid loader from the existing `poc/index.html`. No skin-analysis SDK, login, or client-record integration is included.
+A static browser experience that uses WebAR.rocks.object to automatically detect and track a coffee cup, computer keyboard, or Sprite can and Three.js to display three tracked annotations. The UI uses the monochrome theme, GlamAR SVG branding, and CSS wave-grid loader from the existing `poc/index.html`. No skin-analysis SDK, login, or client-record integration is included.
 
 ## Run
 
@@ -12,15 +12,15 @@ python3 -m http.server 8765 --bind 127.0.0.1
 
 Open `http://localhost:8765`. For phone testing, serve this directory on **HTTPS**. A phone opening a computer's plain HTTP LAN address does not get the localhost camera exemption. No build or package installation is needed. Enable gzip/Brotli for the network JSON and JavaScript in your static host.
 
-Choose **Cup**, **Keyboard**, or **Sprite can** below **Start camera**, then start live tracking; Cup is selected by default and the rear camera is preferred. Only the selected tracking network downloads when starting the camera, and it is cached in memory for reuse. The labels appear only when the selected target is tracked. Labels can be toggled. Rescan resets detection, and Close stops the camera and returns to object selection. A failed model download can be retried or another object selected.
+Tap **Start camera**, then point at one supported object. There are no manual object choices. The rear camera is preferred. All three tracking networks download on the first start and are cached in memory for later sessions. The app searches Cup → Keyboard → Sprite until a target is confirmed, then shows its three product labels. Labels can be toggled. **Rescan** clears the lock and starts a new search; **Close** stops the camera and returns to the start screen. Failed model downloads can be retried.
 
 ## Targets and labels
 
 - Tracking targets use the official pretrained networks and their corresponding detector settings:
 
-  | Selection | Label | Network |
+  | Target | Label | Network |
   | --- | --- | --- |
-  | Cup (default) | `CUP` | `NN_COFFEE_2.json` |
+  | Cup | `CUP` | `NN_COFFEE_2.json` |
   | Keyboard | `KEYBOARD` | `NN_KEYBOARD_5.json` |
   | Sprite can | `SPRITECAN` | `NN_SPRITE_1.json` |
 
@@ -35,14 +35,24 @@ Choose **Cup**, **Keyboard**, or **Sprite can** below **Start camera**, then sta
   Keyboard copy is supplied for this demo; detecting a keyboard does not verify its materials, battery, or packaging. Cup copy describes everyday use without asserting materials or insulation. Sprite flavour and chilled-serving copy refer to [Coca-Cola's Sprite information](https://www.yourcoca-cola.co.uk/p/sprite-24-x-330ml/12737124/); recycling depends on local collection. Three reference spots remain configured for each object's shape. There is no toaster model to load or render.
 - Any cup is **not** guaranteed. Start with a conventional opaque coffee cup in good light, keep the entire cup visible, and move slowly. Unusual shapes, clear glass, shiny metal, occlusion, and poor lighting can reduce reliability. Verify your specific cup.
 - For Keyboard, try a full-size computer keyboard with all edges visible. For Sprite, try a 330 ml / 12 oz Sprite can with the logo facing the camera. Other drink cans and every Sprite packaging variation are not supported by implication. Recognition must be checked with the actual objects.
-- One target at a time. Content hides after tracking is lost and reappears after reacquisition. There are no persistent room anchors or real-object depth occlusion.
+- One target at a time: the first confirmed supported target is locked. If multiple objects are visible, scan order affects which is selected. Content hides after tracking is lost and reappears after reacquisition. There are no persistent room anchors or real-object depth occlusion.
 - The estimated camera field of view and annotation placement require calibration with actual objects. This POC has not been validated on physical iOS or Android devices yet. Keyboard retains the upstream detector's `followZRot: false`; the optional upstream device-orientation correction is not enabled, so no motion-sensor permission is requested. All targets share the same pose filter.
+
+## Automatic scanning
+
+The three existing networks remain separate; they are not a combined classifier. Each candidate gets at least 1.8 seconds and 30 fresh detection frames to search. Four consecutive valid detections confirm a lock. This is followed by the scene’s existing three-frame reveal check. Scores are evaluated by each network’s own detector settings, not ranked against other networks.
+
+While locked, only that target’s model runs. A brief miss preserves its lock; labels hide after the existing 220 ms visual-loss tolerance. After 1.5 seconds without a valid detection, automatic searching resumes with the next candidate. Rescan and returning from a background tab clear the lock and retry the current model before continuing the search. Unsupported objects remain in the searching state.
+
+`src/auto-tracker.js` schedules search, confirmation, lock and recovery. It destroys the previous tracking core before initializing the next one, keeps the same camera stream, and reuses cached JSON. This avoids accumulating neural-network GPU resources and reapplies init-only settings such as Keyboard’s different `followZRot`. The camera stream stays open during model changes; GPU setup can briefly interrupt rendering. Only one tracking core is active at a time.
+
+Initial model downloads and candidate switching add latency. A complete search cycle can take several seconds and longer on slow devices; these timing settings are search budgets, not recognition guarantees. Mobile hardware performance and real-object false positives still need device testing.
 
 ## Configuration
 
-`src/config.js` contains target profiles, per-target `annotations` copy, shared card layout, annotation anchor positions, loss tolerance, and detection cadence. Switching targets redraws the card textures and screen-reader text, disposes replaced textures, and reuses the existing geometry. Each profile's `annotationAnchors` are object-local coordinates in tracker units, not metres or detected semantic keypoints. Cup and Sprite spots use the upstream centered cylinder dimensions; the keyboard spots lie near its deck plane and may need tuning for different keyboard proportions. Card orientation is controlled by the camera-facing update, so object rotation does not tilt or mirror the text. Rendering and the detector share a centered cover crop; the detector source is refreshed on intrinsic video-size changes.
+`src/config.js` contains target profiles, per-target `annotations` copy, shared card layout, annotation anchor positions, loss tolerance, detection cadence, and the automatic search budgets in `CONFIG.autoDetection`. Switching targets redraws the card textures and screen-reader text, disposes replaced textures, and reuses the existing geometry. Each profile's `annotationAnchors` are object-local coordinates in tracker units, not metres or detected semantic keypoints. Cup and Sprite spots use the upstream centered cylinder dimensions; the keyboard spots lie near its deck plane and may need tuning for different keyboard proportions. Card orientation is controlled by the camera-facing update, so object rotation does not tilt or mirror the text. Rendering and the detector share a centered cover crop; the detector source is refreshed on intrinsic video-size changes.
 
-`src/tracker.js` owns the singleton tracking core and its lifecycle. `src/scene.js` owns rendering, pose conversion, stabilization, and the shared annotation hierarchy. `src/annotations.js` creates textured 3D text cards, connector lines, and anchor dots. The dots follow the smoothed object pose. Text cards counter-rotate every rendered frame to stay parallel to the camera and upright, including when the object turns around. `src/label-layout.js` places cards near their projected anchors, smoothly places the side cards outward from their projected spots as the object turns, and chooses the vertical order from the initial tracked view. That order stays fixed until tracking resets, with 20 CSS pixels between cards and a separate 8-pixel preferred connector gap, and keeps them inside the viewport safe area above the session controls. Card width is constrained in CSS pixels for readability. Connector lines update to meet the resized card edges using the same geometry each frame. `src/app.js` owns camera permissions and UI state. Add `?debug=1` to see detection state and score.
+`src/tracker.js` owns the singleton tracking core and its lifecycle. `src/scene.js` owns rendering, pose conversion, stabilization, and the shared annotation hierarchy. `src/annotations.js` creates textured 3D text cards, connector lines, and anchor dots. The dots follow the smoothed object pose. Text cards counter-rotate every rendered frame to stay parallel to the camera and upright, including when the object turns around. `src/label-layout.js` places cards near their projected anchors, smoothly places the side cards outward from their projected spots as the object turns, and chooses the vertical order from the initial tracked view. That order stays fixed until tracking resets, with 20 CSS pixels between cards and a separate 8-pixel preferred connector gap, and keeps them inside the viewport safe area above the session controls. Card width is constrained in CSS pixels for readability. Connector lines update to meet the resized card edges using the same geometry each frame. `src/app.js` owns camera permissions and UI state. Add `?debug=1` to see search/lock phase, active candidate, detection label and score.
 
 `src/pose-filter.js` applies an adaptive [One Euro filter](https://gery.casiez.net/1euro/) to position and quaternion rotation, replacing the previous sliding-window stabilizer. A frame-time lerp/slerp eases the shared root between detections, keeping the labels, dots and lines together. Tune cutoffs, speed response and render easing in `CONFIG.smoothing`: lower minimum cutoffs suppress more stationary jitter but add lag; higher beta responds faster to motion. Position speed is normalized by depth, and rotation uses the shortest quaternion arc. Brief missed detections retain filtering history; tracking loss, rescan, session changes and tab resume reset it. This reduces pose noise but does not correct an incorrectly detected object or uncalibrated camera.
 
@@ -64,7 +74,7 @@ Run the deterministic smoothing checks with `node tests/pose-filter-check.cjs` (
 
 Browser checks cover annotation creation without GLB/Draco downloads, label toggling, mobile viewport layout, actual tracking-engine initialization against a synthetic camera stream, rescanning, stopping, and reinitialization. Annotation checks cover the three tracked spots, camera-facing text across yaw/pitch/roll and reversed views, leader attachment, geometry reuse, and loss/reacquisition with injected detection output. Placement checks cover all three target profiles, front and oblique views, portrait/landscape and small screens, separation between cards, and clearance from safe-area insets and controls. Synthetic checks establish runtime integration only; they do not establish physical-object recognition accuracy or mobile hardware performance.
 
-Target-selection checks cover all three network initializations, per-target settings and state isolation, keyboard navigation, selected-only downloads, cache reuse, wrong-label rejection, camera permission retry, and recovery from a missing network.
+Run `node tests/auto-tracker-check.cjs` for automatic search and lifecycle checks. Automatic-mode browser checks cover all three target locks and product labels, confirmation, brief loss versus sustained loss, rescanning, cache reuse, no manual selectors, camera close/restart, and error recovery. Real vendor checks cycle the three networks against a synthetic camera source to verify initialization and profile isolation. Synthetic detections validate control flow, not physical-object recognition.
 
 Theme checks compare the logo paths and loader animation against the source POC, verify reduced motion and loader failure recovery, cycle all product copies without recreating geometry, and emulate mobile viewport/safe-area changes in Chromium. These do not reproduce native iOS browser chrome.
 

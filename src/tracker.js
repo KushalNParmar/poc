@@ -37,6 +37,7 @@ export class ObjectTracker {
     this.videoHeight = 0;
     this.onFatal = onFatal;
     this.api = null;
+    this.coreStarted = false;
     this.initialized = false;
     this.ready = false;
     this.stopped = false;
@@ -71,6 +72,8 @@ export class ObjectTracker {
       this.videoWidth = this.video.videoWidth;
       this.videoHeight = this.video.videoHeight;
       await this.waitForCallback('initialization', CORE_TIMEOUT_MS, 'CORE_TIMEOUT', (done) => {
+        // init can allocate resources before it reports success or failure.
+        this.coreStarted = true;
         this.api.init({
           video: this.video,
           canvas: this.canvas,
@@ -78,6 +81,7 @@ export class ObjectTracker {
           followZRot: this.target.followZRot,
           scanSettings: structuredClone(this.target.scanSettings),
           callbackReady: (code) => {
+            if (this.stopped || activeTracker !== this) return;
             // The engine reuses this callback for context loss after startup.
             if (code && this.initialized) {
               this.fatal(trackingError(code, 'graphics context'));
@@ -98,8 +102,7 @@ export class ObjectTracker {
     } catch (error) {
       this.failed = true;
       this.ready = false;
-      // An initialized core remains reserved until destroy() completes.
-      if (!this.initialized && activeTracker === this) activeTracker = null;
+      // Even a partially initialized core stays reserved until destroy().
       throw error;
     }
   }
@@ -177,8 +180,9 @@ export class ObjectTracker {
     if (this.pendingReject) this.pendingReject(trackingError('DESTROYED', 'cleanup'));
     this.destroyPromise = (async () => {
       try {
-        if (this.initialized) await this.api.destroy();
+        if (this.coreStarted && activeTracker === this) await this.api.destroy();
       } finally {
+        this.coreStarted = false;
         this.initialized = false;
         if (activeTracker === this) activeTracker = null;
       }
