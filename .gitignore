@@ -6,3 +6,12 @@ dist/
 .env
 .env.*
 !.env.example
+
+.vercel/
+
+# Local audit images; not required by the storefront or deployment.
+/docs/lngvty-theme-design/references/screenshots/
+
+# Regenerated from data/catalog.json and data/reviews.json by every build.
+/theme/assets/catalog.js
+/theme/assets/reviews.js

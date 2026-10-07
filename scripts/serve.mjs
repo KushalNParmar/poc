@@ -2,13 +2,13 @@ import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
 import {build,root} from './build.mjs';
+import {pageHeaders} from './storefront-headers.mjs';
 import {serveSkinSdkConfig} from './skin-analysis-config.mjs';
 try{process.loadEnvFile(path.join(root,'.env'));}catch(error){if(error.code!=='ENOENT')throw error;}
 const routes=await build();
 const port=Number(process.env.PORT || 8765);
 const types={'.html':'text/html; charset=utf-8','.css':'text/css; charset=utf-8','.js':'text/javascript; charset=utf-8','.json':'application/json','.png':'image/png','.jpg':'image/jpeg','.jpeg':'image/jpeg','.svg':'image/svg+xml','.webp':'image/webp','.avif':'image/avif','.gif':'image/gif','.mp4':'video/mp4','.woff':'font/woff','.woff2':'font/woff2','.ttf':'font/ttf','.ico':'image/x-icon'};
 const aliases={'/collections':'/collections/all','/account':'/pages/kp-account','/account/login':'/pages/kp-account','/customer_authentication/redirect':'/pages/kp-account'};
-const csp="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; media-src 'self' blob:; font-src 'self' data:; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'";
 const server=http.createServer((req,res)=>{
   const url=new URL(req.url,'http://localhost');
   let pathname;try{pathname=decodeURIComponent(url.pathname).replace(/\/$/,'')||'/';}catch{res.writeHead(400).end();return;}
@@ -29,17 +29,10 @@ const server=http.createServer((req,res)=>{
   }
   if(!file||!file.startsWith(root+path.sep)||!fs.existsSync(file)||!fs.statSync(file).isFile()){
     const fallback=path.join(root,'dist/404/index.html');
-    res.writeHead(404,{'Content-Type':'text/html; charset=utf-8','Content-Security-Policy':csp});
+    res.writeHead(404,{'Content-Type':'text/html; charset=utf-8',...pageHeaders('/404')});
     res.end(fs.existsSync(fallback)?fs.readFileSync(fallback):'<h1>Page not found</h1><a href="/">Return home</a>');return;
   }
-  // Home initializes the SDK in the background and reveals the same frame on navigation.
-  const sdkPage=pathname==='/'||pathname==='/pages/skin-analysis';
-  const pageCsp=sdkPage?csp
-    .replace("script-src 'self' 'unsafe-inline'","script-src 'self' 'unsafe-inline' https://cdn.glamar.io")
-    .replace("connect-src 'self'","connect-src 'self' https://api.glamar.fynd.com https://cdn.glamar.io")
-    .replace("frame-src 'none'","frame-src https://cdn.glamar.io")
-    :csp;
-  const stat=fs.statSync(file),headers={'Content-Type':types[path.extname(file)]||'application/octet-stream','Content-Security-Policy':pageCsp,'Permissions-Policy':sdkPage?'camera=(self "https://cdn.glamar.io"), microphone=()':'camera=(), microphone=()','X-Content-Type-Options':'nosniff','Cache-Control':'no-cache','Accept-Ranges':'bytes'};
+  const stat=fs.statSync(file),headers={'Content-Type':types[path.extname(file)]||'application/octet-stream',...pageHeaders(pathname),'X-Content-Type-Options':'nosniff','Cache-Control':'no-cache','Accept-Ranges':'bytes'};
   const range=req.headers.range?.match(/^bytes=(\d+)-(\d*)$/);
   if(range){
     const start=Number(range[1]),end=Math.min(range[2]?Number(range[2]):stat.size-1,stat.size-1);

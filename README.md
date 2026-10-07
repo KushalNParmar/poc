@@ -82,3 +82,17 @@ Both local and external INR-priced recommendations can enter the existing **mock
 The server exposes only the configured app ID and SDK access key through `/api/skin-analysis/sdk-config`. The SDK access key is client-visible by design; the platform API token is unused. Set the local origins in the app's Allowed Domains and publish. Native SDK appearance and watermark are controlled by the app's SDK configuration. Closing or leaving a scan unregisters callbacks and removes the SDK frame.
 
 References: https://www.glamar.io/docs/integrations/skin-analysis/sdk/web/api/ and https://www.glamar.io/docs/integrations/skin-analysis/events/
+
+## Vercel deployment
+
+The repository uses Vercel’s Build Output API. `vercel.json` runs `npm ci` and `npm run vercel-build`; the latter renders Liquid pages, copies storefront assets, and packages `/api/skin-analysis/sdk-config` as a Node.js function. `npm start` remains the local server command. No React or Shopify backend is introduced.
+
+The Vercel project should link to `KushalNParmar/poc`, use production branch `main`, and use the repository root (blank Root Directory, not a folder named `poc2`). The local folder name is not part of the Git tree. The checked-in configuration sets Framework Preset to Other and overrides the build/output settings. If the existing project has an Ignored Build Step or automatic production deployments disabled, adjust those settings so new commits deploy. Confirm `lngvty.vercel.app` is attached to this project's current production deployment.
+
+Add `GLAMAR_APP_ID` and `GLAMAR_ACCESS_KEY` to the project's Production environment variables (and Preview if previews need scanning), using the existing SDK values from your local `.env`. The platform API token is not used. Environment files are not committed or copied to the deployment output. Set the SDK's allowed website origin to the deployed domain if the vendor configuration requires it.
+
+Run `npm run vercel-build` to inspect `.vercel/output` locally, then commit and push the source changes. Check Vercel's latest deployment for the pushed commit and a Ready status. This packaging does not itself publish or change a Vercel project. HTML and mutable scripts revalidate after deployment; page aliases, blog pagination, the campaign query, 404s, and camera policies match the local server.
+
+### Files kept out of Git
+
+The local `.env`, dependencies, `dist`, `.vercel`, reference screenshots, and generated catalogue/review JavaScript are ignored. `data/catalog.json` and `data/reviews.json` are the tracked sources; both local and Vercel builds regenerate their browser scripts. Reference screenshots remain on the original workstation for design checks but are not needed for the deployed storefront. Required product images and storefront videos stay tracked so a fresh checkout can build without missing media. Untracking files does not rewrite previous commits.
