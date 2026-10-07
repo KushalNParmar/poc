@@ -1,0 +1,96 @@
+
+  .commits-template--23927395319923__commmitement_DbRmQy {
+    background: var(--commit-bg);
+    padding: 96px 64px;
+  }
+
+
+  .commits-template--23927395319923__commmitement_DbRmQy .commits-h {
+    font-family: var(--avenir,"Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: clamp(
+      44px,
+      6.5vw,
+      96px
+    ) !important;
+    font-weight: 600 !important;
+    letter-spacing: -4px;
+    line-height: .88;
+    color: var(--commit-heading);
+    max-width: 680px;
+    margin: 0 0 80px;
+  }
+
+
+  .commits-template--23927395319923__commmitement_DbRmQy .commits-h em {
+    font-style: italic;
+    color: rgba(255,255,255,.62);
+    font-weight:200;
+  }
+
+
+  .commits-template--23927395319923__commmitement_DbRmQy .commit {
+    display:grid;
+    grid-template-columns:300px 1fr;
+    gap:56px;
+    padding:32px 0;
+    border-top:1px solid var(--commit-border);
+    align-items:start;
+  }
+
+
+  .commits-template--23927395319923__commmitement_DbRmQy .commit:last-child {
+    border-bottom:1px solid var(--commit-border);
+  }
+
+
+  .commits-template--23927395319923__commmitement_DbRmQy .ct {
+    font-family:var(--avenir,"Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size:clamp(
+      17px,
+      1.8vw,
+      21px
+    );
+    font-weight:300;
+    color:var(--commit-title);
+    letter-spacing:-.2px;
+    line-height:1.2;
+  }
+
+
+  .commits-template--23927395319923__commmitement_DbRmQy .cb,
+  .commits-template--23927395319923__commmitement_DbRmQy .cb p {
+    font-family:var(--avenir,"Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size:15px;
+    font-weight:400;
+    color:var(--commit-body);
+    line-height:1.85;
+    margin:0;
+  }
+
+
+  @media(max-width:1100px){
+
+    .commits-template--23927395319923__commmitement_DbRmQy {
+      padding:
+      72px
+      28px;
+    }
+
+    .commits-template--23927395319923__commmitement_DbRmQy .commit{
+      grid-template-columns:1fr;
+      gap:10px;
+    }
+
+    .commits-template--23927395319923__commmitement_DbRmQy .commits-h{
+      letter-spacing:-2px;
+      margin-bottom:50px;
+    }
+
+  }
+  @media (max-width:767px){
+    .commits-template--23927395319923__commmitement_DbRmQy .ct {
+    font-size:20px !important;
+    font-weight:500 !important;
+    font-style:italic
+    }
+  }

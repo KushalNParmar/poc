@@ -1,0 +1,136 @@
+
+    #story-final-cta-template--23927395582067__story_cta_DyJcLd {
+      --story-bg: #313131;
+      --story-text: #ffffff;
+      --story-muted: #fbfbfb;
+      --story-content-width: px;
+      --story-top-space: 64px;
+      --story-bottom-space: 64px;
+      --story-accent: #cc843d;
+    }
+
+    #story-final-cta-template--23927395582067__story_cta_DyJcLd {
+      background: var(--story-bg);
+      color: var(--story-text);
+      padding-top: var(--story-top-space);
+      padding-bottom: var(--story-bottom-space);
+      border-top: 1px solid rgba(0,0,0,.10);
+      opacity: 0;
+      transform: translateY(16px);
+    }
+
+    #story-final-cta-template--23927395582067__story_cta_DyJcLd.is-visible {
+      opacity: 1;
+      transform: none;
+      transition: opacity .9s cubic-bezier(.22,.61,.36,1), transform .9s cubic-bezier(.22,.61,.36,1);
+    }
+
+    #story-final-cta-template--23927395582067__story_cta_DyJcLd .story-handoff {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      text-decoration: none;
+      color: var(--story-text);
+      background: var(--story-bg);
+    }
+
+   
+
+    #story-final-cta-template--23927395582067__story_cta_DyJcLd .story-wrap {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+      position: relative;
+      z-index: 2;
+    }
+
+    #story-final-cta-template--23927395582067__story_cta_DyJcLd .story-kicker {
+      display: block;
+      margin-bottom: 16px;
+      font-size: 10px;
+      letter-spacing: .26em;
+      text-transform: uppercase;
+      color: var(--story-muted);
+      font-weight: 500;
+    }
+
+    #story-final-cta-template--23927395582067__story_cta_DyJcLd .story-title {
+      margin: 0 0 20px 0;
+      
+      font-size: clamp(30px, 5vw, 66px);
+      line-height: .98;
+      letter-spacing: -0.044em;
+      font-weight: 300;
+      color: var(--story-text);
+      transition: color .2s ease;
+    }
+
+    #story-final-cta-template--23927395582067__story_cta_DyJcLd .story-lead {
+      margin: 0;
+      max-width: 38ch;
+      font-size: 15px;
+      line-height: 1.66;
+      color: var(--story-muted);
+    }
+
+    #story-final-cta-template--23927395582067__story_cta_DyJcLd .story-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid rgba(0,0,0,.22);
+      color: var(--story-text);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: .26em;
+      font-size: 11px;
+      transition: color .2s ease, border-color .2s ease, transform .2s ease;
+    }
+
+    #story-final-cta-template--23927395582067__story_cta_DyJcLd .story-cta:hover,
+    #story-final-cta-template--23927395582067__story_cta_DyJcLd .story-cta:focus-visible {
+      color: var(--story-text);
+      border-bottom-color: var(--story-text);
+      transform: translateX(-2px);
+    }
+
+    #story-final-cta-template--23927395582067__story_cta_DyJcLd .story-ghost {
+    position: absolute;
+    right: 15px;
+    top: 35%;
+    transform: translate(14%, -50%);
+    pointer-events: none;
+    font-weight: 300;
+    font-size: clamp(100px, 23vw, 200px);
+    line-height: .74;
+    letter-spacing: -.06em;
+    opacity: 0;
+    transition: opacity .8s ease, transform .8s ease;
+    z-index: 1;
+    display: block;
+    font-weight: 300;
+    line-height: .8;
+    letter-spacing: -.05em;
+    color: transparent;
+    -webkit-text-stroke: 1.5px rgba(255, 254, 243, .44);
+    }
+
+    #story-final-cta-template--23927395582067__story_cta_DyJcLd .story-handoff:hover .story-ghost,
+    #story-final-cta-template--23927395582067__story_cta_DyJcLd .story-handoff:focus-visible .story-ghost {
+      opacity: 1;
+      transform: translate(0, -50%);
+    }
+
+    #story-final-cta-template--23927395582067__story_cta_DyJcLd .story-handoff:hover .story-title,
+    #story-final-cta-template--23927395582067__story_cta_DyJcLd .story-handoff:focus-visible .story-title {
+      color: var(--story-accent);
+    }
+
+    @media (max-width: 860px) {
+      #story-final-cta-template--23927395582067__story_cta_DyJcLd .story-ghost {
+        display: none;
+      }
+    }
+  

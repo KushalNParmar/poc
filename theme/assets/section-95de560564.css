@@ -1,0 +1,444 @@
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB{
+      --sm-ink:#0b0b0b;
+      --sm-paper:#fffef3;
+      --sm-lime:#7dc04c;
+      --sm-burnt:#e67e22;
+      --sm-emerald:#00a86b;
+      background:var(--sm-paper);
+      color:var(--sm-ink);
+      padding:45px 0 45px;
+      font-family:"Avenir Next","Avenir","Century Gothic",sans-serif;
+      -webkit-font-smoothing:antialiased;
+      overflow:hidden
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .page-width{
+      width:100%
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB *{
+      box-sizing:border-box
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB p,
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB h2,
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-figure{
+      margin:0
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-tag{
+      font-size:10px;
+      line-height:1.4;
+      font-weight:400;
+      letter-spacing:.26em;
+      text-transform:uppercase;
+      color:rgba(11,11,11,.34)
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-tag.sm-hue{
+      color:var(--sm-emerald)
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-heading * ,
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-heading h2{
+      margin-top:16px;
+      font-size:clamp(33px,6.8vw,84px);
+      line-height:.95;
+      font-weight:300;
+      letter-spacing:-.048em;
+      text-wrap:balance
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-heading p{
+      margin:0
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-lead{
+      max-width:34ch;
+      margin-top:clamp(24px,3vw,38px);
+      font-size:clamp(18px,2.1vw,25px);
+      line-height:1.38;
+      font-weight:300;
+      letter-spacing:-.02em;
+      color:rgba(11,11,11,.58)
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-model{
+      display:block;
+      margin-top:clamp(30px,7vw,96px)
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-figure{
+      margin:0px 0 0
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-plot{
+      position:relative;
+      width:100%;
+      aspect-ratio:1200/500
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB svg{
+      position:absolute;
+      inset:0;
+      width:100%;
+      height:100%;
+      display:block;
+      overflow:visible
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-gl{
+      stroke:rgba(11,11,11,.06);
+      stroke-width:1
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-base,
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-tick{
+      stroke:rgba(11,11,11,.22);
+      stroke-width:1
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-drop{
+      stroke:rgba(11,11,11,.3);
+      stroke-width:1;
+      stroke-dasharray:2 5;
+      opacity:.3
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-area{
+      fill:var(--sm-emerald);
+      opacity:.075
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-tread{
+      fill:none;
+      stroke:var(--sm-burnt);
+      stroke-width:1.9;
+      stroke-linejoin:round;
+      stroke-linecap:round;
+      vector-effect:non-scaling-stroke
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-maxx{
+      fill:none;
+      stroke:var(--sm-emerald);
+      stroke-width:5.4;
+      stroke-linecap:round
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-v{
+      fill:var(--sm-paper);
+      stroke:var(--sm-burnt);
+      stroke-width:1.5
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-head{
+      fill:var(--sm-emerald);
+      opacity:0
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-thead{
+      fill:var(--sm-burnt);
+      opacity:0
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-ring{
+      fill:none;
+      stroke:var(--sm-ink);
+      stroke-width:1.4
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-peak{
+      fill:none;
+      stroke:var(--sm-emerald);
+      stroke-width:1.5
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-plot svg line,
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-plot svg circle{
+      vector-effect:non-scaling-stroke
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-plot svg circle{
+      transform-box:fill-box;
+      transform-origin:center;
+      transform:scaleX(var(--sm-fx,1))
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-fl{
+      position:absolute;
+      pointer-events:none;
+      font-size:10px;
+      font-weight:400;
+      letter-spacing:.24em;
+      line-height:1.7;
+      text-transform:uppercase;
+      color:rgba(11,11,11,.34)
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-fl.sm-mid{
+      text-transform:none;
+      letter-spacing:-.026em;
+      font-size:19px;
+      line-height:1.34;
+      color:var(--sm-ink);
+      max-width:15ch;
+      font-weight:300
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-fl.sm-em{
+      color:var(--sm-emerald);
+      font-size:11px;
+      letter-spacing:.14em
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-fl.sm-bu{
+      color:var(--sm-burnt);
+      font-size:11px;
+      letter-spacing:.14em
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-fl.sm-xo{
+      font-size:9.5px;
+      letter-spacing:.2em;
+      max-width:20ch
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-cyc-m{
+      display:none
+    }
+
+    p.sm-tag.sm-hue.sm-model.sm-rv.on:empty{
+      margin:0 !important;
+    }
+
+    /*
+      DESKTOP ONLY
+      Graph is enlarged proportionally so it becomes wider
+      without looking horizontally stretched.
+      Mobile is completely unaffected.
+    */
+    @media(min-width:721px){
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-plot{
+        width:108%;
+        margin-left:-4%;
+      }
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-actions{
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+      align-items:center;
+      margin-top:clamp(32px,4vw,54px)
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-cta{
+      display:inline-flex;
+      align-items:center;
+      gap:14px;
+      padding:18px 30px;
+      border:1px solid var(--sm-ink);
+      background:var(--sm-ink);
+      color:var(--sm-paper);
+      text-decoration:none;
+      font-size:11px;
+      font-weight:400;
+      letter-spacing:.26em;
+      text-transform:uppercase;
+      transition:background .3s ease,color .3s ease
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-cta.sm-ghost{
+      background:transparent;
+      color:rgba(11,11,11,.58);
+      border-color:rgba(11,11,11,.22)
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-cta:hover{
+      background:transparent;
+      color:var(--sm-ink)
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-cta.sm-ghost:hover{
+      background:rgba(11,11,11,.03);
+      color:var(--sm-ink);
+      border-color:var(--sm-ink)
+    }
+@media(min-width:721px){
+  #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-plot svg{
+    left:-3%;
+    width:126%;
+  }
+}
+    @media(max-width:900px){
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-plot{
+        aspect-ratio:900/560
+      }
+
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-fl{
+        white-space:nowrap
+      }
+    }
+
+    @media(max-width:720px){
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-plot{
+        aspect-ratio:820/540
+      }
+
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-plot{
+        --sm-fx:1.181
+      }
+
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-plot{
+        overflow:hidden
+      }
+
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-plot svg{
+        width:123.9%
+      }
+
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-fl{
+        font-size:9px;
+        letter-spacing:.14em
+      }
+
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-fl.sm-mid,
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-fl.sm-xo,
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-fl[data-sm-hide="mobile"]{
+        display:none
+      }
+
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-fl.sm-mid{
+        font-size:14px;
+        max-width:14ch;
+        letter-spacing:-.02em
+      }
+
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-fl.sm-em{
+        left:6%!important;
+        top:2%!important
+      }
+
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-fl.sm-bu{
+        left:6%!important;
+        top:11%!important
+      }
+
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-fl.sm-em,
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-fl.sm-bu{
+        font-size:10px
+      }
+
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-fl.sm-xo{
+        font-size:8.5px;
+        letter-spacing:.14em
+      }
+
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-fl[data-sm-cycle]{
+        top:90%!important;
+        font-size:8px!important;
+        letter-spacing:.06em!important
+      }
+
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-fl.sm-cyc1{
+        left:36%!important
+      }
+
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-fl.sm-cyc2{
+        left:63%!important
+      }
+
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-fl.sm-cyc3{
+        left:97%!important;
+        transform:translateX(-92%)!important
+      }
+
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-cyc-d{
+        display:none!important
+      }
+
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-cyc-m{
+        display:block!important
+      }
+    }
+
+    @media(max-width:480px){
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-plot{
+        aspect-ratio:760/540;
+        --sm-fx:1.514
+      }
+
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-fl{
+        font-size:8.5px;
+        letter-spacing:.1em
+      }
+
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-fl[data-sm-cycle]{
+        font-size:7.5px!important;
+        letter-spacing:.05em!important
+      }
+    }
+
+    @media(max-width:600px){
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-cta{
+        flex:1 1 100%;
+        justify-content:center;
+        text-align:center;
+        padding:16px 22px;
+        min-height:44px
+      }
+    }
+
+    @media(max-width:720px){
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-maxx{
+        stroke-width:6.6
+      }
+
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-tread{
+        stroke-width:2.4
+      }
+    }
+
+    @media(max-width:480px){
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-maxx{
+        stroke-width:7.6
+      }
+
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-tread{
+        stroke-width:2.8
+      }
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-rv{
+      opacity:1;
+      transform:none
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB.js .sm-rv{
+      opacity:0;
+      transform:translateY(14px)
+    }
+
+    #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB.js .sm-rv.on{
+      opacity:1;
+      transform:none;
+      transition:
+        opacity .9s cubic-bezier(.22,.61,.36,1) var(--sm-rv-delay,0ms),
+        transform .9s cubic-bezier(.22,.61,.36,1) var(--sm-rv-delay,0ms)
+    }
+
+    @media(prefers-reduced-motion:reduce){
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB .sm-animated{
+        transition:none!important
+      }
+
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB.js .sm-rv,
+      #lvg-skinmaxxing-consistency-template--23927395221619__consistent_model_4tN8VB.js .sm-rv.on{
+        opacity:1!important;
+        transform:none!important;
+        transition:none!important
+      }
+    }
+  

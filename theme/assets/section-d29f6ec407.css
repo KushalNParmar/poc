@@ -1,0 +1,134 @@
+
+  .sci-hero-template--23927395680371__hero_science_D3j8a3 {
+    background: var(--sci-bg);
+    min-height: 82vh;
+    display: grid;
+    grid-template-columns: 56% 44%;
+    border-bottom: 1px solid var(--sci-border);
+  }
+
+  .sci-hero-template--23927395680371__hero_science_D3j8a3 .sh-l {
+    padding: 96px 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 28px;
+    border-right: 1px solid var(--sci-border);
+  }
+.sci-hero-template--23927395680371__hero_science_D3j8a3 .sh-main-video,
+.sci-hero-template--23927395680371__hero_science_D3j8a3 .sh-main-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.sci-hero-template--23927395680371__hero_science_D3j8a3 .sh-main-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+  .sci-hero-template--23927395680371__hero_science_D3j8a3 .sh-kicker {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: 11px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--sci-muted);
+    margin: 0;
+  }
+
+  .sci-hero-template--23927395680371__hero_science_D3j8a3 .sh-h {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: clamp(40px, 6.5vw, 88px) !important;
+    font-weight: 400;
+    letter-spacing: -4px;
+    line-height: .88;
+    color: var(--sci-text);
+    margin: 0;
+  }
+
+  .sci-hero-template--23927395680371__hero_science_D3j8a3 .sh-h em {
+    font-style: italic;
+    color: rgba(255,255,255,.7);
+    font-weight: 200;
+  }
+
+ .sci-hero-template--23927395680371__hero_science_D3j8a3 .sh-r {
+  padding: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+  .sci-hero-template--23927395680371__hero_science_D3j8a3 .sh-img {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: var(--sci-img-bg);
+  }
+
+  .sci-hero-template--23927395680371__hero_science_D3j8a3 .sh-main-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .sci-hero-template--23927395680371__hero_science_D3j8a3 .ph-dk {
+    position: absolute;
+    inset: 0;
+    background: var(--sci-img-bg);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+
+  .sci-hero-template--23927395680371__hero_science_D3j8a3 .ph-dk span {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: 10px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.62);
+    line-height: 1.7;
+    text-align: right;
+  }
+
+  @media (max-width: 1024px) {
+    .sci-hero-template--23927395680371__hero_science_D3j8a3 {
+      grid-template-columns: 1fr;
+    }
+
+    .sci-hero-template--23927395680371__hero_science_D3j8a3 .sh-l {
+      border-right: none;
+    }
+
+    .sci-hero-template--23927395680371__hero_science_D3j8a3 .sh-r {
+      border-top: 1px solid var(--sci-border);
+      padding-top: 64px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .sci-hero-template--23927395680371__hero_science_D3j8a3 .sh-l
+    {
+      padding: 64px 28px;
+    }
+.sci-hero-template--23927395680371__hero_science_D3j8a3 .sh-r {
+      padding: 0px;
+    }
+    .sci-hero-template--23927395680371__hero_science_D3j8a3 .sh-h {
+      letter-spacing: -2px;
+    }
+  }
+  @media (max-width:767px){
+   .sci-hero-template--23927395680371__hero_science_D3j8a3 .sh-img {
+  aspect-ratio:1 !important
+
+}
+  }

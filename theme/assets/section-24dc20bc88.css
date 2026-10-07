@@ -1,0 +1,232 @@
+
+  header-drawer {
+    justify-self: start;
+    margin-left: -1.2rem;
+  }
+
+  .menu-drawer-container {
+    display: flex;
+  }
+
+  .list-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .list-menu--inline {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  summary.list-menu__item {
+    padding-right: 2.7rem;
+  }
+
+  .list-menu__item {
+    display: flex;
+    align-items: center;
+    line-height: calc(1 + 0.3 / var(--font-body-scale));
+  }
+
+  .list-menu__item--link {
+    text-decoration: none;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    line-height: calc(1 + 0.8 / var(--font-body-scale));
+  }
+
+  /* =========================================
+     CENTER MENU
+     ========================================= */
+
+  .header--center-menu .header__inline-menu {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .header--center-menu {
+    grid-template-columns: auto 1fr auto;
+  }
+
+  /* =========================================
+     HEADER BUTTONS
+     ========================================= */
+
+  .header-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-left: 15px;
+  }
+
+  .header-btn {
+    font-size: 12px;
+    padding: 9px 18px;
+    border-radius: 2px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+    text-transform: uppercase;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .header-btn:hover {
+    background: #B87330;
+  }
+
+  .header-btn--primary {
+    background: rgb(var(--color-button));
+    color: rgb(var(--color-button-text));
+  }
+
+  .header-btn--secondary {
+    border: none;
+    background: transparent;
+    color: #000;
+    text-transform: capitalize !important;
+  }
+
+  .header-btn--secondary:hover {
+    background: transparent;
+    color: #000;
+  }
+
+  /* =========================================
+     HEADER ICONS
+     ========================================= */
+
+  .custom-header-icons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .custom-header-icons .header__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .custom-header-icons .svg-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header-search-wrapper,
+  .header-account-wrapper,
+  .header-cart-wrapper {
+    display: flex;
+    align-items: center;
+  }
+
+  /* =========================================
+     DESKTOP LOGO START
+     ========================================= */
+
+  @media screen and (min-width: 990px) {header-drawer {
+        display: none;
+      }.header {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+
+    .header--logo-start {
+      display: grid;
+      grid-template-columns: auto 1fr auto auto;
+      align-items: center;
+      column-gap: 20px;
+    }
+
+    .header--logo-start .header__heading,
+    .header--logo-start .header__heading-link {
+      order: 1;
+    }
+
+    .header--logo-start .header__inline-menu,
+    .header--logo-start .header__submenu {
+      order: 2;
+      justify-self: start;
+    }
+
+    .header--logo-start .header-buttons {
+      order: 3;
+    }
+
+    .header--logo-start .custom-header-icons {
+      order: 4;
+    }
+  }
+
+  /* =========================================
+     TABLET / MOBILE
+     ========================================= */
+
+  @media screen and (max-width: 989px) {
+
+    .header-buttons {
+      display: none;
+    }
+
+    .custom-header-icons {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .header--center-menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    .list-menu__item--link {
+      padding-bottom: 0.5rem;
+      padding-top: 0.5rem;
+    }
+  }
+
+  /* =========================================
+     SEARCH VISIBILITY
+     ========================================= */
+
+  
+    @media screen and (min-width: 990px) {
+      .header-search-wrapper {
+        display: none !important;
+      }
+    }
+  
+
+  
+    @media screen and (max-width: 989px) {
+      .header-search-wrapper {
+        display: none !important;
+      }
+    }
+  
+
+  /* =========================================
+     ACCOUNT VISIBILITY
+     ========================================= */
+
+  
+
+  
+
+  /* =========================================
+     CART VISIBILITY
+     ========================================= */
+
+  
+
+  
+
+  /* =========================================
+     REDUCE LOGO ON SCROLL
+     ========================================= */

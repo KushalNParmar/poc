@@ -1,0 +1,7 @@
+
+    .shop-other-serums .xsc-b[data-soldout="true"] { opacity: .45; text-decoration: line-through; }
+    .shop-other-serums .xsc.lngvty-cs-soldout .xsc-add,
+    .shop-other-serums .xsc.lngvty-cs-soldout .xsc-buy2 { opacity: .4; pointer-events: none; }
+    /* pre-order sizes (lngvty-preorder adds .lngvty-po-on) stay buyable */
+    .shop-other-serums .xsc.lngvty-cs-soldout.lngvty-po-on .xsc-buy2 { opacity: 1; pointer-events: auto; }
+  

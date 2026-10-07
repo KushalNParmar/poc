@@ -1,0 +1,92 @@
+
+  .lp-why-k7x2m *,
+  .lp-why-k7x2m *::before,
+  .lp-why-k7x2m *::after { box-sizing: border-box; }
+
+  .lp-why-k7x2m {
+    --lp-ink: #181818;
+    --lp-cream: #FFFEF3;
+    --lp-white: #FFFFFF;
+    --lp-copper: #B87330;
+    --lp-copper-hover: #a56628;
+    --lp-lime: #7DC04C;
+    --lp-grey: #565656;
+    --lp-font-primary: "Avenir Light","Avenir Next","Avenir","Century Gothic","Trebuchet MS",sans-serif;
+
+    background: var(--lp-cream);
+    color: var(--lp-ink);
+    font-family: var(--lp-font-primary);
+    padding: 60px 20px 60px;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .lp-why-k7x2m__inner {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .lp-why-k7x2m__eyebrow {
+    display: inline-block;
+    font-family: var(--lp-font-primary);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--lp-copper);
+    margin-bottom: 14px;
+  }
+
+  .lp-why-k7x2m__headline {
+    font-family: var(--lp-font-primary);
+    font-size: clamp(26px, 6.5vw, 44px);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -0.8px;
+    color: var(--lp-ink);
+    margin: 0 auto 16px;
+    max-width: 22ch;
+  }
+  .lp-why-k7x2m__headline-line { display: block; }
+
+  .lp-why-k7x2m__sub {
+    font-family: var(--lp-font-primary);
+    font-size: clamp(14px, 3.6vw, 16px);
+    font-weight: 500;
+    line-height: 1.55;
+    color: var(--lp-grey);
+    margin: 0 auto 28px;
+    max-width: 48ch;
+  }
+
+  /* copper button, 18px weight 600 so 3.80:1 clears AA Large per design-tokens */
+  .lp-why-k7x2m__cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: var(--lp-copper);
+    color: var(--lp-white);
+    font-family: var(--lp-font-primary);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    padding: 15px 28px;
+    border: 0;
+    border-radius: 0;
+    text-decoration: none;
+    min-height: 48px;
+    transition: background 0.2s ease;
+    cursor: pointer;
+  }
+  .lp-why-k7x2m__cta:hover,
+  .lp-why-k7x2m__cta:focus-visible { background: var(--lp-copper-hover); }
+  .lp-why-k7x2m__cta:focus-visible { outline: 2px solid var(--lp-ink); outline-offset: 2px; }
+  .lp-why-k7x2m__cta-arrow { display: inline-block; transition: transform 0.2s ease; }
+  .lp-why-k7x2m__cta:hover .lp-why-k7x2m__cta-arrow { transform: translateX(3px); }
+
+  @media (min-width: 900px) {
+    .lp-why-k7x2m { padding: 96px 40px 96px; }
+    .lp-why-k7x2m__sub { margin-bottom: 32px; }
+  }

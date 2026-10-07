@@ -1,0 +1,99 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * avenir-lt-pro:
+ *   - http://typekit.com/eulas/0000000000000000775aa86e
+ *   - http://typekit.com/eulas/0000000000000000775aa86f
+ *   - http://typekit.com/eulas/0000000000000000775aa870
+ *   - http://typekit.com/eulas/0000000000000000775aa873
+ *   - http://typekit.com/eulas/0000000000000000775aa872
+ *   - http://typekit.com/eulas/0000000000000000775aa871
+ *   - http://typekit.com/eulas/0000000000000000775aa877
+ *   - http://typekit.com/eulas/0000000000000000775aa879
+ *   - http://typekit.com/eulas/0000000000000000775aa874
+ *   - http://typekit.com/eulas/0000000000000000775aa875
+ *   - http://typekit.com/eulas/0000000000000000775aa876
+ *   - http://typekit.com/eulas/0000000000000000775aa878
+ *
+ * © 2009-2026 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2026-06-09 06:46:40 UTC"}*/
+
+
+
+@font-face {
+font-family:"avenir-lt-pro";
+src:url("/assets/media/l-ffbfda1a69.woff2") format("woff2"),url("/assets/media/d-b6a5c89173.woff2") format("woff"),url("/assets/media/a-e419d41d06.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:800;font-stretch:normal;
+}
+
+@font-face {
+font-family:"avenir-lt-pro";
+src:url("/assets/media/l-623e2f3ce5.woff2") format("woff2"),url("/assets/media/d-568e575e98.woff2") format("woff"),url("/assets/media/a-4b056bb68f.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:500;font-stretch:normal;
+}
+
+@font-face {
+font-family:"avenir-lt-pro";
+src:url("/assets/media/l-c933b3c6ac.woff2") format("woff2"),url("/assets/media/d-6d9f151438.woff2") format("woff"),url("/assets/media/a-b50bc1b05d.woff2") format("opentype");
+font-display:auto;font-style:italic;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"avenir-lt-pro";
+src:url("/assets/media/l-e25da18e60.woff2") format("woff2"),url("/assets/media/d-f9f3f24fe3.woff2") format("woff"),url("/assets/media/a-3ff4e2c454.woff2") format("opentype");
+font-display:auto;font-style:italic;font-weight:200;font-stretch:normal;
+}
+
+@font-face {
+font-family:"avenir-lt-pro";
+src:url("/assets/media/l-323ea61720.woff2") format("woff2"),url("/assets/media/d-92c0ee533f.woff2") format("woff"),url("/assets/media/a-d4a5d68bc6.woff2") format("opentype");
+font-display:auto;font-style:italic;font-weight:300;font-stretch:normal;
+}
+
+@font-face {
+font-family:"avenir-lt-pro";
+src:url("/assets/media/l-d22f93b497.woff2") format("woff2"),url("/assets/media/d-34cdd7cc05.woff2") format("woff"),url("/assets/media/a-73f8f0a032.woff2") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"avenir-lt-pro";
+src:url("/assets/media/l-5774569ece.woff2") format("woff2"),url("/assets/media/d-2eef08971e.woff2") format("woff"),url("/assets/media/a-3dc8be2c26.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
+}
+
+@font-face {
+font-family:"avenir-lt-pro";
+src:url("/assets/media/l-6a9331c4af.woff2") format("woff2"),url("/assets/media/d-1dd9f7651c.woff2") format("woff"),url("/assets/media/a-182317a9bb.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:300;font-stretch:normal;
+}
+
+@font-face {
+font-family:"avenir-lt-pro";
+src:url("/assets/media/l-8883ba0822.woff2") format("woff2"),url("/assets/media/d-556480acb6.woff2") format("woff"),url("/assets/media/a-0c500cf427.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:200;font-stretch:normal;
+}
+
+@font-face {
+font-family:"avenir-lt-pro";
+src:url("/assets/media/l-21666acaa6.woff2") format("woff2"),url("/assets/media/d-247f9a5ad4.woff2") format("woff"),url("/assets/media/a-79cbd10fb0.woff2") format("opentype");
+font-display:auto;font-style:italic;font-weight:800;font-stretch:normal;
+}
+
+@font-face {
+font-family:"avenir-lt-pro";
+src:url("/assets/media/l-054ee52444.woff2") format("woff2"),url("/assets/media/d-1536b35435.woff2") format("woff"),url("/assets/media/a-f6e35b9cfa.woff2") format("opentype");
+font-display:auto;font-style:italic;font-weight:500;font-stretch:normal;
+}
+
+@font-face {
+font-family:"avenir-lt-pro";
+src:url("/assets/media/l-19289bd8ba.woff2") format("woff2"),url("/assets/media/d-13f8fd0602.woff2") format("woff"),url("/assets/media/a-a1d483b4ea.woff2") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+.tk-avenir-lt-pro { font-family: "avenir-lt-pro",sans-serif; }

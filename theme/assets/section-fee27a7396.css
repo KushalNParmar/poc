@@ -1,0 +1,65 @@
+
+  .wl-template--23927395319923__why_us_X4dKdJ {
+    background: var(--wl-bg);
+    padding: 96px 64px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    border-bottom: 1px solid var(--wl-border);
+  }
+
+  .wl-template--23927395319923__why_us_X4dKdJ .wl-h {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: clamp(32px, 3.5vw, 48px) !important;
+    font-weight: 600 !important;
+    letter-spacing: -.5px;
+    line-height: 1.1;
+    color: var(--wl-text);
+    margin: 0;
+  }
+
+  .wl-template--23927395319923__why_us_X4dKdJ .wl-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .wl-template--23927395319923__why_us_X4dKdJ .wl-label {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--wl-muted);
+    margin: 0;
+  }
+
+  .wl-template--23927395319923__why_us_X4dKdJ .wl-body,
+  .wl-template--23927395319923__why_us_X4dKdJ .wl-body p {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--wl-muted);
+    line-height: 1.85;
+    margin: 0;
+  }
+
+  .wl-template--23927395319923__why_us_X4dKdJ .wl-close {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--wl-text);
+    line-height: 1.65;
+    padding-top: 20px;
+    border-top: 1px solid var(--wl-border);
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .wl-template--23927395319923__why_us_X4dKdJ {
+      grid-template-columns: 1fr;
+      padding: 64px 28px;
+      gap: 32px;
+    }
+  }

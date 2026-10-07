@@ -1,0 +1,41 @@
+
+.lng-marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.lng-marquee__track {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  width: max-content;
+  animation: lng-marquee-scroll 30s linear infinite;
+}
+
+.lng-marquee__item {
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  font-weight: 300;
+}
+
+.lng-marquee__dot {
+  opacity: 0.5;
+}
+
+@keyframes lng-marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .lng-marquee__track {
+    gap: 12px;
+  }
+}

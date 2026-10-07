@@ -1,0 +1,44 @@
+<div id="lng-skin-analysis" data-sa-screen="intro"{% if preload %} data-sa-preload inert aria-hidden="true"{% endif %}>
+  <div id="sa-notice" class="sa-notice" role="alert" hidden></div>
+  <div id="sa-landing">
+    <section class="sa-hero" aria-labelledby="sa-sdk-title">
+      <div class="sa-hero-copy">
+        <p class="sa-eyebrow">LNGVTY / SKIN ANALYSIS</p>
+        <h1 id="sa-sdk-title" tabindex="-1">Better skin starts<br>with <em>understanding.</em></h1>
+        <p class="sa-hero-description">Get to know your skin beyond the surface.<br>A guided scan. A personal skin report. Care matched to you.</p>
+        <div class="sa-hero-actions"><button class="sa-button" data-sa-action="start">Analyse my skin <span aria-hidden="true">↗</span></button><a class="sa-text-link" href="#sa-how-it-works">How it works <span aria-hidden="true">↓</span></a></div>
+        <p class="sa-access-note">Your report and recommendations. No sign-in needed.</p>
+      </div>
+      <figure class="sa-hero-image"><img src="/assets/media/skin-barrier-analysis-77296396d5.webp" alt="A close-up from LNGVTY’s skin science series" width="1080" height="1080"{% if preload %} loading="lazy"{% else %} fetchpriority="high"{% endif %}><figcaption><span>SKIN FIRST. ALWAYS.</span><span>01 / UNDERSTAND</span></figcaption></figure>
+    </section>
+    <section class="sa-method" id="sa-how-it-works" aria-label="How skin analysis works">
+      <article><span class="sa-step-number">01</span><div><h2>Take a closer look.</h2><p>Follow the guided camera scan in good light, with a clean, uncovered face.</p></div></article>
+      <article><span class="sa-step-number">02</span><div><h2>Understand your skin.</h2><p>Explore your report to see the concerns that deserve your attention.</p></div></article>
+      <article><span class="sa-step-number">03</span><div><h2>Find your starting point.</h2><p>Discover relevant serums and supporting care, matched to your skin report.</p></div></article>
+    </section>
+    <section class="sa-philosophy" aria-labelledby="sa-philosophy-title"><div><p class="sa-eyebrow">LESS GUESSWORK. MORE INTENTION.</p><h2 id="sa-philosophy-title">Your skin is individual.<br><em>Your care should be, too.</em></h2></div><div><p>Start with what your skin needs. We match relevant concerns to LNGVTY’s multi-repair serums, then bring in supporting care where it belongs.</p><a class="sa-text-link" href="/collections/frontpage">Meet the serums <span aria-hidden="true">↗</span></a></div></section>
+  </div>
+  <section id="sa-sdk-section" class="sa-scanner" aria-labelledby="sa-scan-title" inert aria-hidden="true">
+    <div class="sa-scan-heading"><div><p class="sa-eyebrow">LNGVTY / SKIN ANALYSIS</p><h2 id="sa-scan-title" tabindex="-1">A closer look.</h2></div><button class="sa-text-link" data-sa-action="close">← Back to skin analysis</button></div>
+    <div class="sa-sdk-shell" id="sa-sdk-shell">
+      <div id="glamar-skin-container" title="Skin analysis"></div>
+      <div class="sa-sdk-loading" id="sa-sdk-loading" role="status" aria-live="polite"><span class="sa-loading-indicator" aria-hidden="true"></span><p id="sa-sdk-loading-label">Preparing your skin analysis</p><button class="sa-button" data-sa-action="retry" hidden>Try again ↗</button></div>
+    </div>
+    <div id="sa-sdk-result-actions" class="sa-result-actions" hidden><div><p class="sa-eyebrow">YOUR REPORT. YOUR NEXT STEP.</p><h3>Find care matched to your skin.</h3></div><button class="sa-button" data-sa-action="recommendations">See my recommendations <span aria-hidden="true">↗</span></button></div>
+    <p class="sa-fine-print">Skin insights are cosmetic guidance, not a medical diagnosis.</p>
+  </section>
+  <section id="sa-recommendations" class="lp-serums-sx7mq sa-recommendations sa-catalog" aria-labelledby="sa-recommendations-title" hidden>
+    <div class="wrap">
+      <div class="sa-recommendations-nav"><button class="sa-text-link" data-sa-action="results">← Back to my report</button><p id="sa-recommendations-count" aria-live="polite"></p></div>
+      <div class="head"><h2 id="sa-recommendations-title" tabindex="-1">Recommended for your skin</h2></div>
+      <div id="sa-recommendations-content"></div>
+      <div class="sa-recommendations-footer"><button class="sa-text-link" data-sa-action="new-scan">Start a new analysis ↗</button></div>
+    </div>
+  </section>
+  <noscript><p class="sa-notice">Enable JavaScript to start your skin analysis.</p></noscript>
+</div>
+<link rel="stylesheet" href="/assets/section-e46c955336.css">
+{% unless preload %}<link rel="stylesheet" href="/assets/skin-analysis.css">{% endunless %}
+<script src="/assets/skin-analysis-core.js" defer></script>
+<script src="/assets/skin-analysis-sdk.js" defer></script>
+<script src="/assets/skin-analysis.js" defer></script>

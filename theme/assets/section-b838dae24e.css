@@ -1,0 +1,133 @@
+
+#shopify-section-template--23927395418227__faq_tabber_ALzaaG .faq-wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 80px 32px 112px;
+}
+
+#shopify-section-template--23927395418227__faq_tabber_ALzaaG .faq-cat {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: rgba(24,24,24,.62);
+  padding: 48px 0 20px;
+  border-bottom: 1px solid rgba(24,24,24,.07);
+}
+
+#shopify-section-template--23927395418227__faq_tabber_ALzaaG .faq-cat:first-child {
+  padding-top: 0;
+}
+
+#shopify-section-template--23927395418227__faq_tabber_ALzaaG .faq-item {
+  border-bottom: 1px solid rgba(24,24,24,.07);
+}
+
+#shopify-section-template--23927395418227__faq_tabber_ALzaaG .faq-q {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 24px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+}
+.faq-main-wrapper{
+  background: var(--cream);
+}
+
+#shopify-section-template--23927395418227__faq_tabber_ALzaaG .faq-q-text {
+  font-size: clamp(16px,1.8vw,19px);
+  font-weight: 400;
+  color: #181818;
+  line-height: 1.35;
+}
+
+#shopify-section-template--23927395418227__faq_tabber_ALzaaG .faq-icon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  position: relative;
+}
+
+#shopify-section-template--23927395418227__faq_tabber_ALzaaG .faq-icon::before,
+#shopify-section-template--23927395418227__faq_tabber_ALzaaG .faq-icon::after {
+  content: "";
+  position: absolute;
+  background: rgba(24,24,24,.55);
+  transition: transform .25s ease, opacity .25s ease;
+}
+
+#shopify-section-template--23927395418227__faq_tabber_ALzaaG .faq-icon::before {
+  width: 1px;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#shopify-section-template--23927395418227__faq_tabber_ALzaaG .faq-icon::after {
+  width: 100%;
+  height: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#shopify-section-template--23927395418227__faq_tabber_ALzaaG .faq-item.open .faq-icon::before {
+  transform: translateX(-50%) scaleY(0);
+  opacity: 0;
+}
+
+#shopify-section-template--23927395418227__faq_tabber_ALzaaG .faq-a {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .35s cubic-bezier(.4,0,.2,1);
+}
+
+#shopify-section-template--23927395418227__faq_tabber_ALzaaG .faq-item.open .faq-a {
+  max-height: 700px;
+}
+
+#shopify-section-template--23927395418227__faq_tabber_ALzaaG .faq-a-inner {
+  padding-bottom: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(24,24,24,.65);
+  line-height: 1.85;
+}
+
+#shopify-section-template--23927395418227__faq_tabber_ALzaaG .faq-a-inner p + p {
+  margin-top: 14px;
+}
+
+#shopify-section-template--23927395418227__faq_tabber_ALzaaG .faq-a-inner strong {
+  font-weight: 500;
+  color: #181818;
+}
+
+#shopify-section-template--23927395418227__faq_tabber_ALzaaG .faq-a-inner a {
+  color: #B87330;
+  border-bottom: 1px solid rgba(184,115,48,.3);
+}
+
+@media (max-width: 768px) {
+  #shopify-section-template--23927395418227__faq_tabber_ALzaaG .faq-wrap {
+    padding: 56px 20px 80px;
+  }
+
+  #shopify-section-template--23927395418227__faq_tabber_ALzaaG .faq-cat {
+    padding: 38px 0 18px;
+  }
+
+  #shopify-section-template--23927395418227__faq_tabber_ALzaaG .faq-q {
+    padding: 20px 0;
+    gap: 18px;
+  }
+
+  #shopify-section-template--23927395418227__faq_tabber_ALzaaG .faq-a-inner {
+    font-size: 15px;
+  }
+}

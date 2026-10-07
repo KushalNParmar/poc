@@ -1,0 +1,28 @@
+nav.header__inline-menu {
+    display: flex;
+}
+  .header {
+    padding:
+      10px
+      3rem
+      10px
+      3rem;
+  }
+
+  .section-header {
+    position: sticky;
+    margin-bottom: 0px;
+  }
+  span.svg-wrapper.header__icon-close {
+    display: none;
+}
+ @media (max-width:990px){
+  nav.header__inline-menu {
+    display: none;
+}
+ }
+  @media screen and (min-width: 750px) {
+    .section-header {
+      margin-bottom: 0px;
+    }
+  }

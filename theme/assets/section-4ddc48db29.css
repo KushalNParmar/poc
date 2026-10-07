@@ -1,0 +1,74 @@
+
+  .industry-sec-template--23927395680371__industry_problem_tApEXX {
+    background: var(--ind-bg);
+    padding: 96px 72px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+    border-bottom: 1px solid var(--ind-border);
+  }
+
+  .industry-sec-template--23927395680371__industry_problem_tApEXX .ind-q {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: clamp(24px, 3vw, 40px);
+    font-weight: 200;
+    letter-spacing: -.5px;
+    line-height: 1.2;
+    color: var(--ind-text);
+  }
+
+  .industry-sec-template--23927395680371__industry_problem_tApEXX .ind-q em {
+    font-style: italic;
+    color: rgba(255,255,255,.9);
+    font-weight: 200;
+  }
+
+  .industry-sec-template--23927395680371__industry_problem_tApEXX .ind-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .industry-sec-template--23927395680371__industry_problem_tApEXX .ind-label {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--ind-muted);
+    margin: 0;
+  }
+
+  .industry-sec-template--23927395680371__industry_problem_tApEXX .ind-p {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--ind-muted);
+    line-height: 1.85;
+    margin: 0;
+  }
+
+  .industry-sec-template--23927395680371__industry_problem_tApEXX .ind-close {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--ind-text);
+    line-height: 1.65;
+    padding-top: 20px;
+    border-top: 1px solid var(--ind-border);
+    margin: 0;
+  }
+
+  @media (max-width: 1024px) {
+    .industry-sec-template--23927395680371__industry_problem_tApEXX {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    .industry-sec-template--23927395680371__industry_problem_tApEXX {
+      padding: 64px 28px;
+    }
+  }

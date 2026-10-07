@@ -1,0 +1,163 @@
+
+
+.age-sec-template--23927395680371__skin_age_9ygXYG {
+  background: var(--age-bg);
+  display:grid;
+  grid-template-columns:220px 1fr;
+  border-bottom:1px solid var(--age-border);
+}
+
+
+.age-sec-template--23927395680371__skin_age_9ygXYG .age-label {
+  padding:
+    80px
+    40px
+    80px
+    72px;
+
+  border-right:1px solid var(--age-border);
+  display:flex;
+  align-items:flex-start;
+}
+
+
+.age-sec-template--23927395680371__skin_age_9ygXYG .age-label-txt {
+  font-family:var(--avenir,"Avenir Next","Avenir","Century Gothic",sans-serif);
+  font-size:12px;
+  font-weight:400;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--age-text);
+  writing-mode:vertical-rl;
+  transform:rotate(180deg);
+}
+
+
+.age-sec-template--23927395680371__skin_age_9ygXYG .age-copy {
+
+  padding:
+  80px
+  72px;
+
+  display:flex;
+  flex-direction:column;
+}
+
+
+.age-sec-template--23927395680371__skin_age_9ygXYG .age-h {
+
+  font-family:var(--avenir,"Avenir Next","Avenir","Century Gothic",sans-serif);
+
+  font-size:clamp(
+    28px,
+    3.5vw,
+    48px
+  ) !important;
+
+  font-weight:600 !important;
+  letter-spacing:-.8px;
+  line-height:1.1;
+  color:var(--age-text);
+
+  margin:0 0 40px;
+}
+
+
+.age-sec-template--23927395680371__skin_age_9ygXYG .age-h em {
+  font-style:italic;
+  color:#333;
+  font-weight:200;
+}
+
+
+
+.age-sec-template--23927395680371__skin_age_9ygXYG .age-grid {
+
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:40px 56px;
+
+}
+
+
+
+.age-sec-template--23927395680371__skin_age_9ygXYG .age-item-n {
+
+  font-family:var(--avenir,"Avenir Next","Avenir","Century Gothic",sans-serif);
+
+  font-size:clamp(
+    36px,
+    4vw,
+    52px
+  );
+
+  font-weight:200;
+  letter-spacing:-2px;
+  line-height:1;
+  color:var(--age-muted);
+
+  margin-bottom:12px;
+
+}
+
+
+
+.age-sec-template--23927395680371__skin_age_9ygXYG .age-item-h {
+
+  font-family:var(--avenir,"Avenir Next","Avenir","Century Gothic",sans-serif);
+
+  font-size:16px;
+  font-weight:500;
+
+  color:var(--age-text);
+  letter-spacing:-.1px;
+  margin-bottom:8px;
+
+}
+
+
+
+.age-sec-template--23927395680371__skin_age_9ygXYG .age-item-p,
+.age-sec-template--23927395680371__skin_age_9ygXYG .age-item-p p {
+
+  font-family:var(--avenir,"Avenir Next","Avenir","Century Gothic",sans-serif);
+
+  font-size:14px;
+  font-weight:400;
+
+  color:var(--age-muted);
+  line-height:1.8;
+
+  margin:0;
+
+}
+
+
+
+@media(max-width:900px){
+
+  .age-sec-template--23927395680371__skin_age_9ygXYG {
+    grid-template-columns:1fr;
+  }
+
+
+  .age-sec-template--23927395680371__skin_age_9ygXYG .age-label {
+    display:none;
+  }
+
+
+  .age-sec-template--23927395680371__skin_age_9ygXYG .age-copy {
+
+    padding:
+    64px
+    28px;
+
+  }
+
+
+  .age-sec-template--23927395680371__skin_age_9ygXYG .age-grid {
+    grid-template-columns:1fr;
+  }
+
+}
+

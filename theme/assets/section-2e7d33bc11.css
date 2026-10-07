@@ -1,0 +1,121 @@
+
+  .arc-template--23927395680371__why_75_JeDDTU {
+    background: var(--arc-bg);
+    padding: 96px 72px;
+  }
+
+  .arc-template--23927395680371__why_75_JeDDTU .arc-kicker {
+    font-family: var(--mono, "Courier New", monospace);
+    font-size: 12px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--arc-accent);
+    margin: 0 0 36px;
+  }
+
+  .arc-template--23927395680371__why_75_JeDDTU .arc-h {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: clamp(30px, 3.6vw, 52px) !important;
+    font-weight: 600 !important;
+    letter-spacing: -1.2px;
+    line-height: 1.05;
+    color: var(--arc-text);
+    max-width: 640px;
+    margin: 0 0 24px;
+  }
+
+  .arc-template--23927395680371__why_75_JeDDTU .arc-h em {
+    font-style: italic;
+    color: rgba(255,255,255,.95);
+    font-weight: 200;
+  }
+
+  .arc-template--23927395680371__why_75_JeDDTU .arc-sub {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: clamp(15px, 1.4vw, 17px) !important;
+    font-weight: 400;
+    color: var(--arc-muted);
+    line-height: 1.8;
+    max-width: 560px;
+    margin: 0 0 72px;
+  }
+
+  .arc-template--23927395680371__why_75_JeDDTU .arc-phases {
+    display: flex;
+    gap: 2px;
+    align-items: flex-end;
+  }
+
+  .arc-template--23927395680371__why_75_JeDDTU .arc-phase {
+    background: var(--arc-card-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 32px 28px;
+    transition: background .2s;
+  }
+
+  .arc-template--23927395680371__why_75_JeDDTU .arc-phase:hover {
+    background: rgba(255,255,255,.07);
+  }
+
+  .arc-template--23927395680371__why_75_JeDDTU .arc-phase:nth-child(1) {
+    flex: 1;
+    min-height: 180px;
+  }
+
+  .arc-template--23927395680371__why_75_JeDDTU .arc-phase:nth-child(2) {
+    flex: 1.4;
+    min-height: 240px;
+  }
+
+  .arc-template--23927395680371__why_75_JeDDTU .arc-phase:nth-child(3) {
+    flex: 1.9;
+    min-height: 300px;
+  }
+
+  .arc-template--23927395680371__why_75_JeDDTU .arc-phase:nth-child(4) {
+    flex: 2.6;
+    min-height: 380px;
+  }
+
+  .arc-template--23927395680371__why_75_JeDDTU .arc-days {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255,255,255,.86);
+    margin-bottom: 12px;
+  }
+
+  .arc-template--23927395680371__why_75_JeDDTU .arc-phase-name {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: clamp(14px, 1.5vw, 17px);
+    font-weight: 400;
+    color: var(--arc-text);
+    letter-spacing: -.1px;
+    margin-bottom: 8px;
+  }
+
+  .arc-template--23927395680371__why_75_JeDDTU .arc-phase-body {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--arc-muted);
+    line-height: 1.7;
+  }
+
+  @media (max-width: 900px) {
+    .arc-template--23927395680371__why_75_JeDDTU {
+      padding: 64px 28px;
+    }
+
+    .arc-template--23927395680371__why_75_JeDDTU .arc-phases {
+      flex-direction: column;
+      align-items: stretch;
+    }
+
+    .arc-template--23927395680371__why_75_JeDDTU .arc-phase {
+      min-height: auto !important;
+      flex: none !important;
+    }
+  }

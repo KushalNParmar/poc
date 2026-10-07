@@ -1,0 +1,213 @@
+{
+  "observed_on": "2026-10-07",
+  "source": "https://lngvty.in/",
+  "theme": {
+    "name": "Lngvty X GoKwik Theme: Blog page edits",
+    "id": 164128161907,
+    "schema_name": "Dawn",
+    "schema_version": "15.4.1",
+    "theme_store_id": 887,
+    "role": "main"
+  },
+  "theme_assets": [
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/animations.js?v=88693664871331136111790668804",
+      "file": "assets/animations.js",
+      "bytes": 2930
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/base.css?v=73844994791074520821790668804",
+      "file": "assets/base.css",
+      "bytes": 67380
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/cart-drawer.js?v=169981311261118214701790668804",
+      "file": "assets/cart-drawer.js",
+      "bytes": 3402
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/cart-notification.js?v=133508293167896966491790668804",
+      "file": "assets/cart-notification.js",
+      "bytes": 1915
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/cart.js?v=168995049558366113891790668804",
+      "file": "assets/cart.js",
+      "bytes": 8326
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/component-article-card.css?v=47105078945762260691790668804",
+      "file": "assets/component-article-card.css",
+      "bytes": 2004
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/component-card.css?v=120341546515895839841790668804",
+      "file": "assets/component-card.css",
+      "bytes": 11873
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/component-cart-drawer.css?v=39223250576183958541790668804",
+      "file": "assets/component-cart-drawer.css",
+      "bytes": 6461
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/component-cart-items.css?v=13033300910818915211790668804",
+      "file": "assets/component-cart-items.css",
+      "bytes": 5001
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/component-cart-notification.css?v=54116361853792938221790668804",
+      "file": "assets/component-cart-notification.css",
+      "bytes": 2692
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/component-cart.css?v=164708765130180853531790668804",
+      "file": "assets/component-cart.css",
+      "bytes": 2767
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/component-discounts.css?v=152760482443307489271790668804",
+      "file": "assets/component-discounts.css",
+      "bytes": 562
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/component-list-menu.css?v=151968516119678728991790668804",
+      "file": "assets/component-list-menu.css",
+      "bytes": 516
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/component-list-payment.css?v=69253961410771838501790668804",
+      "file": "assets/component-list-payment.css",
+      "bytes": 362
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/component-list-social.css?v=35792976012981934991790668804",
+      "file": "assets/component-list-social.css",
+      "bytes": 504
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/component-menu-drawer.css?v=147478906057189667651790668804",
+      "file": "assets/component-menu-drawer.css",
+      "bytes": 4689
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/component-newsletter.css?v=4727253280200485261790668804",
+      "file": "assets/component-newsletter.css",
+      "bytes": 1305
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/component-pagination.css?v=136206814810731739951790668804",
+      "file": "assets/component-pagination.css",
+      "bytes": 1254
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/component-predictive-search.css?v=118923337488134913561790668804",
+      "file": "assets/component-predictive-search.css",
+      "bytes": 4976
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/component-price.css?v=47596247576480123001790668804",
+      "file": "assets/component-price.css",
+      "bytes": 1642
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/component-search.css?v=165164710990765432851790668804",
+      "file": "assets/component-search.css",
+      "bytes": 1338
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/component-slider.css?v=14039311878856620671790668804",
+      "file": "assets/component-slider.css",
+      "bytes": 7896
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/component-slideshow.css?v=17933591812325749411790668804",
+      "file": "assets/component-slideshow.css",
+      "bytes": 3674
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/component-totals.css?v=15906652033866631521790668804",
+      "file": "assets/component-totals.css",
+      "bytes": 493
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/constants.js?v=132983761750457495441790668804",
+      "file": "assets/constants.js",
+      "bytes": 258
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/custom.css?v=81637894495924251651790678707",
+      "file": "assets/custom.css",
+      "bytes": 13146
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/details-disclosure.js?v=13653116266235556501790668804",
+      "file": "assets/details-disclosure.js",
+      "bytes": 1441
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/details-modal.js?v=25581673532751508451790668804",
+      "file": "assets/details-modal.js",
+      "bytes": 1555
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/global.js?v=7301445359237545521790668804",
+      "file": "assets/global.js",
+      "bytes": 33933
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/predictive-search.js?v=57209189334897115771790668804",
+      "file": "assets/predictive-search.js",
+      "bytes": 6317
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/pubsub.js?v=25310214064522200911790668804",
+      "file": "assets/pubsub.js",
+      "bytes": 547
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/quantity-popover.css?v=160630540099520878331790668804",
+      "file": "assets/quantity-popover.css",
+      "bytes": 2992
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/quantity-popover.js?v=987015268078116491790668804",
+      "file": "assets/quantity-popover.js",
+      "bytes": 2776
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/search-form.js?v=133129549252120666541790668804",
+      "file": "assets/search-form.js",
+      "bytes": 995
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/section-footer.css?v=60318643098753476351790668804",
+      "file": "assets/section-footer.css",
+      "bytes": 7472
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/assets/section-main-blog.css?v=58493965935147852611791006240",
+      "file": "assets/section-main-blog.css",
+      "bytes": 3098
+    },
+    {
+      "url": "https://lngvty.in/cdn/shop/t/11/compiled_assets/scripts.js?v=17616755238470224921790668804",
+      "file": "assets/scripts.js",
+      "bytes": 3346
+    },
+    {
+      "url": "https://use.typekit.net/yoj5qwp.css",
+      "file": "assets/yoj5qwp.css",
+      "bytes": 8926
+    }
+  ],
+  "font_stack": "Avenir Next, Avenir, Century Gothic, Trebuchet MS, sans-serif",
+  "integrations": [
+    "GoKwik merchant integration and kp-account",
+    "Judge.me",
+    "jQuery 3.7.1",
+    "Slick Carousel 1.8.1",
+    "Adobe Typekit kit yoj5qwp"
+  ],
+  "observation": "Public theme source plus rendered browser UI. No access to original Liquid templates, theme editor settings, app dashboards, or checkout implementation."
+}

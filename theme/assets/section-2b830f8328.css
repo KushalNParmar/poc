@@ -1,0 +1,11 @@
+.section-template--23927395778675__custom_liquid_yzJUYb-padding {
+    padding-top: calc(0px * 0.75);
+    padding-bottom: calc(0px  * 0.75);
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-template--23927395778675__custom_liquid_yzJUYb-padding {
+      padding-top: 0px;
+      padding-bottom: 0px;
+    }
+  }

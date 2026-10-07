@@ -1,0 +1,116 @@
+
+  .lp-explore-k7x2m *,
+  .lp-explore-k7x2m *::before,
+  .lp-explore-k7x2m *::after { box-sizing: border-box; }
+
+  .lp-explore-k7x2m {
+    --lp-ink: #181818;
+    --lp-cream: #FFFEF3;
+    --lp-white: #FFFFFF;
+    --lp-copper: #B87330;
+    --lp-copper-hover: #a56628;
+    --lp-white-muted: rgba(255,255,255,.72);
+    --lp-white-faint: rgba(255,255,255,.32);
+    --lp-font-primary: "Avenir Light","Avenir Next","Avenir","Century Gothic","Trebuchet MS",sans-serif;
+
+    background: var(--lp-ink);
+    color: var(--lp-white);
+    font-family: var(--lp-font-primary);
+    padding: 64px 20px 68px;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .lp-explore-k7x2m__inner {
+    max-width: 880px;
+    margin: 0 auto;
+  }
+
+  .lp-explore-k7x2m__eyebrow {
+    display: inline-block;
+    font-family: var(--lp-font-primary);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--lp-copper);
+    margin-bottom: 14px;
+  }
+
+  .lp-explore-k7x2m__headline {
+    font-family: var(--lp-font-primary);
+    font-size: clamp(28px, 7vw, 48px);
+    font-weight: 800;
+    line-height: 1.05;
+    letter-spacing: -1px;
+    color: var(--lp-white);
+    margin: 0 0 14px;
+  }
+
+  .lp-explore-k7x2m__sub {
+    font-family: var(--lp-font-primary);
+    font-size: clamp(14px, 3.6vw, 16px);
+    font-weight: 500;
+    line-height: 1.55;
+    color: var(--lp-white-muted);
+    margin: 0 auto 32px;
+    max-width: 46ch;
+  }
+
+  .lp-explore-k7x2m__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+
+  .lp-explore-k7x2m__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px 20px;
+    min-height: 52px;
+    background: transparent;
+    color: var(--lp-white);
+    border: 1px solid var(--lp-white);
+    border-radius: 0;
+    font-family: var(--lp-font-primary);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s ease, color 0.2s ease;
+  }
+  .lp-explore-k7x2m__btn:hover,
+  .lp-explore-k7x2m__btn:focus-visible {
+    background: var(--lp-white);
+    color: var(--lp-ink);
+  }
+  .lp-explore-k7x2m__btn:focus-visible {
+    outline: 2px solid var(--lp-copper);
+    outline-offset: 2px;
+  }
+  .lp-explore-k7x2m__btn-arrow {
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+  .lp-explore-k7x2m__btn:hover .lp-explore-k7x2m__btn-arrow { transform: translateX(3px); }
+
+  @media (min-width: 720px) {
+    .lp-explore-k7x2m { padding: 96px 40px 100px; }
+    .lp-explore-k7x2m__actions {
+      flex-direction: row;
+      justify-content: center;
+      align-items: stretch;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .lp-explore-k7x2m__btn {
+      flex: 1 1 200px;
+      min-width: 200px;
+      max-width: 260px;
+    }
+  }

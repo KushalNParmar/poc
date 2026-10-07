@@ -1,0 +1,71 @@
+
+  .lp-close-sx7mq {
+    --color-ink: #181818;
+    --color-white: #FFFFFF;
+    --color-grey: #565656;
+    --color-copper: #B87330;
+    --font-primary: "Avenir Next","Avenir","Segoe UI","Century Gothic","Trebuchet MS",sans-serif;
+    box-sizing: border-box;
+    background: var(--color-ink);
+    color: var(--color-white);
+    padding: 56px 20px 72px;
+    font-family: var(--font-primary);
+  }
+  .lp-close-sx7mq *, .lp-close-sx7mq *::before, .lp-close-sx7mq *::after {
+    box-sizing: inherit;
+    animation: none !important;
+    filter: none !important;
+    -webkit-filter: none !important;
+    backdrop-filter: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+    text-shadow: none !important;
+    -webkit-font-smoothing: antialiased !important;
+    -moz-osx-font-smoothing: grayscale !important;
+    text-rendering: optimizeLegibility !important;
+  }
+
+  .lp-close-sx7mq .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .lp-close-sx7mq .eyebrow {
+    font-size: clamp(11px, 1vw, 13px);
+    font-weight: 500;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: var(--color-copper);
+    margin: 0 0 14px;
+  }
+
+  .lp-close-sx7mq h2 {
+    font-size: clamp(28px, 4.5vw, 52px) !important;
+    font-weight: 400 !important;
+    line-height: 1.15 !important;
+    margin: 0 0 28px !important;
+    color: var(--color-white) !important;
+  }
+
+  .lp-close-sx7mq a.btn-primary {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 52px !important;
+    padding: 0 32px !important;
+    background: var(--color-copper) !important;
+    color: var(--color-white) !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    letter-spacing: .06em !important;
+    text-decoration: none !important;
+    border: 1px solid var(--color-copper) !important;
+    border-radius: 0 !important;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  @media (min-width: 901px) {
+    .lp-close-sx7mq { padding: 90px 40px 100px; }
+  }

@@ -1,0 +1,314 @@
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq {
+      --story-bg: #0b0b0b;
+      --story-text: #fffef3;
+      --story-muted: #fffef394;
+      --story-content-width: 1200px;
+      --story-top-space: 84px;
+      --story-bottom-space: 84px;
+      --story-accent: #cc843d;
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq {
+      position: relative;
+      background: var(--story-bg);
+      color: var(--story-text);
+      padding-top: var(--story-top-space);
+      padding-bottom: var(--story-bottom-space);
+      border-top: 1px solid rgba(255, 254, 243, 0.10);
+      border-bottom: 1px solid rgba(255, 254, 243, 0.10);
+    }
+
+    
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .figure-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-bottom: clamp(34px,4.4vw,64px);
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .figure-title {
+      margin: 0;
+      
+      font-size: clamp(26px, 4.6vw, 54px);
+      line-height: 1.01;
+      letter-spacing: -0.042em;
+      font-weight: 300;
+      color: var(--story-text);
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .figure-replay {
+      appearance: none;
+      background: transparent;
+      border: 0;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 10px;
+      font-weight: 400;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--story-muted);
+      border-bottom: 1px solid rgba(255,254,243,0.20);
+      padding: 0 0 5px;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .figure-replay:hover {
+      color: var(--story-text);
+      border-bottom-color: var(--story-text);
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .figure-stage {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: clamp(320px,44vw,560px);
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-wrap {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0,1fr);
+      justify-items: start;
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate {
+      position: relative;
+      width: min(100%, 520px);
+      aspect-ratio: 4 / 3;
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-photo {
+      position: absolute;
+      inset: 0;
+      overflow: hidden;
+      border: 1px solid rgba(255,254,243,0.22);
+      background: rgba(255,254,243,0.035);
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-photo img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .fill-up {
+      clip-path: inset(var(--fill, 100%) 0 0 0);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .fill-up {
+        clip-path: none !important;
+      }
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-photo::before,
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-photo::after {
+      content: "";
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      border: 1px solid rgba(255,254,243,0.5);
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-photo::before {
+      left: -1px;
+      top: -1px;
+      border-right: 0;
+      border-bottom: 0;
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-photo::after {
+      right: -1px;
+      bottom: -1px;
+      border-left: 0;
+      border-top: 0;
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-lead {
+      position: absolute;
+      left: 100%;
+      width: 13%;
+      height: 1px;
+      background: rgba(255,254,243,0.5);
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-lead::before {
+      content: "";
+      position: absolute;
+      left: -2.5px;
+      top: -2px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: rgba(255,254,243,0.9);
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-title {
+      position: absolute;
+      top: var(--point-top, 0%);
+      left: 117%;
+      transform: translateY(-50%);
+      font-size: clamp(10px,1.05vw,13px);
+      font-weight: 400;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(255,254,243,0.94);
+      white-space: nowrap;
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-sub {
+      position: absolute;
+      top: var(--point-top, 0%);
+      left: 117%;
+      margin-top: clamp(11px,1.15vw,15px);
+      transform: translateY(-50%);
+      font-size: clamp(9px,.88vw,11px);
+      letter-spacing: 0.01em;
+      color: rgba(255,254,243,0.55);
+      white-space: nowrap;
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-lead,
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-title,
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-sub {
+      opacity: 0;
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-lead,
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-title,
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-sub {
+      will-change: opacity, transform;
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-lead.marked,
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-lead.marked::before {
+      background: var(--story-accent);
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-title.marked {
+      color: var(--story-accent);
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-scan {
+      position: absolute;
+      left: -4%;
+      width: 108%;
+      height: 1px;
+      top: 0;
+      background: rgba(255,254,243,0.92);
+      opacity: 0;
+      box-shadow: 0 0 10px rgba(11,11,11,0.75);
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq.is-playing .plate-lead {
+      animation: storyPlateLead 0.55s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      animation-delay: var(--d);
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq.is-playing .plate-title,
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq.is-playing .plate-sub {
+      animation: storyPlateText 0.55s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      animation-delay: calc(var(--d) + 0.12s);
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq.is-playing .plate-scan {
+      animation: storyPlateScan 2.6s cubic-bezier(0.22, 0.61, 0.36, 1) 0.5s forwards;
+    }
+
+    @keyframes storyPlateLead {
+      from {
+        opacity: 0;
+        transform: scaleX(0.2);
+        transform-origin: 0 50%;
+      }
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    @keyframes storyPlateText {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes storyPlateScan {
+      0% {
+        opacity: 0;
+        top: 0;
+      }
+      8% {
+        opacity: 1;
+      }
+      92% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        top: 100%;
+      }
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-scan::before {
+      content: "";
+      position: absolute;
+      left: -3px;
+      top: -3px;
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--story-text);
+    }
+
+    #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .figure-caption {
+      margin-top: clamp(26px,3.2vw,44px);
+      max-width: 60ch;
+      color: var(--story-muted);
+      font-size: 13px;
+      line-height: 1.62;
+    }
+
+    @media (max-width: 860px) {
+      #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate {
+        width: min(100%, 200px);
+      }
+
+      #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-title,
+      #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-sub {
+        left: 112%;
+        white-space: nowrap;
+        max-width: 78%;
+      }
+
+      #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate-lead {
+        width: 9%;
+      }
+    }
+
+    @media (max-width: 760px) {
+      #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .figure-header {
+        align-items: flex-start;
+      }
+    }
+        @media (max-width: 370px) {
+      #story-skin-diagram-template--23927395811443__truth_spicemen_EXeGwq .plate {
+        width: min(100%, 160px);
+      }
+
+    }
+  

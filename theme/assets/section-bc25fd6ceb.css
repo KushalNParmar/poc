@@ -1,0 +1,11 @@
+.section-template--23927395483763__main-padding {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-template--23927395483763__main-padding {
+      padding-top: 28px;
+      padding-bottom: 28px;
+    }
+  }

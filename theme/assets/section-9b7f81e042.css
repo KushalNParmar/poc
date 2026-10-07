@@ -1,0 +1,17 @@
+
+    #lvg-sticky-serum-bar-template--23927395221619__serum_bar_beG438{--ssb-bg:#0b0b0b;--ssb-fg:#fffef3;--ssb-accent:#7dc04c;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--ssb-bg);border-top:1px solid color-mix(in srgb,var(--ssb-fg) 14%,transparent);transform:translateY(102%);transition:transform .45s cubic-bezier(.19,1,.22,1);font-family:"Avenir Next","Avenir","Century Gothic",sans-serif;color:var(--ssb-fg);-webkit-font-smoothing:antialiased}
+    #lvg-sticky-serum-bar-template--23927395221619__serum_bar_beG438.lvg-sticky-bar-show{transform:none}
+    #lvg-sticky-serum-bar-template--23927395221619__serum_bar_beG438 .ssb-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:11px clamp(22px,5vw,80px)}
+    #lvg-sticky-serum-bar-template--23927395221619__serum_bar_beG438 .ssb-label{min-width:0;margin:0;font-size:clamp(14px,2.4vw,21px);font-weight:400;line-height:1.25;letter-spacing:-.024em;white-space:nowrap}
+    #lvg-sticky-serum-bar-template--23927395221619__serum_bar_beG438 .ssb-short{display:none}
+    #lvg-sticky-serum-bar-template--23927395221619__serum_bar_beG438 .ssb-cta{display:inline-flex;align-items:center;gap:12px;flex:0 0 auto;padding:17px 26px;border:1px solid var(--ssb-fg);background:var(--ssb-fg);color:var(--ssb-bg);text-decoration:none;font-size:10px;font-weight:500;letter-spacing:.22em;text-transform:uppercase;transition:background .28s ease,color .28s ease,border-color .28s ease}
+    #lvg-sticky-serum-bar-template--23927395221619__serum_bar_beG438 .ssb-cta:hover{background:transparent;color:var(--ssb-fg);border-color:var(--ssb-fg)}
+    #lvg-sticky-serum-bar-template--23927395221619__serum_bar_beG438 .ssb-arrow{font-size:15px;line-height:1;transition:transform .35s ease}
+    #lvg-sticky-serum-bar-template--23927395221619__serum_bar_beG438 .ssb-arrow{color:var(--ssb-accent)}
+    #lvg-sticky-serum-bar-template--23927395221619__serum_bar_beG438 .ssb-cta:hover .ssb-arrow{transform:translateX(4px)}
+    @media(max-width:600px){#lvg-sticky-serum-bar-template--23927395221619__serum_bar_beG438 .ssb-inner{padding:10px 16px;gap:12px}#lvg-sticky-serum-bar-template--23927395221619__serum_bar_beG438 .ssb-label{font-size:13px}#lvg-sticky-serum-bar-template--23927395221619__serum_bar_beG438 .ssb-cta{padding:15px 18px;font-size:9.5px;letter-spacing:.2em}}
+    @media(max-width:420px){#lvg-sticky-serum-bar-template--23927395221619__serum_bar_beG438 .ssb-inner{padding:9px 14px;gap:10px}#lvg-sticky-serum-bar-template--23927395221619__serum_bar_beG438 .ssb-long{display:none}#lvg-sticky-serum-bar-template--23927395221619__serum_bar_beG438 .ssb-short{display:inline}#lvg-sticky-serum-bar-template--23927395221619__serum_bar_beG438 .ssb-label{font-size:12px;white-space:normal}#lvg-sticky-serum-bar-template--23927395221619__serum_bar_beG438 .ssb-cta{padding:14px 15px;font-size:9px}}
+    body.lvg-sticky-bar-active{padding-bottom:64px}
+    @media(max-width:600px){body.lvg-sticky-bar-active{padding-bottom:72px}}
+    @media(prefers-reduced-motion:reduce){#lvg-sticky-serum-bar-template--23927395221619__serum_bar_beG438{transition:none!important}#lvg-sticky-serum-bar-template--23927395221619__serum_bar_beG438 .ssb-cta,#lvg-sticky-serum-bar-template--23927395221619__serum_bar_beG438 .ssb-arrow{transition:none!important}}
+  

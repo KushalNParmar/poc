@@ -1,0 +1,199 @@
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB {
+    background: #fffef4;
+  }
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .pillar {
+    display: grid;
+    border-top: 1px solid rgba(24,24,24,.07);
+    min-height: 480px;
+  }
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .pillar.lg {
+    grid-template-columns: 60% 40%;
+  }
+   .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .pillar.md {
+    grid-template-columns: 50% 50%;
+  }
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .pillar.sm {
+    grid-template-columns: 40% 60%;
+  }
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .p-img {
+    position: relative;
+    overflow: hidden;
+    min-height: 480px;
+  }
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .p-img img,
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .p-img video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .ph,
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .ph-dk {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 20px;
+  }
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .ph span,
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .ph-dk span {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: 9px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    text-align: right;
+    line-height: 1.7;
+  }
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .ph span {
+    color: #2b2b2b;
+  }
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .ph-dk span {
+    color: rgba(255,255,255,.62);
+  }
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .p-copy {
+    padding: 64px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+    border-left: 1px solid rgba(24,24,24,.07);
+  }
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .pillar.sm .p-copy {
+    border-left: none;
+    border-right: 1px solid rgba(24,24,24,.07);
+  }
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .p-pillar-n {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: 14px;
+    font-weight: 400;
+    color: #2b2b2b;
+  }
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .p-name {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: clamp(26px, 3.2vw, 44px);
+    font-weight: 600;
+    letter-spacing: -1.5px;
+    line-height: .95;
+    margin: 0;
+  }
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .p-body,
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .p-mechanism {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: 14px;
+    font-weight: 400;
+    color: #1f1f1f;
+    line-height: 1.8;
+    max-width: 360px;
+    margin: 0;
+  }
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .p-mechanism {
+    line-height: 1.75;
+    padding-top: 12px;
+    border-top: 1px solid rgba(24,24,24,.07);
+  }
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .p-stat {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: clamp(40px, 4.5vw, 64px);
+    font-weight: 200;
+    letter-spacing: -3px;
+    line-height: .88;
+    margin-top: 8px;
+  }
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .p-stat sup {
+    font-size: .26em;
+    font-weight: 400;
+    vertical-align: super;
+    letter-spacing: 0;
+    margin-left: 4px;
+    opacity: .85;
+  }
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .p-stat-label {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: 14px;
+    font-weight: 400;
+    color: #242424;
+    margin-top: 6px;
+  }
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .p-cite {
+    font-family: var(--mono, "Courier New", monospace);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: .03em;
+    color: rgba(24,24,24,.62);
+    margin-top: 18px;
+    max-width: 480px;
+  }
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .pillar.dark {
+    background: #181818;
+  }
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .pillar.dark .p-copy {
+    border-color: rgba(255,255,255,.06);
+  }
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .pillar.dark .p-pillar-n,
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .pillar.dark .p-body,
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .pillar.dark .p-mechanism,
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .pillar.dark .p-stat-label {
+    color: rgba(255,255,255,.9);
+  }
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .pillar.dark .p-mechanism {
+    border-top-color: rgba(255,255,255,.08);
+  }
+
+  .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .pillar.dark .p-cite {
+    color: rgba(255,255,255,.5);
+  }
+
+  @media (max-width: 900px) {
+    .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .pillar.lg,
+    .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .pillar.sm {
+      grid-template-columns: 1fr;
+    }
+
+    .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .p-img {
+      min-height: 320px;
+    }
+
+    .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .p-copy {
+      padding: 48px 28px;
+      border-left: none;
+      border-right: none;
+      border-top: 1px solid rgba(24,24,24,.07);
+    }
+
+    .pillars-wrap-template--23927395680371__logentity_pilllar_NLmCqB .pillar.dark .p-copy {
+      border-color: rgba(255,255,255,.06);
+    }
+  }
+  @media (max-width:767px){
+  .pillar .p-img {
+    grid-row: 1;
+}
+  }

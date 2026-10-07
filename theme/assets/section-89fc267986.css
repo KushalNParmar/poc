@@ -1,0 +1,66 @@
+
+#shopify-section-template--23927395418227__faq_hero_EN6LkH .faq-hero {
+  background: #181818;
+  padding: 80px 72px 72px;
+}
+
+#shopify-section-template--23927395418227__faq_hero_EN6LkH .faq-hero-h {
+  font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+  font-size: 88px !important;
+  font-weight: 400;
+  letter-spacing: -4px;
+  line-height: .9;
+  color: #ffffff;
+  max-width: 640px;
+  margin: 0 0 16px;
+}
+
+#shopify-section-template--23927395418227__faq_hero_EN6LkH .faq-hero-h em {
+  font-style: italic;
+  color: #a0a0a0;
+}
+
+#shopify-section-template--23927395418227__faq_hero_EN6LkH .faq-hero-p {
+  font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+  font-size: 17px;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.7;
+  max-width: 480px;
+  margin: 0;
+}
+
+@media (max-width: 990px) {
+  #shopify-section-template--23927395418227__faq_hero_EN6LkH .faq-hero {
+    padding: 68px 40px 60px;
+  }
+
+  #shopify-section-template--23927395418227__faq_hero_EN6LkH .faq-hero-h {
+    font-size: 64px !important;
+    letter-spacing: -2px;
+  }
+
+  #shopify-section-template--23927395418227__faq_hero_EN6LkH .faq-hero-p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  #shopify-section-template--23927395418227__faq_hero_EN6LkH .faq-hero-h {
+  font-size: (42px !important
+}
+
+  #shopify-section-template--23927395418227__faq_hero_EN6LkH .faq-hero {
+    padding: 64px 28px 56px;
+  }
+
+  #shopify-section-template--23927395418227__faq_hero_EN6LkH .faq-hero-h {
+    font-size: 42px;
+    letter-spacing: -1.5px;
+    line-height: .95;
+  }
+
+  #shopify-section-template--23927395418227__faq_hero_EN6LkH .faq-hero-p {
+    font-size: 15px;
+  }
+}

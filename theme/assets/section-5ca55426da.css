@@ -1,0 +1,422 @@
+
+  /* =========================================================
+     LNGVTY — FIGURE PANEL / TRIANGLE
+     Default styling is copied from the supplied HTML.
+     All section-specific values are exposed as CSS variables.
+     ========================================================= */
+
+  #fig-template--23927395745907__triangle_iQQh4T {
+    --ink: var(--triangle-bg);
+    --paper: var(--triangle-fg);
+    --burnt: var(--triangle-accent);
+    --hair: var(--triangle-border);
+    --av: "Avenir Next","Avenir Next Medium","Avenir","Century Gothic",sans-serif;
+
+    position: relative;
+    display: block;
+    overflow: hidden;
+    background: var(--triangle-bg);
+    color: var(--triangle-fg);
+    padding:
+      clamp(56px, 7vw, var(--triangle-panel-top))
+      var(--triangle-gut)
+      clamp(48px, 6vw, var(--triangle-panel-bottom));
+    border-top: 1px solid rgba(255,254,243,.10);
+    border-bottom: 1px solid rgba(255,254,243,.10);
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T *,
+  #fig-template--23927395745907__triangle_iQQh4T *::before,
+  #fig-template--23927395745907__triangle_iQQh4T *::after {
+    box-sizing: border-box;
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .figure-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: clamp(34px,4.4vw,64px);
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .figure-header .display-3 {
+    
+    margin: 0;
+    font-family: var(--av);
+    font-weight: 300;
+    font-size: clamp(26px,4.6vw,54px);
+    line-height: 1.01;
+    letter-spacing: -.042em;
+    text-wrap: balance;
+    color:#fff !important
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .mask-reveal {
+    overflow: hidden;
+    padding-bottom: .09em;
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .mask-reveal i {
+    display: block;
+    font-style: normal;
+  }
+
+  html.has-js #fig-template--23927395745907__triangle_iQQh4T .mask-reveal i {
+    transform: translateY(104%);
+  }
+
+  html.has-js #fig-template--23927395745907__triangle_iQQh4T .mask-reveal.is-visible i {
+    transform: none;
+    transition: transform 1.15s cubic-bezier(.19,1,.22,1);
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .figure-replay {
+    appearance: none;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    flex: 0 0 auto;
+    font-family: var(--av);
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: .24em;
+    text-transform: uppercase;
+    color: rgba(255,254,243,.62);
+    border-bottom: 1px solid rgba(255,254,243,.34);
+    padding: 0 0 5px;
+    transition:
+      color .28s cubic-bezier(.22,.61,.36,1),
+      border-color .28s cubic-bezier(.22,.61,.36,1);
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .figure-replay:hover {
+    color: var(--triangle-fg);
+    border-bottom-color: var(--triangle-fg);
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .figure-replay:focus-visible {
+    outline: 2px solid var(--triangle-accent);
+    outline-offset: 5px;
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .figure-stage {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: clamp(
+      var(--triangle-stage-min),
+      44vw,
+      var(--triangle-stage-max)
+    );
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .triangle-stage-inner {
+    width: 100%;
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .figure-panel,
+  #fig-template--23927395745907__triangle_iQQh4T figure {
+    margin: 0;
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .tri {
+    display: block;
+    width: 100%;
+    max-width: var(--triangle-max-width);
+    height: auto;
+    margin: 0 auto;
+    overflow: visible;
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .tri-guide {
+    fill: none;
+    stroke: rgba(255,254,243,.05);
+    stroke-width: 1;
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .tri-region {
+    fill: none;
+    stroke: rgba(255,254,243,.16);
+    stroke-width: 1;
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .tri-edge {
+    fill: none;
+    stroke: rgba(255,254,243,.34);
+    stroke-width: var(--triangle-edge-width);
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .tri-hub {
+    fill: rgba(255,254,243,.46);
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .tri-node {
+    fill: none;
+    stroke: rgba(255,254,243,.55);
+    stroke-width: 1.25;
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .tri-halo {
+    fill: none;
+    stroke: var(--triangle-accent);
+    stroke-width: 1.25;
+    opacity: var(--triangle-halo-opacity);
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: scale(var(--triangle-halo-scale));
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .tri-photo {
+    opacity: .9;
+    width: var(--triangle-image-size);
+    height: var(--triangle-image-size);
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .tri-title {
+    font-family: var(--av);
+    font-size: var(--triangle-title-size);
+    font-weight: 400;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    fill: rgba(255,254,243,.88);
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .tri-index {
+    font-family: var(--av);
+    font-size: var(--triangle-index-size);
+    font-weight: 400;
+    letter-spacing: .18em;
+    fill: var(--triangle-accent);
+    opacity: .9;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .tri-trail {
+    fill: none;
+    stroke: var(--triangle-accent);
+    stroke-width: 2.4;
+    stroke-linecap: round;
+    opacity: var(--triangle-trail-opacity);
+    stroke-dasharray: 56 714;
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .tri-nib {
+    fill: var(--triangle-accent);
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .tri-ratio {
+    font-family: var(--av);
+    font-size: var(--triangle-center-size);
+    font-weight: 300;
+    fill: var(--triangle-accent);
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .tri-percent {
+    font-family: var(--av);
+    font-size: var(--triangle-center-label-size);
+    font-weight: 400;
+    letter-spacing: .08em;
+    fill: rgba(255,254,243,.64);
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .tri-disclaimer {
+    margin: 18px auto 0;
+    max-width: 56ch;
+    text-align: center;
+    font-family: var(--av);
+    font-size: 9.5px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: rgba(255,254,243,.58);
+  }
+
+  #fig-template--23927395745907__triangle_iQQh4T .figure-caption {
+    margin: clamp(26px,3.2vw,44px) 0 0;
+    max-width: var(--triangle-caption-width);
+    color: rgba(255,254,243,.58);
+    font-family: var(--av);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.62;
+    letter-spacing: -.002em;
+    text-wrap: pretty;
+  }
+
+  /* Exact animation model from the supplied HTML */
+  html.has-anim #fig-template--23927395745907__triangle_iQQh4T .tri-edge {
+    stroke-dasharray: 190;
+    stroke-dashoffset: 190;
+  }
+
+  html.has-anim #fig-template--23927395745907__triangle_iQQh4T .tri-hub,
+  html.has-anim #fig-template--23927395745907__triangle_iQQh4T .tri-node,
+  html.has-anim #fig-template--23927395745907__triangle_iQQh4T .tri-halo,
+  html.has-anim #fig-template--23927395745907__triangle_iQQh4T .tri-title,
+  html.has-anim #fig-template--23927395745907__triangle_iQQh4T .tri-index,
+  html.has-anim #fig-template--23927395745907__triangle_iQQh4T .tri-photo,
+  html.has-anim #fig-template--23927395745907__triangle_iQQh4T .tri-ratio,
+  html.has-anim #fig-template--23927395745907__triangle_iQQh4T .tri-percent,
+  html.has-anim #fig-template--23927395745907__triangle_iQQh4T .tri-trail,
+  html.has-anim #fig-template--23927395745907__triangle_iQQh4T .tri-nib {
+    opacity: 0;
+  }
+
+  html.has-anim #fig-template--23927395745907__triangle_iQQh4T.is-playing .tri-edge {
+    animation: lngvtyTriDraw-template--23927395745907__triangle_iQQh4T var(--triangle-edge-duration) cubic-bezier(.22,.61,.36,1) forwards;
+    animation-delay: calc(var(--i) * var(--triangle-stagger));
+  }
+
+  html.has-anim #fig-template--23927395745907__triangle_iQQh4T.is-playing .tri-hub,
+  html.has-anim #fig-template--23927395745907__triangle_iQQh4T.is-playing .tri-node,
+  html.has-anim #fig-template--23927395745907__triangle_iQQh4T.is-playing .tri-title {
+    animation: lngvtyTriIn-template--23927395745907__triangle_iQQh4T .5s cubic-bezier(.19,1,.22,1) forwards;
+    animation-delay: calc(.42s + var(--i) * var(--triangle-stagger));
+  }
+
+  html.has-anim #fig-template--23927395745907__triangle_iQQh4T.is-playing .tri-index {
+    animation: lngvtyTriIn-template--23927395745907__triangle_iQQh4T .5s cubic-bezier(.19,1,.22,1) forwards;
+    animation-delay: calc(.52s + var(--i) * var(--triangle-stagger));
+  }
+
+  html.has-anim #fig-template--23927395745907__triangle_iQQh4T.is-playing .tri-photo {
+    animation: lngvtyTriPhoto-template--23927395745907__triangle_iQQh4T .8s cubic-bezier(.19,1,.22,1) forwards;
+    animation-delay: calc(.42s + var(--i) * var(--triangle-stagger));
+  }
+
+  html.has-anim #fig-template--23927395745907__triangle_iQQh4T.is-playing .tri-halo {
+    animation: lngvtyTriHalo-template--23927395745907__triangle_iQQh4T .6s cubic-bezier(.19,1,.22,1) forwards;
+    animation-delay: calc(.42s + var(--i) * var(--triangle-stagger));
+  }
+
+  html.has-anim #fig-template--23927395745907__triangle_iQQh4T.is-playing .tri-ratio {
+    animation: lngvtyTriIn-template--23927395745907__triangle_iQQh4T .7s cubic-bezier(.19,1,.22,1) 2.25s forwards;
+  }
+
+  html.has-anim #fig-template--23927395745907__triangle_iQQh4T.is-playing .tri-percent {
+    animation: lngvtyTriIn-template--23927395745907__triangle_iQQh4T .7s cubic-bezier(.19,1,.22,1) 2.45s forwards;
+  }
+
+  html.has-anim #fig-template--23927395745907__triangle_iQQh4T.is-playing .tri-trail {
+    opacity: var(--triangle-trail-opacity);
+    animation: lngvtyTriLap-template--23927395745907__triangle_iQQh4T var(--triangle-trail-duration) linear 2.7s infinite;
+  }
+
+  html.has-anim #fig-template--23927395745907__triangle_iQQh4T.is-playing .tri-nib {
+    opacity: 1;
+    animation: lngvtyTriNib-template--23927395745907__triangle_iQQh4T var(--triangle-trail-duration) linear 2.7s infinite;
+  }
+
+  @keyframes lngvtyTriDraw-template--23927395745907__triangle_iQQh4T {
+    to { stroke-dashoffset: 0; }
+  }
+
+  @keyframes lngvtyTriIn-template--23927395745907__triangle_iQQh4T {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes lngvtyTriHalo-template--23927395745907__triangle_iQQh4T {
+    from { opacity: 0; }
+    to { opacity: var(--triangle-halo-opacity); }
+  }
+
+  @keyframes lngvtyTriPhoto-template--23927395745907__triangle_iQQh4T {
+    from { opacity: 0; }
+    to { opacity: .9; }
+  }
+
+  @keyframes lngvtyTriLap-template--23927395745907__triangle_iQQh4T {
+    from { stroke-dashoffset: 0; }
+    to { stroke-dashoffset: -780; }
+  }
+
+  @keyframes lngvtyTriNib-template--23927395745907__triangle_iQQh4T {
+    from { offset-distance: 0%; }
+    to { offset-distance: 100%; }
+  }
+
+  @media (max-width: 860px) {
+    #fig-template--23927395745907__triangle_iQQh4T .tri-title {
+      font-size: 19px;
+    }
+
+    #fig-template--23927395745907__triangle_iQQh4T .tri-ratio {
+      font-size: 34px;
+    }
+
+    #fig-template--23927395745907__triangle_iQQh4T .tri-percent {
+      font-size: 14px;
+    }
+
+    #fig-template--23927395745907__triangle_iQQh4T .tri-disclaimer {
+      font-size: 9px;
+      letter-spacing: .11em;
+    }
+  }
+
+  @media (max-width: 760px) {
+    #fig-template--23927395745907__triangle_iQQh4T {
+      padding-left: max(var(--triangle-gut), env(safe-area-inset-left));
+      padding-right: max(var(--triangle-gut), env(safe-area-inset-right));
+    }
+
+    #fig-template--23927395745907__triangle_iQQh4T .figure-header {
+      margin-bottom: 30px;
+    }
+
+    #fig-template--23927395745907__triangle_iQQh4T .figure-replay {
+      min-height: 44px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+  }
+
+  @media (max-width: 520px) {
+    #fig-template--23927395745907__triangle_iQQh4T .figure-header {
+      align-items: flex-start;
+    }
+
+    #fig-template--23927395745907__triangle_iQQh4T .figure-header .display-3 {
+      max-width: 15ch;
+    }
+
+    #fig-template--23927395745907__triangle_iQQh4T .tri {
+      width: 112%;
+      max-width: none;
+      margin-left: -6%;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #fig-template--23927395745907__triangle_iQQh4T .mask-reveal i {
+      transform: none !important;
+      transition: none !important;
+    }
+
+    #fig-template--23927395745907__triangle_iQQh4T .tri-edge,
+    #fig-template--23927395745907__triangle_iQQh4T .tri-hub,
+    #fig-template--23927395745907__triangle_iQQh4T .tri-node,
+    #fig-template--23927395745907__triangle_iQQh4T .tri-halo,
+    #fig-template--23927395745907__triangle_iQQh4T .tri-title,
+    #fig-template--23927395745907__triangle_iQQh4T .tri-index,
+    #fig-template--23927395745907__triangle_iQQh4T .tri-photo,
+    #fig-template--23927395745907__triangle_iQQh4T .tri-ratio,
+    #fig-template--23927395745907__triangle_iQQh4T .tri-percent,
+    #fig-template--23927395745907__triangle_iQQh4T .tri-trail,
+    #fig-template--23927395745907__triangle_iQQh4T .tri-nib {
+      opacity: 1 !important;
+      animation: none !important;
+    }
+
+    #fig-template--23927395745907__triangle_iQQh4T .tri-edge {
+      stroke-dashoffset: 0 !important;
+    }
+  }

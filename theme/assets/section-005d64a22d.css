@@ -1,0 +1,31 @@
+ 
+        #sy-whatshelp { 
+            right: 25px; 
+            bottom: 30px; 
+            position: fixed; 
+            z-index: 9999; 
+        } 
+ 
+        #sy-whatshelp a.sywh-open-services { 
+            background-color: #25d366; 
+            color: #fff; 
+            line-height: 55px; 
+            margin-top: 10px; 
+            border: none; 
+            cursor: pointer; 
+            font-size: 45px; 
+            width: 65px; 
+            height: 65px; 
+            text-align: center; 
+            box-shadow: 2px 2px 8px -3px #000; 
+            border-radius: 100%; 
+            -webkit-border-radius: 100%; 
+            -moz-border-radius: 100%; 
+            -ms-border-radius: 100%; 
+            display: inline-block; 
+        } 
+ 
+        #sy-whatshelp a.sywh-open-services i { 
+            line-height: 65px; 
+        } 
+    

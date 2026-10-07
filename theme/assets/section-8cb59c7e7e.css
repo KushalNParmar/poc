@@ -1,0 +1,55 @@
+
+    .lngvty-po-note {
+      margin: 8px 0 0;
+      font-size: 13px;
+      line-height: 1.5;
+      color: #565656;
+    }
+    .lngvty-po-note[hidden] { display: none; }
+    .lngvty-po-kw {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      overflow: hidden !important;
+      clip: rect(0 0 0 0) !important;
+      white-space: nowrap !important;
+    }
+
+    /* PDP hero: hide Add to cart, Buy now becomes the single full-width primary button */
+    .lngvty-hero.lngvty-po-on [data-add-to-cart] { display: none !important; }
+    .lngvty-hero.lngvty-po-on .lngvty-hero__actions { grid-template-columns: 1fr !important; }
+    .lngvty-hero.lngvty-po-on [data-purchase-action] {
+      position: relative;
+      background: var(--hero-ink, #12100d) !important;
+      color: var(--hero-paper, #fffef3) !important;
+      border: 1px solid var(--hero-ink, #12100d) !important;
+      width: 100% !important;
+      height: auto !important;
+      min-height: 50px !important;
+      line-height: 1.2 !important;
+      margin: 0 !important;
+    }
+
+    /* PDP "Shop other serums" cards */
+    .shop-other-serums .xsc.lngvty-po-on .xsc-cart-form { display: none !important; }
+    .shop-other-serums .xsc.lngvty-po-on .xsc-acts { grid-template-columns: 1fr !important; }
+    .shop-other-serums .xsc.lngvty-po-on [data-buy-now] { position: relative; }
+
+    /* Collection serum cards */
+    .lp-serums-sx7mq .card.lngvty-po-on .cta-row button.btn-add { display: none !important; }
+    .lp-serums-sx7mq .card.lngvty-po-on .cta-row button.btn-buy {
+      position: relative;
+      flex-direction: column;
+      gap: 3px;
+      line-height: 1.1;
+    }
+    .lp-serums-sx7mq .card .cta-row button.btn-buy .lngvty-po-sub {
+      font-size: 11px;
+      font-weight: 400;
+      letter-spacing: .02em;
+      opacity: .85;
+    }
+
+    /* Homepage serum cards */
+    .lng-serums__card .lngvty-po-note { margin: 10px 0 0; }
+  

@@ -1,0 +1,393 @@
+
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+#lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9 {
+  background: var(--lvg-rtb-paper);
+  color: var(--lvg-rtb-ink);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PAGE WIDTH
+========================================================= */
+
+#lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9 .page-width {
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CHAPTER
+========================================================= */
+
+#lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9 .lvg-rtb-chapter {
+  position: relative;
+
+  padding-top: var(--lvg-rtb-desktop-top);
+  padding-bottom: var(--lvg-rtb-desktop-bottom);
+
+  border-top:
+    var(--lvg-rtb-line-width)
+    solid
+    color-mix(
+      in srgb,
+      var(--lvg-rtb-line-color)
+      calc(var(--lvg-rtb-line-opacity) * 100%),
+      transparent
+    );
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   FIRST CHAPTER
+========================================================= */
+
+#lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9 .lvg-rtb-chapter:first-child {
+  border-top: 0;
+}
+
+
+/* =========================================================
+   DIVIDER SPACING
+========================================================= */
+
+/*
+  Space above the divider
+*/
+
+#lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9 .lvg-rtb-chapter + .lvg-rtb-chapter {
+  margin-top: var(--lvg-rtb-line-space-top);
+
+  padding-top:
+    calc(
+      var(--lvg-rtb-desktop-top) +
+      var(--lvg-rtb-line-space-bottom)
+    );
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+#lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9 .lvg-rtb-chapter__content {
+  width: 100%;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+#lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9 .lvg-rtb-chapter__label {
+  display: block;
+
+  margin: 0 0 var(--lvg-rtb-label-heading-gap);
+
+  color: var(--lvg-rtb-muted);
+
+  font-size: 10px;
+  line-height: 1.2;
+
+  letter-spacing: .26em;
+  text-transform: uppercase;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+#lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9 h2 {
+  
+
+  margin: 0;
+
+  color: var(--lvg-rtb-ink);
+
+  font-size: clamp(
+    26px,
+    4.6vw,
+    var(--lvg-rtb-heading-size)
+  );
+
+  font-weight: 300;
+  line-height: 1.01;
+  letter-spacing: -.042em;
+}
+
+
+/* =========================================================
+   COLUMNS
+========================================================= */
+
+#lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9 .lvg-rtb-chapter__columns {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: var(--lvg-rtb-column-gap);
+
+  margin-top: var(--lvg-rtb-heading-copy-gap);
+}
+
+
+/* =========================================================
+   COPY
+========================================================= */
+
+#lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9 .lvg-rtb-copy {
+  max-width: 48ch;
+
+  margin: 0;
+
+  color: var(--lvg-rtb-muted);
+
+  font-size: var(--lvg-rtb-body-size);
+  line-height: var(--lvg-rtb-body-line-height);
+}
+
+
+/* =========================================================
+   RICH TEXT
+========================================================= */
+
+#lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9 .lvg-rtb-copy p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9 .lvg-rtb-copy p + p {
+  margin-top: 1.2em;
+}
+
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+/*
+  IMPORTANT:
+  data-reveal is on the ROOT section itself.
+
+  Therefore we use:
+
+  #section[data-reveal="true"]
+
+  NOT:
+
+  #section [data-reveal="true"]
+*/
+
+
+#lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9[data-reveal="true"]
+.lvg-rtb-reveal-item {
+
+  opacity: 0;
+
+  transition:
+    opacity var(--lvg-rtb-reveal-duration)
+      cubic-bezier(.22,.61,.36,1),
+
+    transform var(--lvg-rtb-reveal-duration)
+      cubic-bezier(.22,.61,.36,1);
+
+  will-change: opacity, transform;
+}
+
+
+/* =========================================================
+   FROM BOTTOM
+========================================================= */
+
+#lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9[data-reveal="true"][data-reveal-direction="up"]
+.lvg-rtb-reveal-item {
+
+  transform:
+    translate3d(
+      0,
+      var(--lvg-rtb-reveal-distance),
+      0
+    );
+}
+
+
+/* =========================================================
+   FROM TOP
+========================================================= */
+
+#lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9[data-reveal="true"][data-reveal-direction="down"]
+.lvg-rtb-reveal-item {
+
+  transform:
+    translate3d(
+      0,
+      calc(var(--lvg-rtb-reveal-distance) * -1),
+      0
+    );
+}
+
+
+/* =========================================================
+   FROM RIGHT
+========================================================= */
+
+#lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9[data-reveal="true"][data-reveal-direction="left"]
+.lvg-rtb-reveal-item {
+
+  transform:
+    translate3d(
+      var(--lvg-rtb-reveal-distance),
+      0,
+      0
+    );
+}
+
+
+/* =========================================================
+   FROM LEFT
+========================================================= */
+
+#lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9[data-reveal="true"][data-reveal-direction="right"]
+.lvg-rtb-reveal-item {
+
+  transform:
+    translate3d(
+      calc(var(--lvg-rtb-reveal-distance) * -1),
+      0,
+      0
+    );
+}
+
+
+/* =========================================================
+   VISIBLE STATE
+========================================================= */
+
+#lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9[data-reveal="true"]
+.lvg-rtb-chapter.is-visible
+.lvg-rtb-reveal-item {
+
+  opacity: 1;
+
+  transform: translate3d(0, 0, 0);
+}
+
+
+/* =========================================================
+   STAGGER ANIMATION
+========================================================= */
+
+#lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9[data-reveal="true"]
+.lvg-rtb-chapter.is-visible
+.lvg-rtb-reveal-item:nth-child(1) {
+  transition-delay: 0ms;
+}
+
+
+#lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9[data-reveal="true"]
+.lvg-rtb-chapter.is-visible
+.lvg-rtb-reveal-item:nth-child(2) {
+  transition-delay:
+    calc(var(--lvg-rtb-reveal-delay) * 1);
+}
+
+
+#lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9[data-reveal="true"]
+.lvg-rtb-chapter.is-visible
+.lvg-rtb-reveal-item:nth-child(3) {
+  transition-delay:
+    calc(var(--lvg-rtb-reveal-delay) * 2);
+}
+
+
+#lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9[data-reveal="true"]
+.lvg-rtb-chapter.is-visible
+.lvg-rtb-reveal-item:nth-child(4) {
+  transition-delay:
+    calc(var(--lvg-rtb-reveal-delay) * 3);
+}
+
+
+/* =========================================================
+   REVEAL DISABLED
+========================================================= */
+
+#lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9[data-reveal="false"]
+.lvg-rtb-reveal-item {
+
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 760px) {
+
+  #lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9 .lvg-rtb-chapter {
+    padding-top: var(--lvg-rtb-mobile-top);
+    padding-bottom: var(--lvg-rtb-mobile-bottom);
+  }
+
+
+  #lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9
+  .lvg-rtb-chapter + .lvg-rtb-chapter {
+
+    padding-top:
+      calc(
+        var(--lvg-rtb-mobile-top) +
+        var(--lvg-rtb-line-space-bottom)
+      );
+  }
+
+
+  #lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9
+  .lvg-rtb-chapter__columns {
+
+    grid-template-columns: 1fr;
+
+    gap: var(--lvg-rtb-column-gap);
+  }
+
+
+  #lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9 h2 {
+    
+  }
+
+
+  #lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9 .lvg-rtb-copy {
+    font-size: var(--lvg-rtb-body-size);
+    line-height: var(--lvg-rtb-body-line-height);
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  #lvg-rtb-chapters-template--23927395549299__chapters_Ri6Pn9
+  .lvg-rtb-reveal-item {
+
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+}
+

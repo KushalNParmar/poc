@@ -1,0 +1,747 @@
+/* ========================================================== 
+     VARIABLES 
+     ========================================================== */ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw { 
+    --bnf-bg: #fffef3; 
+    --bnf-fg: #12100d; 
+    --bnf-muted: #8a8578; 
+    --bnf-heading-c: #12100d; 
+    --bnf-accent: #e67e22; 
+ 
+    --bnf-gap: 10px; 
+ 
+    --bnf-card-min: 240px; 
+    --bnf-card-vw: 26vw; 
+    --bnf-card-max: 320px; 
+ 
+    --bnf-aspect: 1/1; 
+    --bnf-radius: 0px; 
+ 
+    --bnf-pad-top: 52px; 
+    --bnf-pad-bottom: 52px; 
+ 
+    --bnf-reveal-dist: 14px; 
+    --bnf-reveal-dur: 900ms; 
+ 
+    /* ========================================================
+       SLIDER ARROW VARIABLES
+       ======================================================== */ 
+ 
+    --bnf-arrow-size: 44px; 
+    --bnf-arrow-bg: #12100d; 
+    --bnf-arrow-color: #fffef3; 
+    --bnf-arrow-hover-bg: #000000; 
+    --bnf-arrow-hover-color: #fffef3; 
+    --bnf-arrow-border: #12100d; 
+ 
+    /* 
+      Calculates the space between the viewport edge and 
+      the centered page-width container. 
+ 
+      This is used only on the RIGHT side of the slider. 
+    */ 
+    --bnf-page-side-space: 
+      max( 
+        0px, 
+        calc( 
+          (100vw - 1400px) / 2 
+        ) 
+      ); 
+ 
+    /* 
+      Right breathing room for the final card. 
+ 
+      If viewport is narrower than page width, it falls back 
+      to the normal section side padding. 
+    */ 
+    --bnf-slider-right-space: 
+      max( 
+        24px, 
+        var(--bnf-page-side-space) 
+      ); 
+  } 
+ 
+ 
+  /* ========================================================== 
+     SECTION 
+     ========================================================== */ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf { 
+    background: var(--bnf-bg); 
+    color: var(--bnf-fg); 
+ 
+    padding-top: var(--bnf-pad-top); 
+    padding-bottom: var(--bnf-pad-bottom); 
+ 
+    font-family: 
+      var( 
+        --bnf-font, 
+        "Avenir Next", 
+        "Avenir Next Medium", 
+        "Avenir", 
+        "Century Gothic", 
+        sans-serif 
+      ); 
+ 
+    overflow-x: clip; 
+  } 
+ 
+ 
+  /* ========================================================== 
+     CONTAINER 
+     ========================================================== */ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-container { 
+    width: 100%; 
+  } 
+ 
+ 
+  /* ========================================================== 
+     HEADER / HEADING + ARROWS 
+     ========================================================== */ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-header { 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 30px; 
+    width: 100%; 
+  } 
+ 
+ 
+  /* ========================================================== 
+     SLIDER NAVIGATION 
+     DESKTOP ONLY 
+     ========================================================== */ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-navigation { 
+    display: none; 
+    align-items: center; 
+    gap: 10px; 
+    flex-shrink: 0; 
+  } 
+ 
+ 
+  @media (min-width: 990px) { 
+ 
+    #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-navigation { 
+      display: flex; 
+    } 
+ 
+  } 
+ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-arrow { 
+    width: var(--bnf-arrow-size); 
+    height: var(--bnf-arrow-size); 
+ 
+    padding: 0; 
+ 
+    border: 1px solid var(--bnf-arrow-border); 
+    border-radius: 50%; 
+ 
+    background: var(--bnf-arrow-bg); 
+    color: var(--bnf-arrow-color); 
+ 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+ 
+    cursor: pointer; 
+ 
+    flex-shrink: 0; 
+ 
+    transition: 
+      background-color 220ms ease, 
+      color 220ms ease, 
+      border-color 220ms ease, 
+      opacity 220ms ease, 
+      transform 220ms ease; 
+  } 
+ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-arrow svg { 
+    width: 45%; 
+    height: 45%; 
+ 
+    display: block; 
+ 
+    flex-shrink: 0; 
+  } 
+ 
+ 
+  @media (hover: hover) and (pointer: fine) { 
+ 
+    #shopify-section-template--23927395876979__skin_benefits_CDJUgw 
+    .bnf-arrow:not(:disabled):hover { 
+ 
+      background: var(--bnf-arrow-hover-bg); 
+      color: var(--bnf-arrow-hover-color); 
+      border-color: var(--bnf-arrow-hover-bg); 
+ 
+      transform: translateY(-1px); 
+    } 
+ 
+  } 
+ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-arrow:disabled { 
+    opacity: 0.3; 
+    cursor: default; 
+  } 
+ 
+ 
+  /* ========================================================== 
+     HEADING 
+     ========================================================== */ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-heading * { 
+    font-weight: 400; 
+ 
+    color: var(--bnf-heading-c); 
+ 
+    letter-spacing: -0.046em; 
+ 
+    line-height: 0.98; 
+ 
+    margin: 0; 
+ 
+    text-wrap: balance; 
+  } 
+ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-heading.h-small { 
+    font-size: clamp(22px, 3.4vw, 30px); 
+  } 
+ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-heading.h-medium { 
+    font-size: clamp(28px, 4.4vw, 44px); 
+  } 
+ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-heading.h-large { 
+    font-size: clamp(30px, 5.2vw, 60px); 
+  } 
+ 
+ 
+  /* ========================================================== 
+     TRACK 
+     ========================================================== */ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-track { 
+    margin-top: 26px; 
+  } 
+ 
+ 
+  /* ========================================================== 
+     SLIDER 
+     ========================================================== */ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-track.bnf-slider { 
+    display: grid; 
+ 
+    grid-auto-flow: column; 
+ 
+    grid-auto-columns: 
+      clamp( 
+        var(--bnf-card-min), 
+        var(--bnf-card-vw), 
+        var(--bnf-card-max) 
+      ); 
+ 
+    gap: var(--bnf-gap); 
+ 
+    overflow-x: auto; 
+    overflow-y: hidden; 
+ 
+    scroll-snap-type: x mandatory; 
+ 
+    scrollbar-width: none; 
+ 
+    -webkit-overflow-scrolling: touch; 
+ 
+    /* 
+      IMPORTANT: 
+ 
+      Left side = 0 extra space. 
+ 
+      The slider starts exactly where the page-width 
+      container starts. 
+    */ 
+    margin-left: 0; 
+ 
+    /* 
+      Extend the slider to the viewport right edge. 
+ 
+      This makes the final card able to reach the far right 
+      side instead of stopping at the page-width container. 
+    */ 
+    margin-right: 
+      calc( 
+        ( 
+          100vw - min( 
+            100vw, 
+            1400px 
+          ) 
+        ) / -2 
+      ); 
+ 
+    /* 
+      No left padding. 
+ 
+      Right padding is dynamically calculated so the final 
+      card has the same visual breathing room as the centered 
+      page-width layout. 
+    */ 
+    padding-left: 0; 
+ 
+    padding-right: 
+      var(--bnf-slider-right-space); 
+ 
+    padding-bottom: 8px; 
+ 
+    scroll-padding-left: 0; 
+ 
+    scroll-padding-right: 
+      var(--bnf-slider-right-space); 
+  } 
+ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-track.bnf-slider::-webkit-scrollbar { 
+    display: none; 
+  } 
+ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-track.bnf-slider > * { 
+    scroll-snap-align: start; 
+  } 
+ 
+ 
+  /* ========================================================== 
+     GRID 
+     ========================================================== */ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-track.bnf-grid { 
+    display: grid; 
+ 
+    grid-template-columns: 
+      repeat( 
+        var(--bnf-cols), 
+        minmax(0, 1fr) 
+      ); 
+ 
+    gap: var(--bnf-gap); 
+  } 
+ 
+ 
+  @media (max-width: 760px) { 
+ 
+    #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-track.bnf-grid { 
+      grid-template-columns: 
+        repeat( 
+          2, 
+          minmax(0, 1fr) 
+        ); 
+    } 
+ 
+  } 
+ 
+ 
+  @media (max-width: 480px) { 
+ 
+    #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-track.bnf-grid { 
+      grid-template-columns: 1fr; 
+    } 
+ 
+  } 
+ 
+ 
+  /* ========================================================== 
+     CARD 
+     ========================================================== */ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-card { 
+    display: flex; 
+ 
+    flex-direction: column; 
+ 
+    min-width: 0; 
+ 
+    position: relative; 
+ 
+    /* 
+      Smooth hover transition. 
+    */ 
+    transition: 
+      opacity 320ms cubic-bezier(.19,1,.22,1), 
+      filter 320ms cubic-bezier(.19,1,.22,1), 
+      transform 320ms cubic-bezier(.19,1,.22,1); 
+  } 
+ 
+ 
+  /* ========================================================== 
+     HOVER EFFECT 
+     ========================================================== */ 
+ 
+  /* 
+    Desktop only. 
+ 
+    When ANY card is hovered: 
+      - all cards become dull 
+      - hovered card stays completely bright 
+  */ 
+ 
+  @media (hover: hover) and (pointer: fine) { 
+ 
+    /* When the rail is hovered, make every card slightly dull */ 
+    #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-track:hover .bnf-card { 
+      opacity: 0.35; 
+      /* filter: saturate(0.65);  */
+      transition: opacity 280ms ease, filter 280ms ease, transform 280ms ease; 
+    } 
+ 
+    /* Keep ONLY the card being hovered fully visible */ 
+    #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-track:hover .bnf-card:hover { 
+      opacity: 1; 
+      filter: none; 
+      transform: translateY(-2px); 
+      z-index: 3; 
+    } 
+ 
+  } 
+ 
+ 
+  /* ========================================================== 
+     IMAGE 
+     ========================================================== */ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-slot { 
+    position: relative; 
+ 
+    background: 
+      color-mix( 
+        in srgb, 
+        var(--bnf-fg) 5%, 
+        transparent 
+      ); 
+ 
+    border: 
+      1px solid 
+      color-mix( 
+        in srgb, 
+        var(--bnf-fg) 11%, 
+        transparent 
+      ); 
+ 
+    border-radius: 
+      var(--bnf-radius); 
+ 
+    overflow: hidden; 
+ 
+    display: flex; 
+ 
+    align-items: flex-end; 
+ 
+    aspect-ratio: 
+      var(--bnf-aspect); 
+  } 
+ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-slot img { 
+    position: absolute; 
+ 
+    inset: 0; 
+ 
+    width: 100%; 
+    height: 100%; 
+ 
+    object-fit: cover; 
+ 
+    transition: 
+      transform 500ms 
+      cubic-bezier(.19,1,.22,1); 
+  } 
+ 
+ 
+  @media (hover: hover) and (pointer: fine) { 
+ 
+    #shopify-section-template--23927395876979__skin_benefits_CDJUgw 
+    .bnf-card:hover 
+    .bnf-slot img { 
+ 
+      transform: 
+        scale(1.025); 
+    } 
+ 
+  } 
+ 
+ 
+  /* ========================================================== 
+     FALLBACK LABEL 
+     ========================================================== */ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-slot span { 
+    position: relative; 
+ 
+    padding: 12px 14px; 
+ 
+    font-size: 10px; 
+ 
+    font-weight: 600; 
+ 
+    letter-spacing: 0.16em; 
+ 
+    text-transform: uppercase; 
+ 
+    color: var(--bnf-muted); 
+ 
+    line-height: 1.7; 
+  } 
+ 
+ 
+  /* ========================================================== 
+     CARD TITLE 
+     ========================================================== */ 
+ 
+  body #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-card h3 { 
+    margin: 14px 0 0; 
+ 
+    font-weight: 600 !important; 
+ 
+    font-size: 16px !important; 
+ 
+    line-height: 1.16; 
+ 
+    letter-spacing: -0.022em; 
+ 
+    color: var(--bnf-heading-c) !important; 
+  } 
+ 
+ 
+  /* ========================================================== 
+     SUBTITLE / METAFIELD RICH TEXT 
+     ========================================================== */ 
+ 
+  /* 
+    The metafield is returning rich text similar to: 
+ 
+    <p> 
+      Lesions down 
+      <strong>47.7%</strong> 
+      in four weeks. 
+    </p> 
+ 
+    metafield_tag is used in Liquid so Shopify converts the 
+    rich-text JSON into proper HTML. 
+  */ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-stat p { 
+    margin: 8px 0 0; 
+ 
+    font-size: 15px !important; 
+ 
+    line-height: 1.5; 
+ 
+    font-weight: 500; 
+ 
+    color: var(--bnf-fg); 
+  } 
+ 
+ 
+  /* 
+    Remove default paragraph margin created by metafield_tag. 
+  */ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-stat p { 
+    margin: 0; 
+  } 
+ 
+ 
+  /* 
+    Rich-text bold / strong text. 
+ 
+    This makes 47.7% use the accent color. 
+  */ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw 
+  .bnf-stat strong, 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw 
+  .bnf-stat b { 
+ 
+    font-weight: 600; 
+ 
+    color: var(--bnf-accent) !important; 
+ 
+    font-variant-numeric: tabular-nums; 
+  } 
+ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw 
+  .bnf-stat em { 
+ 
+    font-style: italic; 
+  } 
+ 
+ 
+  /* 
+    Remove extra spacing from nested rich text elements. 
+  */ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw 
+  .bnf-stat p:first-child { 
+ 
+    margin-top: 0; 
+  } 
+ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw 
+  .bnf-stat p:last-child { 
+ 
+    margin-bottom: 0; 
+  } 
+ 
+ 
+  /* ========================================================== 
+     REVEAL ANIMATION 
+     ========================================================== */ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-rv { 
+ 
+    opacity: 0; 
+ 
+    transform: 
+      translateY( 
+        var(--bnf-reveal-dist) 
+      ); 
+ 
+    transition: 
+      opacity 
+      var(--bnf-reveal-dur) 
+      cubic-bezier(.19,1,.22,1), 
+ 
+      transform 
+      var(--bnf-reveal-dur) 
+      cubic-bezier(.19,1,.22,1); 
+ 
+    transition-delay: 
+      var(--d, 0ms); 
+  } 
+ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw .bnf-rv.in { 
+ 
+    opacity: 1; 
+ 
+    transform: none; 
+  } 
+ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw 
+  .bnf-rv 
+  .bnf-slot { 
+ 
+    clip-path: 
+      inset( 
+        0 0 100% 0 
+      ); 
+ 
+    transition: 
+      clip-path 
+      calc( 
+        var(--bnf-reveal-dur) + 150ms 
+      ) 
+      cubic-bezier(.19,1,.22,1); 
+ 
+    transition-delay: 
+      calc( 
+        var(--d, 0ms) + 90ms 
+      ); 
+  } 
+ 
+ 
+  #shopify-section-template--23927395876979__skin_benefits_CDJUgw 
+  .bnf-rv.in 
+  .bnf-slot { 
+ 
+    clip-path: 
+      inset( 
+        0 0 0 0 
+      ); 
+  } 
+ 
+ 
+  /* ========================================================== 
+     MOBILE SLIDER 
+     ========================================================== */ 
+ 
+  @media (max-width: 760px) { 
+ 
+    #shopify-section-template--23927395876979__skin_benefits_CDJUgw 
+    .bnf-track.bnf-slider { 
+ 
+      /* 
+        On mobile the page-width is normally viewport width, 
+        so there is no artificial left margin. 
+ 
+        Keep the final card slightly away from the edge. 
+      */ 
+ 
+      margin-right: 
+        calc( 
+          24px * -1 
+        ); 
+ 
+      padding-right: 
+        24px; 
+ 
+      scroll-padding-right: 
+        24px; 
+    } 
+ 
+  } 
+ 
+ 
+  /* ========================================================== 
+     REDUCED MOTION 
+     ========================================================== */ 
+ 
+  @media (prefers-reduced-motion: reduce) { 
+ 
+    #shopify-section-template--23927395876979__skin_benefits_CDJUgw 
+    .bnf-rv { 
+ 
+      opacity: 1; 
+ 
+      transform: none; 
+ 
+      transition: none; 
+    } 
+ 
+ 
+    #shopify-section-template--23927395876979__skin_benefits_CDJUgw 
+    .bnf-rv 
+    .bnf-slot { 
+ 
+      clip-path: none; 
+ 
+      transition: none; 
+    } 
+ 
+ 
+    #shopify-section-template--23927395876979__skin_benefits_CDJUgw 
+    .bnf-card { 
+ 
+      transition: none; 
+    } 
+ 
+ 
+    #shopify-section-template--23927395876979__skin_benefits_CDJUgw 
+    .bnf-slot img { 
+ 
+      transition: none; 
+    } 
+ 
+  }

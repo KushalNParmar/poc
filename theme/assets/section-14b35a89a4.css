@@ -1,0 +1,146 @@
+
+
+.sci-close-template--23927395680371__science_cta_Mc6YFj {
+
+  background:var(--sc-bg);
+
+  padding:
+  96px
+  72px;
+
+  display:grid;
+  grid-template-columns:1fr 420px;
+  gap:80px;
+
+  border-top:1px solid var(--sc-border);
+
+}
+
+
+
+.sci-close-template--23927395680371__science_cta_Mc6YFj .sc-h {
+
+  font-family:var(--avenir,"Avenir Next","Avenir","Century Gothic",sans-serif);
+
+  font-size:clamp(
+  38px,
+  5vw,
+  76px
+  ) !important;
+
+  font-weight:600 !important;
+
+  letter-spacing:-3px;
+  line-height:.95;
+
+  color:var(--sc-text);
+
+  margin:0;
+
+}
+
+
+
+.sci-close-template--23927395680371__science_cta_Mc6YFj .sc-h em {
+
+  font-style:italic;
+  font-weight:200;
+  color:rgba(255,255,255,.65);
+
+}
+
+
+
+.sci-close-template--23927395680371__science_cta_Mc6YFj .sc-r {
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:flex-start;
+
+}
+
+
+
+.sci-close-template--23927395680371__science_cta_Mc6YFj .sc-body {
+
+  font-family:var(--avenir,"Avenir Next","Avenir","Century Gothic",sans-serif);
+
+  font-size:16px !important;
+  font-weight:400;
+
+  line-height:1.8;
+
+  color:var(--sc-muted);
+
+  margin:0 0 32px;
+
+}
+
+
+
+.sci-close-template--23927395680371__science_cta_Mc6YFj .sc-btn {
+
+  font-family:var(--avenir,"Avenir Next","Avenir","Century Gothic",sans-serif);
+
+  font-size:13px;
+  font-weight:400;
+
+  letter-spacing:.08em;
+  text-transform:uppercase;
+
+  background:var(--sc-btn-bg);
+  color:var(--sc-btn-text);
+
+  padding:16px 34px;
+
+  display:inline-flex;
+
+  margin-bottom:20px;
+
+  text-decoration:none;
+
+}
+
+
+
+.sci-close-template--23927395680371__science_cta_Mc6YFj .sc-link {
+
+  font-family:var(--avenir,"Avenir Next","Avenir","Century Gothic",sans-serif);
+
+  font-size:14px;
+
+  color:var(--sc-muted);
+
+  text-decoration:none;
+
+  border-bottom:1px solid currentColor;
+
+}
+
+
+
+@media(max-width:900px){
+
+.sci-close-template--23927395680371__science_cta_Mc6YFj {
+
+grid-template-columns:1fr;
+
+gap:40px;
+
+padding:
+64px
+28px;
+
+}
+
+
+
+.sci-close-template--23927395680371__science_cta_Mc6YFj .sc-h {
+
+letter-spacing:-2px;
+
+}
+
+}
+

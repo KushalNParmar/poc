@@ -1,85 +1,84 @@
-# The Leela AR discovery POC
+# LNGVTY — POC 2
 
-A browser camera experience that automatically recognises a supported cup, keyboard or Sprite can and reveals The Leela stories around it. WebAR.rocks.object estimates the object pose; Three.js and the existing One Euro filter smooth the anchors; interactive HTML hotspots stay readable and face the camera.
+A local replica of the public **lngvty.in** storefront audited on 7 October 2026. Built with **Liquid, HTML, CSS, and vanilla JavaScript**, matching the storefront's customized Shopify Dawn 15.4.1 architecture. The reference's jQuery 3.7.1 and Slick 1.8.1 presentation dependencies are included locally. No React is used.
 
 ## Run
 
+Use Node.js 20.18.1 or newer.
+
 ```sh
-python3 -m http.server 8765 --bind 127.0.0.1
+npm ci
+npm start
 ```
 
-Open `http://localhost:8765`. Use **HTTPS** when testing on phones and tablets. A plain HTTP LAN address does not qualify for the localhost camera exemption. No build or package installation is required. Enable gzip/Brotli for the model JSON and JavaScript on the static host.
+Open **http://127.0.0.1:8765**. To use another port: `PORT=3000 npm start`.
 
-## Experience
+Keep that terminal running. Stop the server with **Ctrl+C**. If the port is already occupied by a running POC, open its URL, stop the previous server, or choose another port with the command above.
 
-The page requests the rear camera on entry and displays a full-screen native animation inspired by `leela_ar_intro_1080x1920.gif`. The loader stays visible for at least two seconds and completes its opening logo/lettering reveal. Camera startup runs concurrently, and only once both are ready does it reveal the blurred live preview and introduction sheet, which contains the original static Leela monogram above its title:
+`npm run build` renders the Liquid templates into `dist/`. `npm test` runs the cart, rendering, navigation, asset, and script checks. Restart the server after changing the route manifest; rebuild and refresh after changing a Liquid file. CSS and JavaScript changes require a browser refresh.
 
-- **Enter the world of True Indian Luxury**
-- Point your camera at an object and uncover the story behind it.
-- **Start scanning**
+## Included
 
-The browser still controls camera permission. If permission is denied or the camera fails, an error panel offers **Try again**; retry returns to the animated loader while the camera starts, then shows the introduction. Starting scanning reuses the preview stream instead of opening a second camera. The GIF is a visual reference only and is not shipped or requested. The loader uses the small Leela logo PNG, CSS reveal/glow and lettering animations, gold scan corners, a subtle SVG geometric pattern, and softly twinkling points. Its blue background fills every screen edge to edge, with no aspect-ratio cropping or side gaps. Reduced-motion preferences show a static, readable identity. The introduction sheet uses the original small static monogram from the HTML reference, without lettering, framing or logo animation. Model preparation after Start scanning retains the compact Leela loader.
+- All **51 audited public URL variants**: home; both collection views; all four products; the four story chapters; About, FAQ, Science, Contact, and press; all campaigns and reward terms; the blog with three pagination views and all 20 articles; four policies; cart; account.
+- Local checkout and 404 views, plus Skin Analysis, bringing the rendered total to **54**.
+- Original public section markup, CSS, copy, SVG diagrams, image crops, desktop/mobile hero artwork, motion, media, and variant controls.
+- Product galleries, comparison sliders, image lightboxes, accordions, FAQ tabs, horizontal rails, customer videos, mobile navigation, and sticky purchase bars.
+- The original four-question quiz, its three recommendations, back/retake behavior, and ties resolved in acne → dark spots → hydration order.
+- Browser-local cart with every catalog variant, quantity changes, removal, exact paise arithmetic, persistence, free gift above the reference threshold, and simulated checkout.
+- Mock OTP login, account/order history, contact submission, review sorting/filtering/pagination/photo previews, and local review submission.
 
-After Start scanning, the app loads the three models once, searches automatically and shows the matching experience. No manual object selector is provided. Four gold pins and glass labels per target reproduce the supplied hotspot copy:
+## Demo controls
 
-| Target | Hotspots | Overview links |
-| --- | --- | --- |
-| Cup | Culinary Artistry; Mindful Sips; Signature Dining; Gift the Taste | Explore dining; Aujasya menus |
-| Keyboard | Royal Meetings; Always Connected; Grand Venues; Arq Privileges | Plan a meeting; MICE brochure |
-| Sprite can | Plastic-free; Mixology; The Library Bar; Net Zero by 2050 | Our sustainability; Explore bars |
+- Login: enter any valid-format 10-digit Indian mobile number, then **123456**. No OTP is sent.
+- Discount: **LOCAL10** simulates a 10% discount. It is a demo code, not a merchant offer.
+- Checkout: enter sample details. **Place demo order** creates only a local browser record; it never takes payment or creates a real order/shipment. Addresses and checkout contact details are not persisted.
+- **My account → Reset demo data** clears this POC's cart, orders, session, and local reviews.
+- Forms report local success. Review submissions stay in the browser. The floating contact control leads to the local contact page.
 
-Tap a pin or label to open only that hotspot’s subtitle, detail and call to action. There are no pagination dots or highlight counts. **Back** returns to the overview, where the centered **Labels on/off** and **Rescan** controls are available; both are hidden while a hotspot detail is open. **Labels off** hides the text cards and connector lines while retaining tappable pins. **Rescan** clears the current match and searches again. The sheet has no Close or reopen control. After a successful scan, sustained tracking loss shows a Leela-themed camera overlay naming that object and asking the user to align it. It never appears during the first search. The header and bottom sheet remain usable, and the open object detail is preserved. Three consecutive valid pose frames restore the annotations and remove the overlay; isolated detection blips do not dismiss it.
+## Source structure
 
-The reference’s `can` content maps to our existing **Sprite can** tracking network. Its mock COCO detector notes are not implemented; this POC still supports the same three pretrained object models.
+```text
+theme/
+  layout/theme.liquid      Shared document and local runtime
+  templates/               One composition for each public URL view
+  sections/                Shared shell and individual reference sections
+  assets/                  Section CSS/JS, local app adapters, media, vendor assets
+data/
+  routes.json              Route/template map and titles
+  catalog.json             Ten local variant fixtures and prices
+  reviews.json             55 public reviews present in the audited product HTML
+  asset-manifest.json      Original public URLs for direct reference assets
+scripts/
+  build.mjs                LiquidJS rendering
+  serve.mjs                Local HTTP server, route aliases, media range requests
+tests/storefront.test.mjs  Automated verification
+docs/                     Audit skill and implementation/QA notes
+```
 
-## Branding, responsive layout and content
+The templates reconstruct the public rendered theme; the merchant's private Liquid source, settings, and app internals were unavailable. **LiquidJS is the local renderer**, while Node is only the development server/build runner. This project is a standalone POC, not an authenticated Shopify store or an importable Shopify theme package. It deliberately contains no production Shopify/GoKwik credentials, checkout integration, or live merchant writes.
 
-The theme, monogram, hotspot copy and sheet copy come from `leela_ar_get_started.html` and `leela_ar_ui_reference.html`; the logo motion references `leela_ar_intro_1080x1920.gif`. Active screens and loading states use The Leela branding throughout. Palette: sodalite `#070d1f`, gold `#f8e6a8` / `#e2c27a` / `#c9a45a`, ivory `#efe8da`. Typography retains the supplied serif/sans font stacks with system fallbacks; no remote font dependency is required.
+The merchant's app widgets are recreated locally: their unaudited authenticated/checkout states cannot be claimed as exact copies. The homepage keeps its public 66-review aggregate; the local review corpus contains the 55 reviews included in the captured public product source. Static marketing pages preserve the reference's dated content, including the 15 October hydration preorder and expired 30 September reward campaign. The dust bag also retains the reference's unusual shared serum template.
 
-The app fills the available camera viewport, reserves device safe areas and limits intro/AR sheets to 600 px on tablets and desktop. Short landscape layouts use a compact introduction. Sheet content scrolls independently when necessary, keeping its controls reachable. Hotspot text wraps rather than truncating. Cards occupy distinct positions outside the projected object anchors: keyboard cards sit in two pairs above and below, while cup/can cards spread around all four sides. Cards retain their readable size and spacing; they may extend beyond the viewport instead of being squeezed into the available screen. Moving the camera can reveal them again. The header and sheet render above the annotations. The tracked-object corner frame is removed; scanning corners appear only during initial discovery. Safari’s native browser bars remain controlled by iOS.
+Storefront presentation assets are local. The Skin Analysis page embeds the official GlamAR SDK; its script, frame and service requests are allowed only on that page. Other pages block remote scripts and frames. Public external press/social links remain outbound navigation links. Product statements are preserved reference copy.
 
-All overview and hotspot calls to action use HTTPS links to the official Leela site and open a new tab with `noopener noreferrer`. The following destinations were checked on 6 October 2026:
+## Previous POC
 
-- [Culinary Artistry](https://www.theleela.com/culinary-artistry-at-the-leela): dining, signature restaurants and the multi-property bar listings used by Explore bars.
-- [Aujasya](https://www.theleela.com/aujasya-by-the-leela): wellbeing and Sampoorna nourishment information.
-- [Meetings](https://www.theleela.com/meetings): meeting spaces and its linked MICE brochure. The brochure action preserves the official PDF URL and version from the reference.
-- [Sustainability](https://www.theleela.com/sustainability) and [Environmental stewardship](https://www.theleela.com/environmental-stewardship).
-- [Signatures](https://www.theleela.com/signatures-by-the-leela), [Royal Meetings](https://www.theleela.com/special-offers/royal-meetings), [Arq](https://www.theleela.com/arq-by-the-leela), and [The Library Bar](https://www.theleela.com/the-leela-palace-bengaluru/restaurants/the-library-bar).
+The previous WebAR implementation was removed from this folder after a verified archive was made. Its Git history remains intact. The accompanying implementation report identifies the recoverable archive and original Git revision.
 
-`src/content.js` contains the reference copy and links independently of tracking configuration. Time-sensitive offers and their linked pages may change.
+## Skin Analysis — GlamAR Web SDK
 
-## Automatic tracking
+The navigation link remains between The Story and About. The skin-analysis page uses the storefront's own photography, Avenir typography, cream/black sections, square controls and understated copy. Extra vendor branding has been removed from the merchant UI; the SDK's built-in attribution is untouched.
 
-| Target | Detector label | Network |
-| --- | --- | --- |
-| Cup | `CUP` | `NN_COFFEE_2.json` |
-| Keyboard | `KEYBOARD` | `NN_KEYBOARD_5.json` |
-| Sprite can | `SPRITECAN` | `NN_SPRITE_1.json` |
+The homepage initializes the official SDK with face/light model preloading in an offscreen, inert container. Home-to-skin navigation keeps the same frame connected. The **Analyse my skin** button only reveals that existing container. It does not initialize, restart, or call any SDK method (including `skinAnalysis('start')`); preparation, camera permissions, capture and the report remain native SDK screens. No camera method runs during preload. Other storefront routes and new-tab clicks retain normal navigation.
 
-The three networks are separate. Each candidate receives at least 1.8 seconds and 30 fresh detection frames; four consecutive valid, confident detections confirm the target. The scene retains its three-frame reveal check. Scores are judged using each model’s native thresholds, not compared across different models. Only the locked model runs during tracking. Brief misses preserve its lock; annotations hide after 220 ms. Once the UI has successfully revealed an object, the controller retains that model throughout loss instead of switching to an unrelated object. Recovery guidance appears after 500 ms without stable tracking. Before a successful reveal, the original 1.5-second loss budget can still advance the automatic search. **Rescan** explicitly releases the retained object and restarts automatic discovery. Returning from a background tab refreshes pose confirmation while retaining the discovered object and its details.
+**Recommendations require no login.** The result and recommendation events are independent and can arrive in either order. The SDK product tab and the merchant recommendations button open the same recommendations. Capturing a new scan clears the prior in-memory recommendations. No scan photos or scores are persisted.
 
-`src/auto-tracker.js` serializes destruction and initialization of the single tracking core. The camera stays open across model changes and model JSON is cached. GPU setup can briefly interrupt rendering; a complete search can take several seconds. Only one target is tracked at a time, and scan order affects the result if several supported objects are visible.
+The local demo matching rule considers concern scores below 75 (a storefront merchandising threshold, not a clinical cutoff), with the lowest matching score first. Acne/whiteheads/blackheads map to Acne, Blemish Control; pores/pigmentation/post-acne marks map to Dark Spots, Pore Control; hydration maps to Deep Hydration, Glow. It does not assign unrelated serums to eye concerns or wrinkles. Recommendations show relevant LNGVTY matches alongside SDK products, using the original collection header, card markup, promotional images and stylesheet. Each card shows 10ml, 30ml and 30+30ml size buttons. LNGVTY size selections independently update the catalogue variant, price, Add to cart and Buy now actions. Third-party size buttons are visual demo controls only: their SDK product identity and price remain unchanged. Selections persist when returning from the report and reset for a new scan. There is no routine view, login gate, role label, AM/PM tag or matching explanation on the cards. Exact local SKUs in SDK recommendations use the local catalogue. SDK-returned products preserve their actual names, images, prices and currency; alternatives remain available. A clear product type in its name takes precedence over a conflicting supplied category. No third-party products are invented when the SDK returns none.
 
-The pretrained models do not guarantee recognition of every cup, keyboard or Sprite package. Use a conventional opaque cup, a fully visible keyboard, or a Sprite 330 ml / 12 oz can with the logo visible. Other drinks, arbitrary cans, reflective or transparent materials and partial views may not work. No retraining, paid service, room anchors or real-world depth occlusion is added.
+SDK recommendation fields supported: `product_list` (including a `data` wrapper), `sku`, `brand`, `title`, `img`, `product_url`, `category`/`type`, `concern`/`target_concern`, `selling_price`/`mrp`/`price`, `currency`, `am_pm`. Product prices arrive in major currency units and are normalized to minor units. Only HTTPS external links/images are rendered. Unknown prices stay unavailable; currencies are never guessed or converted.
 
-## Code
+Both local and external INR-priced recommendations can enter the existing **mock cart**. External cart items use a `sdk:` namespace and persist only validated public product metadata alongside cart lines. They never place an order with another merchant. Non-INR or unpriced items link to the supplied product page instead of corrupting INR cart totals. Remote product images are permitted by the image policy; remote scripts, transactions and analytics remain blocked apart from the official SDK on the home/skin routes.
 
-- `src/app.js`: camera preview, permission/retry flow, automatic tracking and lifecycle.
-- `src/experience-ui.js`: overview/detail panels, external links and sheet controls.
-- `src/content.js`: the twelve supplied Leela hotspots, six overview actions and detail actions.
-- `src/tracking-recovery.js`: object-specific camera guidance and placement between the active header and bottom sheet.
-- `src/config.js`: unchanged detector profiles/search budgets, smoothing settings and four object-local anchor coordinates per target.
-- `src/scene.js`: Three.js pose conversion, smoothing and projection into the camera viewport.
-- `src/hotspots.js`: interactive pins, labels, gold leaders and object-relative placement without viewport clamping. Pins inherit the filtered object pose; text remains upright in screen space.
-- `src/tracker.js`: singleton vendor core, cancellation and cleanup.
-- `src/pose-filter.js`: adaptive One Euro position/quaternion filter and render interpolation.
+The server exposes only the configured app ID and SDK access key through `/api/skin-analysis/sdk-config`. The SDK access key is client-visible by design; the platform API token is unused. Set the local origins in the app's Allowed Domains and publish. Native SDK appearance and watermark are controlled by the app's SDK configuration. Closing or leaving a scan unregisters callbacks and removes the SDK frame.
 
-Add `?debug=1` to see scanning phase, current model, label and score. Anchor positions are reference locations in tracker units, not detected semantic keypoints or metres. Real-object alignment may need calibration. Older texture-card and branding assets remain unreferenced; they are not loaded by the active UI.
-
-Three.js remains pinned to r136. The vendored WebAR.rocks.object version and its two existing profile-isolation corrections are recorded in `vendor/sources.json`. Third-party license notices remain included.
-
-## Validation
-
-Run `node tests/auto-tracker-check.cjs` for confirmation, scan budgets, retained-target loss/recovery, resume/Rescan behavior, profile changes and cleanup. `node tests/pose-filter-check.cjs` checks the existing pose smoother. Neither is a physical recognition benchmark.
-
-Browser checks use a synthetic camera and injected recognition output to verify loader visibility through permission and playback startup, its minimum display time and completed opening reveal, camera-ready introduction, automatic preview/stream reuse, the three target experiences, all twelve tappable hotspots, selected-hotspot details and Back, overview-only label/Rescan controls, official-link destinations, delayed object-specific recovery guidance and unobscured controls, camera cleanup/restart and permission/error recovery. Responsive checks include mobile portrait, tablet, desktop and short landscape; safe-area and reduced-motion behavior are also checked. Real-object accuracy, camera calibration and native iOS browser chrome still require device testing.
+References: https://www.glamar.io/docs/integrations/skin-analysis/sdk/web/api/ and https://www.glamar.io/docs/integrations/skin-analysis/events/

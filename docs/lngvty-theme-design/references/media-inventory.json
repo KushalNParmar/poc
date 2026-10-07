@@ -1,0 +1,4601 @@
+{
+  "observed_on": "2026-10-07",
+  "note": "Observed public media references only; media files not bundled. Resolve srcset candidates and inspect image role and crop before use. Repeated assets intentionally remain associated with each page.",
+  "pages": [
+    {
+      "page": "https://lngvty.in/",
+      "media": [
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/India_s_1_regenerative_serum_1.webp?v=1788951270&width=1500",
+          "alt": "",
+          "class": "",
+          "media": "(max-width: 767px)",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/regenerative_serum_homepage_banner.jpg?v=1790862141&width=3840",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1188",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f.jpg?v=1783597339&width=1000",
+          "alt": "Serum front 30ml",
+          "class": "lng-serums__image lng-serums__image--default",
+          "media": "",
+          "width": "1000",
+          "height": "828",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/acne_1.webp?v=1783069163&width=1000",
+          "alt": "",
+          "class": "lng-serums__image lng-serums__image--hover",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/3_fa6a5cd6-22de-4dbf-8e0d-907b39558c9a.jpg?v=1783597305&width=1000",
+          "alt": "Serum front 30ml",
+          "class": "lng-serums__image lng-serums__image--default",
+          "media": "",
+          "width": "1000",
+          "height": "828",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/pore_1.webp?v=1783069164&width=1000",
+          "alt": "",
+          "class": "lng-serums__image lng-serums__image--hover",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/1_ef230265-217e-44f3-a6ca-7bc74de77a11.jpg?v=1783597239&width=1000",
+          "alt": "Serum front 30ml",
+          "class": "lng-serums__image lng-serums__image--default",
+          "media": "",
+          "width": "1000",
+          "height": "828",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Hydration_1.webp?v=1783069164&width=1000",
+          "alt": "",
+          "class": "lng-serums__image lng-serums__image--hover",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/skinmaxxing_after_1abe6e8a-aaa9-4079-a08c-4ef410d8f091.webp?v=1787641901&width=2400",
+          "alt": "",
+          "class": "lngvty-before-after__comparison-image",
+          "media": "",
+          "width": "1440",
+          "height": "810",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/skinmaxxing_before.webp?v=1787641502&width=2400",
+          "alt": "",
+          "class": "lngvty-before-after__comparison-image",
+          "media": "",
+          "width": "1440",
+          "height": "810",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/bermuda_triangle.webp?v=1788767649&width=1600",
+          "alt": "More products. Same problems.",
+          "class": "sx-art",
+          "media": "",
+          "width": "1600",
+          "height": "1999",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Untitled_design_10_a093ad91-5a6f-42f0-9872-16ff55d30cf8.jpg?v=1788766954&width=1600",
+          "alt": "What you see on the surface is not the whole problem.",
+          "class": "sx-art",
+          "media": "",
+          "width": "1600",
+          "height": "1600",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/ChatGPT_Image_Sep_7_2026_12_00_50_PM.webp?v=1788762688&width=1600",
+          "alt": "Our approach to SKINMAXXING.",
+          "class": "sx-art",
+          "media": "",
+          "width": "1600",
+          "height": "763",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/stem_cell_CM.jpg?v=1788767308&width=1600",
+          "alt": "How your skin gets the message - Stem Cell Cm.",
+          "class": "sx-art",
+          "media": "",
+          "width": "1600",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "video",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/5ad41db440e844f7ba6e2edee0e620a8.thumbnail.0000000000_900x.jpg?v=1790591126",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": "//lngvty.in/cdn/shop/files/preview_images/5ad41db440e844f7ba6e2edee0e620a8.thumbnail.0000000000_900x.jpg?v=1790591126"
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/videos/c/vp/5ad41db440e844f7ba6e2edee0e620a8/5ad41db440e844f7ba6e2edee0e620a8.HD-1080p-7.2Mbps-95763830.mp4?v=0",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/5ad41db440e844f7ba6e2edee0e620a8.thumbnail.0000000000_900x.jpg?v=1790591126",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "video",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/98149cb40e9944ea96cfa1a91706c1b3.thumbnail.0000000000_900x.jpg?v=1787654055",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": "//lngvty.in/cdn/shop/files/preview_images/98149cb40e9944ea96cfa1a91706c1b3.thumbnail.0000000000_900x.jpg?v=1787654055"
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/videos/c/vp/98149cb40e9944ea96cfa1a91706c1b3/98149cb40e9944ea96cfa1a91706c1b3.HD-1080p-2.5Mbps-92548027.mp4?v=0",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/98149cb40e9944ea96cfa1a91706c1b3.thumbnail.0000000000_900x.jpg?v=1787654055",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "video",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/5d8d65c1667f4eeda1dd28c9b45f2898.thumbnail.0000000000_900x.jpg?v=1787644953",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": "//lngvty.in/cdn/shop/files/preview_images/5d8d65c1667f4eeda1dd28c9b45f2898.thumbnail.0000000000_900x.jpg?v=1787644953"
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/videos/c/vp/5d8d65c1667f4eeda1dd28c9b45f2898/5d8d65c1667f4eeda1dd28c9b45f2898.HD-720p-1.6Mbps-92534724.mp4?v=0",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/5d8d65c1667f4eeda1dd28c9b45f2898.thumbnail.0000000000_900x.jpg?v=1787644953",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "video",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/bd75eee6dd4343b49c06d9622c73eb04.thumbnail.0000000000_900x.jpg?v=1787650939",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": "//lngvty.in/cdn/shop/files/preview_images/bd75eee6dd4343b49c06d9622c73eb04.thumbnail.0000000000_900x.jpg?v=1787650939"
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/videos/c/vp/bd75eee6dd4343b49c06d9622c73eb04/bd75eee6dd4343b49c06d9622c73eb04.HD-720p-1.6Mbps-92543390.mp4?v=0",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/bd75eee6dd4343b49c06d9622c73eb04.thumbnail.0000000000_900x.jpg?v=1787650939",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "video",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/86eb41ecde064a96aa58966f1d00ef85.thumbnail.0000000000_900x.jpg?v=1787650836",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": "//lngvty.in/cdn/shop/files/preview_images/86eb41ecde064a96aa58966f1d00ef85.thumbnail.0000000000_900x.jpg?v=1787650836"
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/videos/c/vp/86eb41ecde064a96aa58966f1d00ef85/86eb41ecde064a96aa58966f1d00ef85.HD-1080p-2.5Mbps-92543216.mp4?v=0",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/86eb41ecde064a96aa58966f1d00ef85.thumbnail.0000000000_900x.jpg?v=1787650836",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/blogs/skinmaxxing",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/what-causes-uneven-skin-tone-and-facial-pigmentation.png?v=1790847297&width=533",
+          "alt": "What Causes Uneven Skin Tone and Facial Pigmentation?",
+          "class": "motion-reduce",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/salicylic-acid-causing-dryness-and-breakouts-what-to-do.png?v=1790847284&width=533",
+          "alt": "Salicylic Acid Causing Dryness and Breakouts: What to Do",
+          "class": "motion-reduce",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/routine-for-oily-but-dehydrated-acne-prone-skin.png?v=1790847257&width=533",
+          "alt": "Routine for Oily but Dehydrated, Acne-Prone Skin",
+          "class": "motion-reduce",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/how-to-fade-dark-spots-left-after-acne.png?v=1790847270&width=533",
+          "alt": "How to Fade Dark Spots Left After Acne",
+          "class": "motion-reduce",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/how-to-choose-a-hydrating-serum-for-dehydrated-skin.png?v=1790847225&width=533",
+          "alt": "How to Choose a Hydrating Serum for Dehydrated Skin",
+          "class": "motion-reduce",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/how-to-use-vitamin-c-serum-without-wasting-it.png?v=1790867276&width=533",
+          "alt": "How to Use Vitamin C Serum Without Wasting It",
+          "class": "motion-reduce",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/night-skincare-routine-what-order-actually-matters.png?v=1790867356&width=533",
+          "alt": "Night Skincare Routine: What Order Actually Matters",
+          "class": "motion-reduce",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/whiteheads-removal-why-picking-makes-it-worse_6dbc69d5-16e3-49d2-a6e3-0f2c958c0eaa.png?v=1790928971&width=533",
+          "alt": "Whiteheads Removal: Why Picking Makes It Worse",
+          "class": "motion-reduce",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/melasma-treatment-why-its-different-from-regular-pigmentation.png?v=1790850032&width=533",
+          "alt": "Melasma Treatment: Why It's Different From Regular Pigmentation",
+          "class": "motion-reduce",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/collections/all",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/Acne.png?v=1790151428",
+          "alt": "LNGVTY Acne, Blemish Control serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/Darkspots.png?v=1790151428",
+          "alt": "LNGVTY Dark Spots, Pore Control serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/Glow.png?v=1790151428",
+          "alt": "LNGVTY Deep Hydration, Glow serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/collections/frontpage",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/Acne.png?v=1790151428",
+          "alt": "LNGVTY Acne, Blemish Control serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/Darkspots.png?v=1790151428",
+          "alt": "LNGVTY Dark Spots, Pore Control serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/Glow.png?v=1790151428",
+          "alt": "LNGVTY Deep Hydration, Glow serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/pages/about",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/ChatGPT_Image_Jul_7_2026_07_26_18_PM.jpg?v=1783432799&width=1600",
+          "alt": "Product editorial image",
+          "class": "skip-main-img",
+          "media": "",
+          "width": "1600",
+          "height": "1600",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Untitled_design_16_5084d8ff-09d4-4f49-a55d-fe8fc1409c4f.jpg?v=1784007334&width=1400",
+          "alt": "Founder portrait",
+          "class": "f-main-img",
+          "media": "",
+          "width": "1400",
+          "height": "1400",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/9_00668362-01af-4695-b1ec-6c22adcf72c2.jpg?v=1783329052&width=1400",
+          "alt": "Founder portrait",
+          "class": "f-main-img",
+          "media": "",
+          "width": "1400",
+          "height": "1400",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/33.jpg?v=1783325809&width=1400",
+          "alt": "Three serums editorial image",
+          "class": "close-main-img",
+          "media": "",
+          "width": "1400",
+          "height": "1400",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/pages/contact",
+      "media": []
+    },
+    {
+      "page": "https://lngvty.in/pages/faq",
+      "media": []
+    },
+    {
+      "page": "https://lngvty.in/pages/in-the-news",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/lngvty_image_media_800x.webp?v=1787119376",
+          "alt": "LNGVTY Raises Rs 5 Cr In Seed Funding Led by Rukam Capital",
+          "class": "",
+          "media": "",
+          "width": "800",
+          "height": "500",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/lngvty_image_media_800x.webp?v=1787119376",
+          "alt": "quickcommerce player plazza beauty brand lngvty bag early stage funds",
+          "class": "",
+          "media": "",
+          "width": "800",
+          "height": "500",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/lngvty_image_media_800x.webp?v=1787119376",
+          "alt": "Press coverage",
+          "class": "",
+          "media": "",
+          "width": "800",
+          "height": "500",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/lngvty_image_media_800x.webp?v=1787119376",
+          "alt": "Skin longevity startup LNGVTY raises Rs 5 crore in seed round led by Rukam Capital",
+          "class": "",
+          "media": "",
+          "width": "800",
+          "height": "500",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/skin-longevity-beauty-brand-lngvty-raises-usd-5-crore-in-seed-funding-led-by-rukam-capital-1-2026-07-20-16-54-44_800x.webp?v=1787118644",
+          "alt": "Skin Longevity Beauty Brand LNGVTY Raises ₹5 Crore in Seed Funding Led by Rukam Capital",
+          "class": "",
+          "media": "",
+          "width": "800",
+          "height": "500",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/lngvty_image_media_800x.webp?v=1787119376",
+          "alt": "Rukam Capital leads seed round in skin longevity beauty brand LNGVTY",
+          "class": "",
+          "media": "",
+          "width": "800",
+          "height": "500",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/pages/quiz",
+      "media": []
+    },
+    {
+      "page": "https://lngvty.in/pages/reason-to-believe",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/REASON_TO_BELIEVE.webp?v=1788749142&width=2400",
+          "alt": "Conditioned media and released signals",
+          "class": "",
+          "media": "",
+          "width": "2400",
+          "height": "1139",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/five-ch-1.webp?v=1787504777&width=1200",
+          "alt": "Structural fat grafting",
+          "class": "",
+          "media": "",
+          "width": "1200",
+          "height": "1200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/five-ch-2.webp?v=1787504777&width=1200",
+          "alt": "Adipose cell research",
+          "class": "",
+          "media": "",
+          "width": "1200",
+          "height": "1200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/five-ch-3.webp?v=1787504778&width=1200",
+          "alt": "Reconstructive use",
+          "class": "",
+          "media": "",
+          "width": "1200",
+          "height": "1200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/five-ch-4.webp?v=1787504776&width=1200",
+          "alt": "Conditioned-media skin studies",
+          "class": "",
+          "media": "",
+          "width": "1200",
+          "height": "1200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/02-dropper-feminine-tilted_1.webp?v=1788759219&width=2400",
+          "alt": "Finished serum drop on skin",
+          "class": "",
+          "media": "",
+          "width": "2400",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/ChatGPT_Image_Sep_7_2026_12_00_50_PM.webp?v=1788762688&width=2400",
+          "alt": "Laboratory detail",
+          "class": "",
+          "media": "",
+          "width": "2400",
+          "height": "1144",
+          "poster": ""
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/conditioned-media-cell-signalling-closeup.webp?v=1788876306&width=1400",
+          "alt": "",
+          "class": "",
+          "media": "(max-width: 900px)",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/01-stem-cell-releases-signals.webp?v=1788723694&width=1400",
+          "alt": "Adipose tissue macro",
+          "class": "",
+          "media": "",
+          "width": "1400",
+          "height": "1867",
+          "poster": ""
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/conditioned-media-signalling-bubbles.webp?v=1788876329&width=1400",
+          "alt": "",
+          "class": "",
+          "media": "(max-width: 900px)",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/02-signal-rich-conditioned-medium.webp?v=1788723704&width=1400",
+          "alt": "Cell-free conditioned medium",
+          "class": "",
+          "media": "",
+          "width": "1400",
+          "height": "1867",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/pages/relief",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/LNGVTY_SERUMS.webp?v=1788721629&width=2400",
+          "alt": "Conditioned media and released signals",
+          "class": "",
+          "media": "",
+          "width": "2400",
+          "height": "1351",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/06-real-repeated-routine_1.webp?v=1788758391&width=2000",
+          "alt": "Surface macro",
+          "class": "",
+          "media": "",
+          "width": "2000",
+          "height": "1334",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/download.webp?v=1788025715&width=800",
+          "alt": "One serum.",
+          "class": "rs-img rs-fu",
+          "media": "",
+          "width": "1200",
+          "height": "1500",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/download_1.webp?v=1788028509&width=180",
+          "alt": "Principle image",
+          "class": "relief-principles__image",
+          "media": "",
+          "width": "180",
+          "height": "180",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/download_2.webp?v=1788028509&width=180",
+          "alt": "Principle image",
+          "class": "relief-principles__image",
+          "media": "",
+          "width": "180",
+          "height": "180",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/download_3.webp?v=1788028509&width=180",
+          "alt": "Principle image",
+          "class": "relief-principles__image",
+          "media": "",
+          "width": "180",
+          "height": "180",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/download_4.webp?v=1788028509&width=180",
+          "alt": "Principle image",
+          "class": "relief-principles__image",
+          "media": "",
+          "width": "180",
+          "height": "180",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f.jpg?v=1783597339&width=1200",
+          "alt": "Serum front 30ml",
+          "class": "lngvty-shelf__image",
+          "media": "",
+          "width": "1200",
+          "height": "993",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/3_fa6a5cd6-22de-4dbf-8e0d-907b39558c9a.jpg?v=1783597305&width=1200",
+          "alt": "Serum front 30ml",
+          "class": "lngvty-shelf__image",
+          "media": "",
+          "width": "1200",
+          "height": "993",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/1_21ac2cd6-8055-44c6-b8f9-a0705bf98f53.jpg?v=1783597207&width=1200",
+          "alt": "",
+          "class": "lngvty-shelf__image",
+          "media": "",
+          "width": "1200",
+          "height": "993",
+          "poster": ""
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/skin-barrier-analysis.webp?v=1788875175&width=600 600w,                  //lngvty.in/cdn/shop/files/skin-barrier-analysis.webp?v=1788875175&width=900 900w,                  //lngvty.in/cdn/shop/files/skin-barrier-analysis.webp?v=1788875175&width=1200 1200w,                  //lngvty.in/cdn/shop/files/skin-barrier-analysis.webp?v=1788875175&width=1600 1600w,                  //lngvty.in/cdn/shop/files/skin-barrier-analysis.webp?v=1788875175&width=2000 2000w                ",
+          "alt": "",
+          "class": "",
+          "media": "(max-width: 760px)",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/02-same-skin-two-readings.webp?v=1788758757&width=2000",
+          "alt": "Surface macro",
+          "class": "",
+          "media": "",
+          "width": "2000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/ALL_3_SERUMS.jpg?v=1788758190&width=2000",
+          "alt": "Surface macro",
+          "class": "",
+          "media": "",
+          "width": "2000",
+          "height": "842",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/pages/tension",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/SKINCARE_HERO_IMAGE.jpg?v=1788715071&width=2400",
+          "alt": "Conditioned media and released signals",
+          "class": "",
+          "media": "",
+          "width": "2400",
+          "height": "1135",
+          "poster": ""
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/acne-prone-skin-analysis.webp?v=1788874611&width=600 600w,                  //lngvty.in/cdn/shop/files/acne-prone-skin-analysis.webp?v=1788874611&width=900 900w,                  //lngvty.in/cdn/shop/files/acne-prone-skin-analysis.webp?v=1788874611&width=1200 1200w,                  //lngvty.in/cdn/shop/files/acne-prone-skin-analysis.webp?v=1788874611&width=1600 1600w,                  //lngvty.in/cdn/shop/files/acne-prone-skin-analysis.webp?v=1788874611&width=2000 2000w                ",
+          "alt": "",
+          "class": "",
+          "media": "(max-width: 760px)",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/13-same-skin-scientific-thinner-face.webp?v=1788718106&width=2000",
+          "alt": "Surface macro",
+          "class": "",
+          "media": "",
+          "width": "2000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/01-products-before-v6.webp?v=1788768315&width=1600",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/01-products-after-v6.webp?v=1788768327&width=800 800w,                      //lngvty.in/cdn/shop/files/01-products-after-v6.webp?v=1788768327&width=1200 1200w,                      //lngvty.in/cdn/shop/files/01-products-after-v6.webp?v=1788768327&width=1600 1600w,                      //lngvty.in/cdn/shop/files/01-products-after-v6.webp?v=1788768327&width=2000 2000w                    ",
+          "alt": "",
+          "class": "",
+          "media": "(max-width: 760px)",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/01-products-after-v6.webp?v=1788768327&width=1600",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/15-incentive-loop-more-products_1.webp?v=1788758570&width=2000",
+          "alt": "A person at rest",
+          "class": "",
+          "media": "",
+          "width": "1774",
+          "height": "887",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/pages/truth",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/01-truth-hero-real-woman.webp?v=1788760884&width=2400",
+          "alt": "Conditioned media and released signals",
+          "class": "",
+          "media": "",
+          "width": "2400",
+          "height": "1028",
+          "poster": ""
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Untitled_design_10_a093ad91-5a6f-42f0-9872-16ff55d30cf8.jpg?v=1788766954&width=600 600w,                  //lngvty.in/cdn/shop/files/Untitled_design_10_a093ad91-5a6f-42f0-9872-16ff55d30cf8.jpg?v=1788766954&width=900 900w,                  //lngvty.in/cdn/shop/files/Untitled_design_10_a093ad91-5a6f-42f0-9872-16ff55d30cf8.jpg?v=1788766954&width=1200 1200w,                  //lngvty.in/cdn/shop/files/Untitled_design_10_a093ad91-5a6f-42f0-9872-16ff55d30cf8.jpg?v=1788766954&width=1600 1600w,                  //lngvty.in/cdn/shop/files/Untitled_design_10_a093ad91-5a6f-42f0-9872-16ff55d30cf8.jpg?v=1788766954&width=2000 2000w                ",
+          "alt": "",
+          "class": "",
+          "media": "(max-width: 760px)",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/3244686a-3d11-4a48-8177-028ed34728b3.webp?v=1788759300&width=2000",
+          "alt": "Surface macro",
+          "class": "",
+          "media": "",
+          "width": "2000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/step-2.webp?v=1787481684&width=1200",
+          "alt": "Cross-section of skin",
+          "class": "fill-up",
+          "media": "",
+          "width": "1200",
+          "height": "900",
+          "poster": ""
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/8_7aa8b8f2-267f-4cf2-b90f-e030e2315afe.jpg?v=1788757814&width=600 600w,                            //lngvty.in/cdn/shop/files/8_7aa8b8f2-267f-4cf2-b90f-e030e2315afe.jpg?v=1788757814&width=900 900w,                            //lngvty.in/cdn/shop/files/8_7aa8b8f2-267f-4cf2-b90f-e030e2315afe.jpg?v=1788757814&width=1200 1200w,                            //lngvty.in/cdn/shop/files/8_7aa8b8f2-267f-4cf2-b90f-e030e2315afe.jpg?v=1788757814&width=1600 1600w,                            //lngvty.in/cdn/shop/files/8_7aa8b8f2-267f-4cf2-b90f-e030e2315afe.jpg?v=1788757814&width=2000 2000w                          ",
+          "alt": "",
+          "class": "",
+          "media": "(max-width: 760px)",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/7_069f5c26-325c-4902-8e56-158070677a60.jpg?v=1788757786&width=2000",
+          "alt": "A person at rest",
+          "class": "",
+          "media": "",
+          "width": "1086",
+          "height": "815",
+          "poster": ""
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/7_069f5c26-325c-4902-8e56-158070677a60.jpg?v=1788757786&width=600 600w,                            //lngvty.in/cdn/shop/files/7_069f5c26-325c-4902-8e56-158070677a60.jpg?v=1788757786&width=900 900w,                            //lngvty.in/cdn/shop/files/7_069f5c26-325c-4902-8e56-158070677a60.jpg?v=1788757786&width=1200 1200w,                            //lngvty.in/cdn/shop/files/7_069f5c26-325c-4902-8e56-158070677a60.jpg?v=1788757786&width=1600 1600w,                            //lngvty.in/cdn/shop/files/7_069f5c26-325c-4902-8e56-158070677a60.jpg?v=1788757786&width=2000 2000w                          ",
+          "alt": "",
+          "class": "",
+          "media": "(max-width: 760px)",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/8_7aa8b8f2-267f-4cf2-b90f-e030e2315afe.jpg?v=1788757814&width=2000",
+          "alt": "Skin macro",
+          "class": "",
+          "media": "",
+          "width": "1086",
+          "height": "815",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/06-basal-renewal-layer.webp?v=1788761487&width=2000",
+          "alt": "A person at rest",
+          "class": "",
+          "media": "",
+          "width": "1671",
+          "height": "941",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/REAL_ROUTINE_SKINMAXXING.jpg?v=1788760838&width=2000",
+          "alt": "A person at rest",
+          "class": "",
+          "media": "",
+          "width": "2418",
+          "height": "1018",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/policies/privacy-policy",
+      "media": []
+    },
+    {
+      "page": "https://lngvty.in/policies/refund-policy",
+      "media": []
+    },
+    {
+      "page": "https://lngvty.in/policies/shipping-policy",
+      "media": []
+    },
+    {
+      "page": "https://lngvty.in/policies/terms-of-service",
+      "media": []
+    },
+    {
+      "page": "https://lngvty.in/products/acne-blemish-control-serum-30ml",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f.jpg?v=1783597339&width=2200",
+          "alt": "Serum front 30ml",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "1821",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/11.jpg?v=1783595072&width=2200",
+          "alt": "Serum front 10ml",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "1821",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/2-who_it_is_for_acne.webp?v=1788806861&width=2200",
+          "alt": "Acne, Blemish Control Serum",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "2200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/3_WHY_IT_WORKS_ACNE.webp?v=1788809148&width=2200",
+          "alt": "Acne, Blemish Control Serum",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "2200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/03-Acne_3a97d263-2ed3-4ced-93bd-1e3be199499e.png?v=1790661219&width=2200",
+          "alt": "Acne, Blemish Control Serum",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "2200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/04-Acne_6219fa80-9d1c-4357-a83f-999e98df0110.png?v=1790661219&width=2200",
+          "alt": "Acne, Blemish Control Serum",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "2200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/ACNE_PDP_NEW_AUG.ai.png?v=1790072077&width=2200",
+          "alt": "Acne, Blemish Control Serum",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "2200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/acne_bundle.webp?v=1789293308&width=2200",
+          "alt": "Acne, Blemish Control Serum",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "2200",
+          "poster": ""
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/skinmaxxing_after_1abe6e8a-aaa9-4079-a08c-4ef410d8f091.webp?v=1787641901&width=1600",
+          "alt": "",
+          "class": "",
+          "media": "(max-width: 749px)",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/skinmaxxing_after_1abe6e8a-aaa9-4079-a08c-4ef410d8f091.webp?v=1787641901&width=2400",
+          "alt": "",
+          "class": "lngvty-before-after__comparison-image",
+          "media": "",
+          "width": "1440",
+          "height": "810",
+          "poster": ""
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/skinmaxxing_before.webp?v=1787641502&width=1600",
+          "alt": "",
+          "class": "",
+          "media": "(max-width: 749px)",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/skinmaxxing_before.webp?v=1787641502&width=2400",
+          "alt": "",
+          "class": "lngvty-before-after__comparison-image",
+          "media": "",
+          "width": "1440",
+          "height": "810",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/download_5.webp?v=1788287311&width=700",
+          "alt": "",
+          "class": "lngvty-receipt__featured-image",
+          "media": "",
+          "width": "700",
+          "height": "2265",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/01-acne.png?v=1790679159&width=2000",
+          "alt": "",
+          "class": "lngvty-pictures__image",
+          "media": "",
+          "width": "2000",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/01.5-Acne.png?v=1790661219&width=2000",
+          "alt": "",
+          "class": "lngvty-pictures__image",
+          "media": "",
+          "width": "2000",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/02-Acne_3d91c5ce-e033-44de-9da6-78e4d5276ccc.png?v=1790661219&width=2000",
+          "alt": "",
+          "class": "lngvty-pictures__image",
+          "media": "",
+          "width": "2000",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/03-Acne_3a97d263-2ed3-4ced-93bd-1e3be199499e.png?v=1790661219&width=2000",
+          "alt": "",
+          "class": "lngvty-pictures__image",
+          "media": "",
+          "width": "2000",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/04-Acne_6219fa80-9d1c-4357-a83f-999e98df0110.png?v=1790661219&width=2000",
+          "alt": "",
+          "class": "lngvty-pictures__image",
+          "media": "",
+          "width": "2000",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/05-acne_d9596f5f-7584-4ae6-919b-a6e0d1a18a6e.png?v=1790661219&width=2000",
+          "alt": "",
+          "class": "lngvty-pictures__image",
+          "media": "",
+          "width": "2000",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/08-acne_5bb9db97-bef0-43ef-b1c7-f09ae12e6840.png?v=1790661219&width=2000",
+          "alt": "",
+          "class": "lngvty-pictures__image",
+          "media": "",
+          "width": "2000",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Acne-06_fa11e65e-3061-4f6a-9073-e8ef12afac45.png?v=1790661218&width=2000",
+          "alt": "",
+          "class": "lngvty-pictures__image",
+          "media": "",
+          "width": "2000",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/acne-skinl-1.webp?v=1788464303&width=900",
+          "alt": "Fewer breakouts",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/acne-skinl-2.webp?v=1788464303&width=900",
+          "alt": "Unclogs the pore",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/acne-skinl-3.webp?v=1788464303&width=900",
+          "alt": "Controls sebum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/acne-skinl-4.webp?v=1788464303&width=900",
+          "alt": "Marks fade sooner",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/acne-skinl-5.webp?v=1788464303&width=900",
+          "alt": "Calmer day to day ",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/bottle-1.webp?v=1788540594&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/bottle-2.webp?v=1788540594&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/bottle-3.webp?v=1788540594&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/bottle-4.webp?v=1788540594&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/bottle-5.webp?v=1788540594&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/bottle-6.webp?v=1788540594&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/bottle-7.webp?v=1788540594&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/bottle-8.webp?v=1788540594&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/bottle-9.webp?v=1788540594&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://review-images.judgeme.com/lngvty-in/1790872800__image__original.jpg?quality=80&width=160",
+          "alt": "Priyanshijaiswal review photo",
+          "class": "jdgm-rev__pic-img",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://review-images.judgeme.com/lngvty-in/1790528974__img_1503__original.jpeg?quality=80&width=160",
+          "alt": "Palasha review photo",
+          "class": "jdgm-rev__pic-img",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://review-images.judgeme.com/lngvty-in/1790327186__img_3157__original.jpeg?quality=80&width=160",
+          "alt": "Anonymous review photo",
+          "class": "jdgm-rev__pic-img",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://review-images.judgeme.com/lngvty-in/1789551888__61p6rvnufl__original.jpg?quality=80&width=160",
+          "alt": "Shajila CHoksi review photo",
+          "class": "jdgm-rev__pic-img",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://review-images.judgeme.com/lngvty-in/1787841434__0e3612e5-e07d-4c7d-8507-6623b92bf3fe__original.jpeg?quality=80&width=160",
+          "alt": "Supriya review photo",
+          "class": "jdgm-rev__pic-img",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://review-images.judgeme.com/lngvty-in/1787841436__img_3496__original.jpeg?quality=80&width=160",
+          "alt": "Supriya review photo",
+          "class": "jdgm-rev__pic-img",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://review-images.judgeme.com/lngvty-in/1787123920__acne__original.jpeg?quality=80&width=160",
+          "alt": "Anonymous review photo",
+          "class": "jdgm-rev__pic-img",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://review-images.judgeme.com/lngvty-in/1786524684__whatsappimage2026-08-12at142027__original.jpeg?quality=80&width=160",
+          "alt": "Prathabhatia review photo",
+          "class": "jdgm-rev__pic-img",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://review-images.judgeme.com/lngvty-in/1786514760__review2__original.jpeg?quality=80&width=160",
+          "alt": "Ishitar review photo",
+          "class": "jdgm-rev__pic-img",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://review-images.judgeme.com/lngvty-in/1786514390__review__original.jpeg?quality=80&width=160",
+          "alt": "Vansh review photo",
+          "class": "jdgm-rev__pic-img",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/3_fa6a5cd6-22de-4dbf-8e0d-907b39558c9a.jpg?v=1783597305&width=1800",
+          "alt": "Serum front 30ml",
+          "class": "xsc-image",
+          "media": "",
+          "width": "1800",
+          "height": "1490",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/1_ef230265-217e-44f3-a6ca-7bc74de77a11.jpg?v=1783597239&width=1800",
+          "alt": "Serum front 30ml",
+          "class": "xsc-image",
+          "media": "",
+          "width": "1800",
+          "height": "1490",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/products/dark-spots-pore-control-serum-30ml",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/3_fa6a5cd6-22de-4dbf-8e0d-907b39558c9a.jpg?v=1783597305&width=2200",
+          "alt": "Serum front 30ml",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "1821",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/21_44fe2aa8-e354-4c39-a43a-04eada18fedc.jpg?v=1783596536&width=2200",
+          "alt": "Serum front 10ml",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "1821",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/2_WHO_IT_IS_FOR_DARK_SPOTS.webp?v=1788812773&width=2200",
+          "alt": "Dark Spots, Pore Control Serum",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "2200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/03-darkspots_96ec7c0a-73df-4416-ad0b-dfba78249745.png?v=1790661400&width=2200",
+          "alt": "Dark Spots, Pore Control Serum",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "2200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/04-darkspots_0cf4fe52-8bd4-4e71-b9ec-496ed7df11bb.png?v=1790661400&width=2200",
+          "alt": "Dark Spots, Pore Control Serum",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "2200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/DARK_SPOTS_PDP_AUG_under_100KB.webp?v=1791182632&width=2200",
+          "alt": "Dark Spots, Pore Control Serum",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "2200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/DARK_SPOTS_PDP_AUG-5.png?v=1790072084&width=2200",
+          "alt": "Dark Spots, Pore Control Serum",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "2200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/dark_spots_bundle.webp?v=1789293250&width=2200",
+          "alt": "Dark Spots, Pore Control Serum",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "2200",
+          "poster": ""
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/dark_spots_after.jpg?v=1790061278&width=1600",
+          "alt": "",
+          "class": "",
+          "media": "(max-width: 749px)",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/dark_spots_after.jpg?v=1790061278&width=2400",
+          "alt": "",
+          "class": "lngvty-before-after__comparison-image",
+          "media": "",
+          "width": "1552",
+          "height": "873",
+          "poster": ""
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/dark_spots_before.jpg?v=1790061263&width=1600",
+          "alt": "",
+          "class": "",
+          "media": "(max-width: 749px)",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/dark_spots_before.jpg?v=1790061263&width=2400",
+          "alt": "",
+          "class": "lngvty-before-after__comparison-image",
+          "media": "",
+          "width": "1473",
+          "height": "829",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/download_5.webp?v=1788287311&width=700",
+          "alt": "",
+          "class": "lngvty-receipt__featured-image",
+          "media": "",
+          "width": "700",
+          "height": "2265",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/01-darkspots.png?v=1790679118&width=2000",
+          "alt": "",
+          "class": "lngvty-pictures__image",
+          "media": "",
+          "width": "2000",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/01.5-Darkspots.png?v=1790661398&width=2000",
+          "alt": "",
+          "class": "lngvty-pictures__image",
+          "media": "",
+          "width": "2000",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/02-darkspots_b518dc43-8bfc-4ee7-9c64-39a095bd8afd.png?v=1790661400&width=2000",
+          "alt": "",
+          "class": "lngvty-pictures__image",
+          "media": "",
+          "width": "2000",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/03-darkspots_96ec7c0a-73df-4416-ad0b-dfba78249745.png?v=1790661400&width=2000",
+          "alt": "",
+          "class": "lngvty-pictures__image",
+          "media": "",
+          "width": "2000",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/04-darkspots_0cf4fe52-8bd4-4e71-b9ec-496ed7df11bb.png?v=1790661400&width=2000",
+          "alt": "",
+          "class": "lngvty-pictures__image",
+          "media": "",
+          "width": "2000",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/05-darkspots_6c430224-2afd-44bf-9cef-9098bf2be3a9.png?v=1790661399&width=2000",
+          "alt": "",
+          "class": "lngvty-pictures__image",
+          "media": "",
+          "width": "2000",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/06-darkspots_7a780948-2225-40a5-9a97-69f7f83db6c8.png?v=1790661398&width=2000",
+          "alt": "",
+          "class": "lngvty-pictures__image",
+          "media": "",
+          "width": "2000",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/08-darkspots_4fd863f2-4f09-4418-bf02-a6d0a51a4015.png?v=1790661400&width=2000",
+          "alt": "",
+          "class": "lngvty-pictures__image",
+          "media": "",
+          "width": "2000",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Every_patient_saw_spots_fade.webp?v=1788604286&width=900",
+          "alt": "Every patient saw spots fade",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Fades_the_spot_at_the_source.webp?v=1788604323&width=900",
+          "alt": "Fades the spot at the source",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Pores_look_smaller.webp?v=1788604355&width=900",
+          "alt": "Pores look smaller",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Firmer_over_a_cycle.webp?v=1788604386&width=900",
+          "alt": "Firmer over a cycle",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/bottle-1.webp?v=1788540594&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Niacinamide-Dark_spots.webp?v=1788604940&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Kojic_acid-Dark_spots.webp?v=1788604889&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Six_peptides-Dark_spots.webp?v=1788605229&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Five_ceramides_cholesterol-dark_spots.webp?v=1788605187&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Green_tea_extract-dark_spots.webp?v=1788605141&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Centella_asiatica-Dark_spots.webp?v=1788605279&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Xylitol-Dak_spots.webp?v=1788605317&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Pentavitin-Dark_spots.webp?v=1788605075&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://review-images.judgeme.com/lngvty-in/1791183463__screenshot2026-10-05at122731pm__original.png?quality=80&width=160",
+          "alt": "Akshata Karekar review photo",
+          "class": "jdgm-rev__pic-img",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://review-images.judgeme.com/lngvty-in/1788008464__img_8619__original.jpeg?quality=80&width=160",
+          "alt": "Ruchira Gurle review photo",
+          "class": "jdgm-rev__pic-img",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://review-images.judgeme.com/lngvty-in/1787123630__darkspots__original.jpeg?quality=80&width=160",
+          "alt": "Nishika R review photo",
+          "class": "jdgm-rev__pic-img",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://review-images.judgeme.com/lngvty-in/1787038741__whatsappimage2026-08-13at193933__original.jpeg?quality=80&width=160",
+          "alt": "Jasleen kaur review photo",
+          "class": "jdgm-rev__pic-img",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://review-images.judgeme.com/lngvty-in/1787038744__whatsappimage2026-08-13at194002__original.jpeg?quality=80&width=160",
+          "alt": "Jasleen kaur review photo",
+          "class": "jdgm-rev__pic-img",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://review-images.judgeme.com/lngvty-in/1787038747__whatsappimage2026-08-13at193917__original.jpeg?quality=80&width=160",
+          "alt": "Jasleen kaur review photo",
+          "class": "jdgm-rev__pic-img",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://review-images.judgeme.com/lngvty-in/1786968898__img_5170__original.jpeg?quality=80&width=160",
+          "alt": "Preeti review photo",
+          "class": "jdgm-rev__pic-img",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f.jpg?v=1783597339&width=1800",
+          "alt": "Serum front 30ml",
+          "class": "xsc-image",
+          "media": "",
+          "width": "1800",
+          "height": "1490",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/1_ef230265-217e-44f3-a6ca-7bc74de77a11.jpg?v=1783597239&width=1800",
+          "alt": "Serum front 30ml",
+          "class": "xsc-image",
+          "media": "",
+          "width": "1800",
+          "height": "1490",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/products/deep-hydration-glow-serum-30ml",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/1_ef230265-217e-44f3-a6ca-7bc74de77a11.jpg?v=1783597239&width=2200",
+          "alt": "Serum front 30ml",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "1821",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/10_26eaafeb-697f-4a44-a89f-35202e17ad0b.jpg?v=1783593038&width=2200",
+          "alt": "Serum front 10ml",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "1821",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/2_WHO_IT_IS_FOR_DEEP_HYDRATION.webp?v=1788812664&width=2200",
+          "alt": "Deep Hydration, Glow Serum",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "2200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/3_WHY_IT_WORKS_DEEP_HYDRATION.webp?v=1788812663&width=2200",
+          "alt": "Deep Hydration, Glow Serum",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "2200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/03-Glow_3b73b92b-e371-4088-99a6-2f5437be1dc4.png?v=1790661308&width=2200",
+          "alt": "Deep Hydration, Glow Serum",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "2200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/04-Glow_90dd0f65-5557-4f3d-a5f9-e9194cee46ca.png?v=1790661308&width=2200",
+          "alt": "Deep Hydration, Glow Serum",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "2200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/DEEP_HYDRATION_PDP_AUG.ai_1_copy.webp?v=1791181277&width=2200",
+          "alt": "Deep Hydration, Glow Serum",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "2200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/deep_hydration_bundle.webp?v=1789293205&width=2200",
+          "alt": "Deep Hydration, Glow Serum",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "2200",
+          "poster": ""
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/glow_after.jpg?v=1790062048&width=1600",
+          "alt": "",
+          "class": "",
+          "media": "(max-width: 749px)",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/glow_after.jpg?v=1790062048&width=2400",
+          "alt": "",
+          "class": "lngvty-before-after__comparison-image",
+          "media": "",
+          "width": "1774",
+          "height": "998",
+          "poster": ""
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/glow_LEFT_FACE-DAY_0_JPG.jpg?v=1790061979&width=1600",
+          "alt": "",
+          "class": "",
+          "media": "(max-width: 749px)",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/glow_LEFT_FACE-DAY_0_JPG.jpg?v=1790061979&width=2400",
+          "alt": "",
+          "class": "lngvty-before-after__comparison-image",
+          "media": "",
+          "width": "1790",
+          "height": "1007",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/download_5.webp?v=1788287311&width=700",
+          "alt": "",
+          "class": "lngvty-receipt__featured-image",
+          "media": "",
+          "width": "700",
+          "height": "2265",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/01-glow.png?v=1790679075&width=2000",
+          "alt": "",
+          "class": "lngvty-pictures__image",
+          "media": "",
+          "width": "2000",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/01.5-Glow.png?v=1790661307&width=2000",
+          "alt": "",
+          "class": "lngvty-pictures__image",
+          "media": "",
+          "width": "2000",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/02-glow_c4482a75-79ba-4494-927a-807f95d46cd8.png?v=1790661307&width=2000",
+          "alt": "",
+          "class": "lngvty-pictures__image",
+          "media": "",
+          "width": "2000",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/03-Glow_3b73b92b-e371-4088-99a6-2f5437be1dc4.png?v=1790661308&width=2000",
+          "alt": "",
+          "class": "lngvty-pictures__image",
+          "media": "",
+          "width": "2000",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/04-Glow_90dd0f65-5557-4f3d-a5f9-e9194cee46ca.png?v=1790661308&width=2000",
+          "alt": "",
+          "class": "lngvty-pictures__image",
+          "media": "",
+          "width": "2000",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/05-glow_47b6e834-f3c2-4411-a468-143d07601846.png?v=1790661307&width=2000",
+          "alt": "",
+          "class": "lngvty-pictures__image",
+          "media": "",
+          "width": "2000",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/06-Glow_ddd90f85-4850-47b8-a3c9-6c1764aa421e.png?v=1790661306&width=2000",
+          "alt": "",
+          "class": "lngvty-pictures__image",
+          "media": "",
+          "width": "2000",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/08-glow_edc0eb9d-189c-4ee1-aa4a-3f93222ae3ce.png?v=1790661307&width=2000",
+          "alt": "",
+          "class": "lngvty-pictures__image",
+          "media": "",
+          "width": "2000",
+          "height": "2000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Hydration_that_stays-Deep_Hydration.webp?v=1788599050&width=900",
+          "alt": "Hydration that stays",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Glow_you_can_measure-Deep_hydration.webp?v=1788599081&width=900",
+          "alt": "Glow you can measure",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/More_even_tone-Deep_Hydration.webp?v=1788599115&width=900",
+          "alt": "More even tone",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Calm_while_it_works-Deep_Hydration.webp?v=1788599155&width=900",
+          "alt": "Calm while it works",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Condition_Media-Deep_hdydration.webp?v=1788590590&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Vitamin_C-_Deep_Hydration.webp?v=1788598850&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Niacinamide-Deep_Hydration.webp?v=1788598804&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Kojic_acid-Deep_Hydration.webp?v=1788599606&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Six_peptides-Deep_Hydration.webp?v=1788599552&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Five_ceramides_cholesterol-Deep_Hydration.webp?v=1788599503&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Pentavitin-Deep_Hydration.webp?v=1788598893&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Centella_asiatica-Deep_Hydration.webp?v=1788599666&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Xylitol-Deep_Hydration.webp?v=1788599712&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://review-images.judgeme.com/lngvty-in/1790055233__1000123724__original.jpg?quality=80&width=160",
+          "alt": "Ishpreet Kaur review photo",
+          "class": "jdgm-rev__pic-img",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://review-images.judgeme.com/lngvty-in/1789019382__img_0258__original.jpeg?quality=80&width=160",
+          "alt": "Aiswrya review photo",
+          "class": "jdgm-rev__pic-img",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://review-images.judgeme.com/lngvty-in/1787896696__1000391952__original.jpg?quality=80&width=160",
+          "alt": "Lovey tripathi review photo",
+          "class": "jdgm-rev__pic-img",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://review-images.judgeme.com/lngvty-in/1786603858__img_8487__original.jpeg?quality=80&width=160",
+          "alt": "Divya review photo",
+          "class": "jdgm-rev__pic-img",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://review-images.judgeme.com/lngvty-in/1786603861__img_8485__original.jpeg?quality=80&width=160",
+          "alt": "Divya review photo",
+          "class": "jdgm-rev__pic-img",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f.jpg?v=1783597339&width=1800",
+          "alt": "Serum front 30ml",
+          "class": "xsc-image",
+          "media": "",
+          "width": "1800",
+          "height": "1490",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/3_fa6a5cd6-22de-4dbf-8e0d-907b39558c9a.jpg?v=1783597305&width=1800",
+          "alt": "Serum front 30ml",
+          "class": "xsc-image",
+          "media": "",
+          "width": "1800",
+          "height": "1490",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/blogs/skinmaxxing/best-serum-for-glowing-skin-separating-real-glow-from-filter-skin-marketing",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/best-serum-for-glowing-skin-separating-real-glow-from-filter-skin-marketing.png?v=1790864189&width=1100",
+          "alt": "Best Serum for Glowing Skin: Separating Real Glow From Filter-Skin Marketing",
+          "class": "",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/1_ef230265-217e-44f3-a6ca-7bc74de77a11.jpg?v=1783597239",
+          "alt": "LNGVTY Deep Hydration, Glow Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/how-to-choose-a-hydrating-serum-for-dehydrated-skin.png?v=1790847225&width=600",
+          "alt": "How to Choose a Hydrating Serum for Dehydrated Skin",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/vitamin-c-serum-benefits-separating-evidence-from-hype.png?v=1790864328&width=600",
+          "alt": "Vitamin C Serum Benefits: Separating Evidence From Hype",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/what-causes-uneven-skin-tone-and-facial-pigmentation.png?v=1790847297&width=600",
+          "alt": "What Causes Uneven Skin Tone and Facial Pigmentation?",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/blogs/skinmaxxing/best-sunscreen-for-face-a-no-nonsense-buying-guide",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/best-sunscreen-for-face-a-no-nonsense-buying-guide.png?v=1790867380&width=1100",
+          "alt": "Best Sunscreen for Face: A No-Nonsense Buying Guide",
+          "class": "",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/3_fa6a5cd6-22de-4dbf-8e0d-907b39558c9a.jpg?v=1783597305",
+          "alt": "LNGVTY Dark Spots, Pore Control Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/vitamin-c-serum-for-face-what-it-actually-does.png?v=1790864294&width=600",
+          "alt": "Vitamin C Serum for Face: What It Actually Does",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/best-sunscreen-for-oily-skin-what-to-actually-look-for.png?v=1790864256&width=600",
+          "alt": "Best Sunscreen for Oily Skin: What to Actually Look For",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/what-causes-uneven-skin-tone-and-facial-pigmentation.png?v=1790847297&width=600",
+          "alt": "What Causes Uneven Skin Tone and Facial Pigmentation?",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/blogs/skinmaxxing/best-sunscreen-for-oily-skin-what-to-actually-look-for",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/best-sunscreen-for-oily-skin-what-to-actually-look-for.png?v=1790864256&width=1100",
+          "alt": "Best Sunscreen for Oily Skin: What to Actually Look For",
+          "class": "",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/routine-for-oily-but-dehydrated-acne-prone-skin.png?v=1790847257&width=600",
+          "alt": "Routine for Oily but Dehydrated, Acne-Prone Skin",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/what-causes-uneven-skin-tone-and-facial-pigmentation.png?v=1790847297&width=600",
+          "alt": "What Causes Uneven Skin Tone and Facial Pigmentation?",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/how-to-choose-a-hydrating-serum-for-dehydrated-skin.png?v=1790847225&width=600",
+          "alt": "How to Choose a Hydrating Serum for Dehydrated Skin",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/blogs/skinmaxxing/blackheads-removal-what-dermatology-actually-recommends",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/blackheads-removal-what-dermatology-actually-recommends_fa43bfd4-fab0-4b03-b277-e495104f4555.png?v=1790928983&width=1100",
+          "alt": "Blackheads Removal: What Dermatology Actually Recommends",
+          "class": "",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f.jpg?v=1783597339",
+          "alt": "LNGVTY Acne, Blemish Control Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/whiteheads-removal-why-picking-makes-it-worse_6dbc69d5-16e3-49d2-a6e3-0f2c958c0eaa.png?v=1790928971&width=600",
+          "alt": "Whiteheads Removal: Why Picking Makes It Worse",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/tan-removal-what-actually-works-vs-whats-folklore.png?v=1790867300&width=600",
+          "alt": "Tan Removal: What Actually Works vs What's Folklore",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/what-causes-uneven-skin-tone-and-facial-pigmentation.png?v=1790847297&width=600",
+          "alt": "What Causes Uneven Skin Tone and Facial Pigmentation?",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/blogs/skinmaxxing/ceramide-moisturizer-why-your-barrier-needs-this-not-actives",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/ceramide-moisturizer-why-your-barrier-needs-this-not-actives.png?v=1790864214&width=1100",
+          "alt": "Ceramide Moisturizer: Why Your Barrier Needs This, Not Actives",
+          "class": "",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/1_ef230265-217e-44f3-a6ca-7bc74de77a11.jpg?v=1783597239",
+          "alt": "LNGVTY Deep Hydration, Glow Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/what-causes-uneven-skin-tone-and-facial-pigmentation.png?v=1790847297&width=600",
+          "alt": "What Causes Uneven Skin Tone and Facial Pigmentation?",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/salicylic-acid-causing-dryness-and-breakouts-what-to-do.png?v=1790847284&width=600",
+          "alt": "Salicylic Acid Causing Dryness and Breakouts: What to Do",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/routine-for-oily-but-dehydrated-acne-prone-skin.png?v=1790847257&width=600",
+          "alt": "Routine for Oily but Dehydrated, Acne-Prone Skin",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/blogs/skinmaxxing/how-to-choose-a-hydrating-serum-for-dehydrated-skin",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/how-to-choose-a-hydrating-serum-for-dehydrated-skin.png?v=1790847225&width=1100",
+          "alt": "How to Choose a Hydrating Serum for Dehydrated Skin",
+          "class": "",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/1_ef230265-217e-44f3-a6ca-7bc74de77a11.jpg?v=1783597239",
+          "alt": "LNGVTY Deep Hydration, Glow Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/routine-for-oily-but-dehydrated-acne-prone-skin.png?v=1790847257&width=600",
+          "alt": "Routine for Oily but Dehydrated, Acne-Prone Skin",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/best-serum-for-glowing-skin-separating-real-glow-from-filter-skin-marketing.png?v=1790864189&width=600",
+          "alt": "Best Serum for Glowing Skin: Separating Real Glow From Filter-Skin Marketing",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/what-causes-uneven-skin-tone-and-facial-pigmentation.png?v=1790847297&width=600",
+          "alt": "What Causes Uneven Skin Tone and Facial Pigmentation?",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/blogs/skinmaxxing/how-to-fade-dark-spots-left-after-acne",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/how-to-fade-dark-spots-left-after-acne.png?v=1790847270&width=1100",
+          "alt": "How to Fade Dark Spots Left After Acne",
+          "class": "",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/3_fa6a5cd6-22de-4dbf-8e0d-907b39558c9a.jpg?v=1783597305",
+          "alt": "LNGVTY Dark Spots, Pore Control Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f.jpg?v=1783597339",
+          "alt": "LNGVTY Acne, Blemish Control Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/routine-for-oily-but-dehydrated-acne-prone-skin.png?v=1790847257&width=600",
+          "alt": "Routine for Oily but Dehydrated, Acne-Prone Skin",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/how-to-remove-dark-circles-what-works-and-whats-a-myth.png?v=1790867332&width=600",
+          "alt": "How to Remove Dark Circles: What Works and What's a Myth",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/what-causes-uneven-skin-tone-and-facial-pigmentation.png?v=1790847297&width=600",
+          "alt": "What Causes Uneven Skin Tone and Facial Pigmentation?",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/blogs/skinmaxxing/how-to-remove-dark-circles-what-works-and-whats-a-myth",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/how-to-remove-dark-circles-what-works-and-whats-a-myth.png?v=1790867332&width=1100",
+          "alt": "How to Remove Dark Circles: What Works and What's a Myth",
+          "class": "",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/how-to-fade-dark-spots-left-after-acne.png?v=1790847270&width=600",
+          "alt": "How to Fade Dark Spots Left After Acne",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/serum-for-pigmentation-what-the-research-actually-shows-works.png?v=1790850002&width=600",
+          "alt": "Serum for Pigmentation: What the Research Actually Shows Works",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/tan-removal-what-actually-works-vs-whats-folklore.png?v=1790867300&width=600",
+          "alt": "Tan Removal: What Actually Works vs What's Folklore",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/blogs/skinmaxxing/how-to-use-vitamin-c-serum-without-wasting-it",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/how-to-use-vitamin-c-serum-without-wasting-it.png?v=1790867276&width=1100",
+          "alt": "How to Use Vitamin C Serum Without Wasting It",
+          "class": "",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/1_ef230265-217e-44f3-a6ca-7bc74de77a11.jpg?v=1783597239",
+          "alt": "LNGVTY Deep Hydration, Glow Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/vitamin-c-serum-benefits-separating-evidence-from-hype.png?v=1790864328&width=600",
+          "alt": "Vitamin C Serum Benefits: Separating Evidence From Hype",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/vitamin-c-serum-for-face-what-it-actually-does.png?v=1790864294&width=600",
+          "alt": "Vitamin C Serum for Face: What It Actually Does",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/how-to-choose-a-hydrating-serum-for-dehydrated-skin.png?v=1790847225&width=600",
+          "alt": "How to Choose a Hydrating Serum for Dehydrated Skin",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/blogs/skinmaxxing/melasma-treatment-why-its-different-from-regular-pigmentation",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/melasma-treatment-why-its-different-from-regular-pigmentation.png?v=1790850032&width=1100",
+          "alt": "Melasma Treatment: Why It's Different From Regular Pigmentation",
+          "class": "",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/3_fa6a5cd6-22de-4dbf-8e0d-907b39558c9a.jpg?v=1783597305",
+          "alt": "LNGVTY Dark Spots, Pore Control Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/what-causes-uneven-skin-tone-and-facial-pigmentation.png?v=1790847297&width=600",
+          "alt": "What Causes Uneven Skin Tone and Facial Pigmentation?",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/serum-for-pigmentation-what-the-research-actually-shows-works.png?v=1790850002&width=600",
+          "alt": "Serum for Pigmentation: What the Research Actually Shows Works",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/salicylic-acid-causing-dryness-and-breakouts-what-to-do.png?v=1790847284&width=600",
+          "alt": "Salicylic Acid Causing Dryness and Breakouts: What to Do",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/blogs/skinmaxxing/night-skincare-routine-what-order-actually-matters",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/night-skincare-routine-what-order-actually-matters.png?v=1790867356&width=1100",
+          "alt": "Night Skincare Routine: What Order Actually Matters",
+          "class": "",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f.jpg?v=1783597339",
+          "alt": "LNGVTY Acne, Blemish Control Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/3_fa6a5cd6-22de-4dbf-8e0d-907b39558c9a.jpg?v=1783597305",
+          "alt": "LNGVTY Dark Spots, Pore Control Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/1_ef230265-217e-44f3-a6ca-7bc74de77a11.jpg?v=1783597239",
+          "alt": "LNGVTY Deep Hydration, Glow Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/routine-for-oily-but-dehydrated-acne-prone-skin.png?v=1790847257&width=600",
+          "alt": "Routine for Oily but Dehydrated, Acne-Prone Skin",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/what-causes-uneven-skin-tone-and-facial-pigmentation.png?v=1790847297&width=600",
+          "alt": "What Causes Uneven Skin Tone and Facial Pigmentation?",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/salicylic-acid-causing-dryness-and-breakouts-what-to-do.png?v=1790847284&width=600",
+          "alt": "Salicylic Acid Causing Dryness and Breakouts: What to Do",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/blogs/skinmaxxing/routine-for-oily-but-dehydrated-acne-prone-skin",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/routine-for-oily-but-dehydrated-acne-prone-skin.png?v=1790847257&width=1100",
+          "alt": "Routine for Oily but Dehydrated, Acne-Prone Skin",
+          "class": "",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f.jpg?v=1783597339",
+          "alt": "LNGVTY Acne, Blemish Control Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/1_ef230265-217e-44f3-a6ca-7bc74de77a11.jpg?v=1783597239",
+          "alt": "LNGVTY Deep Hydration, Glow Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/how-to-choose-a-hydrating-serum-for-dehydrated-skin.png?v=1790847225&width=600",
+          "alt": "How to Choose a Hydrating Serum for Dehydrated Skin",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/best-sunscreen-for-oily-skin-what-to-actually-look-for.png?v=1790864256&width=600",
+          "alt": "Best Sunscreen for Oily Skin: What to Actually Look For",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/what-causes-uneven-skin-tone-and-facial-pigmentation.png?v=1790847297&width=600",
+          "alt": "What Causes Uneven Skin Tone and Facial Pigmentation?",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/blogs/skinmaxxing/salicylic-acid-causing-dryness-and-breakouts-what-to-do",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/salicylic-acid-causing-dryness-and-breakouts-what-to-do.png?v=1790847284&width=1100",
+          "alt": "Salicylic Acid Causing Dryness and Breakouts: What to Do",
+          "class": "",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f.jpg?v=1783597339",
+          "alt": "LNGVTY Acne, Blemish Control Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/1_ef230265-217e-44f3-a6ca-7bc74de77a11.jpg?v=1783597239",
+          "alt": "LNGVTY Deep Hydration, Glow Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/what-causes-uneven-skin-tone-and-facial-pigmentation.png?v=1790847297&width=600",
+          "alt": "What Causes Uneven Skin Tone and Facial Pigmentation?",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/routine-for-oily-but-dehydrated-acne-prone-skin.png?v=1790847257&width=600",
+          "alt": "Routine for Oily but Dehydrated, Acne-Prone Skin",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/how-to-fade-dark-spots-left-after-acne.png?v=1790847270&width=600",
+          "alt": "How to Fade Dark Spots Left After Acne",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/blogs/skinmaxxing/serum-for-pigmentation-what-the-research-actually-shows-works",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/serum-for-pigmentation-what-the-research-actually-shows-works.png?v=1790850002&width=1100",
+          "alt": "Serum for Pigmentation: What the Research Actually Shows Works",
+          "class": "",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/3_fa6a5cd6-22de-4dbf-8e0d-907b39558c9a.jpg?v=1783597305",
+          "alt": "LNGVTY Dark Spots, Pore Control Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f.jpg?v=1783597339",
+          "alt": "LNGVTY Acne, Blemish Control Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/what-causes-uneven-skin-tone-and-facial-pigmentation.png?v=1790847297&width=600",
+          "alt": "What Causes Uneven Skin Tone and Facial Pigmentation?",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/how-to-choose-a-hydrating-serum-for-dehydrated-skin.png?v=1790847225&width=600",
+          "alt": "How to Choose a Hydrating Serum for Dehydrated Skin",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/how-to-use-vitamin-c-serum-without-wasting-it.png?v=1790867276&width=600",
+          "alt": "How to Use Vitamin C Serum Without Wasting It",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/blogs/skinmaxxing/tan-removal-what-actually-works-vs-whats-folklore",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/tan-removal-what-actually-works-vs-whats-folklore.png?v=1790867300&width=1100",
+          "alt": "Tan Removal: What Actually Works vs What's Folklore",
+          "class": "",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/3_fa6a5cd6-22de-4dbf-8e0d-907b39558c9a.jpg?v=1783597305",
+          "alt": "LNGVTY Dark Spots, Pore Control Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/whiteheads-removal-why-picking-makes-it-worse_6dbc69d5-16e3-49d2-a6e3-0f2c958c0eaa.png?v=1790928971&width=600",
+          "alt": "Whiteheads Removal: Why Picking Makes It Worse",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/serum-for-pigmentation-what-the-research-actually-shows-works.png?v=1790850002&width=600",
+          "alt": "Serum for Pigmentation: What the Research Actually Shows Works",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/how-to-remove-dark-circles-what-works-and-whats-a-myth.png?v=1790867332&width=600",
+          "alt": "How to Remove Dark Circles: What Works and What's a Myth",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/blogs/skinmaxxing/vitamin-c-serum-benefits-separating-evidence-from-hype",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/vitamin-c-serum-benefits-separating-evidence-from-hype.png?v=1790864328&width=1100",
+          "alt": "Vitamin C Serum Benefits: Separating Evidence From Hype",
+          "class": "",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/1_ef230265-217e-44f3-a6ca-7bc74de77a11.jpg?v=1783597239",
+          "alt": "LNGVTY Deep Hydration, Glow Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/how-to-use-vitamin-c-serum-without-wasting-it.png?v=1790867276&width=600",
+          "alt": "How to Use Vitamin C Serum Without Wasting It",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/best-serum-for-glowing-skin-separating-real-glow-from-filter-skin-marketing.png?v=1790864189&width=600",
+          "alt": "Best Serum for Glowing Skin: Separating Real Glow From Filter-Skin Marketing",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/vitamin-c-serum-for-face-what-it-actually-does.png?v=1790864294&width=600",
+          "alt": "Vitamin C Serum for Face: What It Actually Does",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/blogs/skinmaxxing/vitamin-c-serum-for-face-what-it-actually-does",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/vitamin-c-serum-for-face-what-it-actually-does.png?v=1790864294&width=1100",
+          "alt": "Vitamin C Serum for Face: What It Actually Does",
+          "class": "",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/1_ef230265-217e-44f3-a6ca-7bc74de77a11.jpg?v=1783597239",
+          "alt": "LNGVTY Deep Hydration, Glow Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/how-to-use-vitamin-c-serum-without-wasting-it.png?v=1790867276&width=600",
+          "alt": "How to Use Vitamin C Serum Without Wasting It",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/vitamin-c-serum-benefits-separating-evidence-from-hype.png?v=1790864328&width=600",
+          "alt": "Vitamin C Serum Benefits: Separating Evidence From Hype",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/how-to-choose-a-hydrating-serum-for-dehydrated-skin.png?v=1790847225&width=600",
+          "alt": "How to Choose a Hydrating Serum for Dehydrated Skin",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/blogs/skinmaxxing/what-causes-uneven-skin-tone-and-facial-pigmentation",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/what-causes-uneven-skin-tone-and-facial-pigmentation.png?v=1790847297&width=1100",
+          "alt": "What Causes Uneven Skin Tone and Facial Pigmentation?",
+          "class": "",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/3_fa6a5cd6-22de-4dbf-8e0d-907b39558c9a.jpg?v=1783597305",
+          "alt": "LNGVTY Dark Spots, Pore Control Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f.jpg?v=1783597339",
+          "alt": "LNGVTY Acne, Blemish Control Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/routine-for-oily-but-dehydrated-acne-prone-skin.png?v=1790847257&width=600",
+          "alt": "Routine for Oily but Dehydrated, Acne-Prone Skin",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/how-to-choose-a-hydrating-serum-for-dehydrated-skin.png?v=1790847225&width=600",
+          "alt": "How to Choose a Hydrating Serum for Dehydrated Skin",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/melasma-treatment-why-its-different-from-regular-pigmentation.png?v=1790850032&width=600",
+          "alt": "Melasma Treatment: Why It's Different From Regular Pigmentation",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/blogs/skinmaxxing/whiteheads-removal-why-picking-makes-it-worse",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/whiteheads-removal-why-picking-makes-it-worse_6dbc69d5-16e3-49d2-a6e3-0f2c958c0eaa.png?v=1790928971&width=1100",
+          "alt": "Whiteheads Removal: Why Picking Makes It Worse",
+          "class": "",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f.jpg?v=1783597339",
+          "alt": "LNGVTY Acne, Blemish Control Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/tan-removal-what-actually-works-vs-whats-folklore.png?v=1790867300&width=600",
+          "alt": "Tan Removal: What Actually Works vs What's Folklore",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/blackheads-removal-what-dermatology-actually-recommends_fa43bfd4-fab0-4b03-b277-e495104f4555.png?v=1790928983&width=600",
+          "alt": "Blackheads Removal: What Dermatology Actually Recommends",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/what-causes-uneven-skin-tone-and-facial-pigmentation.png?v=1790847297&width=600",
+          "alt": "What Causes Uneven Skin Tone and Facial Pigmentation?",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/blogs/skinmaxxing/why-your-pores-look-bigger-than-they-are-and-what-actually-closes-them",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/why-your-pores-look-bigger-than-they-are-and-what-actually-closes-them_92946fc0-2257-4907-96a7-366ed3f69d8e.png?v=1790928958&width=1100",
+          "alt": "Why Your Pores Look Bigger Than They Are (And What Actually Closes Them)",
+          "class": "",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/3_fa6a5cd6-22de-4dbf-8e0d-907b39558c9a.jpg?v=1783597305",
+          "alt": "LNGVTY Dark Spots, Pore Control Serum",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/best-sunscreen-for-oily-skin-what-to-actually-look-for.png?v=1790864256&width=600",
+          "alt": "Best Sunscreen for Oily Skin: What to Actually Look For",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/what-causes-uneven-skin-tone-and-facial-pigmentation.png?v=1790847297&width=600",
+          "alt": "What Causes Uneven Skin Tone and Facial Pigmentation?",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/salicylic-acid-causing-dryness-and-breakouts-what-to-do.png?v=1790847284&width=600",
+          "alt": "Salicylic Acid Causing Dryness and Breakouts: What to Do",
+          "class": "",
+          "media": "",
+          "width": "600",
+          "height": "450",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/pages/acne-5-reasons",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/4.png?v=1791269980&width=1080",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1080",
+          "height": "802",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/5.png?v=1791270028&width=1080",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1080",
+          "height": "793",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/4_84941d30-0833-4d2d-9678-d164174950db.webp?v=1791205037&width=1080",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1080",
+          "height": "1080",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/review.webp?v=1791270899&width=1080",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1080",
+          "height": "1080",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/9_8df49bc7-7349-443c-a314-9463cfb7558f.webp?v=1791272197&width=1080",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1080",
+          "height": "1080",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/2_32c2db25-eecf-4fbd-963e-04abb496da72.webp?v=1791205037&width=1080",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1080",
+          "height": "1080",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/4_84941d30-0833-4d2d-9678-d164174950db.webp?v=1791205037&width=1080",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1080",
+          "height": "1080",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/5_32ae7b11-c19b-46e9-8d92-6f1f17bb92ce.webp?v=1791205037&width=1080",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1080",
+          "height": "1080",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/7_d7e393c0-6270-4ea0-9866-9ff729da62af.webp?v=1791205037&width=1080",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1080",
+          "height": "1080",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/8_51c43c73-c141-44d2-a9b6-b3c72acb1961.webp?v=1791272197&width=1080",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1080",
+          "height": "1080",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f.jpg?v=1783597339&width=1200",
+          "alt": "Serum front 30ml",
+          "class": "",
+          "media": "",
+          "width": "1200",
+          "height": "993",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/11.jpg?v=1783595072&width=1200",
+          "alt": "Serum front 10ml",
+          "class": "",
+          "media": "",
+          "width": "1200",
+          "height": "993",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/2-who_it_is_for_acne.webp?v=1788806861&width=1200",
+          "alt": "Acne, Blemish Control Serum",
+          "class": "",
+          "media": "",
+          "width": "1200",
+          "height": "1200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/3_WHY_IT_WORKS_ACNE.webp?v=1788809148&width=1200",
+          "alt": "Acne, Blemish Control Serum",
+          "class": "",
+          "media": "",
+          "width": "1200",
+          "height": "1200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/03-Acne_3a97d263-2ed3-4ced-93bd-1e3be199499e.png?v=1790661219&width=1200",
+          "alt": "Acne, Blemish Control Serum",
+          "class": "",
+          "media": "",
+          "width": "1200",
+          "height": "1200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/04-Acne_6219fa80-9d1c-4357-a83f-999e98df0110.png?v=1790661219&width=1200",
+          "alt": "Acne, Blemish Control Serum",
+          "class": "",
+          "media": "",
+          "width": "1200",
+          "height": "1200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/ACNE_PDP_NEW_AUG.ai.png?v=1790072077&width=1200",
+          "alt": "Acne, Blemish Control Serum",
+          "class": "",
+          "media": "",
+          "width": "1200",
+          "height": "1200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/acne_bundle.webp?v=1789293308&width=1200",
+          "alt": "Acne, Blemish Control Serum",
+          "class": "",
+          "media": "",
+          "width": "1200",
+          "height": "1200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/006-LEFT_FACE-DAY_0.png?v=1791271336&width=1080",
+          "alt": "Day 0",
+          "class": "",
+          "media": "",
+          "width": "1080",
+          "height": "1080",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/006-LEFT_FACE-DAY_0.png?v=1791271336&width=1080",
+          "alt": "Day 14",
+          "class": "",
+          "media": "",
+          "width": "1080",
+          "height": "1080",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/006-LEFT_FACE-DAY_28.png?v=1791271335&width=1080",
+          "alt": "Day 28",
+          "class": "",
+          "media": "",
+          "width": "1080",
+          "height": "1080",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/bottle-1.webp?v=1788540594&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/bottle-2.webp?v=1788540594&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/bottle-3.webp?v=1788540594&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/bottle-4.webp?v=1788540594&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/bottle-5.webp?v=1788540594&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/bottle-6.webp?v=1788540594&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/bottle-7.webp?v=1788540594&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/bottle-8.webp?v=1788540594&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/bottle-9.webp?v=1788540594&width=1000",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1000",
+          "height": "1000",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f.jpg?v=1783597339&width=120",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "120",
+          "height": "99",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/pages/kp-account",
+      "media": []
+    },
+    {
+      "page": "https://lngvty.in/pages/reward-for-discipline",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/Pore-Banner.webp?v=1790073747",
+          "alt": "Pore Control serum — Reward for Discipline",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/Glow-Banner.webp?v=1790073747",
+          "alt": "Glow serum — Reward for Discipline",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/Acne-Banner.webp?v=1790073747",
+          "alt": "Acne serum — Reward for Discipline",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f.jpg?v=1783597339&width=1200",
+          "alt": "LNGVTY Acne, Blemish Control Serum bottle beside its carton",
+          "class": "",
+          "media": "",
+          "width": "1200",
+          "height": "900",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/3_fa6a5cd6-22de-4dbf-8e0d-907b39558c9a.jpg?v=1783597305&width=1200",
+          "alt": "LNGVTY Dark Spots, Pore Control Serum bottle",
+          "class": "",
+          "media": "",
+          "width": "1200",
+          "height": "900",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/1_ef230265-217e-44f3-a6ca-7bc74de77a11.jpg?v=1783597239&width=1200",
+          "alt": "LNGVTY Deep Hydration, Glow Serum bottle beside its carton",
+          "class": "",
+          "media": "",
+          "width": "1200",
+          "height": "900",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/pratha_img.webp?v=1789123194",
+          "alt": "Example check-in photo: face, the LNGVTY bottle in hand, and the dropper releasing a drop, all in one frame",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "video",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/7bb4a225e8984b21a9742d07830dcbc3.thumbnail.0000000000_900x.jpg?v=1787644967",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": "//lngvty.in/cdn/shop/files/preview_images/7bb4a225e8984b21a9742d07830dcbc3.thumbnail.0000000000_900x.jpg?v=1787644967"
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/videos/c/vp/7bb4a225e8984b21a9742d07830dcbc3/7bb4a225e8984b21a9742d07830dcbc3.HD-720p-1.6Mbps-92534741.mp4?v=0",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/7bb4a225e8984b21a9742d07830dcbc3.thumbnail.0000000000_900x.jpg?v=1787644967",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "video",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/98149cb40e9944ea96cfa1a91706c1b3.thumbnail.0000000000_900x.jpg?v=1787654055",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": "//lngvty.in/cdn/shop/files/preview_images/98149cb40e9944ea96cfa1a91706c1b3.thumbnail.0000000000_900x.jpg?v=1787654055"
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/videos/c/vp/98149cb40e9944ea96cfa1a91706c1b3/98149cb40e9944ea96cfa1a91706c1b3.HD-1080p-2.5Mbps-92548027.mp4?v=0",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/98149cb40e9944ea96cfa1a91706c1b3.thumbnail.0000000000_900x.jpg?v=1787654055",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "video",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/5d8d65c1667f4eeda1dd28c9b45f2898.thumbnail.0000000000_900x.jpg?v=1787644953",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": "//lngvty.in/cdn/shop/files/preview_images/5d8d65c1667f4eeda1dd28c9b45f2898.thumbnail.0000000000_900x.jpg?v=1787644953"
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/videos/c/vp/5d8d65c1667f4eeda1dd28c9b45f2898/5d8d65c1667f4eeda1dd28c9b45f2898.HD-720p-1.6Mbps-92534724.mp4?v=0",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/5d8d65c1667f4eeda1dd28c9b45f2898.thumbnail.0000000000_900x.jpg?v=1787644953",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "video",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/bd75eee6dd4343b49c06d9622c73eb04.thumbnail.0000000000_900x.jpg?v=1787650939",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": "//lngvty.in/cdn/shop/files/preview_images/bd75eee6dd4343b49c06d9622c73eb04.thumbnail.0000000000_900x.jpg?v=1787650939"
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/videos/c/vp/bd75eee6dd4343b49c06d9622c73eb04/bd75eee6dd4343b49c06d9622c73eb04.HD-720p-1.6Mbps-92543390.mp4?v=0",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/bd75eee6dd4343b49c06d9622c73eb04.thumbnail.0000000000_900x.jpg?v=1787650939",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "video",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/86eb41ecde064a96aa58966f1d00ef85.thumbnail.0000000000_900x.jpg?v=1787650836",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": "//lngvty.in/cdn/shop/files/preview_images/86eb41ecde064a96aa58966f1d00ef85.thumbnail.0000000000_900x.jpg?v=1787650836"
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/videos/c/vp/86eb41ecde064a96aa58966f1d00ef85/86eb41ecde064a96aa58966f1d00ef85.HD-1080p-2.5Mbps-92543216.mp4?v=0",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/86eb41ecde064a96aa58966f1d00ef85.thumbnail.0000000000_900x.jpg?v=1787650836",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/banner_2_desktop.webp?v=1789123247",
+          "alt": "",
+          "class": "",
+          "media": "(min-width:900px)",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/banner_2_mobile.webp?v=1789123258",
+          "alt": "Most beauty brands make money when you quit. Start the challenge.",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/pages/reward-for-discipline-tnc",
+      "media": []
+    },
+    {
+      "page": "https://lngvty.in/pages/science",
+      "media": [
+        {
+          "element": "video",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/8e85990087694e02b7f105a7cf2db10d.thumbnail.0000000000_small.jpg?v=1783582598",
+          "alt": "",
+          "class": "sh-main-video",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": "//lngvty.in/cdn/shop/files/preview_images/8e85990087694e02b7f105a7cf2db10d.thumbnail.0000000000_small.jpg?v=1783582598"
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/videos/c/vp/8e85990087694e02b7f105a7cf2db10d/8e85990087694e02b7f105a7cf2db10d.HD-720p-1.6Mbps-88493058.mp4?v=0",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/8e85990087694e02b7f105a7cf2db10d.thumbnail.0000000000_small.jpg?v=1783582598",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/Untitled_design_1.jpg?v=1783616020&width=3840",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "1672",
+          "height": "941.0",
+          "poster": ""
+        },
+        {
+          "element": "video",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/5eb7fdf40a70487b8e9ce7b1ded3aba3.thumbnail.0000000000_small.jpg?v=1783756101",
+          "alt": "",
+          "class": "p-video ready",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": "//lngvty.in/cdn/shop/files/preview_images/5eb7fdf40a70487b8e9ce7b1ded3aba3.thumbnail.0000000000_small.jpg?v=1783756101"
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/videos/c/vp/5eb7fdf40a70487b8e9ce7b1ded3aba3/5eb7fdf40a70487b8e9ce7b1ded3aba3.HD-720p-3.0Mbps-88682486.mp4?v=0",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/5eb7fdf40a70487b8e9ce7b1ded3aba3.thumbnail.0000000000_small.jpg?v=1783756101",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/1_56119069-5c17-444a-9d56-85ac597f2788.jpg?v=1783803823&width=1200",
+          "alt": "",
+          "class": "p-main-img",
+          "media": "",
+          "width": "1200",
+          "height": "800",
+          "poster": ""
+        },
+        {
+          "element": "video",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/8fa5c1b50ecd48a794f4c2bff29ec82e.thumbnail.0000000000_small.jpg?v=1783331652",
+          "alt": "",
+          "class": "p-video ready",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": "//lngvty.in/cdn/shop/files/preview_images/8fa5c1b50ecd48a794f4c2bff29ec82e.thumbnail.0000000000_small.jpg?v=1783331652"
+        },
+        {
+          "element": "source",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/videos/c/vp/8fa5c1b50ecd48a794f4c2bff29ec82e/8fa5c1b50ecd48a794f4c2bff29ec82e.HD-720p-2.1Mbps-88215860.mp4?v=0",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/preview_images/8fa5c1b50ecd48a794f4c2bff29ec82e.thumbnail.0000000000_small.jpg?v=1783331652",
+          "alt": "",
+          "class": "",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/3_64b0c2e1-95f7-497c-825d-b4da25fc5b6e.jpg?v=1783803850&width=1200",
+          "alt": "",
+          "class": "p-main-img",
+          "media": "",
+          "width": "1200",
+          "height": "800",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/4_6e76dd7f-60c1-418b-a568-e37d0592fbe5.jpg?v=1783803876&width=1200",
+          "alt": "",
+          "class": "p-main-img",
+          "media": "",
+          "width": "1200",
+          "height": "800",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/5_e1a15e07-e90e-4162-aa4e-7ed7bb4a8604.jpg?v=1783803892&width=1200",
+          "alt": "",
+          "class": "p-main-img",
+          "media": "",
+          "width": "1200",
+          "height": "800",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/pages/the-acne-serum-that-works",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/acne_hero_new.jpg?v=1786211007",
+          "alt": "Acne + Blemish Control Serum by LNGVTY",
+          "class": "lp-hero-k7x2m__img",
+          "media": "",
+          "width": "1200",
+          "height": "1500",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f.jpg?v=1783597339&width=1400",
+          "alt": "Acne, Blemish Control Serum - image 1",
+          "class": "lp-buy-k7x2m__img",
+          "media": "",
+          "width": "1200",
+          "height": "1500",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/11.jpg?v=1783595072&width=1400",
+          "alt": "Acne, Blemish Control Serum - image 2",
+          "class": "lp-buy-k7x2m__img",
+          "media": "",
+          "width": "1200",
+          "height": "1500",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/2-who_it_is_for_acne.webp?v=1788806861&width=1400",
+          "alt": "Acne, Blemish Control Serum - image 3",
+          "class": "lp-buy-k7x2m__img",
+          "media": "",
+          "width": "1200",
+          "height": "1500",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/3_WHY_IT_WORKS_ACNE.webp?v=1788809148&width=1400",
+          "alt": "Acne, Blemish Control Serum - image 4",
+          "class": "lp-buy-k7x2m__img",
+          "media": "",
+          "width": "1200",
+          "height": "1500",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/03-Acne_3a97d263-2ed3-4ced-93bd-1e3be199499e.png?v=1790661219&width=1400",
+          "alt": "Acne, Blemish Control Serum - image 5",
+          "class": "lp-buy-k7x2m__img",
+          "media": "",
+          "width": "1200",
+          "height": "1500",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/04-Acne_6219fa80-9d1c-4357-a83f-999e98df0110.png?v=1790661219&width=1400",
+          "alt": "Acne, Blemish Control Serum - image 6",
+          "class": "lp-buy-k7x2m__img",
+          "media": "",
+          "width": "1200",
+          "height": "1500",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/ACNE_PDP_NEW_AUG.ai.png?v=1790072077&width=1400",
+          "alt": "Acne, Blemish Control Serum - image 7",
+          "class": "lp-buy-k7x2m__img",
+          "media": "",
+          "width": "1200",
+          "height": "1500",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/acne_bundle.webp?v=1789293308&width=1400",
+          "alt": "Acne, Blemish Control Serum - image 8",
+          "class": "lp-buy-k7x2m__img",
+          "media": "",
+          "width": "1200",
+          "height": "1500",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/lngvty_bag.jpg?v=1786101818",
+          "alt": "LNGVTY twill bag, free launch gift",
+          "class": "lp-offer-k7x2m__img",
+          "media": "",
+          "width": "1600",
+          "height": "900",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f.jpg?v=1783597339&width=120",
+          "alt": "",
+          "class": "lp-sticky-k7x2m__thumb",
+          "media": "",
+          "width": "120",
+          "height": "120",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/pages/the-whole-routine",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f.jpg?v=1783597339&width=1400",
+          "alt": "Acne, Blemish Control Serum - image 1",
+          "class": "lp-buy-q3n8r__img",
+          "media": "",
+          "width": "1200",
+          "height": "1500",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/11.jpg?v=1783595072&width=1400",
+          "alt": "Acne, Blemish Control Serum - image 2",
+          "class": "lp-buy-q3n8r__img",
+          "media": "",
+          "width": "1200",
+          "height": "1500",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/2-who_it_is_for_acne.webp?v=1788806861&width=1400",
+          "alt": "Acne, Blemish Control Serum - image 3",
+          "class": "lp-buy-q3n8r__img",
+          "media": "",
+          "width": "1200",
+          "height": "1500",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/3_WHY_IT_WORKS_ACNE.webp?v=1788809148&width=1400",
+          "alt": "Acne, Blemish Control Serum - image 4",
+          "class": "lp-buy-q3n8r__img",
+          "media": "",
+          "width": "1200",
+          "height": "1500",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/03-Acne_3a97d263-2ed3-4ced-93bd-1e3be199499e.png?v=1790661219&width=1400",
+          "alt": "Acne, Blemish Control Serum - image 5",
+          "class": "lp-buy-q3n8r__img",
+          "media": "",
+          "width": "1200",
+          "height": "1500",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/04-Acne_6219fa80-9d1c-4357-a83f-999e98df0110.png?v=1790661219&width=1400",
+          "alt": "Acne, Blemish Control Serum - image 6",
+          "class": "lp-buy-q3n8r__img",
+          "media": "",
+          "width": "1200",
+          "height": "1500",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/ACNE_PDP_NEW_AUG.ai.png?v=1790072077&width=1400",
+          "alt": "Acne, Blemish Control Serum - image 7",
+          "class": "lp-buy-q3n8r__img",
+          "media": "",
+          "width": "1200",
+          "height": "1500",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/acne_bundle.webp?v=1789293308&width=1400",
+          "alt": "Acne, Blemish Control Serum - image 8",
+          "class": "lp-buy-q3n8r__img",
+          "media": "",
+          "width": "1200",
+          "height": "1500",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/Untitled_design_24.jpg?v=1783330697",
+          "alt": "Skin Longevity System 5 science",
+          "class": "lp-why-q3n8r__img",
+          "media": "",
+          "width": "",
+          "height": "",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/lngvty_bag.jpg?v=1786101818",
+          "alt": "LNGVTY twill bag, free launch gift",
+          "class": "lp-offer-q3n8r__img",
+          "media": "",
+          "width": "1600",
+          "height": "900",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f.jpg?v=1783597339&width=120",
+          "alt": "",
+          "class": "lp-sticky-q3n8r__thumb",
+          "media": "",
+          "width": "120",
+          "height": "120",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/products/dust-bag-twill",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/LNGVTYdustbagtwill.jpg?v=1781344649&width=2200",
+          "alt": "LNGVTY twill dust bag pouch on a white background",
+          "class": "lngvty-hero__image",
+          "media": "",
+          "width": "2200",
+          "height": "2200",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/files/download_5.webp?v=1788287311&width=700",
+          "alt": "",
+          "class": "lngvty-receipt__featured-image",
+          "media": "",
+          "width": "700",
+          "height": "2265",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/blogs/skinmaxxing?page=2",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/serum-for-pigmentation-what-the-research-actually-shows-works.png?v=1790850002&width=533",
+          "alt": "Serum for Pigmentation: What the Research Actually Shows Works",
+          "class": "motion-reduce",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/vitamin-c-serum-benefits-separating-evidence-from-hype.png?v=1790864328&width=533",
+          "alt": "Vitamin C Serum Benefits: Separating Evidence From Hype",
+          "class": "motion-reduce",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/how-to-remove-dark-circles-what-works-and-whats-a-myth.png?v=1790867332&width=533",
+          "alt": "How to Remove Dark Circles: What Works and What's a Myth",
+          "class": "motion-reduce",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/tan-removal-what-actually-works-vs-whats-folklore.png?v=1790867300&width=533",
+          "alt": "Tan Removal: What Actually Works vs What's Folklore",
+          "class": "motion-reduce",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/ceramide-moisturizer-why-your-barrier-needs-this-not-actives.png?v=1790864214&width=533",
+          "alt": "Ceramide Moisturizer: Why Your Barrier Needs This, Not Actives",
+          "class": "motion-reduce",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/best-serum-for-glowing-skin-separating-real-glow-from-filter-skin-marketing.png?v=1790864189&width=533",
+          "alt": "Best Serum for Glowing Skin: Separating Real Glow From Filter-Skin Marketing",
+          "class": "motion-reduce",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/vitamin-c-serum-for-face-what-it-actually-does.png?v=1790864294&width=533",
+          "alt": "Vitamin C Serum for Face: What It Actually Does",
+          "class": "motion-reduce",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/why-your-pores-look-bigger-than-they-are-and-what-actually-closes-them_92946fc0-2257-4907-96a7-366ed3f69d8e.png?v=1790928958&width=533",
+          "alt": "Why Your Pores Look Bigger Than They Are (And What Actually Closes Them)",
+          "class": "motion-reduce",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/blackheads-removal-what-dermatology-actually-recommends_fa43bfd4-fab0-4b03-b277-e495104f4555.png?v=1790928983&width=533",
+          "alt": "Blackheads Removal: What Dermatology Actually Recommends",
+          "class": "motion-reduce",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/blogs/skinmaxxing?page=3",
+      "media": [
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/best-sunscreen-for-face-a-no-nonsense-buying-guide.png?v=1790867380&width=533",
+          "alt": "Best Sunscreen for Face: A No-Nonsense Buying Guide",
+          "class": "motion-reduce",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        },
+        {
+          "element": "img",
+          "url_or_srcset": "https://lngvty.in/cdn/shop/articles/best-sunscreen-for-oily-skin-what-to-actually-look-for.png?v=1790864256&width=533",
+          "alt": "Best Sunscreen for Oily Skin: What to Actually Look For",
+          "class": "motion-reduce",
+          "media": "",
+          "width": "1024",
+          "height": "768",
+          "poster": ""
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/cart",
+      "media": []
+    }
+  ]
+}

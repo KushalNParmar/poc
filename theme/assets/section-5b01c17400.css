@@ -1,0 +1,349 @@
+
+
+/* =========================================================
+   SECTION / TOKENS  (mirrors the .dk reference styling)
+========================================================= */
+
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 {
+  --ir-bg: #12100D;
+  --ir-fg: #FFFEF3;
+  --ir-acc: var(--color-acent);
+  --ir-hair: rgba(255,254,243,.12);
+  --ir-hair2: rgba(255,254,243,.24);
+  --ir-t2: rgba(255,254,243,.72);
+  --ir-t3: rgba(255,254,243,.52);
+  --ir-e1: cubic-bezier(.19,1,.22,1);
+  --ir-e2: cubic-bezier(.22,.61,.36,1);
+
+  padding-top: var(--ir-padding-top);
+  padding-bottom: var(--ir-padding-bottom);
+  background: var(--ir-bg);
+  color: var(--ir-fg);
+  overflow: visible;
+}
+
+/* if "dark_mode" is turned off, invert to light tokens */
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9:not(.ir-section--dark) {
+  --ir-bg: #FFFEF3;
+  --ir-fg: #12100D;
+  --ir-hair: rgba(18,16,13,.11);
+  --ir-hair2: rgba(18,16,13,.22);
+  --ir-t2: rgba(18,16,13,.74);
+  --ir-t3: rgba(18,16,13,.58);
+}
+
+/* =========================================================
+   HEADER (heading + arrows)
+========================================================= */
+
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+}
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-d2 {
+  margin: 0;
+  font-weight: 400;
+  font-size: clamp(30px, 5.2vw, 60px);
+  line-height: .98;
+  letter-spacing: -.046em;
+  color: var(--ir-fg);
+}
+
+/* =========================================================
+   NAVIGATION / ARROWS
+   (exactly matches .lngvty-pictures__arrow rules)
+========================================================= */
+
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-navigation {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-arrow {
+  width: var(--ir-arrow-size);
+  height: var(--ir-arrow-size);
+  min-width: var(--ir-arrow-size);
+  min-height: var(--ir-arrow-size);
+
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--ir-arrow-border);
+  border-radius: 50%;
+
+  background: var(--ir-arrow-background);
+  color: var(--ir-arrow-color);
+
+  cursor: pointer;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  box-shadow: 0 5px 18px rgba(0, 0, 0, .10);
+
+  transition:
+    opacity .25s ease,
+    transform .25s ease,
+    background-color .25s ease,
+    color .25s ease,
+    box-shadow .25s ease;
+}
+
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-arrow svg {
+  display: block;
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-arrow:hover:not(:disabled) {
+  transform: scale(1.06);
+  background: var(--ir-arrow-color);
+  color: #000;
+  box-shadow: 0 7px 22px rgba(0, 0, 0, .14);
+}
+
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-arrow:active:not(:disabled) {
+  transform: scale(.96);
+}
+
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-arrow:disabled {
+  opacity: .3;
+  cursor: default;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 990px) {
+  #ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-navigation {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  #ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-navigation {
+    display: none !important;
+  }
+}
+
+/* =========================================================
+   SLIDER  (matches .swipe in reference)
+========================================================= */
+
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-swipe {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--ir-card-gap);
+  margin-top: clamp(28px, 3.4vw, 48px);
+  width: 100%;
+  max-width: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x proximity;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior-x: contain;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+}
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-swipe::-webkit-scrollbar { display: none; }
+.ir-act-job ul li {
+    margin: 0 !important;
+    font-size: 14px;
+}
+/* =========================================================
+   CARDS  (matches .act in reference)
+========================================================= */
+
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-act {
+  flex: 0 0 var(--ir-card-width);
+  width: var(--ir-card-width);
+  min-width: 0;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 254, 243, .035);
+    padding: 20px;
+    border: 1px solid #e1e1e1a1;
+}
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-act:last-child { scroll-snap-align: end; }
+
+/* =========================================================
+   IMAGE SLOT
+========================================================= */
+
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-slot {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  background: rgba(255,254,243,.08);
+  border: 1px solid var(--ir-hair2);
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+}
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-slot img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-slot:has(img) {
+  box-shadow: inset 0 0 clamp(40px, 7vw, 110px) rgba(0,0,0,.34);
+}
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-slot span {
+  padding: 12px 14px;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--ir-t3);
+  line-height: 1.7;
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-act h3 {
+  margin: clamp(14px, 1.4vw, 18px) 0 0;
+  font-weight: 600 !important;
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: -.01em;
+  color: var(--ir-fg);
+}
+
+/* =========================================================
+   BENEFIT LIST  (matches .act-job in reference)
+========================================================= */
+
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-act-job {
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  font-size: 13.5px;
+  line-height: 1.55;
+  letter-spacing: -.005em;
+  color: var(--ir-t2);
+}
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-act-job li {
+  position: relative;
+  padding-left: 16px;
+  margin-top: 7px;
+}
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-act-job li:first-child { margin-top: 0; }
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-act-job li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 8px;
+  height: 1px;
+  background: var(--ir-acc);
+}
+/* rich-text fallback: style whatever <ul>/<li> Shopify outputs the same way */
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-act-job--richtext ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-act-job--richtext li {
+  position: relative;
+  padding-left: 16px;
+  margin-top: 7px;
+}
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-act-job--richtext li:first-child { margin-top: 0; }
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-act-job--richtext li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 8px;
+  height: 1px;
+  background: var(--ir-acc);
+}
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-rv {
+  opacity: 0;
+  transform: translateY(14px);
+  transition:
+    opacity .9s var(--ir-e1),
+    transform .9s var(--ir-e1);
+  transition-delay: var(--d, 0ms);
+}
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-rv.in { opacity: 1; transform: none; }
+
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-rv .ir-slot {
+  clip-path: inset(0 0 100% 0);
+  transition: clip-path 1.05s var(--ir-e1);
+  transition-delay: calc(var(--d, 0ms) + 90ms);
+}
+#ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-rv.in .ir-slot { clip-path: inset(0 0 0 0); }
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+@media (hover: hover) and (pointer: fine) {
+  #ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-act {
+    transition: opacity .45s var(--ir-e2);
+  }
+  #ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-swipe:hover .ir-act:not(:hover) {
+    opacity: .48;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 599px) {
+  #ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-header { gap: 16px; }
+  #ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-swipe { gap: max(12px, calc(var(--ir-card-gap) * .7)); }
+  #ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-act { flex-basis: 74%; width: 74%; }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (min-width: 600px) and (max-width: 989px) {
+  #ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-swipe { gap: 24px; }
+  #ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-act { flex-basis: 42vw; width: 42vw; }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  #ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-rv { opacity: 1; transform: none; transition: none; }
+  #ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-rv .ir-slot { clip-path: none; transition: none; }
+  #ingredient-reveal-template--23927395876979__ingredient_reveal_LiXxd9 .ir-swipe { scroll-behavior: auto; }
+}
+

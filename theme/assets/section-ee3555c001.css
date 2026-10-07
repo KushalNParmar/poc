@@ -1,0 +1,164 @@
+
+#shopify-section-template--23927395680371__graph_line_NHw8Ji {
+  --graph-bg: #181818;
+  --graph-text: #ffffff;
+  --graph-muted: rgba(255, 255, 255, 0.85);
+  --graph-soft: rgba(255, 255, 255, 0.6);
+  --graph-faint: rgba(255, 255, 255, 0.3);
+  --graph-line: rgba(255, 255, 255, 0.12);
+  --graph-accent: #b87330;
+}
+
+#shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-sec {
+  background: var(--graph-bg);
+  border-top: 1px solid rgba(255,255,255,.06);
+  overflow: hidden;
+}
+
+#shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-inner {
+  display: grid;
+  grid-template-columns: 42% 58%;
+  min-height: 480px;
+  align-items: center;
+  padding: 80px 52px 80px;
+  gap: 64px;
+}
+
+#shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-kicker {
+  font-family: var(--courier, "Courier New", monospace);
+  font-size: 9px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.6);
+  margin-bottom: 20px;
+}
+
+#shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-h {
+  font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+  font-size: clamp(32px, 3.8vw, 48px);
+  font-weight: 500;
+  letter-spacing: -1.5px;
+  line-height: 1.05;
+  color: var(--graph-text);
+  margin: 0 0 20px;
+}
+
+#shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-h em {
+  font-style: italic;
+  color: rgba(255,255,255,.42);
+  font-weight: 300;
+}
+
+#shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-body {
+  font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--graph-muted);
+  line-height: 1.8;
+  max-width: 360px;
+  margin: 0 0 28px;
+}
+
+#shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-stat-row {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 32px;
+}
+
+#shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-stat-n {
+  font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+  font-size: 36px;
+  font-weight: 200;
+  letter-spacing: -1px;
+  color: var(--graph-accent);
+  line-height: 1;
+}
+
+#shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-stat-l {
+  font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+  font-size: 13px;
+  color: rgba(255,255,255,.8);
+  margin-top: 4px;
+}
+
+#shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-cta {
+  font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255,255,255,.92);
+  border-bottom: 1px solid rgba(255,255,255,.4);
+  padding-bottom: 2px;
+  transition: color .2s, border-color .2s;
+}
+
+#shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-cta:hover {
+  color: #fff;
+  border-color: rgba(255,255,255,.6);
+}
+
+#shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-right svg {
+  width: 100%;
+  display: block;
+}
+
+#shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-line-path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+}
+
+#shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-area-path {
+  opacity: 0;
+}
+
+#shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-line-path.drawn {
+  animation: graphDraw-template--23927395680371__graph_line_NHw8Ji 2.4s cubic-bezier(.4,0,.2,1) forwards;
+}
+
+#shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-area-path.drawn {
+  animation: graphFill-template--23927395680371__graph_line_NHw8Ji .7s ease forwards;
+  animation-delay: 1.7s;
+}
+
+@keyframes graphDraw-template--23927395680371__graph_line_NHw8Ji {
+  to { stroke-dashoffset: 0; }
+}
+
+@keyframes graphFill-template--23927395680371__graph_line_NHw8Ji {
+  to { opacity: 1; }
+}
+
+#shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-left,
+#shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-right {
+  opacity: 1;
+  transform: none;
+  transition: opacity .7s ease, transform .7s ease;
+}
+
+html.js-reveal #shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-left,
+html.js-reveal #shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-right {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+html.js-reveal #shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-left.revealed,
+html.js-reveal #shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-right.revealed {
+  opacity: 1;
+  transform: none;
+}
+
+html.js-reveal #shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-right {
+  transition-delay: .12s;
+}
+
+@media (max-width: 900px) {
+  #shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-inner {
+    grid-template-columns: 1fr;
+    padding: 64px 24px 64px;
+    gap: 40px;
+    min-height: 0;
+  }
+
+  #shopify-section-template--23927395680371__graph_line_NHw8Ji .graph-stat-row {
+    flex-wrap: wrap;
+  }
+}

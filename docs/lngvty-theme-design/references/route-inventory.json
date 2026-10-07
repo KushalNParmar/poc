@@ -1,0 +1,1631 @@
+{
+  "observed_on": "2026-10-07",
+  "routes": [
+    {
+      "url": "https://lngvty.in/",
+      "title": "LNGVTY | Multi-Repair Serums for Peak Skin Potential",
+      "headings": [
+        "Shop by concern",
+        "Acne, Blemish Control Serum",
+        "Dark Spots, Pore Control Serum",
+        "Deep Hydration, Glow Serum",
+        "Unfiltered, unedited Clinical results",
+        "Why we created LNGVTY",
+        "SKINMAXXING with LNGVTY",
+        "Consumer love <3",
+        "UNLOCK PEAK",
+        "BEAUTY POTENTIAL"
+      ],
+      "section_ids": [
+        "template--23927395221619__custom_banner_ewe3NT",
+        "template--23927395221619__1788768554070c5570",
+        "template--23927395221619__lng_serums_NkgdtY",
+        "template--23927395221619__clicle_before_BhdcEt",
+        "template--23927395221619__story_lngvty_9mdQCP",
+        "template--23927395221619__skin_reels_P9i3te",
+        "template--23927395221619__1787641367ffbd0867",
+        "template--23927395221619__consistent_model_4tN8VB",
+        "template--23927395221619__serum_bar_beG438",
+        "template--23927395221619__178930814694eee312"
+      ],
+      "breakpoints": [
+        "@media (hover: none) ",
+        "@media (max-width: 720px) ",
+        "@media (max-width: 860px) ",
+        "@media (max-width:990px)",
+        "@media (min-width: 1100px) ",
+        "@media (min-width: 700px) ",
+        "@media (min-width: 861px) ",
+        "@media (prefers-reduced-motion: reduce) ",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 749px) ",
+        "@media screen and (max-width: 860px) ",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(max-width:420px)",
+        "@media(max-width:480px)",
+        "@media(max-width:600px)",
+        "@media(max-width:720px)",
+        "@media(max-width:900px)",
+        "@media(min-width:721px)",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "f4dde74153686a1ddc5b6e5c2eb83b2ae94169e1f3af7296c41304c0f6b33e5c",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/blogs/skinmaxxing",
+      "title": "SKINMAXXING – LNGVTY.IN",
+      "headings": [
+        "SKINMAXXING",
+        "What Causes Uneven Skin Tone and Facial Pigment...",
+        "What Causes Uneven Skin Tone and Facial Pigment...",
+        "Salicylic Acid Causing Dryness and Breakouts: W...",
+        "Salicylic Acid Causing Dryness and Breakouts: W...",
+        "Routine for Oily but Dehydrated, Acne-Prone Skin",
+        "Routine for Oily but Dehydrated, Acne-Prone Skin",
+        "How to Fade Dark Spots Left After Acne",
+        "How to Fade Dark Spots Left After Acne",
+        "How to Choose a Hydrating Serum for Dehydrated ...",
+        "How to Choose a Hydrating Serum for Dehydrated ...",
+        "How to Use Vitamin C Serum Without Wasting It"
+      ],
+      "section_ids": [
+        "template--23927394861171__main"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "c2d3432992ac752b449b27a614a98fc864e2bd9a8f34b53ca20fec83ee8ac2ab",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/collections/all",
+      "title": "Products – LNGVTY.IN",
+      "headings": [
+        "Stem Cell Technology makes actives work harder.",
+        "Four ways stem cell technology helps your skin.",
+        "Repairs faster.",
+        "Builds stronger structure.",
+        "Holds onto moisture longer.",
+        "Tightens pore appearance.",
+        "Start SKINMAXXING with LNGVTY."
+      ],
+      "section_ids": [
+        "template--23927394926707__custom_liquid_czkkqq",
+        "template--23927394926707__custom_liquid_mBjFLF",
+        "template--23927394926707__custom_liquid_qewdnf"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media (min-width: 901px) ",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "c886c34029cde1e36ad0196fd48cb4c84d74095d09255197bd9a97821090051e",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/collections/frontpage",
+      "title": "Home page – LNGVTY.IN",
+      "headings": [
+        "Stem Cell Technology makes actives work harder.",
+        "Four ways stem cell technology helps your skin.",
+        "Repairs faster.",
+        "Builds stronger structure.",
+        "Holds onto moisture longer.",
+        "Tightens pore appearance.",
+        "Start SKINMAXXING with LNGVTY."
+      ],
+      "section_ids": [
+        "template--23927394926707__custom_liquid_czkkqq",
+        "template--23927394926707__custom_liquid_mBjFLF",
+        "template--23927394926707__custom_liquid_qewdnf"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media (min-width: 901px) ",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "25e3a477dbe4e7e5d3cb3ed82d91ffc15298c048a93ed16769ce850d6bf4ff36",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/pages/about",
+      "title": "About – LNGVTY.IN",
+      "headings": [
+        "You’ve been playing the wrong game.",
+        "Let's skip the pitch.",
+        "Anti-ageing is a reaction. Longevity is a position.",
+        "Three things we believe about beauty. Everything else follows.",
+        "Nishit Ratthe",
+        "Pratha Bhatia",
+        "Your skin has been patient long enough."
+      ],
+      "section_ids": [
+        "template--23927395319923__about_hero_HKHVC6",
+        "template--23927395319923__lngtv_pitch_fAkWhB",
+        "template--23927395319923__why_us_X4dKdJ",
+        "template--23927395319923__commmitement_DbRmQy",
+        "template--23927395319923__founders_8rUXW4",
+        "template--23927395319923__marquessbar_Y4Vn3Y",
+        "template--23927395319923__closing_cta_8RcEXw"
+      ],
+      "breakpoints": [
+        "@media (max-width: 1100px) ",
+        "@media (max-width: 768px) ",
+        "@media (max-width:767px)",
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 749px) ",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(max-width:1100px)",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "67a4c7931623a8bfa532a505025e56f33a7da1f479f5d0c9ab21632c961783d9",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/pages/contact",
+      "title": "Contact – LNGVTY.IN",
+      "headings": [
+        "Contact",
+        "Get in touch",
+        "Send us a message"
+      ],
+      "section_ids": [
+        "template--23927395352691__contact_main_pr8ktR"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(max-width:768px)",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "3b96f000245e97e1f7038a612558c6d42d9ae2b8e451cdd1defd8ae6e9de7a3a",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/pages/faq",
+      "title": "FAQ – LNGVTY.IN",
+      "headings": [
+        "Honest answers. No fine print.",
+        "Ready to start the 75-day protocol?"
+      ],
+      "section_ids": [
+        "template--23927395418227__faq_hero_EN6LkH",
+        "template--23927395418227__faq_tabber_ALzaaG",
+        "template--23927395418227__faq_cta_CJCpUG"
+      ],
+      "breakpoints": [
+        "@media (max-width: 767px) ",
+        "@media (max-width: 768px) ",
+        "@media (max-width: 990px) ",
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(max-width: 768px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "50161903a443814fcd597da70d507c77d8f135f1a49552ab6f33a22fa22bf30f",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/pages/in-the-news",
+      "title": "In the News – LNGVTY.IN",
+      "headings": [
+        "In the News",
+        "LNGVTY Raises Rs 5 Cr In Seed Funding Led by Rukam Capital",
+        "Read the feature",
+        "Skin longevity brand LNGVTY raises Rs 5 Cr in seed round",
+        "Read the feature",
+        "quickcommerce player plazza beauty brand lngvty bag early stage funds",
+        "Read the feature",
+        "Skin longevity startup LNGVTY raises Rs 5 crore in seed round led by Rukam Capital",
+        "Read the feature",
+        "Skin Longevity Beauty Brand LNGVTY Raises ₹5 Crore in Seed Funding Led by Rukam Capital",
+        "Read the feature",
+        "Rukam Capital leads seed round in skin longevity beauty brand LNGVTY"
+      ],
+      "section_ids": [
+        "template--23927395450995__press_in_the_news_34h3Va"
+      ],
+      "breakpoints": [
+        "@media (max-width: 768px) ",
+        "@media (max-width:990px)",
+        "@media (min-width: 769px) and (max-width: 1024px) ",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "c7841775e9e9ae783ab3171fd774a3e8f3946d9ea83a1a475974a252913d5187",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/pages/quiz",
+      "title": "Quiz – LNGVTY.IN",
+      "headings": [
+        ""
+      ],
+      "section_ids": [
+        "template--23927395516531__quiz_fiPRce"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(max-width:768px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "34ede257ae843f9319c8c1bab26ff3ac99ec2c06121180efae944ffe3e61a864",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/pages/reason-to-believe",
+      "title": "Reason To Believe – LNGVTY.IN",
+      "headings": [
+        "How your skin gets the message.",
+        "It started in an operating theatre, not at a lab bench.",
+        "The cells were talking to the tissue around them.",
+        "Five steps, in order.",
+        "Four moments, and what each one actually contributed.",
+        "Structural fat grafting",
+        "Adipose cell research",
+        "Reconstructive use",
+        "Conditioned-media skin studies",
+        "What this does not mean.",
+        "Not live stem cells in a bottle.",
+        "Not a fat graft, laser or microneedling procedure in a serum."
+      ],
+      "section_ids": [
+        "template--23927395549299__believe_banner_dmnFWQ",
+        "template--23927395549299__chapters_Ri6Pn9",
+        "template--23927395549299__rtb_provence_pqf3E9",
+        "template--23927395549299__believe_process_wwfnMj",
+        "template--23927395549299__closing_handof_3HNtf8"
+      ],
+      "breakpoints": [
+        "@media (hover:hover) ",
+        "@media (max-width: 640px) ",
+        "@media (max-width: 900px) ",
+        "@media (max-width:990px)",
+        "@media (min-width: 901px) and (prefers-reduced-motion: no-preference) ",
+        "@media (prefers-reduced-motion: reduce) ",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 760px) ",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(hover:hover)",
+        "@media(hover:hover) ",
+        "@media(max-width:600px)",
+        "@media(max-width:640px)",
+        "@media(max-width:640px) ",
+        "@media(max-width:760px) ",
+        "@media(max-width:860px) ",
+        "@media(max-width:900px)",
+        "@media(max-width:990px) ",
+        "@media(min-width:901px) and (prefers-reduced-motion:no-preference) ",
+        "@media(prefers-reduced-motion: reduce) ",
+        "@media(prefers-reduced-motion:reduce)",
+        "@media(prefers-reduced-motion:reduce) "
+      ],
+      "source_sha256": "609af0dcfc22d8b75df1aec6a15f1f6c9cc063923ad5257007a173fcd27a5af4",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/pages/relief",
+      "title": "Relief – LNGVTY.IN",
+      "headings": [
+        "Our approach to SKINMAXXING.",
+        "SKINMAXXING is what this is called.",
+        "One serum. Instead of three.",
+        "Four principles, and none of them is \"buy more\".",
+        "What actually comes off the shelf.",
+        "Acne + Blemish Control",
+        "Dark Spots + Pore Control",
+        "Deep Hydration + Glow",
+        "One technology under all three. One active set on top.",
+        "The fix is the easy half.",
+        "What SKINMAXXING is not."
+      ],
+      "section_ids": [
+        "template--23927395582067__believe_banner_teFpYd",
+        "template--23927395582067__pair_card_Mcc7TY",
+        "template--23927395582067__relief_figure_cV97G8",
+        "template--23927395582067__relief_chapter2_bgt39Y",
+        "template--23927395582067__belief_relief_mVD46E",
+        "template--23927395582067__technology_fig_HNnAEE",
+        "template--23927395582067__pair_card_C9zfwR",
+        "template--23927395582067__pair_card_Vy3Pyf",
+        "template--23927395582067__story_cta_DyJcLd"
+      ],
+      "breakpoints": [
+        "@media (max-width: 380px) ",
+        "@media (max-width: 500px) ",
+        "@media (max-width: 560px) ",
+        "@media (max-width: 600px) ",
+        "@media (max-width: 640px) ",
+        "@media (max-width: 760px) ",
+        "@media (max-width: 767px) ",
+        "@media (max-width: 860px) ",
+        "@media (max-width:990px)",
+        "@media (min-width: 641px) and (max-width: 1200px) ",
+        "@media (prefers-reduced-motion: reduce) ",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(hover:hover) ",
+        "@media(max-width:760px) ",
+        "@media(max-width:990px) ",
+        "@media(prefers-reduced-motion:reduce)",
+        "@media(prefers-reduced-motion:reduce) "
+      ],
+      "source_sha256": "a85f5540b8bde65db830e0919656813246901feff67b0e9cea95ebcb3259c05e",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/pages/tension",
+      "title": "Tension – LNGVTY.IN",
+      "headings": [
+        "More products. Same problems.",
+        "You can name every product on that shelf. That was never the problem.",
+        "Every fix creates the next problem.",
+        "Beauty's Bermuda Triangle.",
+        "The loop is not a conspiracy. It is an incentive.",
+        "The real cost is not the money.",
+        "Your skin isn't failing. The products were."
+      ],
+      "section_ids": [
+        "template--23927395745907__believe_banner_gHPG8i",
+        "template--23927395745907__pair_card_iDLyty",
+        "template--23927395745907__tension_chapter2_JJ6Ddb",
+        "template--23927395745907__triangle_iQQh4T",
+        "template--23927395745907__truth_chapter_FzzYbU",
+        "template--23927395745907__story_cta_Mpk8Qa"
+      ],
+      "breakpoints": [
+        "@media (hover: hover) ",
+        "@media (max-width: 500px) ",
+        "@media (max-width: 520px) ",
+        "@media (max-width: 640px) ",
+        "@media (max-width: 760px) ",
+        "@media (max-width: 767px) ",
+        "@media (max-width: 860px) ",
+        "@media (max-width:990px)",
+        "@media (prefers-reduced-motion: no-preference) ",
+        "@media (prefers-reduced-motion: reduce) ",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(hover:hover) ",
+        "@media(max-width:760px) ",
+        "@media(max-width:990px) ",
+        "@media(prefers-reduced-motion: reduce) ",
+        "@media(prefers-reduced-motion:reduce)",
+        "@media(prefers-reduced-motion:reduce) "
+      ],
+      "source_sha256": "6223feadb1694d146392e497eb714ef6384028a69ba6c86c8cb7b5e00afcfdf7",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/pages/truth",
+      "title": "Truth – LNGVTY.IN",
+      "headings": [
+        "What you see on the surface is not the whole problem.",
+        "The surface is the scorecard. It is not the story.",
+        "Where the concern is, and where it comes from.",
+        "You did not choose the skin you started with.",
+        "Skin is not a surface. It is a system that renews itself.",
+        "The real problem is within. So is the real solution.",
+        "Renewal runs on the skin's clock, not on a marketing one."
+      ],
+      "section_ids": [
+        "template--23927395811443__believe_banner_FRnK6L",
+        "template--23927395811443__pair_card_irFN9i",
+        "template--23927395811443__truth_spicemen_EXeGwq",
+        "template--23927395811443__truth_chapter_YE3gzP",
+        "template--23927395811443__story_cta_afTFLw"
+      ],
+      "breakpoints": [
+        "@media (max-width: 370px) ",
+        "@media (max-width: 500px) ",
+        "@media (max-width: 760px) ",
+        "@media (max-width: 767px) ",
+        "@media (max-width: 860px) ",
+        "@media (max-width:990px)",
+        "@media (prefers-reduced-motion: reduce) ",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(hover:hover) ",
+        "@media(max-width:760px) ",
+        "@media(max-width:990px) ",
+        "@media(prefers-reduced-motion: reduce) ",
+        "@media(prefers-reduced-motion:reduce)",
+        "@media(prefers-reduced-motion:reduce) "
+      ],
+      "source_sha256": "bfa251b73f143090920929d65633127764098f99b361b40116bdafd4100844bc",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/policies/privacy-policy",
+      "title": "Privacy policy – LNGVTY.IN",
+      "headings": [
+        "Privacy policy",
+        "Privacy Policy",
+        "Changes to This Privacy Policy",
+        "How We Collect and Use Your Personal Information",
+        "What Personal Information We Collect",
+        "Information We Collect Directly from You",
+        "Information We Collect about Your Usage",
+        "Information We Obtain from Third Parties",
+        "How We Use Your Personal Information",
+        "Cookies",
+        "How We Disclose Personal Information",
+        "Third Party Websites and Links"
+      ],
+      "section_ids": [],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "1347bda907209d2d68317b6a7decab5d543e52e5f24abc442486b650a90fd6c4",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/policies/refund-policy",
+      "title": "Refund policy – LNGVTY.IN",
+      "headings": [
+        "Refund policy",
+        "Returns & Refunds",
+        "Can I return/ exchange my order?",
+        "The package I received is open. What should I do?",
+        "The product doesn't suit me. Can I return it?",
+        "When will I receive my refund in case of return?",
+        "How can I Register a Return?",
+        "Can I exchange a product?",
+        "All in compliance of Consumer Protection (E-commerce) Rules 2020"
+      ],
+      "section_ids": [],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "db0d7a9af206f01a3c8f74cf97d036d992e4ac2c744aea77c17f5eb3deba06f5",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/policies/shipping-policy",
+      "title": "Shipping policy – LNGVTY.IN",
+      "headings": [
+        "Shipping policy",
+        "Shipping Policy",
+        "What is the estimated delivery time?",
+        "What happens if I am not available to receive the order?",
+        "Can I cancel or amend my order?"
+      ],
+      "section_ids": [],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "a8ff7c869ef92eb269339445e94baeb99f22a6e8c17b6021d7353db3d732c18d",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/policies/terms-of-service",
+      "title": "Terms of service – LNGVTY.IN",
+      "headings": [
+        "Terms of service",
+        "Terms of Service",
+        "SECTION 1 - ONLINE STORE TERMS",
+        "SECTION 2 - GENERAL CONDITIONS",
+        "SECTION 3 - ACCURACY, COMPLETENESS AND TIMELINESS OF INFORMATION",
+        "SECTION 4 - MODIFICATIONS TO THE SERVICE AND PRICES",
+        "SECTION 5 - PRODUCTS OR SERVICES",
+        "SECTION 6 - ACCURACY OF BILLING AND ACCOUNT INFORMATION",
+        "SECTION 7 - OPTIONAL TOOLS",
+        "SECTION 8 - THIRD-PARTY LINKS",
+        "SECTION 9 - USER COMMENTS, FEEDBACK, AND OTHER SUBMISSIONS",
+        "SECTION 10 - PERSONAL INFORMATION"
+      ],
+      "section_ids": [],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "e85f94c46068636197183c1f519b7ccb9943dcb3f18028c07175098eb134968e",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/products/acne-blemish-control-serum-30ml",
+      "title": "Acne, Blemish Control Serum – LNGVTY.IN",
+      "headings": [
+        "Acne, Blemish Control Serum",
+        "Unedited, Unfiltered Results on Oily Skin",
+        "The Five products this replaces.",
+        "Acne, Blemish Control Serum",
+        "In pictures.",
+        "Why your skin will love it.",
+        "Fewer breakouts",
+        "Unclogs the pore",
+        "Controls sebum",
+        "Marks fade sooner",
+        "Calmer day to day",
+        "What's in the bottle"
+      ],
+      "section_ids": [
+        "template--23927395876979__new_pdp_9jwWKL",
+        "template--23927395876979__clicle_before_dEh34q",
+        "template--23927395876979__conversion_fzPQV8",
+        "template--23927395876979__rai_compatible_wdQBXz",
+        "template--23927395876979__skin_benefits_CDJUgw",
+        "template--23927395876979__ingredient_reveal_LiXxd9",
+        "template--23927395876979__group_faq_WdDQnK",
+        "template--23927395876979__17865133134bb43cd4",
+        "template--23927395876979__lates_crossell_q6keEA",
+        "template--23927395876979__mainfootersticky_YFaeN7"
+      ],
+      "breakpoints": [
+        "@media (hover: hover) and (pointer: fine) ",
+        "@media (max-width: 480px) ",
+        "@media (max-width: 520px) ",
+        "@media (max-width: 599px) ",
+        "@media (max-width: 600px) ",
+        "@media (max-width: 749px) ",
+        "@media (max-width: 760px) ",
+        "@media (max-width: 980px) ",
+        "@media (max-width: 989px) ",
+        "@media (max-width:990px)",
+        "@media (min-width: 600px) and (max-width: 989px) ",
+        "@media (min-width: 990px) ",
+        "@media (prefers-reduced-motion: reduce) ",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 400px) ",
+        "@media screen and (max-width: 600px) ",
+        "@media screen and (max-width: 749px) ",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "b05fb31de44de80da5686c26ea967d903af221f9b844795f581c6a39adc18074",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/products/dark-spots-pore-control-serum-30ml",
+      "title": "Dark Spots, Pore Control Serum – LNGVTY.IN",
+      "headings": [
+        "Dark Spots, Pore Control Serum",
+        "Unfiltered, Unedited Results",
+        "The Five products this replaces.",
+        "Dark Spots, Pore Control Serum",
+        "In pictures.",
+        "Why your skin will love it.",
+        "Every patient saw spots fade",
+        "Fades the spot at the source",
+        "Pores look smaller",
+        "Firmer over a cycle",
+        "What's in the bottle",
+        "Stem Cell CM"
+      ],
+      "section_ids": [
+        "template--23927395876979__new_pdp_9jwWKL",
+        "template--23927395876979__clicle_before_dEh34q",
+        "template--23927395876979__conversion_fzPQV8",
+        "template--23927395876979__rai_compatible_wdQBXz",
+        "template--23927395876979__skin_benefits_CDJUgw",
+        "template--23927395876979__ingredient_reveal_LiXxd9",
+        "template--23927395876979__group_faq_WdDQnK",
+        "template--23927395876979__17865133134bb43cd4",
+        "template--23927395876979__lates_crossell_q6keEA",
+        "template--23927395876979__mainfootersticky_YFaeN7"
+      ],
+      "breakpoints": [
+        "@media (hover: hover) and (pointer: fine) ",
+        "@media (max-width: 480px) ",
+        "@media (max-width: 520px) ",
+        "@media (max-width: 599px) ",
+        "@media (max-width: 600px) ",
+        "@media (max-width: 749px) ",
+        "@media (max-width: 760px) ",
+        "@media (max-width: 980px) ",
+        "@media (max-width: 989px) ",
+        "@media (max-width:990px)",
+        "@media (min-width: 600px) and (max-width: 989px) ",
+        "@media (min-width: 990px) ",
+        "@media (prefers-reduced-motion: reduce) ",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 400px) ",
+        "@media screen and (max-width: 600px) ",
+        "@media screen and (max-width: 749px) ",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "34ebfd0820a0b2aa3604a8315e611fdd597059691bb734ad5f7b52f70ca24a91",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/products/deep-hydration-glow-serum-30ml",
+      "title": "Deep Hydration, Glow Serum – LNGVTY.IN",
+      "headings": [
+        "Deep Hydration, Glow Serum",
+        "Unedited, Unfiltered Results",
+        "The Five products this replaces.",
+        "Deep Hydration, Glow Serum",
+        "In pictures.",
+        "Why your skin will love it.",
+        "Hydration that stays",
+        "Glow you can measure",
+        "More even tone",
+        "Calm while it works",
+        "What's in the bottle",
+        "Conditioned media"
+      ],
+      "section_ids": [
+        "template--23927395876979__new_pdp_9jwWKL",
+        "template--23927395876979__clicle_before_dEh34q",
+        "template--23927395876979__conversion_fzPQV8",
+        "template--23927395876979__rai_compatible_wdQBXz",
+        "template--23927395876979__skin_benefits_CDJUgw",
+        "template--23927395876979__ingredient_reveal_LiXxd9",
+        "template--23927395876979__group_faq_WdDQnK",
+        "template--23927395876979__17865133134bb43cd4",
+        "template--23927395876979__lates_crossell_q6keEA",
+        "template--23927395876979__mainfootersticky_YFaeN7"
+      ],
+      "breakpoints": [
+        "@media (hover: hover) and (pointer: fine) ",
+        "@media (max-width: 480px) ",
+        "@media (max-width: 520px) ",
+        "@media (max-width: 599px) ",
+        "@media (max-width: 600px) ",
+        "@media (max-width: 749px) ",
+        "@media (max-width: 760px) ",
+        "@media (max-width: 980px) ",
+        "@media (max-width: 989px) ",
+        "@media (max-width:990px)",
+        "@media (min-width: 600px) and (max-width: 989px) ",
+        "@media (min-width: 990px) ",
+        "@media (prefers-reduced-motion: reduce) ",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 400px) ",
+        "@media screen and (max-width: 600px) ",
+        "@media screen and (max-width: 749px) ",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "19864f4e9f9ef5c28fd84919d577c938e438d686bc43f68c236dcda0d7118056",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/blogs/skinmaxxing/best-serum-for-glowing-skin-separating-real-glow-from-filter-skin-marketing",
+      "title": "Best Serum for Glowing Skin: Separating Real Glow From Filter-Skin Mar – LNGVTY.IN",
+      "headings": [
+        "Best Serum for Glowing Skin: Separating Real Glow From Filter-Skin Marketing",
+        "What a real glow is made of"
+      ],
+      "section_ids": [
+        "template--23927394828403__main",
+        "template--23927394828403__related_reads_GCEhNC"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "f3ef4276d69173cd1f709c062324e9e38278785699a4939af31613de88decb4b",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/blogs/skinmaxxing/best-sunscreen-for-face-a-no-nonsense-buying-guide",
+      "title": "Best Sunscreen for Face: A No-Nonsense Buying Guide – LNGVTY.IN",
+      "headings": [
+        "Best Sunscreen for Face: A No-Nonsense Buying Guide",
+        "What the label should say"
+      ],
+      "section_ids": [
+        "template--23927394828403__main",
+        "template--23927394828403__related_reads_GCEhNC"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "cf37a6165ba648e640b0d066196b384e1bccf4d75d9a04236cc75a89b776eeec",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/blogs/skinmaxxing/best-sunscreen-for-oily-skin-what-to-actually-look-for",
+      "title": "Best Sunscreen for Oily Skin: What to Actually Look For – LNGVTY.IN",
+      "headings": [
+        "Best Sunscreen for Oily Skin: What to Actually Look For",
+        "What to check on the label"
+      ],
+      "section_ids": [
+        "template--23927394828403__main",
+        "template--23927394828403__related_reads_GCEhNC"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "d0915d08da91490fd80e3519fcb7b4ea46adc13e145376486389cfc8a3a34279",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/blogs/skinmaxxing/blackheads-removal-what-dermatology-actually-recommends",
+      "title": "Blackheads Removal: What Dermatology Actually Recommends – LNGVTY.IN",
+      "headings": [
+        "Blackheads Removal: What Dermatology Actually Recommends",
+        "What causes a blackhead (and why it turns dark)"
+      ],
+      "section_ids": [
+        "template--23927394828403__main",
+        "template--23927394828403__related_reads_GCEhNC"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "ec7dbe7526e86e593732e66c5d26a71c5bf1387439524c67fb5c63b09bcfeb72",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/blogs/skinmaxxing/ceramide-moisturizer-why-your-barrier-needs-this-not-actives",
+      "title": "Ceramide Moisturizer: Why Your Barrier Needs This, Not Actives – LNGVTY.IN",
+      "headings": [
+        "Ceramide Moisturizer: Why Your Barrier Needs This, Not Actives",
+        "What your skin barrier does"
+      ],
+      "section_ids": [
+        "template--23927394828403__main",
+        "template--23927394828403__related_reads_GCEhNC"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "60c43f1be0ac1fd7257b835ccb8544ae46b60f7ca5ab93020fe7119a867b1919",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/blogs/skinmaxxing/how-to-choose-a-hydrating-serum-for-dehydrated-skin",
+      "title": "How to Choose a Hydrating Serum for Dehydrated Skin – LNGVTY.IN",
+      "headings": [
+        "How to Choose a Hydrating Serum for Dehydrated Skin",
+        "Understanding dehydrated skin versus dry skin"
+      ],
+      "section_ids": [
+        "template--23927394828403__main",
+        "template--23927394828403__related_reads_GCEhNC"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "be5fc59608260ae64071a822418ccb617032cc67bcd0c8d13a1c17fc6876a579",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/blogs/skinmaxxing/how-to-fade-dark-spots-left-after-acne",
+      "title": "How to Fade Dark Spots Left After Acne – LNGVTY.IN",
+      "headings": [
+        "How to Fade Dark Spots Left After Acne",
+        "Why post-acne dark marks form on the skin"
+      ],
+      "section_ids": [
+        "template--23927394828403__main",
+        "template--23927394828403__related_reads_GCEhNC"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "732af1ea036ffd658eb2f1b57a876706ba582a53a4a02158d62d1723a935453e",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/blogs/skinmaxxing/how-to-remove-dark-circles-what-works-and-whats-a-myth",
+      "title": "How to Remove Dark Circles: What Works and What's a Myth – LNGVTY.IN",
+      "headings": [
+        "How to Remove Dark Circles: What Works and What's a Myth",
+        "The causes of dark circles"
+      ],
+      "section_ids": [
+        "template--23927394828403__main",
+        "template--23927394828403__related_reads_GCEhNC"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "aa497a25b81f558fd37510f5b225c0c3eb4b8f3fcc8f0181710ce6d4eb277011",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/blogs/skinmaxxing/how-to-use-vitamin-c-serum-without-wasting-it",
+      "title": "How to Use Vitamin C Serum Without Wasting It – LNGVTY.IN",
+      "headings": [
+        "How to Use Vitamin C Serum Without Wasting It",
+        "Why vitamin C is easy to waste"
+      ],
+      "section_ids": [
+        "template--23927394828403__main",
+        "template--23927394828403__related_reads_GCEhNC"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "9bd00290ddb2f9b5c251f87ca2ddb213817fd9b706c4cc9c657d642c17caa943",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/blogs/skinmaxxing/melasma-treatment-why-its-different-from-regular-pigmentation",
+      "title": "Melasma Treatment: Why It's Different From Regular Pigmentation – LNGVTY.IN",
+      "headings": [
+        "Melasma Treatment: Why It's Different From Regular Pigmentation",
+        "What makes melasma different"
+      ],
+      "section_ids": [
+        "template--23927394828403__main",
+        "template--23927394828403__related_reads_GCEhNC"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "5157e7f3d10a1e4d529404af68971a1b40e07ecded321e150564ddb32946afae",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/blogs/skinmaxxing/night-skincare-routine-what-order-actually-matters",
+      "title": "Night Skincare Routine: What Order Actually Matters – LNGVTY.IN",
+      "headings": [
+        "Night Skincare Routine: What Order Actually Matters",
+        "Why night is different"
+      ],
+      "section_ids": [
+        "template--23927394828403__main",
+        "template--23927394828403__related_reads_GCEhNC"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "663d25b6c2625ca4e1c37cd3a3bd0a2b73f43424e71aae4b4908b75448ffcb02",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/blogs/skinmaxxing/routine-for-oily-but-dehydrated-acne-prone-skin",
+      "title": "Routine for Oily but Dehydrated, Acne-Prone Skin – LNGVTY.IN",
+      "headings": [
+        "Routine for Oily but Dehydrated, Acne-Prone Skin",
+        "Why skin can be oily, dehydrated, and acne-prone at once"
+      ],
+      "section_ids": [
+        "template--23927394828403__main",
+        "template--23927394828403__related_reads_GCEhNC"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "ad9bb0a7e144e6bf697439d1512cdcd908239ca22864b7025032c8651aaeb0df",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/blogs/skinmaxxing/salicylic-acid-causing-dryness-and-breakouts-what-to-do",
+      "title": "Salicylic Acid Causing Dryness and Breakouts: What to Do – LNGVTY.IN",
+      "headings": [
+        "Salicylic Acid Causing Dryness and Breakouts: What to Do",
+        "Why salicylic acid triggers dryness and breakouts at the same time"
+      ],
+      "section_ids": [
+        "template--23927394828403__main",
+        "template--23927394828403__related_reads_GCEhNC"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "1a672a69d035b1d34c7d997c9fea590009fa84741f8a4581bb5d6ace145f0d69",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/blogs/skinmaxxing/serum-for-pigmentation-what-the-research-actually-shows-works",
+      "title": "Serum for Pigmentation: What the Research Actually Shows Works – LNGVTY.IN",
+      "headings": [
+        "Serum for Pigmentation: What the Research Actually Shows Works",
+        "Why dark spots form in the first place"
+      ],
+      "section_ids": [
+        "template--23927394828403__main",
+        "template--23927394828403__related_reads_GCEhNC"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "3f9743a5c2c573bc40862a515022bba1c0051374a9d60fa26f6886941c99e17c",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/blogs/skinmaxxing/tan-removal-what-actually-works-vs-whats-folklore",
+      "title": "Tan Removal: What Actually Works vs What's Folklore – LNGVTY.IN",
+      "headings": [
+        "Tan Removal: What Actually Works vs What's Folklore",
+        "What a tan actually is"
+      ],
+      "section_ids": [
+        "template--23927394828403__main",
+        "template--23927394828403__related_reads_GCEhNC"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "8636de27d3ee2791917f726abdd96ec6a356755f4de0ba57341db75220219cd1",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/blogs/skinmaxxing/vitamin-c-serum-benefits-separating-evidence-from-hype",
+      "title": "Vitamin C Serum Benefits: Separating Evidence From Hype – LNGVTY.IN",
+      "headings": [
+        "Vitamin C Serum Benefits: Separating Evidence From Hype",
+        "Benefits the research supports"
+      ],
+      "section_ids": [
+        "template--23927394828403__main",
+        "template--23927394828403__related_reads_GCEhNC"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "0059eb3c229caf9e83b90ee8f8f90c636e71ee63c523544362e74dde0c10c83b",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/blogs/skinmaxxing/vitamin-c-serum-for-face-what-it-actually-does",
+      "title": "Vitamin C Serum for Face: What It Actually Does – LNGVTY.IN",
+      "headings": [
+        "Vitamin C Serum for Face: What It Actually Does",
+        "The three jobs vitamin C does on your face"
+      ],
+      "section_ids": [
+        "template--23927394828403__main",
+        "template--23927394828403__related_reads_GCEhNC"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "7f88850175040b2b821d0adf421061bc814e6ec9ee8e3efe16f72961fbc56809",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/blogs/skinmaxxing/what-causes-uneven-skin-tone-and-facial-pigmentation",
+      "title": "What Causes Uneven Skin Tone and Facial Pigmentation? – LNGVTY.IN",
+      "headings": [
+        "What Causes Uneven Skin Tone and Facial Pigmentation?",
+        "The four main triggers of facial pigmentation"
+      ],
+      "section_ids": [
+        "template--23927394828403__main",
+        "template--23927394828403__related_reads_GCEhNC"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "5c6007f95f9672e01bae50615e2405821c2cae0838bc81cadade40cc5e6f8614",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/blogs/skinmaxxing/whiteheads-removal-why-picking-makes-it-worse",
+      "title": "Whiteheads Removal: Why Picking Makes It Worse – LNGVTY.IN",
+      "headings": [
+        "Whiteheads Removal: Why Picking Makes It Worse",
+        "What a whitehead actually is beneath the surface"
+      ],
+      "section_ids": [
+        "template--23927394828403__main",
+        "template--23927394828403__related_reads_GCEhNC"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "5803b2aa92716359c3df33bbb577ce47f711ea97418a1c694ada56903c72f581",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/blogs/skinmaxxing/why-your-pores-look-bigger-than-they-are-and-what-actually-closes-them",
+      "title": "Why Your Pores Look Bigger Than They Are (And What Actually Closes The – LNGVTY.IN",
+      "headings": [
+        "Why Your Pores Look Bigger Than They Are (And What Actually Closes Them)",
+        "The myth of opening and closing pores"
+      ],
+      "section_ids": [
+        "template--23927394828403__main",
+        "template--23927394828403__related_reads_GCEhNC"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "1314089323f5ebc6103a8f3ae98a3572808a2aeab06fb5838ee10216cc1fd35a",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/pages/acne-5-reasons",
+      "title": "5 Reasons: Acne + Blemish Control – LNGVTY.IN",
+      "headings": [
+        "6 reasons why dermatologists trust LNGVTY for acne",
+        "Swipe for the 6 reasons 6 reasons it works",
+        "Works on breakouts, excess oil, clogged pores",
+        "Fights the bacteria behind pimples",
+        "Stops acne from coming back",
+        "Clear, fresh skin with no side effect",
+        "Acne solution under ₹1000",
+        "No guesswork, tested on Indian skin",
+        "Clinical trial results",
+        "Acne + Blemish Control Serum",
+        "What's in the bottle",
+        "Stem Cell CM"
+      ],
+      "section_ids": [
+        "template--23983099445363__hero",
+        "template--23983099445363__reasons",
+        "template--23983099445363__before_after",
+        "template--23983099445363__product",
+        "template--23983099445363__ingredients",
+        "template--23983099445363__faq",
+        "template--23983099445363__17912685666f388ba2",
+        "template--23983099445363__sticky"
+      ],
+      "breakpoints": [
+        "@media (hover: hover) and (pointer: fine) ",
+        "@media (max-width: 599px) ",
+        "@media (max-width:990px)",
+        "@media (min-width: 600px) and (max-width: 989px) ",
+        "@media (prefers-reduced-motion: reduce) ",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "1e882a0b35633a7a9b2662a3fc3ef944f0aa124a2fab711b8cbab2b70b0bc2c3",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/pages/kp-account",
+      "title": "kp account – LNGVTY.IN",
+      "headings": [
+        "kp account"
+      ],
+      "section_ids": [
+        "template--23927395483763__main"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "94b228a8da5fbf86a71cc40575711248e6505aeeec35e94b14488a7e07565541",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/pages/reward-for-discipline",
+      "title": "reward for discipline – LNGVTY.IN",
+      "headings": [
+        "Earn ₹1,000 for building a habit. Start the LNGVTY 8-week challenge.",
+        "Choose by concern",
+        "Consistency pays.",
+        "56 days, and 12 photos.",
+        "HEAR IT FROM THE CONSUMERS",
+        "Most beauty brands make money when you quit. Start the challenge.",
+        "Customers are saying",
+        "Frequently asked",
+        "Discipline pays. Literally."
+      ],
+      "section_ids": [
+        "template--23927395647603__custom_liquid_t6t8hj",
+        "template--23927395647603__custom_liquid_JzWJ9J",
+        "template--23927395647603__custom_liquid_jnNq3e",
+        "template--23927395647603__custom_liquid_MkjApn",
+        "template--23927395647603__skin_reels_azdpJa",
+        "template--23927395647603__custom_liquid_n9PLTw",
+        "template--23927395647603__1789228950271fdf69",
+        "template--23927395647603__custom_liquid_9ChXpe",
+        "template--23927395647603__custom_liquid_zeQMdb",
+        "template--23927395647603__custom_liquid_khXeyd"
+      ],
+      "breakpoints": [
+        "@media (max-width: 720px) ",
+        "@media (max-width: 860px) ",
+        "@media (max-width:990px)",
+        "@media (min-width: 861px) ",
+        "@media (prefers-reduced-motion: reduce) ",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(hover:hover)",
+        "@media(min-width:1600px)",
+        "@media(min-width:420px)",
+        "@media(min-width:720px)",
+        "@media(min-width:760px)",
+        "@media(min-width:900px)",
+        "@media(min-width:920px)",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "6686b34a7e43bd12f5e9a0fcaa719dac04ab76ed3f92e44414a94e4017b1f65f",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/pages/reward-for-discipline-tnc",
+      "title": "reward for discipline tnc – LNGVTY.IN",
+      "headings": [
+        "Terms & Conditions",
+        "1. Eligibility",
+        "2. Programme duration",
+        "3. Proof of participation",
+        "4. The reward",
+        "5. Review and verification",
+        "6. General conditions"
+      ],
+      "section_ids": [
+        "template--23927395614835__custom_liquid_fnEKyQ"
+      ],
+      "breakpoints": [
+        "@media (max-width: 768px) ",
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "7199de856ceaff671b762335f53938459609499feef6c2a0d707f09ed9b1266b",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/pages/science",
+      "title": "Science – LNGVTY.IN",
+      "headings": [
+        "Your skin knows how to fix itself. Most products interrupt it.",
+        "Skin doesn't fail. The routine does.",
+        "We use regenerative science in beauty.",
+        "We didn't build another product. We built a skin longevity formula.",
+        "Skin Longevity System 5",
+        "Vitality",
+        "Recovery",
+        "Structure",
+        "Hydration",
+        "Defence",
+        "75 days is the commitment we ask for.",
+        "Slow start. Permanent finish."
+      ],
+      "section_ids": [
+        "template--23927395680371__hero_science_D3j8a3",
+        "template--23927395680371__skin_age_9ygXYG",
+        "template--23927395680371__image_banner_a3ytwy",
+        "template--23927395680371__industry_problem_tApEXX",
+        "template--23927395680371__regen_science_bWeJym",
+        "template--23927395680371__system_intro_NFEz9W",
+        "template--23927395680371__skin_logentive_zkVqbC",
+        "template--23927395680371__logentity_pilllar_NLmCqB",
+        "template--23927395680371__why_75_JeDDTU",
+        "template--23927395680371__graph_line_NHw8Ji",
+        "template--23927395680371__transparency_ingredient_GMJUGx",
+        "template--23927395680371__science_cta_Mc6YFj"
+      ],
+      "breakpoints": [
+        "@media (max-width: 1024px) ",
+        "@media (max-width: 900px) ",
+        "@media (max-width:767px)",
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(max-width:1024px)",
+        "@media(max-width:900px)",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "f14cd4c562510427a44d5922acc24940c1977873aa219ee296605db35df12105",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/pages/the-acne-serum-that-works",
+      "title": "The Acne Serum That Works – LNGVTY.IN",
+      "headings": [
+        "The acne serum that actually works.",
+        "The acne serum that actually works.",
+        "Measured. Not marketing.",
+        "For skin that won’t stay clear.",
+        "We use regenerative science in beauty.",
+        "Real skin. Four weeks in.",
+        "The bag is on us.",
+        "Everything you'd want to ask.",
+        "Look under the hood."
+      ],
+      "section_ids": [
+        "template--23927395778675__custom_liquid_4Fx97K",
+        "template--23927395778675__custom_liquid_e8iJtV",
+        "template--23927395778675__custom_liquid_xapXWb",
+        "template--23927395778675__custom_liquid_c6G9FY",
+        "template--23927395778675__custom_liquid_qpjT6E",
+        "template--23927395778675__custom_liquid_Ad4C6q",
+        "template--23927395778675__custom_liquid_gX48D6",
+        "template--23927395778675__custom_liquid_7JjU97",
+        "template--23927395778675__custom_liquid_yzJUYb"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media (min-width: 720px) ",
+        "@media (min-width: 900px) ",
+        "@media (prefers-reduced-motion: reduce) ",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "c1682826cbcc62133c2fb6f8648ce14315fa1e69db72052d53ddbc5b50f07a79",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/pages/the-whole-routine",
+      "title": "The Whole Routine – LNGVTY.IN",
+      "headings": [
+        "One serum. The whole routine.",
+        "One serum did all of this.",
+        "The routine, replaced.",
+        "The bag is on us.",
+        "Everything you'd want to ask.",
+        "Look under the hood."
+      ],
+      "section_ids": [
+        "template--23927395287155__custom_liquid_FnbAF6",
+        "template--23927395287155__custom_liquid_4ADafc",
+        "template--23927395287155__custom_liquid_LdtVQB",
+        "template--23927395287155__custom_liquid_knebCk",
+        "template--23927395287155__custom_liquid_tNqBnp",
+        "template--23927395287155__custom_liquid_Rd9PF9",
+        "template--23927395287155__custom_liquid_d8nV7R"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media (min-width: 720px) ",
+        "@media (min-width: 900px) ",
+        "@media (prefers-reduced-motion: reduce) ",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "23834d01497b709608b15b72fd951d69b3e7765d790a8d5ac985bade772edfab",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/products/dust-bag-twill",
+      "title": "Dust Bag Twill – LNGVTY.IN",
+      "headings": [
+        "Dust Bag Twill",
+        "The Five products this replaces.",
+        "Dust Bag Twill",
+        "In pictures.",
+        "Why your skin will love it.",
+        "Unclogs the pore",
+        "Controls sebum",
+        "Fewer breakouts",
+        "Reduces acne bacteria",
+        "Calmer day to day",
+        "Marks fade sooner",
+        "What's in the bottle"
+      ],
+      "section_ids": [
+        "template--23927395876979__new_pdp_9jwWKL",
+        "template--23927395876979__clicle_before_dEh34q",
+        "template--23927395876979__conversion_fzPQV8",
+        "template--23927395876979__rai_compatible_wdQBXz",
+        "template--23927395876979__skin_benefits_CDJUgw",
+        "template--23927395876979__ingredient_reveal_LiXxd9",
+        "template--23927395876979__group_faq_WdDQnK",
+        "template--23927395876979__17865133134bb43cd4",
+        "template--23927395876979__lates_crossell_q6keEA",
+        "template--23927395876979__mainfootersticky_YFaeN7"
+      ],
+      "breakpoints": [
+        "@media (hover: hover) and (pointer: fine) ",
+        "@media (max-width: 480px) ",
+        "@media (max-width: 520px) ",
+        "@media (max-width: 599px) ",
+        "@media (max-width: 600px) ",
+        "@media (max-width: 749px) ",
+        "@media (max-width: 760px) ",
+        "@media (max-width: 980px) ",
+        "@media (max-width: 989px) ",
+        "@media (max-width:990px)",
+        "@media (min-width: 600px) and (max-width: 989px) ",
+        "@media (min-width: 990px) ",
+        "@media (prefers-reduced-motion: reduce) ",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 400px) ",
+        "@media screen and (max-width: 600px) ",
+        "@media screen and (max-width: 749px) ",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "f7f11ba8c8513f4347e3b936638aeb980bf17b57ecfe13fa1a5f3d60adc4cba1",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/blogs/skinmaxxing?page=2",
+      "title": "SKINMAXXING – Page 2 – LNGVTY.IN",
+      "headings": [
+        "SKINMAXXING",
+        "Serum for Pigmentation: What the Research Actua...",
+        "Serum for Pigmentation: What the Research Actua...",
+        "Vitamin C Serum Benefits: Separating Evidence F...",
+        "Vitamin C Serum Benefits: Separating Evidence F...",
+        "How to Remove Dark Circles: What Works and What...",
+        "How to Remove Dark Circles: What Works and What...",
+        "Tan Removal: What Actually Works vs What's Folk...",
+        "Tan Removal: What Actually Works vs What's Folk...",
+        "Ceramide Moisturizer: Why Your Barrier Needs Th...",
+        "Ceramide Moisturizer: Why Your Barrier Needs Th...",
+        "Best Serum for Glowing Skin: Separating Real Gl..."
+      ],
+      "section_ids": [
+        "template--23927394861171__main"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "84d60034833d9f8f50b28d2597e34654033a3e287d4c860c237ddc8a82e80cfc",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/blogs/skinmaxxing?page=3",
+      "title": "SKINMAXXING – Page 3 – LNGVTY.IN",
+      "headings": [
+        "SKINMAXXING",
+        "Best Sunscreen for Face: A No-Nonsense Buying G...",
+        "Best Sunscreen for Face: A No-Nonsense Buying G...",
+        "Best Sunscreen for Oily Skin: What to Actually ...",
+        "Best Sunscreen for Oily Skin: What to Actually ..."
+      ],
+      "section_ids": [
+        "template--23927394861171__main"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "8d30001ce69c38e08c835bcd152dc83dd048b87e2a259a0b09a5a49b4c308c34",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    },
+    {
+      "url": "https://lngvty.in/cart",
+      "title": "Your Shopping Cart – LNGVTY.IN",
+      "headings": [
+        "Your cart",
+        "Have an account?",
+        "Estimated total"
+      ],
+      "section_ids": [
+        "template--23927394893939__cart-items",
+        "template--23927394893939__cart-footer"
+      ],
+      "breakpoints": [
+        "@media (max-width:990px)",
+        "@media only screen and (max-width: 768px)",
+        "@media only screen and (min-width: 768px)",
+        "@media screen and (max-width: 989px) ",
+        "@media screen and (min-width: 750px) ",
+        "@media screen and (min-width: 990px) ",
+        "@media(prefers-reduced-motion:reduce)"
+      ],
+      "source_sha256": "9031e75df49693466a78b6b7927dbea68820088019b2196ccf9578287b8b3df8",
+      "inspection": "public HTML/CSS source; see design-reference.md for browser verification coverage"
+    }
+  ]
+}

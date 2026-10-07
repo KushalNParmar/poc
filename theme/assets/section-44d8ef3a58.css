@@ -1,0 +1,122 @@
+
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE {
+    margin-inline: auto;
+    padding-top: var(--fork-top);
+    padding-bottom: var(--fork-bottom);
+    background: var(--fork-bg);
+    color: var(--fork-fg);
+    overflow: hidden;
+  }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE.page-width--narrow { --fork-max: 900px; }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE.page-width--standard { --fork-max: 1200px; }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE.page-width--wide { --fork-max: 1500px; }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE * { box-sizing: border-box; }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__head {
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: clamp(34px, 4.4vw, 64px);
+  }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__title {
+    
+    margin: 0;
+    font-family: "Avenir Next", Avenir, "Century Gothic", sans-serif;
+    font-size: clamp(26px, 4.6vw, 54px);
+    font-weight: 300;
+    line-height: 1.01;
+    letter-spacing: -.042em;
+    text-wrap: balance;
+    color:#fff !important;
+  }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__replay {
+    appearance: none;
+    border: 0;
+    border-bottom: 1px solid color-mix(in srgb, var(--fork-fg) 35%, transparent);
+    padding: 0 0 5px;
+    background: transparent;
+    color: color-mix(in srgb, var(--fork-fg) 68%, transparent);
+    cursor: pointer;
+    font: 400 10px/1.2 "Avenir Next", Avenir, "Century Gothic", sans-serif;
+    letter-spacing: .24em;
+    text-transform: uppercase;
+  }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__replay:hover { color: var(--fork-fg); border-color: var(--fork-fg); }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__stage { width: 100%; max-width: 840px; margin-inline: auto; }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__svg { display: block; width: 100%; height: auto; overflow: visible; }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__trunk,
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__branch-line {
+    fill: none;
+    stroke: color-mix(in srgb, var(--fork-fg) 55%, transparent);
+    stroke-width: 1.3;
+  }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__trunk { stroke-width: 2; }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__arrow { fill: color-mix(in srgb, var(--fork-fg) 44%, transparent); }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__ring {
+    fill: none;
+    stroke: color-mix(in srgb, var(--fork-fg) 28%, transparent);
+    stroke-width: 1.2;
+  }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__ring--base { stroke: color-mix(in srgb, var(--fork-fg) 55%, transparent); }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__ring--concern { stroke: var(--fork-branch-color, var(--fork-accent)); }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__arrow { fill: var(--fork-branch-color, var(--fork-accent)); }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__image { opacity: .92; }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__concern,
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__active,
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__base-title,
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__base-note {
+    font-family: "Avenir Next", Avenir, "Century Gothic", sans-serif;
+  }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__concern {
+    fill: var(--fork-fg); font-size: 13px; font-weight: 500; letter-spacing: .13em; text-transform: uppercase;
+  }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__active { fill: color-mix(in srgb, var(--fork-fg) 62%, transparent); font-size: 11.5px; letter-spacing: .08em; }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__base-title { fill: var(--fork-fg); font-size: 14px; letter-spacing: .18em; text-transform: uppercase; }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__base-note { fill: color-mix(in srgb, var(--fork-fg) 62%, transparent); font-size: 12px; letter-spacing: .05em; }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__caption {
+    max-width: 60ch; margin: clamp(26px, 3.2vw, 44px) 0 0;
+    color: color-mix(in srgb, var(--fork-fg) 58%, transparent);
+    font: 400 13px/1.62 "Avenir Next", Avenir, "Century Gothic", sans-serif;
+  }
+
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE.is-animating .lngvty-fork__trunk,
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE.is-animating .lngvty-fork__branch-line { stroke-dasharray: 1; stroke-dashoffset: 1; }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE.is-animating .lngvty-fork__trunk { animation: lngvtyForkDraw-template23927395582067__technology_fig_HNnAEE .7s cubic-bezier(.22,.61,.36,1) .25s forwards; }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE.is-animating .lngvty-fork__branch-line { animation: lngvtyForkDraw-template23927395582067__technology_fig_HNnAEE .85s cubic-bezier(.22,.61,.36,1) calc(.75s + var(--fork-i) * .2s) forwards; }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE.is-animating .lngvty-fork__arrow,
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE.is-animating .lngvty-fork__ring,
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE.is-animating .lngvty-fork__image,
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE.is-animating .lngvty-fork__concern,
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE.is-animating .lngvty-fork__active { opacity: 0; }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE.is-animating .lngvty-fork__arrow,
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE.is-animating .lngvty-fork__ring,
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE.is-animating .lngvty-fork__image,
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE.is-animating .lngvty-fork__concern,
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE.is-animating .lngvty-fork__active { animation: lngvtyForkIn-template23927395582067__technology_fig_HNnAEE .55s ease calc(1.4s + var(--fork-i, 0) * .2s) forwards; }
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE.is-animating .lngvty-fork__base-title,
+  #lngvty-fork-template23927395582067__technology_fig_HNnAEE.is-animating .lngvty-fork__base-note { opacity: 0; animation: lngvtyForkIn-template23927395582067__technology_fig_HNnAEE .7s ease 1.1s forwards; }
+  @keyframes lngvtyForkDraw-template23927395582067__technology_fig_HNnAEE { to { stroke-dashoffset: 0; } }
+  @keyframes lngvtyForkIn-template23927395582067__technology_fig_HNnAEE { to { opacity: 1; } }
+
+  @media (max-width: 860px) {
+    #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__concern { font-size: 17px; }
+    #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__active { font-size: 15px; }
+    #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__base-title { font-size: 18px; }
+    #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__base-note { font-size: 14px; }
+  }
+  @media (max-width: 560px) {
+    
+    #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__title { font-size: clamp(27px, 8vw, 42px); }
+    #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__caption { font-size: 13.5px; line-height: 1.72; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__trunk,
+    #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__branch-line { stroke-dashoffset: 0 !important; }
+    #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__arrow,
+    #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__ring,
+    #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__image,
+    #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__concern,
+    #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__active,
+    #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__base-title,
+    #lngvty-fork-template23927395582067__technology_fig_HNnAEE .lngvty-fork__base-note { opacity: 1 !important; animation: none !important; }
+  }

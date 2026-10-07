@@ -1,0 +1,132 @@
+
+  .skip-template--23927395319923__lngtv_pitch_fAkWhB {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 88vh;
+    background: var(--skip-bg);
+    border-bottom: 1px solid rgba(24,24,24,.07);
+  }
+
+  .skip-template--23927395319923__lngtv_pitch_fAkWhB .skip-img {
+    position: relative;
+    overflow: hidden;
+    background: var(--skip-img-bg);
+    border-right: 1px solid rgba(24,24,24,.07);
+    min-height: 480px;
+  }
+
+  .skip-template--23927395319923__lngtv_pitch_fAkWhB .skip-main-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    inset: 0;
+  }
+
+  .skip-template--23927395319923__lngtv_pitch_fAkWhB .skip-img-ph {
+    position: absolute;
+    inset: 0;
+    background: #1e1b18;
+    display: flex;
+    align-items: flex-end;
+    padding: 28px;
+  }
+
+  .skip-template--23927395319923__lngtv_pitch_fAkWhB .skip-img-note {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-family: 'Courier New', monospace;
+    font-size: 9px;
+    color: rgba(255,255,255,.15);
+    line-height: 1.8;
+    z-index: 2;
+  }
+
+  .skip-template--23927395319923__lngtv_pitch_fAkWhB .skip-copy {
+    padding: 80px 72px 80px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .skip-template--23927395319923__lngtv_pitch_fAkWhB .skip-num {
+    font-family: 'Courier New', monospace;
+    font-size: 10px;
+    letter-spacing: .16em;
+    color: rgba(24,24,24,.58);
+    margin-bottom: 40px;
+  }
+
+  .skip-template--23927395319923__lngtv_pitch_fAkWhB .skip-h {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: clamp(40px, 5.5vw, 76px) !important;
+    font-weight: 600 !important;
+    letter-spacing: -3px;
+    line-height: .9;
+    color: var(--skip-text);
+    margin: 0 0 40px;
+  }
+
+  .skip-template--23927395319923__lngtv_pitch_fAkWhB .skip-p {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: clamp(16px, 1.6vw, 19px);
+    font-weight: 400;
+    color: var(--skip-muted);
+    line-height: 1.8;
+    max-width: 420px;
+  }
+
+  .skip-template--23927395319923__lngtv_pitch_fAkWhB .skip-cta {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: 13px;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: var(--skip-btn-text);
+    background: var(--skip-btn-bg);
+    padding: 14px 28px;
+    display: inline-block;
+    align-self: flex-start;
+    margin-top: 40px;
+    transition: background .2s;
+  }
+
+  .skip-template--23927395319923__lngtv_pitch_fAkWhB .skip-cta:hover {
+    background: var(--skip-btn-hover);
+  }
+
+  @media (max-width: 1100px) {
+    
+  }
+
+  @media (max-width: 768px) {
+    .skip-template--23927395319923__lngtv_pitch_fAkWhB .skip-copy {
+      padding: 56px 28px;
+      grid-row:1
+    }
+    .skip-template--23927395319923__lngtv_pitch_fAkWhB {
+      grid-template-columns: 1fr;
+    }
+
+    .skip-template--23927395319923__lngtv_pitch_fAkWhB .skip-img {
+      min-height: 480px;
+      border-right: none;
+      border-bottom: 1px solid rgba(24,24,24,.07);
+    }
+
+    .skip-template--23927395319923__lngtv_pitch_fAkWhB .skip-copy {
+      padding: 64px 32px;
+    }
+
+    .skip-template--23927395319923__lngtv_pitch_fAkWhB .skip-h {
+      letter-spacing: -2px;
+      margin-bottom: 28px;
+    }
+
+    .skip-template--23927395319923__lngtv_pitch_fAkWhB .skip-cta {
+      margin-top: 32px;
+    }
+  }

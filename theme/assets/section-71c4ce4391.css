@@ -1,0 +1,11 @@
+.section-template--23927394893939__cart-footer-padding {
+    padding-top: 15px;
+    padding-bottom: 30px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-template--23927394893939__cart-footer-padding {
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+  }

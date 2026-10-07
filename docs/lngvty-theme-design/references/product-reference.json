@@ -1,0 +1,156 @@
+{
+  "observed_on": "2026-10-07",
+  "note": "Snapshot data and original store identifiers, not destination store IDs. Hydration showed a client-side preorder override.",
+  "products": [
+    {
+      "page": "https://lngvty.in/products/acne-blemish-control-serum-30ml",
+      "variants": [
+        {
+          "id": "48573386948765",
+          "image": {
+            "src": "//lngvty.in/cdn/shop/files/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f.jpg?v=1783597339"
+          },
+          "price": {
+            "amount": 1049.0,
+            "currencyCode": "INR"
+          },
+          "sku": "LSSRAB31",
+          "title": "30 ML",
+          "untranslatedTitle": "30 ML"
+        },
+        {
+          "id": "48573386981533",
+          "image": {
+            "src": "//lngvty.in/cdn/shop/files/11.jpg?v=1783595072"
+          },
+          "price": {
+            "amount": 499.0,
+            "currencyCode": "INR"
+          },
+          "sku": "LSSRAB10",
+          "title": "10 ML",
+          "untranslatedTitle": "10 ML"
+        },
+        {
+          "id": "48794741473437",
+          "image": {
+            "src": "//lngvty.in/cdn/shop/files/acne_bundle.webp?v=1789293308"
+          },
+          "price": {
+            "amount": 1888.2,
+            "currencyCode": "INR"
+          },
+          "sku": "LSSRAB30X2",
+          "title": "30 + 30 ML",
+          "untranslatedTitle": "30 + 30 ML"
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/products/dark-spots-pore-control-serum-30ml",
+      "variants": [
+        {
+          "id": "48573386588317",
+          "image": {
+            "src": "//lngvty.in/cdn/shop/files/3_fa6a5cd6-22de-4dbf-8e0d-907b39558c9a.jpg?v=1783597305"
+          },
+          "price": {
+            "amount": 1199.0,
+            "currencyCode": "INR"
+          },
+          "sku": "LSSRPP31",
+          "title": "30 ML",
+          "untranslatedTitle": "30 ML"
+        },
+        {
+          "id": "48573386621085",
+          "image": {
+            "src": "//lngvty.in/cdn/shop/files/21_44fe2aa8-e354-4c39-a43a-04eada18fedc.jpg?v=1783596536"
+          },
+          "price": {
+            "amount": 549.0,
+            "currencyCode": "INR"
+          },
+          "sku": "LSSRPP10",
+          "title": "10 ML",
+          "untranslatedTitle": "10 ML"
+        },
+        {
+          "id": "48794739441821",
+          "image": {
+            "src": "//lngvty.in/cdn/shop/files/dark_spots_bundle.webp?v=1789293250"
+          },
+          "price": {
+            "amount": 2158.2,
+            "currencyCode": "INR"
+          },
+          "sku": "LSSRPP31X2",
+          "title": "30 + 30 ML",
+          "untranslatedTitle": "30 + 30 ML"
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/products/deep-hydration-glow-serum-30ml",
+      "variants": [
+        {
+          "id": "48573378461853",
+          "image": {
+            "src": "//lngvty.in/cdn/shop/files/1_ef230265-217e-44f3-a6ca-7bc74de77a11.jpg?v=1783597239"
+          },
+          "price": {
+            "amount": 1049.0,
+            "currencyCode": "INR"
+          },
+          "sku": "LSSRHG30",
+          "title": "30 ML",
+          "untranslatedTitle": "30 ML"
+        },
+        {
+          "id": "48573378494621",
+          "image": {
+            "src": "//lngvty.in/cdn/shop/files/10_26eaafeb-697f-4a44-a89f-35202e17ad0b.jpg?v=1783593038"
+          },
+          "price": {
+            "amount": 499.0,
+            "currencyCode": "INR"
+          },
+          "sku": "LSSRHG10",
+          "title": "10 ML",
+          "untranslatedTitle": "10 ML"
+        },
+        {
+          "id": "48794738983069",
+          "image": {
+            "src": "//lngvty.in/cdn/shop/files/deep_hydration_bundle.webp?v=1789293205"
+          },
+          "price": {
+            "amount": 1888.2,
+            "currencyCode": "INR"
+          },
+          "sku": "LSSRHG30X2",
+          "title": "30 + 30 ML",
+          "untranslatedTitle": "30 + 30 ML"
+        }
+      ]
+    },
+    {
+      "page": "https://lngvty.in/products/dust-bag-twill",
+      "variants": [
+        {
+          "id": "48422012846237",
+          "image": {
+            "src": "//lngvty.in/cdn/shop/files/LNGVTYdustbagtwill.jpg?v=1781344649"
+          },
+          "price": {
+            "amount": 499.0,
+            "currencyCode": "INR"
+          },
+          "sku": "LGDDB220",
+          "title": "Default Title",
+          "untranslatedTitle": "Default Title"
+        }
+      ]
+    }
+  ]
+}

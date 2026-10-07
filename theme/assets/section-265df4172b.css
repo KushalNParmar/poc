@@ -1,0 +1,567 @@
+
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E {
+    background: var(--shelf-bg);
+    color: var(--shelf-fg);
+    padding-top: var(--shelf-top);
+    padding-bottom: var(--shelf-bottom);
+    overflow: hidden;
+  }
+
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__inner {
+    width: 100%;
+    margin: 0 auto;
+    
+  }
+
+
+  /* ----------------------------------------
+     INTRO
+  ---------------------------------------- */
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__chapter {
+    max-width: 760px;
+  }
+
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__kicker {
+    margin-bottom: 14px;
+
+    color: var(--shelf-muted);
+
+    font-size: 10px;
+    font-weight: 500;
+
+    line-height: 1.3;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  }
+
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__heading {
+    margin: 0;
+
+    color: var(--shelf-fg);
+
+    font-size: 68px;
+    font-weight: 400;
+
+    line-height: 1.05;
+    letter-spacing: -.025em;
+  }
+
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__intro {
+    max-width: 650px;
+
+    margin-top: 22px;
+
+    color: var(--shelf-muted);
+
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+
+  /* ----------------------------------------
+     CARDS
+  ---------------------------------------- */
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__cards {
+    display: grid;
+
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+
+    gap: var(--shelf-gap);
+
+    margin-top: clamp(40px, 5vw, 70px);
+  }
+
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__card {
+    min-width: 0;
+  }
+
+
+  /* ----------------------------------------
+     MEDIA
+  ---------------------------------------- */
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__media {
+    position: relative;
+
+    width: 100%;
+
+    aspect-ratio: 4 / 5;
+
+    margin-bottom: 20px;
+
+    overflow: hidden;
+
+    border-radius: var(--shelf-radius);
+
+    background: rgba(0, 0, 0, .04);
+  }
+
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__image {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform .6s cubic-bezier(.2, .65, .25, 1);
+  }
+
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__card:hover
+  .lngvty-shelf__image {
+    transform: scale(1.025);
+  }
+
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__media--placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__media--placeholder svg {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  /* ----------------------------------------
+     LABEL
+  ---------------------------------------- */
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__label {
+    margin-bottom: 8px;
+
+    color: var(--shelf-muted);
+
+    font-size: 10px;
+    font-weight: 500;
+
+    line-height: 1.3;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+  }
+
+
+  /* ----------------------------------------
+     CARD TITLE
+  ---------------------------------------- */
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__card-title {
+    margin: 0 0 12px;
+
+    color: var(--shelf-fg);
+
+    font-size: 23px;
+    font-weight: 400;
+
+    line-height: 1.15;
+    letter-spacing: -.015em;
+  }
+
+
+  /* ----------------------------------------
+     DESCRIPTION
+  ---------------------------------------- */
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__description {
+    color: var(--shelf-muted);
+
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__description p {
+    margin: 0 0 10px;
+  }
+
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__description p:last-child {
+    margin-bottom: 0;
+  }
+
+
+  /* ----------------------------------------
+     CTA
+  ---------------------------------------- */
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__cta {
+    display: inline-flex;
+
+    align-items: center;
+
+    margin-top: 18px;
+
+    color: var(--shelf-fg);
+
+    font-size: 11px;
+    font-weight: 500;
+
+    line-height: 1.2;
+
+    letter-spacing: .12em;
+    text-transform: uppercase;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid currentColor;
+
+    padding-bottom: 4px;
+
+    transition:
+      opacity .25s ease,
+      border-color .25s ease;
+  }
+
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__cta:hover {
+    opacity: .55;
+  }
+
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__cta[aria-disabled="true"] {
+    cursor: default;
+    opacity: .5;
+  }
+
+
+  /* ----------------------------------------
+     CAPTION
+  ---------------------------------------- */
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__caption {
+    max-width: 650px;
+
+    margin-top: 35px;
+
+    color: var(--shelf-muted);
+
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+
+  /* ----------------------------------------
+     REVEAL ANIMATION
+  ---------------------------------------- */
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__reveal
+  .lngvty-shelf__card {
+    opacity: 0;
+
+    transform: translateY(20px);
+
+    transition:
+      opacity .65s ease,
+      transform .65s cubic-bezier(.2, .65, .25, 1);
+  }
+
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__reveal.is-visible
+  .lngvty-shelf__card {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__reveal.is-visible
+  .lngvty-shelf__card:nth-child(1) {
+    transition-delay: 0ms;
+  }
+
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__reveal.is-visible
+  .lngvty-shelf__card:nth-child(2) {
+    transition-delay: 90ms;
+  }
+
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__reveal.is-visible
+  .lngvty-shelf__card:nth-child(3) {
+    transition-delay: 180ms;
+  }
+
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__reveal.is-visible
+  .lngvty-shelf__card:nth-child(4) {
+    transition-delay: 270ms;
+  }
+
+
+  #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__reveal.is-visible
+  .lngvty-shelf__card:nth-child(5) {
+    transition-delay: 360ms;
+  }
+
+
+  /* ----------------------------------------
+     TABLET
+     641px - 1200px
+     2.5 CARDS VISIBLE
+  ---------------------------------------- */
+
+  @media (min-width: 641px) and (max-width: 1200px) {
+
+    #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__cards {
+      display: flex;
+
+      flex-wrap: nowrap;
+
+      gap: var(--shelf-gap);
+
+      width: 100%;
+
+      overflow-x: auto;
+      overflow-y: hidden;
+
+      margin-top: clamp(30px, 4vw, 54px);
+
+      margin-right: calc(var(--shelf-gutter) * -1);
+
+      padding-right: var(--shelf-gutter);
+
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+
+      -webkit-overflow-scrolling: touch;
+
+      overscroll-behavior-x: contain;
+
+      scroll-snap-type: x mandatory;
+
+      touch-action: pan-x;
+    }
+
+
+    #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__cards::-webkit-scrollbar {
+      display: none;
+    }
+
+
+    #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__card {
+
+      flex: 0 0 calc(
+        (100% - (var(--shelf-gap) * 1.5)) / 2.5
+      );
+
+      width: calc(
+        (100% - (var(--shelf-gap) * 1.5)) / 2.5
+      );
+
+      min-width: calc(
+        (100% - (var(--shelf-gap) * 1.5)) / 2.5
+      );
+
+      scroll-snap-align: start;
+    }
+
+  }
+
+
+  /* ----------------------------------------
+     MOBILE
+     1 FULL CARD + 20% NEXT CARD
+     SAME VERTICAL ORIENTATION
+  ---------------------------------------- */
+
+  @media (max-width: 640px) {
+
+
+    #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__cards {
+
+      display: flex;
+
+      flex-wrap: nowrap;
+
+      gap: 16px;
+
+      width: 100%;
+
+      overflow-x: auto;
+      overflow-y: hidden;
+
+      margin-top: 30px;
+
+      margin-bottom: 0;
+
+      padding: 20px 0 20px 0;
+
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+
+      -webkit-overflow-scrolling: touch;
+
+      overscroll-behavior-x: contain;
+
+      scroll-snap-type: x mandatory;
+
+      touch-action: pan-x pan-y;
+    }
+
+
+    #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__cards::-webkit-scrollbar {
+      display: none;
+    }
+
+
+    /*
+      IMPORTANT:
+      Cards remain vertical like desktop.
+
+      80% width means:
+      - first card takes 80%
+      - remaining ~20% shows next card
+    */
+
+    #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__card {
+
+      flex: 0 0 80%;
+
+      width: 80%;
+
+      min-width: 80%;
+
+      display: block;
+
+      padding: 0;
+
+      border: 0;
+
+      scroll-snap-align: start;
+    }
+
+
+    /* Image stays FULL WIDTH and ON TOP */
+
+    #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__media {
+
+      width: 100%;
+
+      height: auto;
+
+      aspect-ratio: 4 / 5;
+
+      margin: 0 0 18px;
+
+      border-radius: var(--shelf-radius);
+
+      overflow: hidden;
+    }
+
+
+    #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__media img {
+
+      width: 100%;
+
+      height: 100%;
+
+      display: block;
+
+      object-fit: cover;
+    }
+
+
+    /* Label */
+
+    #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__label {
+
+      margin: 0 0 8px;
+
+      font-size: 10px;
+    }
+
+
+    /* Title */
+
+    #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__card-title {
+
+      margin: 0 0 10px;
+
+      font-size: 20px;
+
+      line-height: 1.15;
+    }
+
+
+    /* Description */
+
+    #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__description {
+
+      margin: 0;
+
+      font-size: 14.5px;
+
+      line-height: 1.55;
+    }
+
+
+    /* CTA */
+
+    #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__cta {
+
+      margin-top: 16px;
+    }
+
+
+    #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__caption {
+
+      padding-right: var(--shelf-gutter);
+
+    }
+
+  }
+
+
+  /* ----------------------------------------
+     SMALL MOBILE
+  ---------------------------------------- */
+
+  @media (max-width: 380px) {
+
+    #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__card-title {
+      font-size: 19px;
+    }
+
+    #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__description {
+      font-size: 14px;
+    }
+
+  }
+
+
+  /* ----------------------------------------
+     REDUCED MOTION
+  ---------------------------------------- */
+
+  @media (prefers-reduced-motion: reduce) {
+
+    #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__reveal
+    .lngvty-shelf__card {
+
+      opacity: 1;
+
+      transform: none;
+
+      transition: none;
+    }
+
+    #lngvty-shelf-template--23927395582067__belief_relief_mVD46E .lngvty-shelf__image {
+
+      transition: none;
+    }
+
+  }
+

@@ -1,0 +1,122 @@
+
+  .founders-template--23927395319923__founders_8rUXW4 {
+    background: var(--founders-bg);
+    border-bottom: 1px solid var(--founders-border);
+  }
+
+  .founders-template--23927395319923__founders_8rUXW4 .f {
+    display: grid;
+    min-height: 0;
+    border-top: 1px solid var(--founders-border);
+  }
+
+  .founders-template--23927395319923__founders_8rUXW4 .f.na,
+  .founders-template--23927395319923__founders_8rUXW4 .f.nb {
+    grid-template-columns: 50% 50%;
+  }
+
+  .founders-template--23927395319923__founders_8rUXW4 .f-img {
+    position: relative;
+    overflow: hidden;
+    background: var(--founders-img-bg);
+    min-height: 640px;
+  }
+
+  .founders-template--23927395319923__founders_8rUXW4 .f-main-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    inset: 0;
+  }
+
+  .founders-template--23927395319923__founders_8rUXW4 .f-img-ph {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: 24px;
+  }
+
+  .founders-template--23927395319923__founders_8rUXW4 .f-img-ph span {
+    font-family: 'Courier New', monospace;
+    font-size: 9px;
+    color: rgba(255,255,255,.12);
+    line-height: 1.8;
+  }
+
+  .founders-template--23927395319923__founders_8rUXW4 .f-copy {
+    padding: 64px 52px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 16px;
+    border-left: 1px solid var(--founders-border);
+  }
+
+  .founders-template--23927395319923__founders_8rUXW4 .f.nb .f-copy {
+    border-left: none;
+    border-right: 1px solid var(--founders-border);
+  }
+
+  .founders-template--23927395319923__founders_8rUXW4 .f-name {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: clamp(36px, 5vw, 68px);
+    font-weight: 600;
+    letter-spacing: -3px;
+    line-height: .88;
+    color: var(--founders-text);
+    margin: 0;
+  }
+
+  .founders-template--23927395319923__founders_8rUXW4 .f-name em {
+    font-style: italic;
+    color: rgba(24,24,24,.55);
+    font-weight: 300;
+  }
+
+  .founders-template--23927395319923__founders_8rUXW4 .f-moment {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: clamp(15px, 1.6vw, 18px);
+    font-weight: 300;
+    color: var(--founders-text);
+    line-height: 1.6;
+    letter-spacing: -.1px;
+    max-width: 420px;
+    margin: 0;
+  }
+
+  .founders-template--23927395319923__founders_8rUXW4 .f-bio,
+  .founders-template--23927395319923__founders_8rUXW4 .f-bio p {
+    font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--founders-muted);
+    line-height: 1.8;
+    max-width: 460px;
+    margin: 0;
+  }
+
+  @media (max-width: 1100px) {
+    .founders-template--23927395319923__founders_8rUXW4 .f.na,
+    .founders-template--23927395319923__founders_8rUXW4 .f.nb {
+      grid-template-columns: 1fr;
+    }
+
+    .founders-template--23927395319923__founders_8rUXW4 .f-img {
+      min-height: 400px;
+    }
+
+    .founders-template--23927395319923__founders_8rUXW4 .f-copy {
+      border-left: none !important;
+      border-right: none !important;
+      border-top: 1px solid var(--founders-border);
+      padding: 48px 28px;
+    }
+  }
+  @media (max-width:767px){
+    .f.nb .f-img {
+    grid-row: 1;
+}
+  }

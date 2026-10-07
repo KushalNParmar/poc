@@ -1,0 +1,18 @@
+<!doctype html>
+<html class="js" lang="en">
+<head>
+  <title>{{ page.title | escape }}</title>
+  <script src="/assets/catalog.js"></script>
+  <script src="/assets/commerce-core.js"></script>
+  <script src="/assets/recommendation-cart.js"></script>
+  <script src="/assets/local-runtime.js"></script>
+  {% block head %}{% endblock %}
+  <link rel="stylesheet" href="/assets/local-ui.css">
+  <script src="/assets/reviews.js" defer></script>
+  <script src="/assets/local-ui.js" defer></script>
+</head>
+<body class="{{ page.body_class | escape }}" data-page="{{ page.path | escape }}">
+  {% block content %}{% endblock %}
+  {% render 'local-dialogs' %}
+</body>
+</html>

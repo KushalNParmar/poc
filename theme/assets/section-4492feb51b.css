@@ -1,0 +1,302 @@
+
+  .lp-hero-k7x2m *,
+  .lp-hero-k7x2m *::before,
+  .lp-hero-k7x2m *::after { box-sizing: border-box; }
+
+  /* isolation reset : the live theme's custom.css sets !important on h1/h2/p font.
+     these rules force our tokens back on every text element inside the section.
+     "Avenir Light" removed from the stack because it is a light-only face and was
+     eating our font-weight overrides; Avenir Next synthesizes bold cleanly. */
+  .lp-hero-k7x2m h1,
+  .lp-hero-k7x2m h2,
+  .lp-hero-k7x2m p,
+  .lp-hero-k7x2m span,
+  .lp-hero-k7x2m a,
+  .lp-hero-k7x2m a * {
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: "Avenir Next","Avenir","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    font-synthesis: weight style !important;
+    -webkit-font-synthesis: weight style !important;
+  }
+  .lp-hero-k7x2m { margin: 0; padding: 0; }
+
+  .lp-hero-k7x2m {
+    --lp-ink: #181818;
+    --lp-cream: #FFFEF3;
+    --lp-white: #FFFFFF;
+    --lp-copper: #B87330;
+    --lp-copper-hover: #a56628;
+    --lp-lime: #7DC04C;              /* Acne + Blemish Control accent */
+    --lp-lime-hover: #6BAA3F;
+    --lp-hero-text: var(--lp-ink);         /* flip to var(--lp-white) if image blank space is dark */
+    --lp-hero-text-muted: rgba(24,24,24,.66);
+    --lp-font-primary: "Avenir Light","Avenir Next","Avenir","Century Gothic","Trebuchet MS",sans-serif;
+
+    background: var(--lp-cream);
+    color: var(--lp-ink);
+    font-family: var(--lp-font-primary);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  .lp-hero-k7x2m__inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* MOBILE : image with overlays at top and bottom blank space */
+  .lp-hero-k7x2m__media {
+    position: relative;
+    width: 100%;
+    background: var(--lp-cream);
+    overflow: hidden;
+  }
+
+  .lp-hero-k7x2m__img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .lp-hero-k7x2m__overlay-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 32px 26px 0;
+    text-align: left;
+    color: var(--lp-hero-text);
+    pointer-events: none;
+  }
+
+  .lp-hero-k7x2m__rule {
+    display: block;
+    width: 120px;
+    height: 3px;
+    background: var(--lp-lime);
+    margin: 4px 0 18px 0;
+    border: 0;
+  }
+
+  .lp-hero-k7x2m__cta-wrap {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 22px;
+    pointer-events: auto;
+  }
+
+  .lp-hero-k7x2m__eyebrow {
+    display: inline-block !important;
+    font-size: 11px !important;
+    letter-spacing: 0.22em !important;
+    text-transform: uppercase !important;
+    font-weight: 400 !important;
+    color: var(--lp-hero-text) !important;
+    margin: 0 0 14px !important;
+    line-height: 1.2 !important;
+    text-align: left !important;
+  }
+
+  .lp-hero-k7x2m__headline,
+  .lp-hero-k7x2m h1.lp-hero-k7x2m__headline,
+  .lp-hero-k7x2m h1.lp-hero-k7x2m__headline .lp-hero-k7x2m__headline-line {
+    font-size: clamp(30px, 8.6vw, 44px) !important;
+    font-weight: 700 !important;
+    line-height: 1.02 !important;
+    letter-spacing: -1.3px !important;
+    margin: 0 !important;
+    color: var(--lp-hero-text) !important;
+    text-align: left !important;
+  }
+  .lp-hero-k7x2m__headline .lp-hero-k7x2m__headline-line { display: block !important; }
+
+  .lp-hero-k7x2m__sub {
+    font-size: clamp(13px, 3.6vw, 15px) !important;
+    font-weight: 400 !important;
+    line-height: 1.45 !important;
+    max-width: 40ch;
+    margin: 0 !important;
+    color: var(--lp-hero-text) !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left !important;
+    gap: 6px;
+  }
+  .lp-hero-k7x2m__sub .lp-hero-k7x2m__claim {
+    display: block !important;
+    font-size: inherit !important;
+    font-weight: 400 !important;
+    line-height: inherit !important;
+    color: inherit !important;
+  }
+
+  .lp-hero-k7x2m__claim {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+  }
+
+  .lp-hero-k7x2m__badge {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--lp-lime);
+    color: var(--lp-ink);
+    font-family: var(--lp-font-primary);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    min-width: 26px;
+    height: 20px;
+    padding: 0 6px;
+    border-radius: 12px;
+  }
+
+  /* mobile hero CTA. lime fill with ink text (8.05:1, passes AAA). NOTE: design-tokens.md flags lime as a CTA fill; Vansh approved this exception on 2026-08-07 for the acne landing page. */
+  /* button : compound selector beats theme's a rule; inline-block hugs the text */
+  .lp-hero-k7x2m .lp-hero-k7x2m__cta-wrap a.lp-hero-k7x2m__cta,
+  .lp-hero-k7x2m a.lp-hero-k7x2m__cta,
+  .lp-hero-k7x2m a.lp-hero-k7x2m__cta:link,
+  .lp-hero-k7x2m a.lp-hero-k7x2m__cta:visited,
+  .lp-hero-k7x2m a.lp-hero-k7x2m__cta:hover {
+    display: inline-block !important;
+    width: auto !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    background: var(--lp-lime) !important;
+    color: var(--lp-ink) !important;
+    font-weight: 900 !important;
+    font-size: 12px !important;
+    letter-spacing: 0.08em !important;
+    line-height: 1 !important;
+    padding: 14px 22px !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    text-decoration: none !important;
+    text-transform: uppercase !important;
+    text-align: center !important;
+    min-height: 0 !important;
+    box-shadow: none !important;
+    pointer-events: auto;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  .lp-hero-k7x2m a.lp-hero-k7x2m__cta span {
+    display: inline !important;
+    color: var(--lp-ink) !important;
+    font-weight: 900 !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 0 0 6px !important;
+    text-transform: uppercase !important;
+  }
+  .lp-hero-k7x2m a.lp-hero-k7x2m__cta:hover { background: var(--lp-lime-hover) !important; }
+  .lp-hero-k7x2m__cta:hover,
+  .lp-hero-k7x2m__cta:focus-visible { background: var(--lp-lime-hover); }
+  .lp-hero-k7x2m__cta:focus-visible { outline: 2px solid var(--lp-ink); outline-offset: 2px; }
+  .lp-hero-k7x2m__cta-arrow { display: inline-block; transition: transform 0.2s ease; }
+  .lp-hero-k7x2m__cta:hover .lp-hero-k7x2m__cta-arrow { transform: translateX(3px); }
+
+  /* DESKTOP : split layout, text left in cream panel, image right */
+  .lp-hero-k7x2m__text-panel { display: none; }
+
+  @media (min-width: 900px) {
+    .lp-hero-k7x2m__inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      align-items: stretch;
+      min-height: 560px;
+    }
+
+    .lp-hero-k7x2m__text-panel {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 72px 64px;
+      background: var(--lp-cream);
+      order: 1;
+    }
+
+    .lp-hero-k7x2m__media {
+      order: 2;
+      align-self: stretch;
+      height: 100%;
+    }
+
+    .lp-hero-k7x2m__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .lp-hero-k7x2m__overlay-top { display: none; }
+
+    .lp-hero-k7x2m__eyebrow-desktop {
+      font-size: 12px !important;
+      letter-spacing: 0.2em !important;
+      text-transform: uppercase !important;
+      font-weight: 700 !important;
+      color: var(--lp-copper) !important;
+      margin: 0 0 20px !important;
+      line-height: 1.2 !important;
+    }
+
+    .lp-hero-k7x2m__headline-desktop {
+      font-size: clamp(44px, 4.6vw, 68px) !important;
+      font-weight: 800 !important;
+      line-height: 0.98 !important;
+      letter-spacing: -2px !important;
+      color: var(--lp-ink) !important;
+      margin: 0 0 20px !important;
+      max-width: 12ch;
+    }
+
+    .lp-hero-k7x2m__sub-desktop {
+      font-size: 17px !important;
+      font-weight: 500 !important;
+      line-height: 1.55 !important;
+      color: var(--lp-hero-text-muted) !important;
+      margin: 0 0 32px !important;
+      max-width: 44ch;
+    }
+
+    .lp-hero-k7x2m__cta-desktop {
+      display: inline-flex !important;
+      align-items: center;
+      gap: 10px;
+      background: var(--lp-copper) !important;
+      color: var(--lp-white) !important;
+      font-weight: 600 !important;
+      font-size: 15px !important;
+      letter-spacing: 0.06em !important;
+      padding: 18px 32px !important;
+      border: 0 !important;
+      border-radius: 0 !important;
+      text-decoration: none !important;
+      min-height: 52px !important;
+      line-height: 1.2 !important;
+      align-self: flex-start;
+      transition: background 0.2s ease;
+      cursor: pointer;
+    }
+    .lp-hero-k7x2m__cta-desktop:hover { background: var(--lp-copper-hover); }
+    .lp-hero-k7x2m__cta-desktop:focus-visible { outline: 2px solid var(--lp-ink); outline-offset: 2px; }
+    .lp-hero-k7x2m__cta-desktop .lp-hero-k7x2m__cta-arrow { transition: transform 0.2s ease; }
+    .lp-hero-k7x2m__cta-desktop:hover .lp-hero-k7x2m__cta-arrow { transform: translateX(3px); }
+
+    .lp-hero-k7x2m__meta-desktop {
+      font-family: var(--lp-font-primary);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      color: #565656;
+      text-transform: uppercase;
+      margin-top: 20px;
+    }
+  }

@@ -1,0 +1,26 @@
+<dialog class="poc-cart" id="poc-cart" aria-labelledby="poc-cart-title">
+  <header class="poc-dialog-head"><h2 id="poc-cart-title">Your cart <span data-cart-count></span></h2><button type="button" data-close-dialog aria-label="Close cart">×</button></header>
+  <div class="poc-cart-shipping" data-shipping-message>Get free shipping on orders above ₹900</div>
+  <div id="poc-cart-content"></div>
+</dialog>
+<dialog class="poc-modal" id="poc-login" aria-labelledby="poc-login-title">
+  <button class="poc-close" type="button" data-close-dialog aria-label="Close login">×</button>
+  <div class="poc-login-logo">LNGVTY</div>
+  <h2 id="poc-login-title">Welcome to LNGVTY</h2>
+  <p>Log in to track your orders and start your skin journey.</p>
+  <form id="poc-login-form">
+    <label for="poc-phone">Mobile number</label>
+    <div class="poc-phone"><span>+91</span><input id="poc-phone" name="phone" type="tel" inputmode="numeric" pattern="[6-9][0-9]{9}" maxlength="10" autocomplete="tel-national" placeholder="Enter mobile number" required></div>
+    <div id="poc-otp-field" hidden><label for="poc-otp">Verification code</label><input id="poc-otp" name="otp" inputmode="numeric" maxlength="6" autocomplete="one-time-code" placeholder="6-digit code"><small>Use 123456 for this demo. No SMS is sent.</small></div>
+    <p class="poc-error" id="poc-login-error" role="status"></p>
+    <button class="poc-primary" id="poc-login-submit" type="submit">Continue</button>
+    <button class="poc-text-button" id="poc-change-phone" type="button" hidden>Change mobile number</button>
+  </form>
+  <p class="poc-fineprint">By continuing, you agree to our <a href="/policies/terms-of-service">Terms of Service</a> and <a href="/policies/privacy-policy">Privacy Policy</a>.</p>
+</dialog>
+<dialog class="poc-modal poc-media" id="poc-media" aria-label="Review photo"><button class="poc-close" data-close-dialog type="button" aria-label="Close image">×</button><img id="poc-media-image" alt="Customer review photo"></dialog>
+<dialog class="poc-modal" id="poc-review" aria-labelledby="poc-review-title">
+  <button class="poc-close" data-close-dialog type="button" aria-label="Close review form">×</button><h2 id="poc-review-title">Write a review</h2>
+  <form id="poc-review-form"><label>Your name<input name="name" required maxlength="80" autocomplete="name"></label><label>Rating<select name="rating"><option value="5">★★★★★ — Excellent</option><option value="4">★★★★☆ — Good</option><option value="3">★★★☆☆ — Average</option><option value="2">★★☆☆☆ — Fair</option><option value="1">★☆☆☆☆ — Poor</option></select></label><label>Review title<input name="title" required maxlength="150"></label><label>Your review<textarea name="body" required rows="4" maxlength="2000"></textarea></label><small>This demo review stays in your browser.</small><button class="poc-primary" type="submit">Submit review</button></form>
+</dialog>
+<div class="poc-toast" id="poc-toast" role="status" aria-live="polite" hidden></div>

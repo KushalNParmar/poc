@@ -1,0 +1,397 @@
+
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY {
+    --hair: color-mix(in srgb, var(--lng-serums-text) 11%, transparent);
+    --hair2: color-mix(in srgb, var(--lng-serums-text) 22%, transparent);
+    --well: color-mix(in srgb, var(--lng-serums-text) 3%, transparent);
+    --t2: color-mix(in srgb, var(--lng-serums-text) 58%, transparent);
+    --t3: color-mix(in srgb, var(--lng-serums-text) 34%, transparent);
+
+    background: var(--lng-serums-bg);
+    color: var(--lng-serums-text);
+    padding-top: var(--lng-serums-top);
+    padding-bottom: var(--lng-serums-bottom);
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+  }
+
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__inner { width: 100%; overflow:hidden}
+
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__eyebrow {
+    margin: 0;
+    color: var(--lng-serums-accent);
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 0.26em;
+    text-transform: uppercase;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__heading {
+    margin: 16px 0 0;
+    max-width: 900px;
+    color: var(--lng-serums-text);
+    font-size: clamp(33px, 6.8vw, 84px);
+    line-height: 0.95;
+    letter-spacing: -0.048em;
+    font-weight: 300;
+    text-wrap: balance;
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__heading em,
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__heading i { font-style: italic; }
+
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__description {
+    margin-top: 18px;
+    max-width: 48ch;
+    font-size: 16px;
+    line-height: 1.72;
+    color: var(--t2);
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  /* ── grid: three even columns on desktop, shared rows so the tallest
+     title/claim in the set sets the row for all three cards ── */
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--lng-serums-gap);
+    margin-top: clamp(40px, 5vw, 72px);
+  }
+  @supports (grid-template-rows: subgrid) {
+    #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__grid { grid-template-rows: repeat(4, auto); }
+    #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__card {
+      display: grid;
+      grid-row: span 4;
+      grid-template-rows: subgrid;
+      align-content: start;
+    }
+  }
+
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__card { min-width: 0; position: relative; opacity: 0; transform: translateY(28px); }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__link { display: block; color: inherit; text-decoration: none; }
+
+  /* =========================================
+     SCROLL REVEAL
+     Title and cards sit hidden until the section is
+     scrolled into view, then reveal once via the
+     IntersectionObserver in the script below.
+  ========================================= */
+
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY.is-visible .lng-serums__eyebrow {
+    animation: lngSerumsFadeUp 0.8s cubic-bezier(.22,.61,.36,1) forwards;
+  }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY.is-visible .lng-serums__heading {
+    animation: lngSerumsFadeUp 0.8s cubic-bezier(.22,.61,.36,1) 100ms forwards;
+  }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY.is-visible .lng-serums__description {
+    animation: lngSerumsFadeUp 0.8s cubic-bezier(.22,.61,.36,1) 180ms forwards;
+  }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY.is-visible .lng-serums__card {
+    animation: lngSerumsFadeUp 0.8s cubic-bezier(.22,.61,.36,1) forwards;
+    animation-delay: calc(220ms + var(--lng-card-reveal-delay, 0ms));
+  }
+
+  @keyframes lngSerumsFadeUp {
+    from { opacity: 0; transform: translateY(28px); }
+    to { opacity: 1; transform: none; }
+  }
+
+  /* ── claim line: arrow that travels on hover, exactly like the mockup's .pc-bn ── */
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__claim {
+    display: flex;
+    align-items: baseline;
+    gap: 11px;
+    padding: 0 0 15px;
+    color: var(--lng-serums-text);
+    font-size: clamp(14px, 1.6vw, 22px);
+    font-weight: 500;
+    letter-spacing: -0.018em;
+    line-height: 1.2;
+    transition: color 0.45s cubic-bezier(.22,.61,.36,1);
+  }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__claim i {
+    font-style: normal;
+    font-size: 15px;
+    color: var(--lng-card-accent);
+    transition: transform 0.45s cubic-bezier(.22,.61,.36,1);
+  }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__card:hover .lng-serums__claim { color: var(--lng-card-accent); }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__card:hover .lng-serums__claim i { transform: translateX(5px); }
+
+  /* ── media: dashed-to-solid hairline that lifts to the card's accent on hover ── */
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__media {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: var(--well);
+    border: 1px solid var(--hair);
+    border-radius: var(--lng-serums-card-radius);
+    transition: border-color 0.45s cubic-bezier(.22,.61,.36,1);
+  }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__card:hover .lng-serums__media { border-color: var(--lng-card-accent); }
+#lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__media {
+  position: relative;
+}
+
+#lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition:
+    opacity 0.55s cubic-bezier(.22,.61,.36,1),
+    transform 0.9s cubic-bezier(.19,1,.22,1);
+}
+
+#lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__image--default {
+  position: relative;
+  z-index: 1;
+}
+
+#lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__image--hover {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  opacity: 0;
+}
+
+#lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__card:hover .lng-serums__image--default {
+  transform: scale(1.03);
+}
+
+#lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__card:hover .lng-serums__image--hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__placeholder svg { display: block; width: 100%; height: 100%; }
+
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__category {
+    display: block;
+    margin-top: 20px;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--lng-card-accent);
+  }
+
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__title {
+    display: block;
+    margin-top: 14px;
+    font-weight: 500;
+    font-size: clamp(22px, 2.3vw, 30px);
+    letter-spacing: -0.02em;
+    line-height: 1.14;
+    text-wrap: balance;
+  }
+
+  /* ── variant selector: bordered, top accent bar fills in on select, like .sz ── */
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__variants {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    margin-top: 16px;
+    align-self: start;
+  }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__variant {
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    text-align: left;
+    background: transparent;
+    color: var(--lng-serums-text);
+    border: 1px solid var(--hair2);
+    border-radius: 0;
+    padding: 12px 14px;
+    min-height: 50px;
+    transition: border-color 0.28s cubic-bezier(.22,.61,.36,1), background 0.28s cubic-bezier(.22,.61,.36,1);
+  }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__variant::after {
+    content: "";
+    position: absolute; left: 0; top: 0; height: 2px; width: 100%;
+    background: var(--lng-card-accent);
+    transform: scaleX(0); transform-origin: 0 50%;
+    transition: transform 0.45s cubic-bezier(.19,1,.22,1);
+  }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__variant strong {
+    display: block; font-weight: 500; font-size: 12.5px;
+    letter-spacing: 0.12em; text-transform: uppercase;
+  }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__variant span {
+    display: block; margin-top: 6px; font-size: 11.5px; line-height: 1.4;
+    color: var(--t2);
+  }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__variant:hover { border-color: var(--lng-serums-text); }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__variant.is-active { border-color: var(--hair2); background: var(--well); }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__variant.is-active::after { transform: scaleX(1); }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__variant:disabled { opacity: 0.35; cursor: not-allowed; }
+
+  /* ── buy row: single hairline that fills with the card accent on hover, like .pc-buy ── */
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__buy {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: auto;
+    padding: 14px 0 2px;
+    background: transparent;
+    border: 0;
+    border-top: 1px solid var(--hair);
+    border-radius: 0;
+    font: inherit;
+    text-align: inherit;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    flex-wrap:wrap !important;
+  }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__buy:disabled {
+    cursor: not-allowed;
+    opacity: 0.55;
+  }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__buy.is-loading { cursor: wait; }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__buy[hidden] { display: none; }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__compare-price[hidden] { display: none; }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__buy::before {
+    content: "";
+    position: absolute; left: 0; top: -1px; height: 1px; width: 100%;
+    background: var(--lng-card-accent);
+    transform: scaleX(0); transform-origin: 0 50%;
+    transition: transform 0.9s cubic-bezier(.19,1,.22,1);
+  }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__card:hover .lng-serums__buy::before { transform: scaleX(1); }
+  @media (hover: none) {
+    #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__buy::before { transform: scaleX(1); }
+  }
+
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__price {
+    font-weight: 400;
+    font-size: clamp(28px, 3vw, 38px);
+    letter-spacing: -0.03em;
+    white-space: nowrap;
+  }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__price.tick { animation: lngSerumsTick 0.32s cubic-bezier(.19,1,.22,1) both; }
+  @keyframes lngSerumsTick { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: none; } }
+
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__compare-price {
+    color: var(--t3);
+    font-size: 14px;
+    text-decoration: line-through;
+    white-space: nowrap;
+  }
+
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__button-label {
+    margin-left: auto;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--lng-serums-text);
+    white-space: nowrap;
+    transition: color 0.28s cubic-bezier(.22,.61,.36,1), letter-spacing 0.45s cubic-bezier(.22,.61,.36,1);
+  }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__card:hover .lng-serums__button-label,
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__buy:disabled .lng-serums__button-label {
+    color: var(--lng-card-accent);
+  }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__card:hover .lng-serums__button-label { letter-spacing: 0.25em; }
+  @media (hover: none) {
+    #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__button-label { color: var(--lng-card-accent); }
+  }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__buy.is-added .lng-serums__button-label { color: var(--lng-card-accent); }
+
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__mobile-hint {
+    display: none;
+    align-items: center;
+    gap: 8px;
+    margin-top: 18px;
+    font-size: 9px;
+    font-weight: 400;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+    color: var(--t3);
+  }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__mobile-hint i { font-style: normal; opacity: 0.5; }
+
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__empty {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 30px;
+    border: 1px dashed var(--hair2);
+    border-radius: var(--lng-serums-card-radius);
+    text-align: center;
+  }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__empty span { font-size: 18px; font-weight: 600; }
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__empty small { color: var(--t2); }
+
+  /* ── mobile: rail with a peek, cards snap, one hard flick never skips a serum ── */
+  @media screen and (max-width: 860px) {
+    #lng-serums-template--23927395221619__lng_serums_NkgdtY {
+      padding-top: calc(var(--lng-serums-top) * 0.7);
+      padding-bottom: calc(var(--lng-serums-bottom) * 0.7);
+    }
+     #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__claim {
+    font-size: clamp(14px, 1.9vw, 24px);
+    
+  }
+    #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__heading { font-size: 38px; }
+
+    #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__grid {
+      display: flex;
+      grid-template-columns: none !important;
+      grid-template-rows: none !important;
+      grid-auto-flow: unset;
+      gap: 14px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-padding-left: var(--lng-serums-mobile-gut, 22px);
+      margin-left: calc(-1 * var(--lng-serums-mobile-gut, 22px));
+      margin-right: calc(-1 * var(--lng-serums-mobile-gut, 22px));
+      padding: 2px var(--lng-serums-mobile-gut, 22px) 8px;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      overscroll-behavior-x: contain;
+    }
+    #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__card {
+      display: flex;
+      flex-direction: column;
+      grid-row: auto;
+      grid-template-rows: none;
+      flex: 0 0 clamp(236px, 78vw, 344px);
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+    }
+    #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__price { font-size: clamp(20px, 3vw, 38px); }
+    #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__grid::-webkit-scrollbar { display: none; }
+    #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__variants { gap: 8px; }
+    #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__mobile-hint { display: flex; }
+    #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__title { font-size: 18px; }
+  }
+
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY a:focus-visible,
+  #lng-serums-template--23927395221619__lng_serums_NkgdtY button:focus-visible {
+    outline: 1px solid var(--lng-serums-accent);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #lng-serums-template--23927395221619__lng_serums_NkgdtY * { transition: none !important; animation: none !important; }
+    #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__eyebrow,
+    #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__heading,
+    #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__description,
+    #lng-serums-template--23927395221619__lng_serums_NkgdtY .lng-serums__card {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  }

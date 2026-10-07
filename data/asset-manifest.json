@@ -1,0 +1,1482 @@
+[
+  {
+    "source": "https://lngvty.in/cdn/fonts/playfair_display/playfairdisplay_n4.9980f3e16959dc89137cc1369bfc3ae98af1deb9.woff2",
+    "local": "/assets/media/playfairdisplay_n4.9980f3e16959dc89137cc1369bfc3ae98af1deb9-12601c1161.woff2",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/fonts/playfair_display/playfairdisplay_n4.c562b7c8e5637886a811d2a017f9e023166064ee.woff",
+    "local": "/assets/media/playfairdisplay_n4.c562b7c8e5637886a811d2a017f9e023166064ee-cb28a26b8a.woff",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/WhatsApp_Image_2026-07-08_at_10.39.35_PM.jpg?crop=center&v=1783573009",
+    "local": "/assets/media/WhatsApp_Image_2026-07-08_at_10.39.35_PM-cac329e370.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://use.typekit.net/yoj5qwp.css",
+    "local": "/assets/vendor/yoj5qwp-8f892aa0be.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/constants.js?v=132983761750457495441790668804",
+    "local": "/assets/vendor/constants-9b2069644e.js",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/pubsub.js?v=25310214064522200911790668804",
+    "local": "/assets/vendor/pubsub-07ba150615.js",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/global.js?v=7301445359237545521790668804",
+    "local": "/assets/vendor/global-7a66e86346.js",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/details-disclosure.js?v=13653116266235556501790668804",
+    "local": "/assets/vendor/details-disclosure-3f1843f0ac.js",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/details-modal.js?v=25581673532751508451790668804",
+    "local": "/assets/vendor/details-modal-7e2ae0f427.js",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/search-form.js?v=133129549252120666541790668804",
+    "local": "/assets/vendor/search-form-4809337dad.js",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/animations.js?v=88693664871331136111790668804",
+    "local": "/assets/vendor/animations-4ea0a9b6dc.js",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/compiled_assets/scripts.js?v=17616755238470224921790668804",
+    "local": "/assets/vendor/scripts-059a8f85ff.js",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/base.css?v=73844994791074520821790668804",
+    "local": "/assets/vendor/base-93fe3f292a.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/custom.css?v=81637894495924251651790678707",
+    "local": "/assets/vendor/custom-0925fa22d9.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/component-cart-items.css?v=13033300910818915211790668804",
+    "local": "/assets/vendor/component-cart-items-c066f640e6.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/component-cart-drawer.css?v=39223250576183958541790668804",
+    "local": "/assets/vendor/component-cart-drawer-581ba42e6e.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/component-cart.css?v=164708765130180853531790668804",
+    "local": "/assets/vendor/component-cart-ca8b20b8cf.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/component-totals.css?v=15906652033866631521790668804",
+    "local": "/assets/vendor/component-totals-ee42ce2795.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/component-price.css?v=47596247576480123001790668804",
+    "local": "/assets/vendor/component-price-7a5e47dd55.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/component-discounts.css?v=152760482443307489271790668804",
+    "local": "/assets/vendor/component-discounts-c332da524a.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/component-predictive-search.css?v=118923337488134913561790668804",
+    "local": "/assets/vendor/component-predictive-search-9bffdf1a99.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css",
+    "local": "/assets/vendor/slick.min-73d7ce7aed.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css",
+    "local": "/assets/vendor/slick-theme.min-0ba833fd41.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css",
+    "local": "/assets/vendor/all.min-643205f09e.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/quantity-popover.css?v=160630540099520878331790668804",
+    "local": "/assets/vendor/quantity-popover-5e7ae86b62.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/component-card.css?v=120341546515895839841790668804",
+    "local": "/assets/vendor/component-card-cba7dc61b9.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/quantity-popover.js?v=987015268078116491790668804",
+    "local": "/assets/vendor/quantity-popover-e6ecda6c7f.js",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/component-slideshow.css?v=17933591812325749411790668804",
+    "local": "/assets/vendor/component-slideshow-5ff4ec31ec.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/component-slider.css?v=14039311878856620671790668804",
+    "local": "/assets/vendor/component-slider-ded40f770c.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/component-list-social.css?v=35792976012981934991790668804",
+    "local": "/assets/vendor/component-list-social-dc420bd6a7.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/component-list-menu.css?v=151968516119678728991790668804",
+    "local": "/assets/vendor/component-list-menu-95bb2b2fa4.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/component-search.css?v=165164710990765432851790668804",
+    "local": "/assets/vendor/component-search-42f1b7801f.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/component-menu-drawer.css?v=147478906057189667651790668804",
+    "local": "/assets/vendor/component-menu-drawer-018aaeaf7d.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/component-cart-notification.css?v=54116361853792938221790668804",
+    "local": "/assets/vendor/component-cart-notification-a463d1d41b.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/lngtv-logo.svg?v=1782664857",
+    "local": "/assets/media/lngtv-logo-418651c128.svg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/component-article-card.css?v=47105078945762260691790668804",
+    "local": "/assets/vendor/component-article-card-a5fc36a754.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/section-main-blog.css?v=58493965935147852611791006240",
+    "local": "/assets/vendor/section-main-blog-063ca18ab8.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/articles/what-causes-uneven-skin-tone-and-facial-pigmentation.png?v=1790847297",
+    "local": "/assets/media/what-causes-uneven-skin-tone-and-facial-pigmentation-1584e08d08.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/articles/salicylic-acid-causing-dryness-and-breakouts-what-to-do.png?v=1790847284",
+    "local": "/assets/media/salicylic-acid-causing-dryness-and-breakouts-what-to-do-38bf2a5053.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/articles/routine-for-oily-but-dehydrated-acne-prone-skin.png?v=1790847257",
+    "local": "/assets/media/routine-for-oily-but-dehydrated-acne-prone-skin-e3a9fdf90c.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/articles/how-to-fade-dark-spots-left-after-acne.png?v=1790847270",
+    "local": "/assets/media/how-to-fade-dark-spots-left-after-acne-8ccee75061.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/articles/how-to-choose-a-hydrating-serum-for-dehydrated-skin.png?v=1790847225",
+    "local": "/assets/media/how-to-choose-a-hydrating-serum-for-dehydrated-skin-0c51824a9b.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/articles/how-to-use-vitamin-c-serum-without-wasting-it.png?v=1790867276",
+    "local": "/assets/media/how-to-use-vitamin-c-serum-without-wasting-it-6d941ce5b6.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/articles/night-skincare-routine-what-order-actually-matters.png?v=1790867356",
+    "local": "/assets/media/night-skincare-routine-what-order-actually-matters-a2eaed5da0.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/articles/whiteheads-removal-why-picking-makes-it-worse_6dbc69d5-16e3-49d2-a6e3-0f2c958c0eaa.png?v=1790928971",
+    "local": "/assets/media/whiteheads-removal-why-picking-makes-it-worse_6dbc69d5-16e3-49d2-a6e3-0f2c958c0eaa-4c99cef846.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/articles/melasma-treatment-why-its-different-from-regular-pigmentation.png?v=1790850032",
+    "local": "/assets/media/melasma-treatment-why-its-different-from-regular-pigmentation-70e85ac6ab.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/component-pagination.css?v=136206814810731739951790668804",
+    "local": "/assets/vendor/component-pagination-8fb7011c7b.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/section-footer.css?v=60318643098753476351790668804",
+    "local": "/assets/vendor/section-footer-33ef32108f.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/component-newsletter.css?v=4727253280200485261790668804",
+    "local": "/assets/vendor/component-newsletter-fec4c9bbe1.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/component-list-payment.css?v=69253961410771838501790668804",
+    "local": "/assets/vendor/component-list-payment-4a29e03451.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/white-logo.svg?v=1782839972",
+    "local": "/assets/media/white-logo-042a0905cb.svg",
+    "kind": "media"
+  },
+  {
+    "source": "https://code.jquery.com/jquery-3.7.1.min.js",
+    "local": "/assets/vendor/jquery-3.7.1.min-8c616cf012.js",
+    "kind": "code"
+  },
+  {
+    "source": "https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js",
+    "local": "/assets/vendor/slick.min-0a209c4493.js",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/section-blog-post.css?v=150338533912445407631790668804",
+    "local": "/assets/vendor/section-blog-post-3575d55738.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/articles/best-serum-for-glowing-skin-separating-real-glow-from-filter-skin-marketing.png?v=1790864189",
+    "local": "/assets/media/best-serum-for-glowing-skin-separating-real-glow-from-filter-skin-marketing-648d1b8d8e.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/share.js?v=13024540447964430191790668804",
+    "local": "/assets/vendor/share-fcf834f0ca.js",
+    "kind": "code"
+  },
+  {
+    "source": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/1_ef230265-217e-44f3-a6ca-7bc74de77a11.jpg?v=1783597239",
+    "local": "/assets/media/1_ef230265-217e-44f3-a6ca-7bc74de77a11-3db7ed32f1.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/articles/vitamin-c-serum-benefits-separating-evidence-from-hype.png?v=1790864328",
+    "local": "/assets/media/vitamin-c-serum-benefits-separating-evidence-from-hype-97ff89263f.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/articles/best-sunscreen-for-face-a-no-nonsense-buying-guide.png?v=1790867380",
+    "local": "/assets/media/best-sunscreen-for-face-a-no-nonsense-buying-guide-b640876242.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/3_fa6a5cd6-22de-4dbf-8e0d-907b39558c9a.jpg?v=1783597305",
+    "local": "/assets/media/3_fa6a5cd6-22de-4dbf-8e0d-907b39558c9a-9854414628.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/articles/vitamin-c-serum-for-face-what-it-actually-does.png?v=1790864294",
+    "local": "/assets/media/vitamin-c-serum-for-face-what-it-actually-does-5662e7b472.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/articles/best-sunscreen-for-oily-skin-what-to-actually-look-for.png?v=1790864256",
+    "local": "/assets/media/best-sunscreen-for-oily-skin-what-to-actually-look-for-d2dc8ac06f.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/articles/blackheads-removal-what-dermatology-actually-recommends_fa43bfd4-fab0-4b03-b277-e495104f4555.png?v=1790928983",
+    "local": "/assets/media/blackheads-removal-what-dermatology-actually-recommends_fa43bfd4-fab0-4b03-b277-e495104f4555-a4263960a3.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f.jpg?v=1783597339",
+    "local": "/assets/media/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f-34f38de36e.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/articles/tan-removal-what-actually-works-vs-whats-folklore.png?v=1790867300",
+    "local": "/assets/media/tan-removal-what-actually-works-vs-whats-folklore-9067f4fb29.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/articles/ceramide-moisturizer-why-your-barrier-needs-this-not-actives.png?v=1790864214",
+    "local": "/assets/media/ceramide-moisturizer-why-your-barrier-needs-this-not-actives-aa8f4727d1.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/articles/how-to-remove-dark-circles-what-works-and-whats-a-myth.png?v=1790867332",
+    "local": "/assets/media/how-to-remove-dark-circles-what-works-and-whats-a-myth-3b72ed59b7.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/articles/serum-for-pigmentation-what-the-research-actually-shows-works.png?v=1790850002",
+    "local": "/assets/media/serum-for-pigmentation-what-the-research-actually-shows-works-7e5c17d7b0.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/articles/why-your-pores-look-bigger-than-they-are-and-what-actually-closes-them_92946fc0-2257-4907-96a7-366ed3f69d8e.png?v=1790928958",
+    "local": "/assets/media/why-your-pores-look-bigger-than-they-are-and-what-actually-closes-them_92946fc0-2257-4907-96a7--117b59de76.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/Acne.png?v=1790151428",
+    "local": "/assets/media/Acne-40c9319372.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/Darkspots.png?v=1790151428",
+    "local": "/assets/media/Darkspots-8092b6e6c8.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/Glow.png?v=1790151428",
+    "local": "/assets/media/Glow-45f0ea8b6e.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/India_s_1_regenerative_serum_1.webp?v=1788951270",
+    "local": "/assets/media/India_s_1_regenerative_serum_1-905e85b0eb.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/regenerative_serum_homepage_banner.jpg?v=1790862141",
+    "local": "/assets/media/regenerative_serum_homepage_banner-c191260b9a.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f.jpg?v=1783597339",
+    "local": "/assets/media/2_2b293fb2-0a55-4d2f-a70e-ee4b658e200f-5ab6335168.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/acne_1.webp?v=1783069163",
+    "local": "/assets/media/acne_1-4eee7eae1e.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/3_fa6a5cd6-22de-4dbf-8e0d-907b39558c9a.jpg?v=1783597305",
+    "local": "/assets/media/3_fa6a5cd6-22de-4dbf-8e0d-907b39558c9a-337eb9960c.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/pore_1.webp?v=1783069164",
+    "local": "/assets/media/pore_1-3aa4675545.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/1_ef230265-217e-44f3-a6ca-7bc74de77a11.jpg?v=1783597239",
+    "local": "/assets/media/1_ef230265-217e-44f3-a6ca-7bc74de77a11-f193d38a39.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Hydration_1.webp?v=1783069164",
+    "local": "/assets/media/Hydration_1-857ef547a8.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/skinmaxxing_after_1abe6e8a-aaa9-4079-a08c-4ef410d8f091.webp?v=1787641901",
+    "local": "/assets/media/skinmaxxing_after_1abe6e8a-aaa9-4079-a08c-4ef410d8f091-19f3be9916.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/skinmaxxing_before.webp?v=1787641502",
+    "local": "/assets/media/skinmaxxing_before-2d2970baf8.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/bermuda_triangle.webp?v=1788767649",
+    "local": "/assets/media/bermuda_triangle-f7dbba0149.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Untitled_design_10_a093ad91-5a6f-42f0-9872-16ff55d30cf8.jpg?v=1788766954",
+    "local": "/assets/media/Untitled_design_10_a093ad91-5a6f-42f0-9872-16ff55d30cf8-c8f0472abb.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/ChatGPT_Image_Sep_7_2026_12_00_50_PM.webp?v=1788762688",
+    "local": "/assets/media/ChatGPT_Image_Sep_7_2026_12_00_50_PM-e186b65371.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/stem_cell_CM.jpg?v=1788767308",
+    "local": "/assets/media/stem_cell_CM-563719ba8b.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/preview_images/5ad41db440e844f7ba6e2edee0e620a8.thumbnail.0000000000_900x.jpg?v=1790591126",
+    "local": "/assets/media/5ad41db440e844f7ba6e2edee0e620a8.thumbnail.0000000000_900x-f3a2d8c1d7.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/videos/c/vp/5ad41db440e844f7ba6e2edee0e620a8/5ad41db440e844f7ba6e2edee0e620a8.HD-1080p-7.2Mbps-95763830.mp4?v=0",
+    "local": "/assets/media/5ad41db440e844f7ba6e2edee0e620a8.HD-1080p-7.2Mbps-95763830-c52de773fe.mp4",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/preview_images/98149cb40e9944ea96cfa1a91706c1b3.thumbnail.0000000000_900x.jpg?v=1787654055",
+    "local": "/assets/media/98149cb40e9944ea96cfa1a91706c1b3.thumbnail.0000000000_900x-d3087686c3.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/videos/c/vp/98149cb40e9944ea96cfa1a91706c1b3/98149cb40e9944ea96cfa1a91706c1b3.HD-1080p-2.5Mbps-92548027.mp4?v=0",
+    "local": "/assets/media/98149cb40e9944ea96cfa1a91706c1b3.HD-1080p-2.5Mbps-92548027-bcadb769ff.mp4",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/preview_images/5d8d65c1667f4eeda1dd28c9b45f2898.thumbnail.0000000000_900x.jpg?v=1787644953",
+    "local": "/assets/media/5d8d65c1667f4eeda1dd28c9b45f2898.thumbnail.0000000000_900x-2ca19e9abc.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/videos/c/vp/5d8d65c1667f4eeda1dd28c9b45f2898/5d8d65c1667f4eeda1dd28c9b45f2898.HD-720p-1.6Mbps-92534724.mp4?v=0",
+    "local": "/assets/media/5d8d65c1667f4eeda1dd28c9b45f2898.HD-720p-1.6Mbps-92534724-1e33950997.mp4",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/preview_images/bd75eee6dd4343b49c06d9622c73eb04.thumbnail.0000000000_900x.jpg?v=1787650939",
+    "local": "/assets/media/bd75eee6dd4343b49c06d9622c73eb04.thumbnail.0000000000_900x-42dee1e29a.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/videos/c/vp/bd75eee6dd4343b49c06d9622c73eb04/bd75eee6dd4343b49c06d9622c73eb04.HD-720p-1.6Mbps-92543390.mp4?v=0",
+    "local": "/assets/media/bd75eee6dd4343b49c06d9622c73eb04.HD-720p-1.6Mbps-92543390-7bd4e15590.mp4",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/preview_images/86eb41ecde064a96aa58966f1d00ef85.thumbnail.0000000000_900x.jpg?v=1787650836",
+    "local": "/assets/media/86eb41ecde064a96aa58966f1d00ef85.thumbnail.0000000000_900x-530d7c803c.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/videos/c/vp/86eb41ecde064a96aa58966f1d00ef85/86eb41ecde064a96aa58966f1d00ef85.HD-1080p-2.5Mbps-92543216.mp4?v=0",
+    "local": "/assets/media/86eb41ecde064a96aa58966f1d00ef85.HD-1080p-2.5Mbps-92543216-b8a0c51dbf.mp4",
+    "kind": "media"
+  },
+  {
+    "source": "https://cdn.shopify.com/extensions/01a11176-2280-7862-971a-b99c4fd1084c/judgeme-773/assets/carousels.css",
+    "local": "/assets/vendor/carousels-120408058e.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Untitled_design_38.jpg?v=1783580029",
+    "local": "/assets/media/Untitled_design_38-10442426a4.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Untitled_design_11_bc00315a-40e7-47ed-a241-96c6c9b21736.jpg?v=1783800777",
+    "local": "/assets/media/Untitled_design_11_bc00315a-40e7-47ed-a241-96c6c9b21736-a591fc11c2.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/ChatGPT_Image_Jul_7_2026_07_26_18_PM.jpg?v=1783432799",
+    "local": "/assets/media/ChatGPT_Image_Jul_7_2026_07_26_18_PM-24df5036ee.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Untitled_design_16_5084d8ff-09d4-4f49-a55d-fe8fc1409c4f.jpg?v=1784007334",
+    "local": "/assets/media/Untitled_design_16_5084d8ff-09d4-4f49-a55d-fe8fc1409c4f-f0254da0ce.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/9_00668362-01af-4695-b1ec-6c22adcf72c2.jpg?v=1783329052",
+    "local": "/assets/media/9_00668362-01af-4695-b1ec-6c22adcf72c2-31444a53b3.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/33.jpg?v=1783325809",
+    "local": "/assets/media/33-7c94cb6f95.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://review-images.judgeme.com/lngvty-in/1791183463__screenshot2026-10-05at122731pm__original.png?quality=80",
+    "local": "/assets/media/1791183463__screenshot2026-10-05at122731pm__original-044d083979.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://review-images.judgeme.com/lngvty-in/1790872800__image__original.jpg?quality=80",
+    "local": "/assets/media/1790872800__image__original-1f32ee8ad4.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://review-images.judgeme.com/lngvty-in/1790528974__img_1503__original.jpeg?quality=80",
+    "local": "/assets/media/1790528974__img_1503__original-8f54bb563e.jpeg",
+    "kind": "media"
+  },
+  {
+    "source": "https://review-images.judgeme.com/lngvty-in/1790327186__img_3157__original.jpeg?quality=80",
+    "local": "/assets/media/1790327186__img_3157__original-1fc3734269.jpeg",
+    "kind": "media"
+  },
+  {
+    "source": "https://review-images.judgeme.com/lngvty-in/1790055233__1000123724__original.jpg?quality=80",
+    "local": "/assets/media/1790055233__1000123724__original-ab842a4316.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://review-images.judgeme.com/lngvty-in/1789551888__61p6rvnufl__original.jpg?quality=80",
+    "local": "/assets/media/1789551888__61p6rvnufl__original-17f6b0e612.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://review-images.judgeme.com/lngvty-in/1789019382__img_0258__original.jpeg?quality=80",
+    "local": "/assets/media/1789019382__img_0258__original-d1dad1bc45.jpeg",
+    "kind": "media"
+  },
+  {
+    "source": "https://review-images.judgeme.com/lngvty-in/1788008464__img_8619__original.jpeg?quality=80",
+    "local": "/assets/media/1788008464__img_8619__original-13cc1bdf94.jpeg",
+    "kind": "media"
+  },
+  {
+    "source": "https://review-images.judgeme.com/lngvty-in/1787896696__1000391952__original.jpg?quality=80",
+    "local": "/assets/media/1787896696__1000391952__original-822bf5f123.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://review-images.judgeme.com/lngvty-in/1787841434__0e3612e5-e07d-4c7d-8507-6623b92bf3fe__original.jpeg?quality=80",
+    "local": "/assets/media/1787841434__0e3612e5-e07d-4c7d-8507-6623b92bf3fe__original-f4a42a3ca6.jpeg",
+    "kind": "media"
+  },
+  {
+    "source": "https://review-images.judgeme.com/lngvty-in/1787841436__img_3496__original.jpeg?quality=80",
+    "local": "/assets/media/1787841436__img_3496__original-233309811a.jpeg",
+    "kind": "media"
+  },
+  {
+    "source": "https://review-images.judgeme.com/lngvty-in/1787123920__acne__original.jpeg?quality=80",
+    "local": "/assets/media/1787123920__acne__original-d90457a82a.jpeg",
+    "kind": "media"
+  },
+  {
+    "source": "https://review-images.judgeme.com/lngvty-in/1787123630__darkspots__original.jpeg?quality=80",
+    "local": "/assets/media/1787123630__darkspots__original-d6c4f5f856.jpeg",
+    "kind": "media"
+  },
+  {
+    "source": "https://review-images.judgeme.com/lngvty-in/1787038741__whatsappimage2026-08-13at193933__original.jpeg?quality=80",
+    "local": "/assets/media/1787038741__whatsappimage2026-08-13at193933__original-202dcfe7f4.jpeg",
+    "kind": "media"
+  },
+  {
+    "source": "https://review-images.judgeme.com/lngvty-in/1787038744__whatsappimage2026-08-13at194002__original.jpeg?quality=80",
+    "local": "/assets/media/1787038744__whatsappimage2026-08-13at194002__original-d1ae0917ca.jpeg",
+    "kind": "media"
+  },
+  {
+    "source": "https://review-images.judgeme.com/lngvty-in/1787038747__whatsappimage2026-08-13at193917__original.jpeg?quality=80",
+    "local": "/assets/media/1787038747__whatsappimage2026-08-13at193917__original-0aa8ba9fff.jpeg",
+    "kind": "media"
+  },
+  {
+    "source": "https://review-images.judgeme.com/lngvty-in/1786968898__img_5170__original.jpeg?quality=80",
+    "local": "/assets/media/1786968898__img_5170__original-7d9030e0a4.jpeg",
+    "kind": "media"
+  },
+  {
+    "source": "https://review-images.judgeme.com/lngvty-in/1786603858__img_8487__original.jpeg?quality=80",
+    "local": "/assets/media/1786603858__img_8487__original-819ffb5831.jpeg",
+    "kind": "media"
+  },
+  {
+    "source": "https://review-images.judgeme.com/lngvty-in/1786603861__img_8485__original.jpeg?quality=80",
+    "local": "/assets/media/1786603861__img_8485__original-8623f8f6dc.jpeg",
+    "kind": "media"
+  },
+  {
+    "source": "https://review-images.judgeme.com/lngvty-in/1786524684__whatsappimage2026-08-12at142027__original.jpeg?quality=80",
+    "local": "/assets/media/1786524684__whatsappimage2026-08-12at142027__original-9b3129a961.jpeg",
+    "kind": "media"
+  },
+  {
+    "source": "https://review-images.judgeme.com/lngvty-in/1786514760__review2__original.jpeg?quality=80",
+    "local": "/assets/media/1786514760__review2__original-39a1f35fc0.jpeg",
+    "kind": "media"
+  },
+  {
+    "source": "https://review-images.judgeme.com/lngvty-in/1786514390__review__original.jpeg?quality=80",
+    "local": "/assets/media/1786514390__review__original-a521f49251.jpeg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/lp-landing.css?v=84154559412914598981791203591",
+    "local": "/assets/vendor/lp-landing-fb11bf185a.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/lp-theme-overrides.css?v=161386486232552100731791273276",
+    "local": "/assets/vendor/lp-theme-overrides-be350607a2.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/lp-landing.js?v=149255990223675641291791273276",
+    "local": "/assets/vendor/lp-landing-8815774bcf.js",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/4.png?v=1791269980",
+    "local": "/assets/media/4-5df1415206.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/5.png?v=1791270028",
+    "local": "/assets/media/5-8fe37f31b7.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/4_84941d30-0833-4d2d-9678-d164174950db.webp?v=1791205037",
+    "local": "/assets/media/4_84941d30-0833-4d2d-9678-d164174950db-47dc1c712e.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/review.webp?v=1791270899",
+    "local": "/assets/media/review-f1b88b0952.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/9_8df49bc7-7349-443c-a314-9463cfb7558f.webp?v=1791272197",
+    "local": "/assets/media/9_8df49bc7-7349-443c-a314-9463cfb7558f-eec295a0f3.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/2_32c2db25-eecf-4fbd-963e-04abb496da72.webp?v=1791205037",
+    "local": "/assets/media/2_32c2db25-eecf-4fbd-963e-04abb496da72-60b909ab1d.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/5_32ae7b11-c19b-46e9-8d92-6f1f17bb92ce.webp?v=1791205037",
+    "local": "/assets/media/5_32ae7b11-c19b-46e9-8d92-6f1f17bb92ce-7d8d2bd320.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/7_d7e393c0-6270-4ea0-9866-9ff729da62af.webp?v=1791205037",
+    "local": "/assets/media/7_d7e393c0-6270-4ea0-9866-9ff729da62af-81dde252a4.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/8_51c43c73-c141-44d2-a9b6-b3c72acb1961.webp?v=1791272197",
+    "local": "/assets/media/8_51c43c73-c141-44d2-a9b6-b3c72acb1961-ede391156c.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/11.jpg?v=1783595072",
+    "local": "/assets/media/11-a5f4b79ce2.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/2-who_it_is_for_acne.webp?v=1788806861",
+    "local": "/assets/media/2-who_it_is_for_acne-8bbc29ecfa.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/3_WHY_IT_WORKS_ACNE.webp?v=1788809148",
+    "local": "/assets/media/3_WHY_IT_WORKS_ACNE-3cca96b178.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/03-Acne_3a97d263-2ed3-4ced-93bd-1e3be199499e.png?v=1790661219",
+    "local": "/assets/media/03-Acne_3a97d263-2ed3-4ced-93bd-1e3be199499e-8e6204ff93.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/04-Acne_6219fa80-9d1c-4357-a83f-999e98df0110.png?v=1790661219",
+    "local": "/assets/media/04-Acne_6219fa80-9d1c-4357-a83f-999e98df0110-44433e9d0d.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/ACNE_PDP_NEW_AUG.ai.png?v=1790072077",
+    "local": "/assets/media/ACNE_PDP_NEW_AUG.ai-fe9a481520.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/acne_bundle.webp?v=1789293308",
+    "local": "/assets/media/acne_bundle-9e1cbe1564.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/006-LEFT_FACE-DAY_0.png?v=1791271336",
+    "local": "/assets/media/006-LEFT_FACE-DAY_0-94255e1a7c.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/006-LEFT_FACE-DAY_28.png?v=1791271335",
+    "local": "/assets/media/006-LEFT_FACE-DAY_28-70ef351772.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/bottle-1.webp?v=1788540594",
+    "local": "/assets/media/bottle-1-32b6a0c97a.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/bottle-2.webp?v=1788540594",
+    "local": "/assets/media/bottle-2-e23f01b38d.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/bottle-3.webp?v=1788540594",
+    "local": "/assets/media/bottle-3-cc27309b96.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/bottle-4.webp?v=1788540594",
+    "local": "/assets/media/bottle-4-7d84590a0c.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/bottle-5.webp?v=1788540594",
+    "local": "/assets/media/bottle-5-5940868b6f.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/bottle-6.webp?v=1788540594",
+    "local": "/assets/media/bottle-6-5ff5cd0d02.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/bottle-7.webp?v=1788540594",
+    "local": "/assets/media/bottle-7-d8a0f98135.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/bottle-8.webp?v=1788540594",
+    "local": "/assets/media/bottle-8-ed81710a90.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/bottle-9.webp?v=1788540594",
+    "local": "/assets/media/bottle-9-092357d1e7.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/lngvty_image_media_800x.webp?v=1787119376",
+    "local": "/assets/media/lngvty_image_media_800x-4f5594d822.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/skin-longevity-beauty-brand-lngvty-raises-usd-5-crore-in-seed-funding-led-by-rukam-capital-1-2026-07-20-16-54-44_800x.webp?v=1787118644",
+    "local": "/assets/media/skin-longevity-beauty-brand-lngvty-raises-usd-5-crore-in-seed-funding-led-by-rukam-capital-1-20-8b39eeeca2.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/section-main-page.css?v=848677459125201531790668804",
+    "local": "/assets/vendor/section-main-page-b5fb41aca5.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/REASON_TO_BELIEVE.webp?v=1788749142",
+    "local": "/assets/media/REASON_TO_BELIEVE-a2e22e97a5.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/step-4-1.webp?v=1787481684",
+    "local": "/assets/media/step-4-1-bc23b2bbaa.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/step-4-2.webp?v=1787481684",
+    "local": "/assets/media/step-4-2-418841016d.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/step-4-3.webp?v=1787481684",
+    "local": "/assets/media/step-4-3-27c863c51e.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/step-4-4.webp?v=1787481684",
+    "local": "/assets/media/step-4-4-b214adfa25.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/step-4-5.webp?v=1787481684",
+    "local": "/assets/media/step-4-5-57e11fe51a.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/five-ch-1.webp?v=1787504777",
+    "local": "/assets/media/five-ch-1-4270af39c9.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/five-ch-2.webp?v=1787504777",
+    "local": "/assets/media/five-ch-2-8ed1fe21fa.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/five-ch-3.webp?v=1787504778",
+    "local": "/assets/media/five-ch-3-15645c13e4.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/five-ch-4.webp?v=1787504776",
+    "local": "/assets/media/five-ch-4-55fd323b94.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/02-dropper-feminine-tilted_1.webp?v=1788759219",
+    "local": "/assets/media/02-dropper-feminine-tilted_1-c9f0788394.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/conditioned-media-cell-signalling-closeup.webp?v=1788876306",
+    "local": "/assets/media/conditioned-media-cell-signalling-closeup-c08b692d0c.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/01-stem-cell-releases-signals.webp?v=1788723694",
+    "local": "/assets/media/01-stem-cell-releases-signals-00703002c3.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/conditioned-media-signalling-bubbles.webp?v=1788876329",
+    "local": "/assets/media/conditioned-media-signalling-bubbles-ba8c9aafe2.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/02-signal-rich-conditioned-medium.webp?v=1788723704",
+    "local": "/assets/media/02-signal-rich-conditioned-medium-b486f7bff0.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/LNGVTY_SERUMS.webp?v=1788721629",
+    "local": "/assets/media/LNGVTY_SERUMS-8e0be40f03.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/06-real-repeated-routine_1.webp?v=1788758391",
+    "local": "/assets/media/06-real-repeated-routine_1-0e7c1f3e8b.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/download.webp?v=1788025715",
+    "local": "/assets/media/download-900536cfe2.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/download_1.webp?v=1788028509",
+    "local": "/assets/media/download_1-83006355b4.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/download_2.webp?v=1788028509",
+    "local": "/assets/media/download_2-5d02b59bb6.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/download_3.webp?v=1788028509",
+    "local": "/assets/media/download_3-72cb3a75d2.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/download_4.webp?v=1788028509",
+    "local": "/assets/media/download_4-3c5f724783.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/1_21ac2cd6-8055-44c6-b8f9-a0705bf98f53.jpg?v=1783597207",
+    "local": "/assets/media/1_21ac2cd6-8055-44c6-b8f9-a0705bf98f53-8bb6b3b3df.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/step-3-1.webp?v=1787481684",
+    "local": "/assets/media/step-3-1-61bd553a03.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/step-3-2.webp?v=1787481684",
+    "local": "/assets/media/step-3-2-792d5d72de.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/step-3-3.webp?v=1787481684",
+    "local": "/assets/media/step-3-3-4b017464a1.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/skin-barrier-analysis.webp?v=1788875175",
+    "local": "/assets/media/skin-barrier-analysis-77296396d5.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/02-same-skin-two-readings.webp?v=1788758757",
+    "local": "/assets/media/02-same-skin-two-readings-7c2f1e48ef.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/ALL_3_SERUMS.jpg?v=1788758190",
+    "local": "/assets/media/ALL_3_SERUMS-8c51c989c7.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/Pore-Banner.webp?v=1790073747",
+    "local": "/assets/media/Pore-Banner-6e297983f3.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/Glow-Banner.webp?v=1790073747",
+    "local": "/assets/media/Glow-Banner-f507cbf089.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/Acne-Banner.webp?v=1790073747",
+    "local": "/assets/media/Acne-Banner-4bd594eb4f.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/pratha_img.webp?v=1789123194",
+    "local": "/assets/media/pratha_img-c0b58a91ad.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/preview_images/7bb4a225e8984b21a9742d07830dcbc3.thumbnail.0000000000_900x.jpg?v=1787644967",
+    "local": "/assets/media/7bb4a225e8984b21a9742d07830dcbc3.thumbnail.0000000000_900x-e8779afe6d.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/videos/c/vp/7bb4a225e8984b21a9742d07830dcbc3/7bb4a225e8984b21a9742d07830dcbc3.HD-720p-1.6Mbps-92534741.mp4?v=0",
+    "local": "/assets/media/7bb4a225e8984b21a9742d07830dcbc3.HD-720p-1.6Mbps-92534741-87d0d0d264.mp4",
+    "kind": "media"
+  },
+  {
+    "source": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/banner_2_desktop.webp?v=1789123247",
+    "local": "/assets/media/banner_2_desktop-27323cf406.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/banner_2_mobile.webp?v=1789123258",
+    "local": "/assets/media/banner_2_mobile-aa152b35e4.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/preview_images/8e85990087694e02b7f105a7cf2db10d.thumbnail.0000000000_small.jpg?v=1783582598",
+    "local": "/assets/media/8e85990087694e02b7f105a7cf2db10d.thumbnail.0000000000_small-d5e5bbe6e4.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/videos/c/vp/8e85990087694e02b7f105a7cf2db10d/8e85990087694e02b7f105a7cf2db10d.HD-720p-1.6Mbps-88493058.mp4?v=0",
+    "local": "/assets/media/8e85990087694e02b7f105a7cf2db10d.HD-720p-1.6Mbps-88493058-40f0128f62.mp4",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/t/11/assets/section-image-banner.css?v=124819179385751388401790668804",
+    "local": "/assets/vendor/section-image-banner-a79257b23e.css",
+    "kind": "code"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Untitled_design_1.jpg?v=1783616020",
+    "local": "/assets/media/Untitled_design_1-cac3b92a9e.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/preview_images/5eb7fdf40a70487b8e9ce7b1ded3aba3.thumbnail.0000000000_small.jpg?v=1783756101",
+    "local": "/assets/media/5eb7fdf40a70487b8e9ce7b1ded3aba3.thumbnail.0000000000_small-542754a71c.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/videos/c/vp/5eb7fdf40a70487b8e9ce7b1ded3aba3/5eb7fdf40a70487b8e9ce7b1ded3aba3.HD-720p-3.0Mbps-88682486.mp4?v=0",
+    "local": "/assets/media/5eb7fdf40a70487b8e9ce7b1ded3aba3.HD-720p-3.0Mbps-88682486-38adfebdae.mp4",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/1_56119069-5c17-444a-9d56-85ac597f2788.jpg?v=1783803823",
+    "local": "/assets/media/1_56119069-5c17-444a-9d56-85ac597f2788-a689591d87.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/preview_images/8fa5c1b50ecd48a794f4c2bff29ec82e.thumbnail.0000000000_small.jpg?v=1783331652",
+    "local": "/assets/media/8fa5c1b50ecd48a794f4c2bff29ec82e.thumbnail.0000000000_small-ca584ebe85.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/videos/c/vp/8fa5c1b50ecd48a794f4c2bff29ec82e/8fa5c1b50ecd48a794f4c2bff29ec82e.HD-720p-2.1Mbps-88215860.mp4?v=0",
+    "local": "/assets/media/8fa5c1b50ecd48a794f4c2bff29ec82e.HD-720p-2.1Mbps-88215860-91fad2c107.mp4",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/3_64b0c2e1-95f7-497c-825d-b4da25fc5b6e.jpg?v=1783803850",
+    "local": "/assets/media/3_64b0c2e1-95f7-497c-825d-b4da25fc5b6e-5f78ca5f02.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/4_6e76dd7f-60c1-418b-a568-e37d0592fbe5.jpg?v=1783803876",
+    "local": "/assets/media/4_6e76dd7f-60c1-418b-a568-e37d0592fbe5-737def4154.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/5_e1a15e07-e90e-4162-aa4e-7ed7bb4a8604.jpg?v=1783803892",
+    "local": "/assets/media/5_e1a15e07-e90e-4162-aa4e-7ed7bb4a8604-3fe824ef8d.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/SKINCARE_HERO_IMAGE.jpg?v=1788715071",
+    "local": "/assets/media/SKINCARE_HERO_IMAGE-f45d9b5558.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/acne-prone-skin-analysis.webp?v=1788874611",
+    "local": "/assets/media/acne-prone-skin-analysis-c13a5cf6d9.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/13-same-skin-scientific-thinner-face.webp?v=1788718106",
+    "local": "/assets/media/13-same-skin-scientific-thinner-face-c416e94e94.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/01-products-before-v6.webp?v=1788768315",
+    "local": "/assets/media/01-products-before-v6-73481e5815.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/01-products-after-v6.webp?v=1788768327",
+    "local": "/assets/media/01-products-after-v6-1aa7c4474c.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/step-1-1.webp?v=1787481683",
+    "local": "/assets/media/step-1-1-10161c1431.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/step-1-2.webp?v=1787481683",
+    "local": "/assets/media/step-1-2-0754fbe2d1.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/step-1-3.webp?v=1787481683",
+    "local": "/assets/media/step-1-3-2624feeeb3.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/15-incentive-loop-more-products_1.webp?v=1788758570",
+    "local": "/assets/media/15-incentive-loop-more-products_1-a4696e7334.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/acne_hero_new.jpg?v=1786211007",
+    "local": "/assets/media/acne_hero_new-43a03e898f.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/lngvty_bag.jpg?v=1786101818",
+    "local": "/assets/media/lngvty_bag-60e34ccc5a.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/Untitled_design_24.jpg?v=1783330697",
+    "local": "/assets/media/Untitled_design_24-890d22d178.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/01-truth-hero-real-woman.webp?v=1788760884",
+    "local": "/assets/media/01-truth-hero-real-woman-3694d006c4.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/3244686a-3d11-4a48-8177-028ed34728b3.webp?v=1788759300",
+    "local": "/assets/media/3244686a-3d11-4a48-8177-028ed34728b3-976c4976a9.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/step-2.webp?v=1787481684",
+    "local": "/assets/media/step-2-3658311cd2.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/8_7aa8b8f2-267f-4cf2-b90f-e030e2315afe.jpg?v=1788757814",
+    "local": "/assets/media/8_7aa8b8f2-267f-4cf2-b90f-e030e2315afe-1ba6be86cd.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/7_069f5c26-325c-4902-8e56-158070677a60.jpg?v=1788757786",
+    "local": "/assets/media/7_069f5c26-325c-4902-8e56-158070677a60-a0411fac8e.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/06-basal-renewal-layer.webp?v=1788761487",
+    "local": "/assets/media/06-basal-renewal-layer-a31f01dcea.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/REAL_ROUTINE_SKINMAXXING.jpg?v=1788760838",
+    "local": "/assets/media/REAL_ROUTINE_SKINMAXXING-a0a2607fda.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/21_44fe2aa8-e354-4c39-a43a-04eada18fedc.jpg?v=1783596536",
+    "local": "/assets/media/21_44fe2aa8-e354-4c39-a43a-04eada18fedc-f23e85c4e5.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/dark_spots_bundle.webp?v=1789293250",
+    "local": "/assets/media/dark_spots_bundle-3401ee241e.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/10_26eaafeb-697f-4a44-a89f-35202e17ad0b.jpg?v=1783593038",
+    "local": "/assets/media/10_26eaafeb-697f-4a44-a89f-35202e17ad0b-b0e7c92b72.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/deep_hydration_bundle.webp?v=1789293205",
+    "local": "/assets/media/deep_hydration_bundle-d24824286f.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/LNGVTYdustbagtwill.jpg?v=1781344649",
+    "local": "/assets/media/LNGVTYdustbagtwill-2977febacf.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://public-images.judge.me/judgeme/medals-v2-2025-rebranding/tran/diamond.svg",
+    "local": "/assets/media/diamond-9e0724b0b8.svg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/download_5.webp?v=1788287311",
+    "local": "/assets/media/download_5-bcf165447d.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/01-acne.png?v=1790679159",
+    "local": "/assets/media/01-acne-6277108ac2.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/01.5-Acne.png?v=1790661219",
+    "local": "/assets/media/01.5-Acne-8500c58f25.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/02-Acne_3d91c5ce-e033-44de-9da6-78e4d5276ccc.png?v=1790661219",
+    "local": "/assets/media/02-Acne_3d91c5ce-e033-44de-9da6-78e4d5276ccc-9409f6f9b0.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/05-acne_d9596f5f-7584-4ae6-919b-a6e0d1a18a6e.png?v=1790661219",
+    "local": "/assets/media/05-acne_d9596f5f-7584-4ae6-919b-a6e0d1a18a6e-c82aff6755.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/08-acne_5bb9db97-bef0-43ef-b1c7-f09ae12e6840.png?v=1790661219",
+    "local": "/assets/media/08-acne_5bb9db97-bef0-43ef-b1c7-f09ae12e6840-7ee6622057.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Acne-06_fa11e65e-3061-4f6a-9073-e8ef12afac45.png?v=1790661218",
+    "local": "/assets/media/Acne-06_fa11e65e-3061-4f6a-9073-e8ef12afac45-6b5cec00cd.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/acne-skinl-1.webp?v=1788464303",
+    "local": "/assets/media/acne-skinl-1-e4f12db3b8.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/acne-skinl-2.webp?v=1788464303",
+    "local": "/assets/media/acne-skinl-2-376bd2e8a1.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/acne-skinl-3.webp?v=1788464303",
+    "local": "/assets/media/acne-skinl-3-2e7d7b97d2.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/acne-skinl-4.webp?v=1788464303",
+    "local": "/assets/media/acne-skinl-4-00a9ca5e13.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/acne-skinl-5.webp?v=1788464303",
+    "local": "/assets/media/acne-skinl-5-e5594ddf54.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/2_WHO_IT_IS_FOR_DARK_SPOTS.webp?v=1788812773",
+    "local": "/assets/media/2_WHO_IT_IS_FOR_DARK_SPOTS-4008016078.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/03-darkspots_96ec7c0a-73df-4416-ad0b-dfba78249745.png?v=1790661400",
+    "local": "/assets/media/03-darkspots_96ec7c0a-73df-4416-ad0b-dfba78249745-e6db7d4f45.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/04-darkspots_0cf4fe52-8bd4-4e71-b9ec-496ed7df11bb.png?v=1790661400",
+    "local": "/assets/media/04-darkspots_0cf4fe52-8bd4-4e71-b9ec-496ed7df11bb-b6651aa42b.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/DARK_SPOTS_PDP_AUG_under_100KB.webp?v=1791182632",
+    "local": "/assets/media/DARK_SPOTS_PDP_AUG_under_100KB-b28367968e.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/DARK_SPOTS_PDP_AUG-5.png?v=1790072084",
+    "local": "/assets/media/DARK_SPOTS_PDP_AUG-5-46cd38f1ee.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/dark_spots_after.jpg?v=1790061278",
+    "local": "/assets/media/dark_spots_after-47b8bb0d39.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/dark_spots_before.jpg?v=1790061263",
+    "local": "/assets/media/dark_spots_before-c4b782c12a.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/01-darkspots.png?v=1790679118",
+    "local": "/assets/media/01-darkspots-1ae910dd58.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/01.5-Darkspots.png?v=1790661398",
+    "local": "/assets/media/01.5-Darkspots-c14d773180.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/02-darkspots_b518dc43-8bfc-4ee7-9c64-39a095bd8afd.png?v=1790661400",
+    "local": "/assets/media/02-darkspots_b518dc43-8bfc-4ee7-9c64-39a095bd8afd-ef161aa677.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/05-darkspots_6c430224-2afd-44bf-9cef-9098bf2be3a9.png?v=1790661399",
+    "local": "/assets/media/05-darkspots_6c430224-2afd-44bf-9cef-9098bf2be3a9-2c89720c89.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/06-darkspots_7a780948-2225-40a5-9a97-69f7f83db6c8.png?v=1790661398",
+    "local": "/assets/media/06-darkspots_7a780948-2225-40a5-9a97-69f7f83db6c8-557bced15e.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/08-darkspots_4fd863f2-4f09-4418-bf02-a6d0a51a4015.png?v=1790661400",
+    "local": "/assets/media/08-darkspots_4fd863f2-4f09-4418-bf02-a6d0a51a4015-d61b6dbf75.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Every_patient_saw_spots_fade.webp?v=1788604286",
+    "local": "/assets/media/Every_patient_saw_spots_fade-18393130e1.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Fades_the_spot_at_the_source.webp?v=1788604323",
+    "local": "/assets/media/Fades_the_spot_at_the_source-fe18e8dae4.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Pores_look_smaller.webp?v=1788604355",
+    "local": "/assets/media/Pores_look_smaller-49386f3ed8.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Firmer_over_a_cycle.webp?v=1788604386",
+    "local": "/assets/media/Firmer_over_a_cycle-d5c2e722a7.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Niacinamide-Dark_spots.webp?v=1788604940",
+    "local": "/assets/media/Niacinamide-Dark_spots-4f4e223b44.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Kojic_acid-Dark_spots.webp?v=1788604889",
+    "local": "/assets/media/Kojic_acid-Dark_spots-a257be8471.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Six_peptides-Dark_spots.webp?v=1788605229",
+    "local": "/assets/media/Six_peptides-Dark_spots-3418d93d86.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Five_ceramides_cholesterol-dark_spots.webp?v=1788605187",
+    "local": "/assets/media/Five_ceramides_cholesterol-dark_spots-48768a975f.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Green_tea_extract-dark_spots.webp?v=1788605141",
+    "local": "/assets/media/Green_tea_extract-dark_spots-2015b1327c.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Centella_asiatica-Dark_spots.webp?v=1788605279",
+    "local": "/assets/media/Centella_asiatica-Dark_spots-01ef1eeeda.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Xylitol-Dak_spots.webp?v=1788605317",
+    "local": "/assets/media/Xylitol-Dak_spots-5f9d10ab99.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Pentavitin-Dark_spots.webp?v=1788605075",
+    "local": "/assets/media/Pentavitin-Dark_spots-3333a64540.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/2_WHO_IT_IS_FOR_DEEP_HYDRATION.webp?v=1788812664",
+    "local": "/assets/media/2_WHO_IT_IS_FOR_DEEP_HYDRATION-e95da8b1e9.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/3_WHY_IT_WORKS_DEEP_HYDRATION.webp?v=1788812663",
+    "local": "/assets/media/3_WHY_IT_WORKS_DEEP_HYDRATION-df2660efce.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/03-Glow_3b73b92b-e371-4088-99a6-2f5437be1dc4.png?v=1790661308",
+    "local": "/assets/media/03-Glow_3b73b92b-e371-4088-99a6-2f5437be1dc4-dc57e5692f.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/04-Glow_90dd0f65-5557-4f3d-a5f9-e9194cee46ca.png?v=1790661308",
+    "local": "/assets/media/04-Glow_90dd0f65-5557-4f3d-a5f9-e9194cee46ca-5de5fc0375.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/DEEP_HYDRATION_PDP_AUG.ai_1_copy.webp?v=1791181277",
+    "local": "/assets/media/DEEP_HYDRATION_PDP_AUG.ai_1_copy-fb50d5ff16.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/glow_after.jpg?v=1790062048",
+    "local": "/assets/media/glow_after-f3b0d5cae7.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/glow_LEFT_FACE-DAY_0_JPG.jpg?v=1790061979",
+    "local": "/assets/media/glow_LEFT_FACE-DAY_0_JPG-c4d6780ab3.jpg",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/01-glow.png?v=1790679075",
+    "local": "/assets/media/01-glow-3565f8c1ea.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/01.5-Glow.png?v=1790661307",
+    "local": "/assets/media/01.5-Glow-08b17e1910.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/02-glow_c4482a75-79ba-4494-927a-807f95d46cd8.png?v=1790661307",
+    "local": "/assets/media/02-glow_c4482a75-79ba-4494-927a-807f95d46cd8-2832c61bae.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/05-glow_47b6e834-f3c2-4411-a468-143d07601846.png?v=1790661307",
+    "local": "/assets/media/05-glow_47b6e834-f3c2-4411-a468-143d07601846-6c0c90c9e9.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/06-Glow_ddd90f85-4850-47b8-a3c9-6c1764aa421e.png?v=1790661306",
+    "local": "/assets/media/06-Glow_ddd90f85-4850-47b8-a3c9-6c1764aa421e-1f470d832f.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/08-glow_edc0eb9d-189c-4ee1-aa4a-3f93222ae3ce.png?v=1790661307",
+    "local": "/assets/media/08-glow_edc0eb9d-189c-4ee1-aa4a-3f93222ae3ce-444a75fb23.png",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Hydration_that_stays-Deep_Hydration.webp?v=1788599050",
+    "local": "/assets/media/Hydration_that_stays-Deep_Hydration-2073057997.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Glow_you_can_measure-Deep_hydration.webp?v=1788599081",
+    "local": "/assets/media/Glow_you_can_measure-Deep_hydration-6d781e50ae.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/More_even_tone-Deep_Hydration.webp?v=1788599115",
+    "local": "/assets/media/More_even_tone-Deep_Hydration-fff4ed9045.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Calm_while_it_works-Deep_Hydration.webp?v=1788599155",
+    "local": "/assets/media/Calm_while_it_works-Deep_Hydration-18bab3a200.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Condition_Media-Deep_hdydration.webp?v=1788590590",
+    "local": "/assets/media/Condition_Media-Deep_hdydration-aae2a3e1f2.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Vitamin_C-_Deep_Hydration.webp?v=1788598850",
+    "local": "/assets/media/Vitamin_C-_Deep_Hydration-2177f2965f.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Niacinamide-Deep_Hydration.webp?v=1788598804",
+    "local": "/assets/media/Niacinamide-Deep_Hydration-fb8919ed4b.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Kojic_acid-Deep_Hydration.webp?v=1788599606",
+    "local": "/assets/media/Kojic_acid-Deep_Hydration-43b47f535a.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Six_peptides-Deep_Hydration.webp?v=1788599552",
+    "local": "/assets/media/Six_peptides-Deep_Hydration-5c6f040cf4.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Five_ceramides_cholesterol-Deep_Hydration.webp?v=1788599503",
+    "local": "/assets/media/Five_ceramides_cholesterol-Deep_Hydration-d2838cfe45.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Pentavitin-Deep_Hydration.webp?v=1788598893",
+    "local": "/assets/media/Pentavitin-Deep_Hydration-222df49218.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Centella_asiatica-Deep_Hydration.webp?v=1788599666",
+    "local": "/assets/media/Centella_asiatica-Deep_Hydration-e0c69acc85.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://lngvty.in/cdn/shop/files/Xylitol-Deep_Hydration.webp?v=1788599712",
+    "local": "/assets/media/Xylitol-Deep_Hydration-282a2853dd.webp",
+    "kind": "media"
+  },
+  {
+    "source": "https://cdn.shopify.com/s/files/1/0760/8867/2413/files/LNGVTYdustbagtwill.jpg?v=1781344649",
+    "local": "/assets/media/LNGVTYdustbagtwill-5bb80eede9.jpg",
+    "kind": "media"
+  }
+]

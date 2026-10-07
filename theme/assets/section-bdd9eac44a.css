@@ -1,0 +1,688 @@
+
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9 {
+  position: relative;
+
+  background: var(--lvg-rtb-bg);
+  color: var(--lvg-rtb-fg);
+
+  padding-top: var(--lvg-rtb-section-top);
+  padding-bottom: var(--lvg-rtb-section-bottom);
+
+  border-block: 1px solid rgba(255,254,243,.1);
+
+  font-family:
+    "Avenir Next",
+    "Avenir",
+    "Century Gothic",
+    sans-serif;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+.lvg-rtb-provenance__head {
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 24px;
+
+  flex-wrap: wrap;
+
+  margin-bottom:
+    var(--lvg-rtb-heading-gap);
+
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+.lvg-rtb-provenance__heading {
+
+  
+
+  margin: 0;
+
+  color: var(--lvg-rtb-fg);
+
+  font-size:
+    clamp(26px,4.6vw,54px);
+
+  font-weight: 300;
+
+  line-height: 1.01;
+
+  letter-spacing: -.042em;
+
+}
+
+
+/* =========================================================
+   REPLAY BUTTON
+========================================================= */
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+.lvg-rtb-provenance__replay {
+
+  appearance: none;
+
+  background: transparent;
+
+  border: 0;
+
+  border-bottom:
+    1px solid rgba(255,254,243,.34);
+
+  color:
+    rgba(255,254,243,.62);
+
+  padding:
+    0 0 5px;
+
+  cursor: pointer;
+
+  font-family: inherit;
+
+  font-size: 10px;
+
+  font-weight: 400;
+
+  letter-spacing: .24em;
+
+  text-transform: uppercase;
+
+  transition:
+    color .35s ease,
+    border-color .35s ease;
+
+}
+
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+.lvg-rtb-provenance__replay:hover {
+
+  color: var(--lvg-rtb-fg);
+
+  border-color:
+    var(--lvg-rtb-accent);
+
+}
+
+
+/* =========================================================
+   STAGE
+========================================================= */
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+.lvg-rtb-provenance__stage {
+
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-start;
+
+  min-height:
+    clamp(320px,44vw,560px);
+
+}
+
+
+/* =========================================================
+   SVG
+========================================================= */
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+.lvg-rtb-provenance__svg {
+
+  display: block;
+
+  width: 100%;
+
+  max-width: 760px;
+
+  height: auto;
+
+  margin: 0;
+
+}
+
+
+/* =========================================================
+   TRACK
+========================================================= */
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+.lvg-rtb-provenance__track {
+
+  fill: none;
+
+  stroke:
+    rgba(255,254,243,.22);
+
+  stroke-width: 1;
+
+}
+
+
+/* =========================================================
+   STATIONS
+========================================================= */
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+.lvg-rtb-provenance__station circle {
+
+  fill: none;
+
+  stroke:
+    rgba(255,254,243,.38);
+
+  stroke-width: 1.2;
+
+}
+
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+.lvg-rtb-provenance__station image {
+
+  opacity: .9;
+
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+.lvg-rtb-provenance__index {
+
+  fill:
+    var(--lvg-rtb-accent);
+
+  font-family: inherit;
+
+  font-size: 10px;
+
+  letter-spacing: .18em;
+
+}
+
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+.lvg-rtb-provenance__title {
+
+  fill:
+    rgba(255,254,243,.92);
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  font-weight: 500;
+
+  letter-spacing: .11em;
+
+  text-transform: uppercase;
+
+}
+
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+.lvg-rtb-provenance__subtitle {
+
+  fill:
+    rgba(255,254,243,.62);
+
+  font-family: inherit;
+
+  font-size: 12.5px;
+
+  letter-spacing: .01em;
+
+}
+
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+.lvg-rtb-provenance__note {
+
+  fill:
+    rgba(255,254,243,.72);
+
+  font-family: inherit;
+
+  font-size: 14px;
+
+  letter-spacing: -.01em;
+
+}
+
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+.lvg-rtb-provenance__title.is-em {
+
+  fill:
+    var(--lvg-rtb-accent);
+
+}
+
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+.lvg-rtb-provenance__station circle.is-em {
+
+  stroke:
+    var(--lvg-rtb-accent);
+
+  stroke-width: 1.4;
+
+}
+
+
+/* =========================================================
+   SIGNAL
+========================================================= */
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+.lvg-rtb-provenance__signal {
+
+  fill:
+    var(--lvg-rtb-accent);
+
+  opacity: 0;
+
+}
+
+
+/* =========================================================
+   CAPTION
+========================================================= */
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+.lvg-rtb-provenance__caption {
+
+  max-width: 60ch;
+
+  margin:
+    var(--lvg-rtb-caption-gap)
+    0
+    0;
+
+  color:
+    rgba(255,254,243,.58);
+
+  font-size: 13px;
+
+  line-height: 1.62;
+
+  letter-spacing: -.002em;
+
+}
+
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+/*
+  Initial state only when scroll reveal is enabled.
+*/
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9[data-scroll-reveal="true"]
+.lvg-rtb-reveal {
+
+  opacity: 0;
+
+  transform:
+    translate3d(
+      0,
+      var(--lvg-rtb-reveal-distance),
+      0
+    );
+
+  transition:
+    opacity var(--lvg-rtb-reveal-duration)
+      cubic-bezier(.22,.61,.36,1),
+
+    transform var(--lvg-rtb-reveal-duration)
+      cubic-bezier(.22,.61,.36,1);
+
+  will-change:
+    opacity,
+    transform;
+
+}
+
+
+/* =========================================================
+   SCROLL REVEALED
+========================================================= */
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9[data-scroll-reveal="true"].is-scroll-visible
+.lvg-rtb-reveal {
+
+  opacity: 1;
+
+  transform:
+    translate3d(0,0,0);
+
+}
+
+
+/* =========================================================
+   SCROLL REVEAL STAGGER
+========================================================= */
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9[data-scroll-reveal="true"].is-scroll-visible
+.lvg-rtb-provenance__heading {
+
+  transition-delay: 0ms;
+
+}
+
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9[data-scroll-reveal="true"].is-scroll-visible
+.lvg-rtb-provenance__replay {
+
+  transition-delay:
+    var(--lvg-rtb-reveal-delay);
+
+}
+
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9[data-scroll-reveal="true"].is-scroll-visible
+.lvg-rtb-provenance__stage {
+
+  transition-delay:
+    calc(var(--lvg-rtb-reveal-delay) * 2);
+
+}
+
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9[data-scroll-reveal="true"].is-scroll-visible
+.lvg-rtb-provenance__caption {
+
+  transition-delay:
+    calc(var(--lvg-rtb-reveal-delay) * 3);
+
+}
+
+
+/* =========================================================
+   FIGURE ANIMATION
+========================================================= */
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+.lvg-rtb-provenance__station {
+
+  opacity: 1;
+
+  transform: none;
+
+}
+
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+.lvg-rtb-provenance__track {
+
+  stroke-dasharray: 456;
+
+  stroke-dashoffset: 0;
+
+}
+
+
+/*
+  Only hide/reset SVG elements when animation
+  has actually been started.
+*/
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9.is-animating
+.lvg-rtb-provenance__track {
+
+  stroke-dashoffset: 456;
+
+}
+
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9.is-animating
+.lvg-rtb-provenance__station {
+
+  opacity: 0;
+
+  transform:
+    translateY(10px);
+
+}
+
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9.is-animating
+.lvg-rtb-provenance__signal {
+
+  opacity: 0;
+
+}
+
+
+/* =========================================================
+   FIGURE PLAY
+========================================================= */
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9.is-animating.is-visible
+.lvg-rtb-provenance__track {
+
+  animation:
+    lvg-rtb-track-template--23927395549299__rtb_provence_pqf3E9
+    3.2s
+    linear
+    .4s
+    forwards;
+
+}
+
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9.is-animating.is-visible
+.lvg-rtb-provenance__station {
+
+  animation:
+    lvg-rtb-station-template--23927395549299__rtb_provence_pqf3E9
+    .55s
+    cubic-bezier(.19,1,.22,1)
+    forwards;
+
+  animation-delay:
+    calc(
+      .4s +
+      var(--lvg-rtb-i) * .8s
+    );
+
+}
+
+
+#lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9.is-animating.is-visible
+.lvg-rtb-provenance__signal {
+
+  opacity: 1;
+
+  animation:
+    lvg-rtb-signal-template--23927395549299__rtb_provence_pqf3E9
+    3.2s
+    linear
+    .4s
+    forwards;
+
+}
+
+
+/* =========================================================
+   KEYFRAMES
+========================================================= */
+
+@keyframes lvg-rtb-track-template--23927395549299__rtb_provence_pqf3E9 {
+
+  to {
+
+    stroke-dashoffset: 0;
+
+  }
+
+}
+
+
+@keyframes lvg-rtb-station-template--23927395549299__rtb_provence_pqf3E9 {
+
+  to {
+
+    opacity: 1;
+
+    transform:
+      translateY(0);
+
+  }
+
+}
+
+
+@keyframes lvg-rtb-signal-template--23927395549299__rtb_provence_pqf3E9 {
+
+  from {
+
+    transform:
+      translateY(0);
+
+  }
+
+  to {
+
+    transform:
+      translateY(456px);
+
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:860px) {
+
+  #lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+  .lvg-rtb-provenance__title {
+
+    font-size: 17px;
+
+  }
+
+
+  #lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+  .lvg-rtb-provenance__subtitle {
+
+    font-size: 15px;
+
+  }
+
+
+  #lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+  .lvg-rtb-provenance__note {
+
+    font-size: 16px;
+
+  }
+
+
+  #lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+  .lvg-rtb-provenance__index {
+
+    font-size: 12px;
+
+  }
+
+}
+
+
+@media(max-width:640px) {
+
+  #lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+  .lvg-rtb-provenance__head {
+
+    align-items: flex-start;
+
+  }
+
+
+  #lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+  .lvg-rtb-provenance__replay {
+
+    margin-top: 4px;
+
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media(prefers-reduced-motion: reduce) {
+
+  #lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+  .lvg-rtb-reveal {
+
+    opacity: 1 !important;
+
+    transform: none !important;
+
+    transition: none !important;
+
+  }
+
+
+  #lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+  .lvg-rtb-provenance__track {
+
+    stroke-dashoffset: 0 !important;
+
+  }
+
+
+  #lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+  .lvg-rtb-provenance__station {
+
+    opacity: 1 !important;
+
+    transform: none !important;
+
+  }
+
+
+  #lvg-rtb-provenance-template--23927395549299__rtb_provence_pqf3E9
+  .lvg-rtb-provenance__signal {
+
+    opacity: 1 !important;
+
+  }
+
+}
+

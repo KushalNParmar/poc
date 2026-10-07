@@ -1,0 +1,82 @@
+
+#shopify-section-template--23927395418227__faq_cta_CJCpUG .faq-cta {
+  background: var(--ink, #181818);
+  padding: 64px 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  border-top: 1px solid rgba(255,255,255,.06);
+  font-weight: 500;
+}
+
+#shopify-section-template--23927395418227__faq_cta_CJCpUG .faq-cta h3 {
+  font-size: clamp(24px,3vw,40px);
+  font-weight: 200;
+  letter-spacing: -1.5px;
+  color: #fff;
+  margin-bottom: 8px;
+  line-height: 1.05;
+}
+
+#shopify-section-template--23927395418227__faq_cta_CJCpUG .faq-cta p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(255,255,255,.52);
+}
+
+#shopify-section-template--23927395418227__faq_cta_CJCpUG .faq-cta-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-shrink: 0;
+  align-items: flex-start;
+}
+
+#shopify-section-template--23927395418227__faq_cta_CJCpUG .faq-btn-primary {
+  font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--cu, #B87330);
+  padding: 15px 30px;
+  white-space: nowrap;
+  transition: opacity .2s;
+}
+
+#shopify-section-template--23927395418227__faq_cta_CJCpUG .faq-btn-primary:hover {
+  opacity: .8;
+}
+
+#shopify-section-template--23927395418227__faq_cta_CJCpUG .faq-btn-secondary {
+  font-family: var(--avenir, "Avenir Next","Avenir","Century Gothic",sans-serif);
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255,255,255,.45);
+  border-bottom: 1px solid rgba(255,255,255,.18);
+  padding-bottom: 2px;
+  transition: color .2s;
+}
+
+#shopify-section-template--23927395418227__faq_cta_CJCpUG .faq-btn-secondary:hover {
+  color: #fff;
+}
+
+@media(max-width: 768px) {
+  #shopify-section-template--23927395418227__faq_cta_CJCpUG .faq-cta {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 56px 28px;
+  }
+
+  #shopify-section-template--23927395418227__faq_cta_CJCpUG .faq-cta-btns {
+    width: 100%;
+  }
+
+  #shopify-section-template--23927395418227__faq_cta_CJCpUG .faq-btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+}
